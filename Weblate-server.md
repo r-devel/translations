@@ -1,6 +1,10 @@
 This page describes how the [Weblate](https://weblate.org/en/) service running at [translate.rx.studio](https://translate.rx.studio) was configured, and how it is maintained.
 
+## Infrastructure
+
 The service runs on a single `t3a.large` node in the `us-east-1` region of AWS, with termination protection enabled. AWS Backup is configured to take weekly snapshots of the node with a retention window of 1 year.
+
+## Docker images and configuration
 
 Weblate is running using Docker and Docker compose:
 
@@ -94,6 +98,14 @@ Commands to start the service:
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml build
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up
 ```
+
+## Quarterly patch for R Core
+
+To generate a report on the translation updates in a time period:
+
+1. Visit https://translate.rx.studio/projects/r-project/#reports
+2. Select time period and generate report in rST format
+3. Convert ~markdown to HTML and share in the R Contributors slack group's #core-translation channel
 
 To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
 
