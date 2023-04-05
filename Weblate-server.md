@@ -109,8 +109,9 @@ To generate a report on the translation updates in a time period:
 
 To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
 
-1. Clone the weblate git repo from https://translate.rx.studio/git/r-project/base-r-gui/
-2. Drop empty translation files to reduce noise, e.g. something like:
+1. Update the weblate repo from Subversion at https://translate.rx.studio/projects/r-project/#repository
+2. Clone the weblate git repo from https://translate.rx.studio/git/r-project/base-r-gui/
+3. Drop empty translation files to reduce noise, e.g. something like:
 
     ```r
     last_commit <- '...'
@@ -129,13 +130,13 @@ To submit a patch file on the translations found in Weblate but not in the trunk
     }
     ```
 
-3. Clone the subversion R repo or its git clone from git@github.com:wch/r-source.git
-4. Make sure that both repos are up-to-date!
-5. Copy over `src/library` from the weblate repo to R/trunk.
-6. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
+4. Clone the subversion R repo or its git clone from git@github.com:wch/r-source.git
+5. Make sure that both repos are up-to-date!
+6. Copy over `src/library` from the weblate repo to R/trunk.
+7. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
 
     ```sh
     git diff --no-prefix 366f45a4599e04e00df59d063c67ccfadf27ae96
     ```
 
-7. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
+8. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
