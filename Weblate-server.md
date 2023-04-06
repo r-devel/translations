@@ -88,10 +88,16 @@ The current image ids:
 ```bash
 $ sudo docker images
 REPOSITORY              TAG         IMAGE ID       CREATED         SIZE
-weblate/weblate         latest      02c6327da166   7 months ago    804MB
-postgres                14-alpine   07c710d28b91   7 months ago    216MB
-redis                   6-alpine    57c580553a4d   8 months ago    25.5MB
-steveltn/https-portal   1           26e5bea459df   10 months ago   274MB
+weblate/weblate         latest      2ea7d086a8c4   4 days ago      1.1GB
+redis                   6-alpine    3616f0c0705d   7 days ago      27.1MB
+postgres                14-alpine   9d94e6318ef2   7 days ago      242MB
+steveltn/https-portal   1           1f41166c2e81   2 weeks ago     351MB
+weblate/weblate         <none>      02c6327da166   9 months ago    804MB
+postgres                <none>      07c710d28b91   9 months ago    216MB
+redis                   <none>      57c580553a4d   10 months ago   25.5MB
+postgres                <none>      ea498678e2bd   10 months ago   189MB
+weblate/weblate         <none>      475045de4358   10 months ago   847MB
+steveltn/https-portal   <none>      26e5bea459df   12 months ago   274MB
 ```
 
 Current weblate etc versions listed at https://translate.rx.studio/about/
@@ -101,6 +107,14 @@ Commands to start the service:
 ```sh
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml build
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up
+```
+
+To update, follow the [official docs](https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-the-docker-container), but in short:
+
+```sh
+docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml pull
+docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml down
+docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up -d
 ```
 
 ## Quarterly patch for R Core
