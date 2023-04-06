@@ -76,6 +76,8 @@ services:
       WEBLATE_ADMIN_PASSWORD: *******
       # TODO migrate to Google Analytics v4
       WEBLATE_GOOGLE_ANALYTICS_ID: UA-*******-*
+      # enable daily pulls from R core subversion
+      WEBLATE_AUTO_UPDATE: true
   https-portal:
     environment:
       DOMAINS: 'translate.rx.studio -> http://weblate:8080'
