@@ -2,7 +2,7 @@ This page describes how the [Weblate](https://weblate.org/en/) service running a
 
 ## Infrastructure
 
-The service runs on a single `t3a.large` node in the `us-east-1` region of AWS, with termination protection enabled. AWS Backup is configured to take weekly snapshots of the node with a retention window of 1 year.
+The service runs on a single `t3a.large` node with 20GB storage (was extended from 10GB due to Docker pulls) in the `us-east-1` region of AWS, with termination protection enabled. AWS Backup is configured to take weekly snapshots of the node with a retention window of 1 year.
 
 ## Docker images and configuration
 
