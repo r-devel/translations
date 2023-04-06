@@ -140,3 +140,11 @@ To submit a patch file on the translations found in Weblate but not in the trunk
     ```
 
 8. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
+
+## Maintenance
+
+Components might become locked due to "not being able to push back to the upstream repo" (expected) or when upstream is not updated for a long time. In such case, components can be unlocked on the UI, but this needs to happen at the component level, so better to use the CLI instead:
+
+```sh
+weblate unlock_translation r-project
+```
