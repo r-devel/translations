@@ -92,6 +92,8 @@ redis                   6-alpine    57c580553a4d   8 months ago    25.5MB
 steveltn/https-portal   1           26e5bea459df   10 months ago   274MB
 ```
 
+Current weblate etc versions listed at https://translate.rx.studio/about/
+
 Commands to start the service:
 
 ```sh
