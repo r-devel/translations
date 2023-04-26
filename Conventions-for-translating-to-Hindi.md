@@ -1,2 +1,0 @@
-- Whenever you come across %s-%d-%d, keep it as it is when translating
-- 
