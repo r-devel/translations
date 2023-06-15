@@ -166,3 +166,59 @@ Components might become locked due to "not being able to push back to the upstre
 ```sh
 weblate unlock_translation r-project
 ```
+
+When there's a conflict between SVN and the Weblate git repo, and Weblate cannot pull from the upstream repo, you will need to resolve the conflicts manually after seeing an error like the below:
+
+```sh
+Rebasing (1/210)
+Rebasing (2/210)
+...
+Rebasing (50/210)
+error: could not apply 93fd9017... Added translation using Weblate (Spanish)
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 93fd9017... Added translation using Weblate (Spanish)
+CONFLICT (add/add): Merge conflict in src/library/stats/po/es.po
+Auto-merging src/library/stats/po/es.po
+rebase refs/remotes/origin/trunk: command returned error: 1
+```
+
+Weblate will provide a suggestion on how to fix, but in short:
+
+1. SSH to the Weblate server
+2. Attach the Docker container:
+
+    ```sh
+    sudo docker exec -ti weblate-docker_weblate_1 bash
+    ```
+
+3. Enter the git folder:
+
+    ```sh
+    cd app/data/vcs/r-project/base-r-gui
+    ```
+
+4. Pull from SVN and start the rebase process to see the actual errors:
+
+    ```sh
+    git svn fetch
+    git svn rebase
+    ```
+
+5. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
+
+    ```sh
+    mcedit src/library/base/po/es.po
+    git add src/library/base/po/es.po
+    git commit -m "resolve conflict"
+    git rebase --continue
+    ```
+
+To see the current progress, run something like:
+
+    ```sh
+    ( RMD="$( git rev-parse --git-path 'rebase-merge/' )" && N=$( cat "${RMD}msgnum" ) && L=$( cat "${RMD}end" ) && echo "${N} / ${L}" ; )
+    ```
+
