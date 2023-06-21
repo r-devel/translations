@@ -222,3 +222,8 @@ To see the current progress, run something like:
 ( RMD="$( git rev-parse --git-path 'rebase-merge/' )" && N=$( cat "${RMD}msgnum" ) && L=$( cat "${RMD}end" ) && echo "${N} / ${L}" ; )
 ```
 
+And make sure to use `rerere` (reuse recorded resolution) to speed up resolving the individual conflicts:
+
+```sh
+git config --global rerere.enabled true
+```
