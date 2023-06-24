@@ -132,11 +132,18 @@ To submit a patch file on the translations found in Weblate but not in the trunk
 3. Drop empty translation files to reduce noise, e.g. something like:
 
     ```r
+    library(data.table)
+    library(logger)
+
     last_commit <- '...'
-    new_files <- list.files(pattern = '*.po$', recursive = TRUE, full.names = TRUE)
-    system(paste('git checkout', last_commit))
-    old_files <- list.files(pattern = '*.po$', recursive = TRUE, full.names = TRUE)
-    system('git checkout main')
+    po_files <- \() list.files(pattern = '\\.po$', recursive = TRUE, full.names = TRUE)
+    set_branch <- \(branch) system2('git', c('checkout', branch))
+
+    new_files <- po_files()
+    set_branch(last_commit)
+    old_files <- po_files()
+    set_branch('main')
+
     added_files <- setdiff(new_files, old_files)                                                                                                                                                                                                   
     for (f in added_files) {
       if (fread(cmd = paste('pocount --csv', f), sep = ',', fill = TRUE)$`Translated Messages` == 0) {
