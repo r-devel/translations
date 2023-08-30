@@ -16,15 +16,19 @@ invalid length(x)
 length(x) अमान्य है
 ```
 
-`'MARGIN' does not match dim(X)
+```
+'MARGIN' does not match dim(X)
 
-'MARGIN' dim(X) से मेल नहीं खाता`
+'MARGIN' dim(X) से मेल नहीं खाता
+```
 
 Words related to __Place holder__
 
-`PORT must be specified
+```
+PORT must be specified
 
-पोर्ट (PORT) का उल्लेख करना अनिवार्य है`
+पोर्ट (PORT) का उल्लेख करना अनिवार्य है
+```
 
 ## Formatting
 
