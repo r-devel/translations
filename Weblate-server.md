@@ -248,5 +248,5 @@ To add a new admin in the Weblate app:
 
 To grant SSH access:
 
-1. Share your public key with one of the admins
+1. Share your public key with one of the admins, who will add that to `~/.ssh/authorized_keys`
 2. Ask for the SSH config from one of the admins
