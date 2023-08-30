@@ -1,16 +1,16 @@
-The following update was made during the R Project Sprint 2023, Warwick (hybrid):
+The following update was made during the [R Project Sprint 2023](https://contributor.r-project.org/r-project-sprint-2023/), Warwick and Online (hybrid):
 
 # Languages and contributions
 
 |Language | Contributor/Translator |
 | -- | -- |
-|Arabic|  |
-|Bengali|  |
-|Brazilian-Portugese|  |
-|Hindi|   |
-|Japanese|  |
-|Nepali|  |
-|Spanish|  | 
+|Arabic| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
+|Bengali| [Debartha Paul](https://github.com/itsdebartha) |
+|Brazilian-Portugese| [Caio Lente](https://github.com/clente), [Renata Hirota](https://github.com/rmhirota)|
+|Hindi| [Saranjeet Kaur Bhogal](https://github.com/SaranjeetKaur), [Ayush Patel](https://github.com/AyushBipinPatel)  |
+|Japanese| [Reiko Okamoto](https://github.com/reikookamoto) |
+|Nepali| [Binod Jung Bogati](https://github.com/bjungbogati) |
+|Spanish| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton)| 
 
 The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md):
 
