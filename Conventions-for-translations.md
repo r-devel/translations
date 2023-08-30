@@ -5,7 +5,7 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 |Language | Contributor/Translator |
 | -- | -- |
 |[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations)| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
-|Bengali| [Debartha Paul](https://github.com/itsdebartha) |
+|[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)| [Debartha Paul](https://github.com/itsdebartha) |
 |Brazilian-Portugese| [Caio Lente](https://github.com/clente), [Renata Hirota](https://github.com/rmhirota)|
 |Hindi| [Saranjeet Kaur Bhogal](https://github.com/SaranjeetKaur), [Ayush Patel](https://github.com/AyushBipinPatel)  |
 |Japanese| [Reiko Okamoto](https://github.com/reikookamoto) |
