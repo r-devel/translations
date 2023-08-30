@@ -10,7 +10,7 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 |Hindi| [Saranjeet Kaur Bhogal](https://github.com/SaranjeetKaur), [Ayush Patel](https://github.com/AyushBipinPatel)  |
 |Japanese| [Reiko Okamoto](https://github.com/reikookamoto) |
 |Nepali| [Binod Jung Bogati](https://github.com/bjungbogati) |
-|Spanish| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton)| 
+|Spanish| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton), [https://github.com/msquiroga89](https://github.com/msquiroga89)| 
 
 The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md):
 
