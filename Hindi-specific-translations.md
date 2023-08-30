@@ -10,8 +10,10 @@
 
 Don't translate anything that is a technical term from R, for example, function names, objects and arguments (usually between quotes).
 
->invalid length(x)
->length(x) अमान्य है
+```
+invalid length(x)
+length(x) अमान्य है
+```
 
 `'MARGIN' does not match dim(X)
 
