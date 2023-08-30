@@ -234,3 +234,19 @@ And make sure to use `rerere` (reuse recorded resolution) to speed up resolving 
 ```sh
 git config --global rerere.enabled true
 ```
+
+## Administrators
+
+Currently @daroczig and @MichaelChirico have admin access to Weblate, both in the web UI and via SSH.
+
+To add a new admin in the Weblate app:
+
+1. Go to the [Users page](https://translate.rx.studio/manage/users)
+2. Select the user
+3. Go to "Groups"
+4. Add to the "The R Project for Statistical Computing / Administration" group
+
+To grant SSH access:
+
+1. Share your public key with one of the admins
+2. Ask for the SSH config from one of the admins
