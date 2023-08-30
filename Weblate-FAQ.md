@@ -38,3 +38,7 @@ If you maintain an R package using `gettext` (or similar) in a public git or SVN
 
 1. The Weblate admins create a [new component](#how-to-add-a-new-component) using your git/SVN repo
 2. Optionally set up push-back hooks to the `master` or other branch, so that new translations are available in the original repo as well
+
+### How to test the changes I made in Weblate?
+
+Speaking about translations done in a base R package, you will need to [build R](https://contributor.r-project.org/rdevguide/GetStart.html#building-r). Instead of the official SVN repo, you could use Weblate's git repo at https://translate.rx.studio/git/r-project/base-r-gui/, which includes all new translations up to the past few minutes (translations are committed to the git repo every few minutes). In case you don't want to clone the Weblate git repo, you can download the PO files from Weblate by visiting a component and downloading either all PO files as a ZIP file or selecting a language you can download an individual PO file.
