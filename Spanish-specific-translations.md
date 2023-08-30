@@ -33,7 +33,7 @@ To help in the translation process, you need to:
 1. Create an account on [Weblate](https://translate.rx.studio/) (currently
    maintained by [@daroczig](https://twitter.com/daroczig));
 1. List every Spanish
-   [component](https://translate.rx.studio/languages/pt_BR/r-project/);
+   [component](https://translate.rx.studio/languages/es/r-project/);
 1. Choose a component that's not 100% translated (like, for example, the [utils
    package](https://translate.rx.studio/languages/es/r-project/));
 1. Click **Unfinished strings** to list all messages that haven't been
