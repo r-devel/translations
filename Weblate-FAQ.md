@@ -27,3 +27,14 @@ Only Weblate admins can do that. For now, please reach out to @daroczig or @Mich
 ### How to add a new package?
 
 See above for the definition of a ["component"](#what-is-a-component), and based on that, see the section on ["How to add a new component?"](#how-to-add-a-new-component).
+
+### What packages are translated in Weblate?
+
+Currently, only base R packages. There are [plans to support recommended packages](https://github.com/r-devel/translations/issues/21) as well. Other R packages can also use this installation of Weblate, as per below:
+
+### How to add a package I maintain to Weblate?
+
+If you maintain an R package using `gettext` (or similar) in a public git or SVN repo, and you are planning to use this installation of Weblate to crowdsource the translation of your already extracted strings, please reach out to the [Weblate admins](https://github.com/r-devel/translations/wiki/Weblate-server#administrators) to discuss the details, but in short, the following steps are expected:
+
+1. The Weblate admins create a [new component](#how-to-add-a-new-component) using your git/SVN repo
+2. Optionally set up push-back hooks to the `master` or other branch, so that new translations are available in the original repo as well
