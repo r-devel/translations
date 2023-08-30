@@ -223,7 +223,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     git rebase --continue
     ```
 
-To see the current progress, run something like:
+To see the current progress of conflict resolution, run something like:
 
 ```sh
 ( RMD="$( git rev-parse --git-path 'rebase-merge/' )" && N=$( cat "${RMD}msgnum" ) && L=$( cat "${RMD}end" ) && echo "${N} / ${L}" ; )
