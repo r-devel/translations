@@ -26,4 +26,4 @@ Only Weblate admins can do that. For now, please reach out to @daroczig or @Mich
 
 ### How to add a new package?
 
-See above for the definition of a ("component")[#what-is-a-component], and based on that, see the section on ["How to add a new component?"](#how-to-add-a-new-component).
+See above for the definition of a ["component"](#what-is-a-component), and based on that, see the section on ["How to add a new component?"](#how-to-add-a-new-component).
