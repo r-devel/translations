@@ -1,4 +1,3 @@
-# Guide
 ## About
 ## Resources
 ### Style
