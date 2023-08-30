@@ -2,6 +2,12 @@
 
 Please see the problem statement and proposed solution in the [R Project Sprint 2023's Weblate project](https://contributor.r-project.org/r-project-sprint-2023/projects/weblate-improvements/#problem-statement).
 
+### What is a "component"?
+
+Each R package has been implemented as at least one component in Weblate, referring to the strings to be translated in a PO file.
+
+When a package includes multiple PO files (e.g. one for the strings extracted from the C sources, another one for the strings extracted from the R sources, and another one for the GUI strings), then there are multiple components for a package.
+
 ### How to add a new language for a component?
 
 After logging in and selecting a component, you should see a "Start new translation" button at the bottom of the page, see e.g. at https://translate.rx.studio/projects/r-project/base-c/
@@ -17,3 +23,7 @@ Only Weblate admins can do that. For now, please reach out to @daroczig or @Mich
 5. File format is usually `gettext PO file` (for strings extracted from R core and recommended packages), or e.g. iOS strings (for Mac GUI)
 6. Provide file mask, e.g. `src/library/base/po/*.po` or `src/library/compiler/po/R-*.po`
 7. Set a Language filter when needed to guide Weblate which files to pick up (e.g. to exclude the PO files starting with `R` (part of the "R files" component) for the "C files" component, something like `^(?!en$)[a-z][^.]+$`
+
+### How to add a new package?
+
+See above for the definition of a ("component")[#], and based on that, see the section on "How to add a new component?".
