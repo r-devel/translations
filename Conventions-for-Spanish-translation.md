@@ -3,4 +3,4 @@
 ### Style
 ### Formatting
 ### Grammatical gender
-### Glossary 
+### Glossary
