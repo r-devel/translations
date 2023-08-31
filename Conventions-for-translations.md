@@ -16,9 +16,9 @@ So if you want start, you can contribute following those steps:
 6. Click Unfinished strings to list all messages that haven't been translated and
 7. Start!
 
-This is a short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) that you can check for use the interface of Weblate.
+This is a short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) that you can check for use the Weblate interface.
 
-You can access to full documentation of Weblate throght this [link](https://docs.weblate.org/en/latest/).
+You can access to full documentation of Weblate through this [link](https://docs.weblate.org/en/latest/).
 
 Some translation states are important:
 * **Untranslated**: Translation is empty, it might or not be stored in the file, depending on the file format.
@@ -26,12 +26,12 @@ Some translation states are important:
 * **Waiting for review**: Translation is made, but not reviewed.
 * **Approved**: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.
 
-Exist some **key points** when you starting traslation:
+There are several *key points* to consider when starting translation:
 
 1. Every registered user on the Weblate can act as a translator.
 2. The translation that you participate, should be reviewing.
 3. A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
-4. Adding the missing worlds in the Glosary.
+4. Adding the missing worlds to the Glosary.
 
 Finally, those are the guidelines for the existing languages. If your language doesn't exist yet, please feel free to submit a pull request and create it
 
