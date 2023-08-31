@@ -2,10 +2,71 @@
 
 This document provides a guideline of translating R Messages/Warnings/Errors from English to Arabic. 
 
-# Tools: 
-
-
 # Rules:
+Translating R programming messages and warnings from English to Arabic requires careful attention to both the technical accuracy and linguistic clarity of the translated text. Here's a translation guide to help you with this process:
+**1. Understand the Context:**
+
+Before translating any message or warning, it's crucial to understand the context. Know what the message is conveying, what part of the code it relates to, and its intended audience.
+
+**2. Maintain Technical Accuracy:**
+
+Ensure that the translated message conveys the same technical information as the original. The goal is to make sure that users can still understand the issue or information provided.
+
+**3. Preserve Clarity:**
+
+Clarity is paramount in translations. Make sure the translated message is clear and easy to understand. Avoid overly complex or verbose translations.
+
+**4. Use Formal Arabic:**
+
+When translating messages for a general audience or professional context, use Modern Standard Arabic (MSA) or Formal Arabic. Avoid using dialects unless the message is for a specific region where a particular dialect is preferred.
+
+**5. Consistency:**
+
+Maintain consistency in your translations. Use consistent terminology and wording throughout the translation to avoid confusion.
+
+**6. Be Mindful of Length:**
+
+Consider that the Arabic translation might be longer or shorter than the English text. Ensure that the translated message fits within the space allocated in the code or interface.
+
+**7. Retain Technical Terms:**
+
+For technical terms and code-related elements such as function names, object names, and variable names, it's often best to keep them in English. Use the Arabic script for these terms if necessary but maintain the English terminology.
+
+**8. Handle Plurals:**
+
+Arabic nouns have different forms for singular and plural. Ensure that you correctly handle plurals when translating messages that involve counts or quantities.
+
+**9. Punctuation:**
+
+Use Arabic punctuation and ensure proper spacing around punctuation marks. Arabic uses different quotation marks and a reversed question mark (؟) and exclamation mark (ء).
+
+**10. Special Characters:**
+
+Some technical messages may contain special characters like `%s`, `%d`, or `%f` for string, integer, and floating-point substitutions. Keep these special characters and their order in the translated message, making sure they correspond correctly with the placeholders.
+
+**11. Avoid Gendered Language:**
+
+In Arabic, gendered language is common. However, in technical messages, try to avoid gender-specific terms. Use neutral language whenever possible to be inclusive.
+
+**12. Test the Translation:**
+
+After translating, test the messages in the R environment to ensure they appear correctly and are still functional.
+
+**13. Document Translations:**
+
+Keep a record of your translations for reference. This documentation can help maintain consistency in future translations and facilitate collaboration with other translators.
+
+**14. Seek Feedback:**
+
+If possible, seek feedback from native Arabic speakers who are also familiar with programming to ensure the translations make sense in the intended context.
+
+**15. Revise and Update:**
+
+Programming languages evolve, and so should your translations. Periodically review and update your translations to align with changes in the R programming language or best practices in translation.
+
+Remember that translating programming messages is a specialized skill that requires a strong understanding of both the source and target languages as well as the technical context. Collaborating with other experienced translators can also improve the quality of your translations.
+
+
 
 # How to Contribute: 
 1. Join R Contributors Slack group. 
