@@ -1,6 +1,6 @@
 The following update was made during the [R Project Sprint 2023](https://contributor.r-project.org/r-project-sprint-2023/), Warwick and Online (hybrid) during 30 Aug - 1 Sept 2023:
 
-## Translation workflow
+## Translations workflow
 - Every registered user on the Weblate can act as a translator.
 - The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
 - For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
