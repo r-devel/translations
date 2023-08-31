@@ -8,8 +8,37 @@ The following update was made during the [R Project Sprint 2023](https://contrib
     - Structure
     - Review
 
+## Roles 
+- Translators, Reviewers, Editors (TTW: Turing way translation handbook https://the-turing-way.netlify.app/community-handbook/translation)
+- a role column on the github table. Roles: Translations Manager, Maintainers, 
+- ropensci glossary - chapter 4 
 
-# Languages and contributions
+## Guidelines
+- put policies like not work on new translations, don’t retranslate of something new, start with reviews 
+- weblate how to distinguish between a translator and reviewer 
+- put as a suggestion and not submit, needs editing. Idea of enabling peer review  or dedicated reviewers workflow:
+(https://r-contributors.slack.com/archives/C0210D7EN1X/p1681721670854879?thread_ts=1681456244.863579&cid=C0210D7EN1X)
+- accept the default suggested translations, if it makes sense
+- Peer review workflow https://docs.weblate.org/en/latest/workflows.html#peer-review
+- Dedicated reviewers https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers
+
+## Review Specifications or guidelines 
+- glossary of words
+- language specific glossaries. Weblate has features to flag untranslatable and forbidden terms (see https://docs.weblate.org/en/latest/user/glossary.html)
+- check what they do for Python
+- put on wiki 
+- have glossaries specific to languages
+- argument (write in translated language) or vice versa (original term in brackets)
+- create language specific slack channels
+- put in the language specific conventions wiki about the slack channels (if others want to create one or join an existing one)
+
+## What (words) not to translate - okay for nouns, not for verbs?, (separate page of technical tips).
+- keyboard keys
+- function names
+- %s, %d
+- put on wiki
+
+## Languages and contributions
 
 |Language | Contributor/Translator |
 | -- | -- |
@@ -21,13 +50,29 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)| [Binod Jung Bogati](https://github.com/bjungbogati) |
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton), [Macarena Quiroga](https://github.com/msquiroga89)| 
 
-# About Weblate
+## Sustain the translation community over the time?
+- communicate in slack
+- Highlight milestones (overall and by language)
+- Create spaces for feedback
+- coordinate on github
+- Design acknowledging categories for contributing members (a nice example: https://the-turing-way.netlify.app/afterword/contributors-record#contributors-record-contributors)
+- a getting started page on github
+- how to join the community  - maybe via slack
+- Organise events
+- conduct local/regional events or workshops for the community
+
+## About Weblate
 
 - [Weblate documentation](https://docs.weblate.org/en/latest/)
 - [Glossary on Weblate](https://translate.rx.studio/projects/r-project/glossary/)   
 - [Chapter on Weblate in the R Dev Guide](https://github.com/r-devel/rdevguide/pull/142)
 
-# Resources
+## Space for feedback
+- github issues and/or discussions
+- knowing who to write
+- for the translation workflow write to slack
+
+## Resources
 
 Some interesting guides, glossaries and handbooks:
 - [Turing way translation handbook](https://the-turing-way.netlify.app/community-handbook/translation)
@@ -39,6 +84,9 @@ Some interesting guides, glossaries and handbooks:
 - [International statistical glossaries](https://www.cso.ie/en/methods/quality/statisticalglossary/)
 - [Translating R Messages, R >= 3.0.0](https://developer.r-project.org/Translations30.html)
 - [R Translation Teams](https://developer.r-project.org/TranslationTeams.html)
+
+## Code of Conduct
+- Use the R Foundation Code of Conduct.
 
 The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md):
 
