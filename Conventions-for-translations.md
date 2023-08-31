@@ -4,10 +4,11 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 - Unless having very strong reasons not to, please follow your language specific glossary and guidelines
 - If you encounter ambiguous or difficult strings to translate that aren't captured in the language specific glossary and guidelines, refer to the core-translation slack channel to discuss it with other translators
 - Some languages, like spanish, have specific channels to discuss translation. Refer to your specific channel to discuss issues related to your language: if you need a slack channel set up for a language, send a direct slack message to @mcnanton
+_To be discussed:_
 - put policies like not work on new translations, don’t retranslate of something new, start with reviews 
 - put as a suggestion and not submit, needs editing. 
 - accept the default suggested translations, if it makes sense
-- language specific glossaries. Weblate has features to flag untranslatable and forbidden terms (see https://docs.weblate.org/en/latest/user/glossary.html)
+- Weblate has features to flag untranslatable and forbidden terms (see https://docs.weblate.org/en/latest/user/glossary.html)
 - check what they do for Python
 - argument (write in translated language) or vice versa (original term in brackets)
 
