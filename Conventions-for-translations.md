@@ -1,5 +1,14 @@
 The following update was made during the [R Project Sprint 2023](https://contributor.r-project.org/r-project-sprint-2023/), Warwick and Online (hybrid) during 30 Aug - 1 Sept 2023:
 
+## Translation workflow
+- Translation
+- Updating glossary
+- Review
+- Updating language-specific guidelines
+    - Structure
+    - Review
+
+
 # Languages and contributions
 
 |Language | Contributor/Translator |
@@ -12,6 +21,11 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)| [Binod Jung Bogati](https://github.com/bjungbogati) |
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton), [Macarena Quiroga](https://github.com/msquiroga89)| 
 
+# About Weblate
+
+- [Weblate documentation](https://docs.weblate.org/en/latest/)
+- [Glossary on Weblate](https://translate.rx.studio/projects/r-project/glossary/)   
+- [Chapter on Weblate in the R Dev Guide](https://github.com/r-devel/rdevguide/pull/142)
 
 # Resources
 
