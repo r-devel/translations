@@ -42,3 +42,9 @@ If you maintain an R package using `gettext` (or similar) in a public git or SVN
 ### How to test the changes I made in Weblate?
 
 Speaking about translations done in a base R package, you will need to [build R](https://contributor.r-project.org/rdevguide/GetStart.html#building-r). Instead of the official SVN repo, you could use Weblate's git repo at https://translate.rx.studio/git/r-project/base-r-gui/, which includes all new translations up to the past few minutes (translations are committed to the git repo every few minutes). In case you don't want to clone the Weblate git repo, you can download the PO files from Weblate by visiting a component and downloading either all PO files as a ZIP file or selecting a language you can download an individual PO file.
+
+### How to manage translation teams in Weblate?
+
+Each language team has leaders and reviewers. Only language team leaders and the Weblate admins can remove existing users from the teams, and can add new team members. Team leaders can find their language team listed on their [profile](https://translate.rx.studio/accounts/profile/#teams), where they can edit the list of users in the group.
+
+### 
