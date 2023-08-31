@@ -31,7 +31,7 @@ Exist some key points when you starting traslation:
 3. A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
 4. Adding the missing worlds in the Glosary.
 
-Finally, those are the guidelines for the existing languages. If your language doesn't exist yet, please feel free to submit a pull request and create it
+Finally, those are the guidelines for the existing languages. If your language doesn't exist yet, please feel free to submit a pull request and create it.
 
 |Language | 
 | -- |
@@ -68,9 +68,9 @@ Reviewers approve the work of translators and ensure the overall cohesion of the
 - [Chapter on Weblate in the R Dev Guide](https://github.com/r-devel/rdevguide/pull/142)
 
 ## Space for feedback
-- github issues and/or discussions
-- knowing who to write
-- for the translation workflow write to slack
+- GitHub issues and/or discussions
+- Knowing who to write
+- For the translation workflow write to slack
 
 ## Resources
 
