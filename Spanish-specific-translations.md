@@ -42,7 +42,7 @@ To help in the translation process, you need to:
 ### Formatting
 ### Grammatical gender
 
-Unlike Spanish, English does not specify grammatical gender. We will try to follow the [Manual for Non Sexist Use of Language (in Spanish)](https://edisciplinas.usp.br/pluginfile.php/3034366/mod_resource/content/1/Manual%20para%20uso%20n%C3%A3o%20sexista%20da%20linguagem.pdf) in translations as much as we can, but unfortunately that is not always possible.
+Unlike Spanish, English does not specify grammatical gender. We will try to follow the [Manual for Non Sexist Use of Language (in Spanish)](http://conavim.gob.mx/work/models/CONAVIM/Resource/309/1/images/Manualparaelusonosexistadellenguaje%20completo%281%29.pdf) in translations as much as we can, but unfortunately that is not always possible.
 
 You can check other useful links to use grammatical gender:
 * https://datadrivesimpact.course.tc/?utm_campaign=coschedule&utm_source=linkedin_company&utm_medium=DataDotOrg
