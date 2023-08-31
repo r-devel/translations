@@ -10,28 +10,26 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 - Translation
 - Updating glossary
 - Review
-- Updating language-specific guidelines
-    - Structure
-    - Review
 
 ## Roles 
 We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) workflow on weblate. We currently manage 3 roles in the platform
 - Translators
-- Admins
+Every registered user on weblate can act as translator
+- Admins / team leaders
+Admins / team leaders keep the list of admins and reviewers by language up to date
 - Reviewers
+Reviewers approve the work of translators and ensure the overall cohesion of the translation work in one language
 
 ## Guidelines
 - put policies like not work on new translations, don’t retranslate of something new, start with reviews 
 - weblate how to distinguish between a translator and reviewer 
-- put as a suggestion and not submit, needs editing. Idea of enabling peer review  or dedicated reviewers workflow:
-(https://r-contributors.slack.com/archives/C0210D7EN1X/p1681721670854879?thread_ts=1681456244.863579&cid=C0210D7EN1X)
+- put as a suggestion and not submit, needs editing. 
 - accept the default suggested translations, if it makes sense
 
 ## Review Specifications or guidelines 
 - glossary of words
 - language specific glossaries. Weblate has features to flag untranslatable and forbidden terms (see https://docs.weblate.org/en/latest/user/glossary.html)
 - check what they do for Python
-- put on wiki 
 - have glossaries specific to languages
 - argument (write in translated language) or vice versa (original term in brackets)
 - create language specific slack channels
