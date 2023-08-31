@@ -53,3 +53,41 @@ Admins / team leaders keep the list of admins and reviewers by language up to da
 ### Reviewers
 Reviewers approve the work of translators and ensure the overall cohesion of the translation work in one language. For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
 
+## Sustainability of the translations community 
+- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is main space of communication for the translations community. Join this Slack for communicating with the community and also for sharing any feedback.
+- We encourage people interested in translations to organise and conduct local/regional level events to promote and raise awareness about translations.
+- Highlight milestones (overall and by language)
+- coordinate on github
+- Design acknowledging categories for contributing members (a nice example: https://the-turing-way.netlify.app/afterword/contributors-record#contributors-record-contributors)
+- a getting started page on github
+
+## About Weblate
+
+- [Weblate documentation](https://docs.weblate.org/en/latest/)
+- [Glossary on Weblate](https://translate.rx.studio/projects/r-project/glossary/)   
+- [Chapter on Weblate in the R Dev Guide](https://github.com/r-devel/rdevguide/pull/142)
+
+## Space for feedback
+- github issues and/or discussions
+- knowing who to write
+- for the translation workflow write to slack
+
+## Resources
+
+Some interesting guides, glossaries and handbooks:
+- [Turing way translation handbook](https://the-turing-way.netlify.app/community-handbook/translation)
+- [R OpenSci's draft of translation guidelines](https://translationguide.ropensci.org/)
+- [R OpenSci's glossary](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
+- [R French Dictionary](https://github.com/phgrosjean/rfrench/blob/main/RFrenchDictionary.txt)
+- [R Brazilian Portuguese guide (will be translated into English)](https://github.com/clente/pt-br)
+- [cpplib translations (in Portuguese)](https://translationproject.org/latest/cpplib/pt_BR.po)
+- [International statistical glossaries](https://www.cso.ie/en/methods/quality/statisticalglossary/)
+- [Translating R Messages, R >= 3.0.0](https://developer.r-project.org/Translations30.html)
+- [R Translation Teams](https://developer.r-project.org/TranslationTeams.html)
+
+## Code of Conduct
+- Use the R Foundation Code of Conduct.
+
+## Future work 
+The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md):
+
