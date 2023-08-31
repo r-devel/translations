@@ -15,9 +15,10 @@ The following update was made during the [R Project Sprint 2023](https://contrib
     - Review
 
 ## Roles 
-- Translators, Reviewers, Editors (TTW: Turing way translation handbook https://the-turing-way.netlify.app/community-handbook/translation)
-- a role column on the github table. Roles: Translations Manager, Maintainers, 
-- ropensci glossary - chapter 4 
+We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) workflow on weblate. We currently manage 3 roles in the platform
+- Translators
+- Admins
+- Reviewers
 
 ## Guidelines
 - put policies like not work on new translations, don’t retranslate of something new, start with reviews 
