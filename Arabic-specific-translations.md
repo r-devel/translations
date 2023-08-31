@@ -4,6 +4,7 @@ This document provides a guideline of translating R Messages/Warnings/Errors fro
 
 # Rules:
 Translating R programming messages and warnings from English to Arabic requires careful attention to both the technical accuracy and linguistic clarity of the translated text. Here's a translation guide to help you with this process:
+
 **1. Understand the Context:**
 
 Before translating any message or warning, it's crucial to understand the context. Know what the message is conveying, what part of the code it relates to, and its intended audience.
