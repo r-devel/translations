@@ -2,14 +2,18 @@
 
 This document provides a guideline of translating R Messages/Warnings/Errors from English to Arabic. 
 
-# Resources
+# Tools: 
 
 
-## Style
+# Rules:
 
-## Formatting
-
-## Grammatical gender
+# How to Contribute: 
+1. Join R Contributors Slack group. 
+2. Join #core-translation channel.
+3. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by [@daroczig](https://twitter.com/daroczig));
+4. Choose Arabic language to see all components.
+5. Add your translation to a component that's not 100% translated.
+6. Review translated components. 
 
 ## Glossary
 #### Note: The Arabic translation here is based on Google translate! It requires some review and edit. This can be done later!
