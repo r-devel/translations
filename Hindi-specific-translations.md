@@ -22,7 +22,7 @@ length(x) अमान्य है
 'MARGIN' dim(X) से मेल नहीं खाता
 ```
 
-Words related to __Place holder__
+Words related to mathematics, statistics, engineering, etc will not be translated. However, a phonetic presentation will be provided in Devnagri script along with the word in English script.
 
 ```
 PORT must be specified
