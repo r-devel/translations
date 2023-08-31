@@ -52,16 +52,13 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)| [Binod Jung Bogati](https://github.com/bjungbogati) |
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton), [Macarena Quiroga](https://github.com/msquiroga89)| 
 
-## Sustain the translation community over the time?
-- communicate in slack
+## Sustainability of the translations community 
+- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is main space of communication for the translations community. Join this Slack for communicating with the community and also for sharing any feedback.
+- We encourage people interested in translations to organise and conduct local/regional level events to promote and raise awareness about translations.
 - Highlight milestones (overall and by language)
-- Create spaces for feedback
 - coordinate on github
 - Design acknowledging categories for contributing members (a nice example: https://the-turing-way.netlify.app/afterword/contributors-record#contributors-record-contributors)
 - a getting started page on github
-- how to join the community  - maybe via slack
-- Organise events
-- conduct local/regional events or workshops for the community
 
 ## About Weblate
 
