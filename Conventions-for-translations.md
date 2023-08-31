@@ -43,23 +43,18 @@ Finally, those are the guidelines for the existing languages. If your language d
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
 
-## Translations workflow
-- Every registered user on the Weblate can act as a translator.
-- The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
-- For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
-- A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
-- Translation
-- Updating glossary
-- Review
+## What is being translated?
+All output in R (such as messages emitted by stop(), warning(), or message()) is eligible for translation, as are menu labels in the GUI
 
 ## Roles 
 We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) workflow on weblate. We currently manage 3 roles in the platform
 ### Translators
-Every registered user on weblate can act as translator
+Every registered user on weblate can act as translator. A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
 ### Admins / team leaders
-Admins / team leaders keep the list of admins and reviewers by language up to date
+Admins / team leaders keep the list of admins and reviewers by language up to date. The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
 ### Reviewers
-Reviewers approve the work of translators and ensure the overall cohesion of the translation work in one language
+Reviewers approve the work of translators and ensure the overall cohesion of the translation work in one language. For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
+
 
 ## Guidelines
 ### General guidelines
