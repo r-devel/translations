@@ -15,6 +15,8 @@ the computer it's running on. In principle, this reduces R's barrier to entry;
 warnings and errors are very common in code written by beginners, so it's
 essential that these messages are as clear as possible.
 
+### How to contribute
+
 To help in the translation process, you need to:
 
 1. Sign up to the [R Contributors
