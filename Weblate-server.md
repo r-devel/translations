@@ -239,6 +239,8 @@ git config --global rerere.enabled true
 
 Currently @daroczig and @MichaelChirico have admin access to Weblate, both in the web UI and via SSH.
 
+In case of any questions, reach out to them on the R-devel Slack's `#core-translation` channel, pinging both their usernames.
+
 To add a new admin in the Weblate app:
 
 1. Go to the [Users page](https://translate.rx.studio/manage/users)
