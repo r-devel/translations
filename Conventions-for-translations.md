@@ -9,7 +9,7 @@ In a world that thrives on interconnectedness and global communication, translat
 So if you want start, you can contribute following those steps:
 
 1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the #core-translations channel;
-2. Read the [Resources](https://github.com/r-devel/translations/wiki/) section of this document, because the translation has some conventions that should be followed;
+2. Read the [Guidelines](https://github.com/r-devel/translations/wikihttps://github.com/r-devel/translations/wiki/Conventions-for-translations#guidelines/) section of this document, because the translation has some conventions that should be followed;
 3. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by [@daroczig](https://twitter.com/daroczig));
 4. List the [components](https://translate.rx.studio/languages/) of your language;
 5. Choose a component that's not 100% translated (like, for example, the [utils package](https://translate.rx.studio/languages/es/r-project/));
