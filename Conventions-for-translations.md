@@ -42,7 +42,7 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 
 ## Languages and contributions
 
-|Language | Team Leaders (Contributor/Translator/Reviewer) |
+|Language | Team Leaders (Contributor/Translator/Dedicated Reviewer) |
 | -- | -- |
 |[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations)| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
 |[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)| [Debartha Paul](https://github.com/itsdebartha) |
