@@ -89,5 +89,5 @@ Some interesting guides, glossaries and handbooks:
 - Use the [R Foundation Code of Conduct](https://www.r-project.org/coc-policy.html).
 
 ## Future work 
-The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md):
+The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md)
 
