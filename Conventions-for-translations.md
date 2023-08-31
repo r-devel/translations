@@ -18,6 +18,7 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 - put on wiki
 
 ### Updating glossaries
+_Process to be defined_
 
 ## Languages and contributions
 
@@ -30,44 +31,6 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 |[Japanese](https://github.com/r-devel/translations/wiki/Japanese-specific-translations)| [Reiko Okamoto](https://github.com/reikookamoto) |
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)| [Binod Jung Bogati](https://github.com/bjungbogati) |
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton), [Macarena Quiroga](https://github.com/msquiroga89)| 
-
-## Sustainability of the translations community 
-- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is main space of communication for the translations community. Join this Slack for communicating with the community and also for sharing any feedback.
-- We encourage people interested in translations to organise and conduct local/regional level events to promote and raise awareness about translations.
-- Highlight milestones (overall and by language)
-- coordinate on github
-- Design acknowledging categories for contributing members (a nice example: https://the-turing-way.netlify.app/afterword/contributors-record#contributors-record-contributors)
-- a getting started page on github
-
-## About Weblate
-
-- [Weblate documentation](https://docs.weblate.org/en/latest/)
-- [Glossary on Weblate](https://translate.rx.studio/projects/r-project/glossary/)   
-- [Chapter on Weblate in the R Dev Guide](https://github.com/r-devel/rdevguide/pull/142)
-
-## Space for feedback
-- github issues and/or discussions
-- knowing who to write
-- for the translation workflow write to slack
-
-## Resources
-
-Some interesting guides, glossaries and handbooks:
-- [Turing way translation handbook](https://the-turing-way.netlify.app/community-handbook/translation)
-- [R OpenSci's draft of translation guidelines](https://translationguide.ropensci.org/)
-- [R OpenSci's glossary](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
-- [R French Dictionary](https://github.com/phgrosjean/rfrench/blob/main/RFrenchDictionary.txt)
-- [R Brazilian Portuguese guide (will be translated into English)](https://github.com/clente/pt-br)
-- [cpplib translations (in Portuguese)](https://translationproject.org/latest/cpplib/pt_BR.po)
-- [International statistical glossaries](https://www.cso.ie/en/methods/quality/statisticalglossary/)
-- [Translating R Messages, R >= 3.0.0](https://developer.r-project.org/Translations30.html)
-- [R Translation Teams](https://developer.r-project.org/TranslationTeams.html)
-
-## Code of Conduct
-- Use the R Foundation Code of Conduct.
-
-## Future work 
-The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md):
 
 _Saranjeet wanted to know how to handle translating strings such as "Keyboard: PgUp, PgDown, Ctrl+Arrows, Ctrl+Home, Ctrl+End". She has currently translated to Hindi as "कीबोर्ड: पेज अप, पेज डाउन, कंट्रोल+एरोज , कंट्रोल+होम , कंट्रोल+एन्ड ,", which is in Hindi script but is spoken the same as the English words, since these are imported/foreign words._
 
