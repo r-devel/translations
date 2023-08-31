@@ -31,7 +31,7 @@ Exist some key points when you starting traslation:
 3. A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
 4. Adding the missing worlds in the Glosary.
 
-Finally, those are the guidelines for the existing languages:
+Finally, those are the guidelines for the existing languages. If your language doesn't exist yet, please feel free to submit a pull request and create it
 
 |Language | 
 | -- |
