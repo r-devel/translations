@@ -42,7 +42,7 @@ Finally, those are the guidelines for the existing languages. If your language d
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
 
 ## What is being translated?
-All output in R (such as messages emitted by stop(), warning(), or message()) is eligible for translation, as are menu labels in the GUI
+All output in R (such as messages emitted by stop(), warning(), or message()) is eligible for translation, as are menu labels in the GUI.
 
 ## Roles 
 We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) workflow on weblate. We currently manage 3 roles in the platform
