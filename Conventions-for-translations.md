@@ -1,8 +1,8 @@
 The following update was made during the [R Project Sprint 2023](https://contributor.r-project.org/r-project-sprint-2023/), Warwick and Online (hybrid) during 30 Aug - 1 Sept 2023:
 
-## Getting starter 
+## Getting started 
 
-Welcolme to the traslation adventure in R!
+Welcome to the traslation adventure in R!
 
 In a world that thrives on interconnectedness and global communication, translation plays a pivotal role in bridging linguistic divides. Translation, the art of rendering one language into another, shatters those confines, unlocking a world of possibilities for understanding and collaboration.
 
