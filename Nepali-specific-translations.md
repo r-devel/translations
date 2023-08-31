@@ -86,7 +86,7 @@ Keep a record of your translations for reference. This documentation can help ma
 
 13. Seek Feedback:
 
-If possible, seek feedback from native Arabic speakers who are also familiar with programming to ensure the translations make sense in the intended context.
+If possible, seek feedback from native Nepali speakers who are also familiar with programming to ensure the translations make sense in the intended context.
 
 14. Revise and Update:
 
