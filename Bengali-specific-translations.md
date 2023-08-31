@@ -8,6 +8,19 @@
 
 ## Style
 
+Do not translate anything that is a technical term in R, for example, function names, objects, arguments(usually in between quotes), etc.
+```
+See help("Defunct") and help("%s-defunct").
+
+help("Defunct") আর help("%s-defunct") দেখুন।
+```
+
+```
+"hexNumeric" and "digits17" are mutually exclusive
+
+"hexNumeric" এবং "digits17" একে অপরের স্বতন্ত্র
+```
+
 ## Formatting
 
 ## Grammatical gender
