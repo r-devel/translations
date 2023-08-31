@@ -15,13 +15,6 @@ the computer it's running on. In principle, this reduces R's barrier to entry;
 warnings and errors are very common in code written by beginners, so it's
 essential that these messages are as clear as possible.
 
-Many other countries already have consolidated translation
-[teams](https://developer.r-project.org/TranslationTeams.html), but (maybe
-because of the complexity of the
-[job](https://developer.r-project.org/Translations30.html)) Brazil lacked any
-official collaborators. Nowadays, however, it's easier than ever to help with
-translations and that's why we wanted to collect our efforts on this page.
-
 To help in the translation process, you need to:
 
 1. Sign up to the [R Contributors
