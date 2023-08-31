@@ -1,6 +1,9 @@
 The following update was made during the [R Project Sprint 2023](https://contributor.r-project.org/r-project-sprint-2023/), Warwick and Online (hybrid) during 30 Aug - 1 Sept 2023:
 
 ## Translation workflow
+- The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
+- For adding new people to a language, please reach out to Gergely Daróczi and/or Michael Chirico.
+- Peer review workflow https://docs.weblate.org/en/latest/workflows.html#peer-review
 - Translation
 - Updating glossary
 - Review
@@ -19,8 +22,6 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 - put as a suggestion and not submit, needs editing. Idea of enabling peer review  or dedicated reviewers workflow:
 (https://r-contributors.slack.com/archives/C0210D7EN1X/p1681721670854879?thread_ts=1681456244.863579&cid=C0210D7EN1X)
 - accept the default suggested translations, if it makes sense
-- Peer review workflow https://docs.weblate.org/en/latest/workflows.html#peer-review
-- Dedicated reviewers https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers
 
 ## Review Specifications or guidelines 
 - glossary of words
@@ -40,7 +41,7 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 
 ## Languages and contributions
 
-|Language | Contributor/Translator |
+|Language | Team Leaders (Contributor/Translator/Reviewer) |
 | -- | -- |
 |[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations)| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
 |[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)| [Debartha Paul](https://github.com/itsdebartha) |
