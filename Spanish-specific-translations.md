@@ -45,8 +45,8 @@ To help in the translation process, you need to:
 Unlike Spanish, English does not specify grammatical gender. We will try to follow the [Manual for Non Sexist Use of Language (in Spanish)](http://conavim.gob.mx/work/models/CONAVIM/Resource/309/1/images/Manualparaelusonosexistadellenguaje%20completo%281%29.pdf) in translations as much as we can, but unfortunately that is not always possible.
 
 You can check other useful links to use grammatical gender:
-* https://datadrivesimpact.course.tc/?utm_campaign=coschedule&utm_source=linkedin_company&utm_medium=DataDotOrg
-* https://github.com/angelasanzo/TranslateR_Spanish/ 
+* [Gender Data](https://datadrivesimpact.course.tc/?utm_campaign=coschedule&utm_source=linkedin_company&utm_medium=DataDotOrg)
+* [Translate R Spanish](https://github.com/angelasanzo/TranslateR_Spanish/)
 
 Grammatical gender of arguments, acronyms and other nouns can usually be inferred by context. In the example below, we translate "DLL" as "a biblioteca de vínculo dinámico" (dynamic-link library).
 
