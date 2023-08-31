@@ -3,8 +3,8 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 ## Translation workflow
 - Every registered user on the Weblate can act as a translator.
 - The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
-- For adding new users to Weblate, please reach out to Gergely Daróczi and/or Michael Chirico via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
-- Peer review workflow https://docs.weblate.org/en/latest/workflows.html#peer-review
+- For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
+- A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
 - Translation
 - Updating glossary
 - Review
