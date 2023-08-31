@@ -69,8 +69,8 @@ Remember that translating programming messages is a specialized skill that requi
 
 
 # How to Contribute: 
-1. Join R Contributors Slack group. 
-2. Join #core-translation channel.
+1. Join [R Contributors](https://app.slack.com/client/T01DW9DLB2A/C01EST8PTFA)  Slack group. 
+2. Join [#core-translation](https://app.slack.com/client/T01DW9DLB2A/C0210D7EN1X)  channel.
 3. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by [@daroczig](https://twitter.com/daroczig));
 4. Choose Arabic language to see all components.
 5. Add your translation to a component that's not 100% translated.
