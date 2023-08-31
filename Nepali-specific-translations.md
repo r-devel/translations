@@ -98,3 +98,171 @@ Remember that translating programming messages is a specialized skill that requi
 
 ### Style
 ### Formatting
+
+### Glossary
+
+
+| English               | Nepali                                        |
+|:---------------------|:--------------------------------------------|
+| abort                |  परित्याग        |
+| alias                |  उपनाम      |
+| allocate             |  छुट्याउनु   |
+| argument             |  तर्क       |
+| array                |         |
+| assign               |         |
+| attach               |         |
+| attribute            |         |
+| backslash            |         |
+| bind                 |         |
+| bitmap               |         |
+| boxplot              |         |
+| break                |         |
+| browser              |         |
+| build                |          |
+| bytecode             |         |
+| cache                |         |
+| call                 |          |
+| callback             |        |
+| character string     |         |
+| check                |         |
+| chunk                |         |
+| closure              |        |
+| codoc                |         |
+| coerce               |         |
+| colortype            |         |
+| console              |         |
+| data frame           |         |
+| database             |         |
+| dataset              |          |
+| debug                |         |
+| defunct              |         |
+| deparse              |         |
+| deprecated           |         |
+| detach               |         |
+| device               |         |
+| dispatch             |         |
+| documentation object |         |
+| download             |         |
+| driver               |         |
+| drop                 |         |
+| encoding             |         |
+| entry                |         |
+| environment          |         |
+| evaluate             |         |
+| factor               |         |
+| fifo                 |      |
+| file pointer         |        |
+| file stream          |         |
+| filename             |         |
+| fit                  |         |
+| flag                 |         |
+| flush                |         |
+| frame                |         |
+| handle               |         |
+| hard-coded           |        |
+| history              |         |
+| implement            |         |
+| incoming checks      |         |
+| index                |         |
+| invalid              |         |
+| IO                   |      |
+| label                |         |
+| lag                  |         |
+| layout               |         |
+| lazy loading         |        |
+| lazydata             |       |
+| leading minor        |         |
+| length               |         |
+| library              |         |
+| link                 |         |
+| locale               |         |
+| locator              |        |
+| locking              |         |
+| logical              |        |
+| macro                |         |
+| magic number         |         |
+| match                |         |
+| metafile             |        |
+| mirror               |         |
+| mismatch             |         |
+| missing              |         |
+| modulus              |         |
+| multibyte            |         |
+| namespace            |       |
+| non-interactively    |        |
+| non-numeric type     |        |
+| numeric-alike        |       |
+| offending            |        |
+| offset               |         |
+| opcode               |         |
+| outlier              |         |
+| overflow             |         |
+| override             |         |
+| package              |        |
+| pager                |         |
+| pair list            |        |
+| parse                |        |
+| path                 |         |
+| pipe                 |         |
+| pixmap               |         |
+| platform             |         |
+| polyline             |         |
+| port                 |         |
+| portable             |        |
+| profiling            |       |
+| profile              |        |
+| promise              |         |
+| prompt               |         |
+| proxy                |         |
+| push back            |         |
+| quote symbol         |       |
+| range                |         |
+| raw                  |         |
+| redraw               |         |
+| regular expression   |         |
+| replace              |          |
+| report               |         |
+| repository           |        |
+| require              |         |
+| return               |         |
+| RNG                  |          |
+| role                 |         |
+| routine              |         |
+| run                  |         |
+| seal                 |         |
+| search path          |         |
+| seed                 |         |
+| seek                 |         |
+| sink                 |         |
+| slash                |        |
+| slot                 |         |
+| snapshot             |         |
+| socket               |        |
+| source               |         |
+| splice               |        |
+| stack                |         |
+| standardizable       |        |
+| startup              |         |
+| strict               |         |
+| subscript            |         |
+| subset               |     उपसमूह    |
+| tag                  |     त्यग   |
+| tangling             |   त्यङ्लिङ       |
+| tarball              |   तार्बल      |
+| template             |   नमुना      |
+| thread               |   थ्रेड       |
+| timeout              |   timeout      |
+| timer                |   टाइमर     |
+| timezone             |  समयक्षेत्र       |
+| top level            |  शीर्ष स्तर        |
+| traceback            |   ट्रेसब्याक     |
+| truncate             |   काट्नु      |
+| unary operator       |  unary अपरेटर      |
+| unbind               |  अनबाइन्ड         |
+| underflow            |  अनबाइन्ड        |
+| unlisted             |  सूचीबद्ध नगरिएको      |
+| viewport             |   भ्यूपोर्ट     |
+| vignette             |    भिग्नेट     |
+| warning              |   चेतावनी     |
+| workspace            |  कार्यक्षेत्र       |
+| wrapup               |   र्‍यापअप      |
