@@ -1,6 +1,6 @@
 # Getting starterd
 
-Welcome to the traslation adventure in R!
+Welcome to the traslation adventure in R [🚀](https://emojiterra.com/rocket/)!
 
 In a world that thrives on interconnectedness and global communication, translation plays a pivotal role in bridging linguistic divides. Translation, the art of rendering one language into another, shatters those confines, unlocking a world of possibilities for understanding and collaboration.
 
