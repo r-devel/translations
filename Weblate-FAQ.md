@@ -47,4 +47,6 @@ Speaking about translations done in a base R package, you will need to [build R]
 
 Each language team has leaders and reviewers. Only language team leaders and the Weblate admins can remove existing users from the teams, and can add new team members. Team leaders can find their language team listed on their [profile](https://translate.rx.studio/accounts/profile/#teams), where they can edit the list of users in the group.
 
-### 
+### How to get notifications about language updates?
+
+Go to the [Notification settings on our profile](https://translate.rx.studio/accounts/profile/#notifications), select which projects (e.g. base R and/or recommended R packages) you want to monitor, and select the types of "Translation notifications" you are interested in (e.g. "Pending suggestions" for reviewers).
