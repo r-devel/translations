@@ -14,23 +14,15 @@ So if you want start, you can contribute following those steps:
 6. Click Unfinished strings to list all messages that haven't been translated and
 7. Start!
 
-This is a short (demo)[https://www.youtube.com/watch?v=VFwTn32MrBw] that you can check for use the interface of Weblate.
+This is a short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) that you can check for use the interface of Weblate.
 
-You can access to full documentation of Weblate throght this (link)[https://docs.weblate.org/en/latest/].
+You can access to full documentation of Weblate throght this [link](https://docs.weblate.org/en/latest/).
 
 Some translation states are important:
-
-### Untranslated
-Translation is empty, it might or not be stored in the file, depending on the file format.
-
-### Needs editing
-Translation needs editing, this is usually the result of a source string change, fuzzy matching or translator action.
-
-### Waiting for review
-Translation is made, but not reviewed.
-
-### Approved
-Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.
+* **Untranslated**: Translation is empty, it might or not be stored in the file, depending on the file format.
+* **Needs editing**: Translation needs editing, this is usually the result of a source string change, fuzzy matching or translator action.
+* **Waiting for review**: Translation is made, but not reviewed.
+* **Approved**: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.
 
 Exist some key points when you starting traslation:
 
@@ -48,5 +40,3 @@ Finally, those are the guidelines for the existing languages:
 |[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)|
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
-
-
