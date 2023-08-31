@@ -250,3 +250,13 @@ To grant SSH access:
 
 1. Share your public key with one of the admins, who will add that to `~/.ssh/authorized_keys`
 2. Ask for the SSH config from one of the admins
+
+### Team leaders
+
+There are language teams defined in each project with the below extra permissions:
+
+- Manage glossary
+- Review strings
+- Manage translation memory
+
+See the general [Weblate FAQ](https://github.com/r-devel/translations/wiki/Weblate-FAQ#how-to-manage-translation-teams-in-weblate) on how to manage members.
