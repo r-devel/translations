@@ -45,7 +45,7 @@ Finally, those are the guidelines for the existing languages. If your language d
 All output in R (such as messages emitted by stop(), warning(), or message()) is eligible for translation, as are menu labels in the GUI.
 
 ## Roles 
-We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) workflow on Weblate. We currently manage 3 roles in the platform
+We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) workflow on Weblate. We currently manage 3 roles in the platform. Languages without dedicated reviewers have their translations directly approved without review.
 ### Translators
 Every registered user on Weblate can act as a translator. A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
 ### Admins / team leaders
