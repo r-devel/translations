@@ -101,7 +101,7 @@ Remember that translating programming messages is a specialized skill that requi
 
 ### Glossary
 
-Few glossaries are imported from: [Link 1](https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/9641/ms_6_8_intermediate%20math_Nepali%20ver5-2-1.pdf) | [Link 2](https://docs.steinhardt.nyu.edu/pdfs/metrocenter/atn293/msmath/MS6to8IntermediateMathNepali2014.pdf)
+Few glossaries are imported from: [Link 1](https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/9641/ms_6_8_intermediate%20math_Nepali%20ver5-2-1.pdf) | [Link 2](https://docs.steinhardt.nyu.edu/pdfs/metrocenter/atn293/msmath/MS6to8IntermediateMathNepali2014.pdf) | [Microsoft Style Guide](https://download.microsoft.com/download/a/f/2/af2a5739-c56b-44ae-8d21-1ee5f26e8a6c/nep-npl-styleguide.pdf)
 
 | English               | Nepali                                        |
 |:---------------------|:--------------------------------------------|
@@ -109,9 +109,9 @@ Few glossaries are imported from: [Link 1](https://www.rcsdk12.org/cms/lib/NY010
 | alias                |  उपनाम      |
 | allocate             |  छुट्याउनु   |
 | argument             |  तर्क       |
-| array                |         |
-| assign               |         |
-| attach               |         |
+| array                |  एरे      |
+| assign               |   राख्नु      |
+| attach               |   र्जोर्नु      |
 | attribute            |         |
 | backslash            |         |
 | bind                 |         |
@@ -159,6 +159,7 @@ Few glossaries are imported from: [Link 1](https://www.rcsdk12.org/cms/lib/NY010
 | flag                 |         |
 | flush                |         |
 | frame                |         |
+| function             | फलन    |
 | handle               |         |
 | hard-coded           |        |
 | history              |         |
