@@ -34,15 +34,15 @@ Ensure that the translated message fits within the space allocated in the code o
 
 7. Retain Technical Terms:
 
-For technical terms and code-related elements such as function names, object names, and variable names, it's often best to keep them in English. Use the Arabic script for these terms if necessary but maintain the English terminology.
+For technical terms and code-related elements such as function names, object names, and variable names, it's often best to keep them in English.
 
 8. Handle Plurals:
 
-Arabic nouns have different forms for singular and plural. Ensure that you correctly handle plurals when translating messages that involve counts or quantities.
+Some languages nouns have different forms for singular and plural. Ensure that you correctly handle plurals when translating messages that involve counts or quantities.
 
 9. Punctuation:
 
-Use Arabic punctuation and ensure proper spacing around punctuation marks. Arabic uses different quotation marks and a reversed question mark (؟) and exclamation mark (ء).
+Use the punctuation and ensure proper spacing around punctuation marks.
 
 10. Special Characters:
 
