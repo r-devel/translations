@@ -42,17 +42,14 @@ Reviewers have an editor role who approves the work of translators and ensures t
 
 Possible state of a string:
 * **Untranslated**: Translation is empty, it might or not be stored in the file, depending on the file format.
-* **Needs editing**: Translation needs editing, this is usually the result of a source string change, fuzzy matching or translator action.
+* **Needs editing**: Translation needs editing, this is usually the result of a source string change, fuzzy matching or translator action. **If you are unsure about how to translate something, make a suggestion, do not click the "Needs editing" button**.
 * **Waiting for review**: Translation is made, but not reviewed.
 * **Approved**: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.
 
 ## Sustainability of the translations community 
 - The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is the main space of communication for the translations community. Join this Slack for communicating with the community and also for sharing any feedback.
 - We encourage people interested in translations to organise and conduct local/regional level events to promote and raise awareness about translations.
-- Highlight milestones (overall and by language)
-- Coordinate on GitHub
-- Design acknowledging categories for contributing members (a nice example: https://the-turing-way.netlify.app/afterword/contributors-record#contributors-record-contributors)
-- a getting started page on GitHub
+- Highlight milestones (overall and by language)!
 
 ## About Weblate
 
