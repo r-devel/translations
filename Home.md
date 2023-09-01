@@ -51,7 +51,7 @@ Every registered user on Weblate can act as a translator. A [peer reviewer](http
 ### Admins / team leaders
 Admins / team leaders keep the list of admins and reviewers by language up to date. The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
 ### Reviewers
-Reviewers approve the work of translators and ensure the overall cohesion of the translation work in one language. For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
+Reviewers are editors that approve the work of translators and ensure the overall cohesion of the translation work in one language. For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
 
 ## Sustainability of the translations community 
 - The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is the main space of communication for the translations community. Join this Slack for communicating with the community and also for sharing any feedback.
