@@ -19,6 +19,7 @@ So if you want to start, you can contribute by following these steps:
 |[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)|
 |[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)|
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
+|[Portuguese (Brazilian)](https://github.com/r-devel/translations/wiki/Brazilian%E2%80%90Portugese-specific-translations)|
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
 
 5. You can start translating!
