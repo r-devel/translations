@@ -3,7 +3,7 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 ### General guidelines
 - Unless having very strong reasons not to, please follow your language specific glossary and guidelines
 - If you encounter ambiguous or difficult strings to translate that aren't captured in the language specific glossary and guidelines, refer to the core-translation slack channel to discuss it with other translators
-- Some languages, like spanish, have specific channels to discuss translation. Refer to your specific channel to discuss issues related to your language: if you need a slack channel set up for a language, send a direct slack message to @mcnanton
+- Some languages, like spanish, have specific channels to discuss translation. Refer to your specific channel to discuss issues related to your language: **if you need a slack channel set up for a language, send a direct slack message to @mcnanton**
 
 ### Rules
 Translating R programming messages and warnings from English to other languages requires careful attention to both the technical accuracy and linguistic clarity of the translated text. Here's a translation guide to help you with this process:
@@ -20,7 +20,7 @@ Ensure that the translated message conveys the same technical information as the
 
 Clarity is paramount in translations. Make sure the translated message is clear and easy to understand. Avoid overly complex or verbose translations.
 
-4. Use Formal:
+4. Use Formal language:
 
 When translating messages for a general audience or professional context, use formal languange.
 
@@ -66,22 +66,12 @@ Programming languages evolve, and so should your translations. Periodically revi
 
 Remember that translating programming messages is a specialized skill that requires a strong understanding of both the source and target languages as well as the technical context. Collaborating with other experienced translators can also improve the quality of your translations.
 
-### What (words) not to translate - okay for nouns, not for verbs?, (separate page of technical tips).
-- keyboard keys
-- function names
-- %s, %d
+### What (words) not to translate
+- Keyboard keys
+- Function names
+- Placeholders like %s, %d
 - put on wiki
-- Acronyms?
-
-_To be discussed:_
-
-- put policies like not work on new translations, don’t retranslate of something new, start with reviews 
-- put as a suggestion and not submit, needs editing. 
-- accept the default suggested translations, if it makes sense
-- Weblate has features to flag untranslatable and forbidden terms (see https://docs.weblate.org/en/latest/user/glossary.html)
-- check what they do for Python
-- argument (write in translated language) or vice versa (original term in brackets)
-
+- Acronyms (if they are function arguments)
 
 ### Updating glossaries
 _Process to be defined_
