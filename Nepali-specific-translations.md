@@ -58,15 +58,15 @@ Maintain consistency in your translations. Use consistent terminology and wordin
 
 6. Be Mindful of Length:
 
-Consider that the Arabic translation might be longer or shorter than the English text. Ensure that the translated message fits within the space allocated in the code or interface.
+Consider that the Nepali translation might be longer or shorter than the English text. Ensure that the translated message fits within the space allocated in the code or interface.
 
 7. Retain Technical Terms:
 
-For technical terms and code-related elements such as function names, object names, and variable names, it's often best to keep them in English. Use the Arabic script for these terms if necessary but maintain the English terminology.
+For technical terms and code-related elements such as function names, object names, and variable names, it's often best to keep them in English. Use the Nepali script for these terms if necessary but maintain the English terminology.
 
 8. Handle Plurals:
 
-Arabic nouns have different forms for singular and plural. Ensure that you correctly handle plurals when translating messages that involve counts or quantities.
+Nepali nouns have different forms for singular and plural. Ensure that you correctly handle plurals when translating messages that involve counts or quantities.
 
 9. Punctuation:
 
@@ -101,6 +101,10 @@ Remember that translating programming messages is a specialized skill that requi
 
 ### Glossary
 
+Few glossaries are imported from: 
+
+[Link 1](https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/9641/ms_6_8_intermediate%20math_Nepali%20ver5-2-1.pdf)
+[Link 2](https://docs.steinhardt.nyu.edu/pdfs/metrocenter/atn293/msmath/MS6to8IntermediateMathNepali2014.pdf)
 
 | English               | Nepali                                        |
 |:---------------------|:--------------------------------------------|
