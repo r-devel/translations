@@ -101,9 +101,7 @@ Remember that translating programming messages is a specialized skill that requi
 
 ### Glossary
 
-Few glossaries are imported from: 
-
-[Link 1](https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/9641/ms_6_8_intermediate%20math_Nepali%20ver5-2-1.pdf) | [Link 2](https://docs.steinhardt.nyu.edu/pdfs/metrocenter/atn293/msmath/MS6to8IntermediateMathNepali2014.pdf)
+Few glossaries are imported from: [Link 1](https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/9641/ms_6_8_intermediate%20math_Nepali%20ver5-2-1.pdf) | [Link 2](https://docs.steinhardt.nyu.edu/pdfs/metrocenter/atn293/msmath/MS6to8IntermediateMathNepali2014.pdf)
 
 | English               | Nepali                                        |
 |:---------------------|:--------------------------------------------|
