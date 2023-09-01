@@ -14,8 +14,7 @@ So if you want to start, you can contribute by following these steps:
 1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the #core-translations channel;
 2. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by [@daroczig](https://twitter.com/daroczig)) and read the Translations chapter on the [R Development guide](https://contributor.r-project.org/rdevguide/);
 3. Read the [Conventions for translation](https://github.com/r-devel/translations/wiki/Conventions-for-translations) section of this Wiki, for some conventions that should be followed;
-4. Read the guidelines for the specific language you want to contribute to:
-Here are the guidelines for the existing languages. 
+4. Read the guidelines for the specific language you want to contribute to. If a guideline for your language doesn't exist yet, please feel free to submit a pull request and create it.
 
 |Language | 
 | -- |
@@ -25,15 +24,9 @@ Here are the guidelines for the existing languages.
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
 |[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
 
+5. You can start translating!
 
-4. List the [components](https://translate.rx.studio/languages/) of your language;
-5. Choose a component that's not 100% translated (like, for example, the [utils package](https://translate.rx.studio/languages/es/r-project/));
-6. Click Unfinished strings to list all messages that haven't been translated and
-7. Start!
-
-This is a short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) that you can check for use in the interface of Weblate.
-
-You can get access to complete documentation of Weblate through this [link](https://docs.weblate.org/en/latest/).
+You can check the guide[LINK] on how Weblate works and check this short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) on how to use the Weblate interface. You can also get access to complete documentation of Weblate through this [link](https://docs.weblate.org/en/latest/).
 
 Some translation states are important:
 * **Untranslated**: Translation is empty, it might or not be stored in the file, depending on the file format.
