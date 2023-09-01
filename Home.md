@@ -4,6 +4,8 @@ Welcome to the translation adventure in R! [🚀](https://emojiterra.com/rocket/
 
 In a world that thrives on interconnectedness and global communication, translation plays a pivotal role in bridging linguistic divides. Translation, the art of rendering one language into another, shatters those confines, unlocking a world of possibilities for understanding and collaboration.
 
+[Translation dashboards](https://contributor.r-project.org/translations/#home)
+
 So if you want to start, you can contribute by following these steps:
 
 1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the #core-translations channel;
