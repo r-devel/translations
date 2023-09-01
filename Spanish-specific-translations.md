@@ -29,27 +29,27 @@ You can check other useful links to use grammatical gender:
 
 Grammatical gender of arguments, acronyms and other nouns can usually be inferred by context. In the example below, we translate "DLL" as "a biblioteca de vínculo dinámico" (dynamic-link library).
 
-DLL %s was not loaded
+`DLL %s was not loaded`
 
-DLL %s no fue cargada
+`DLL %s no fue cargada`
 
 In the following example, although "scale" is a feminine noun in Spanish, the masculine is used because it is replacing "argument", "o argumento", which is a masculine noun.
 
-'scale' should be numeric or NULL
+`'scale' should be numeric or NULL`
 
-'scale' debe ser numérico o NULL
+`'scale' debe ser numérico o NULL`
 
 In certain situations, we can simply ignore genders. In the following expression, we could translate "author" to "autor(a)", but there are alternatives that allow us to completely omit it.
 
-Authors@R field gives no person with name and author role
+`Authors@R field gives no person with name and author role`
 
-El campo Authors@R no proporciona ninguna persona con nombre ni función de 'author'
+`El campo Authors@R no proporciona ninguna persona con nombre ni función de 'author'`
 
 In rare cases, the messeges references who doing the programming. In these cases, the best we can do without jeopardising comprehension or overly increasing the length of the sentence is to use "o(a)".
 
-Not enough arguments passed to user macro '%s'
+`Not enough arguments passed to user macro '%s'`
 
-No se han pasado suficientes argumentos para la macro %s' de usuario(a)
+`No se han pasado suficientes argumentos para la macro %s' de usuario(a)`
 
 It's important to note that this strategy is not adopted by the French and Italian teams, who prefer to simply use the masculine term "usuario". Unless there is some guideline discouraging resources such as "o(a)", we believe that our standard is preferable.
 
