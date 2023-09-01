@@ -15,27 +15,6 @@ the computer it's running on. In principle, this reduces R's barrier to entry;
 warnings and errors are very common in code written by beginners, so it's
 essential that these messages are as clear as possible.
 
-## How to contribute
-
-To help in the translation process, you need to:
-
-1. Sign up to the [R Contributors
-   Slack](https://contributor.r-project.org/slack) and introduce yourself in the
-   `#core-translations` channel;
-1. Read the [Resources](https://github.com/r-devel/translations/wiki/Spanish-specific-translations#resources) section of
-   this document, because the translation has some conventions that should be
-   followed;
-1. Create an account on [Weblate](https://translate.rx.studio/) (currently
-   maintained by [@daroczig](https://twitter.com/daroczig));
-1. List every Spanish
-   [component](https://translate.rx.studio/languages/es/r-project/);
-1. Choose a component that's not 100% translated (like, for example, the [utils
-   package](https://translate.rx.studio/languages/es/r-project/));
-1. Click **Unfinished strings** to list all messages that haven't been
-   translated and
-1. Start!
-
-
 ## Resources
 
 ### Style
