@@ -6,7 +6,7 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 - Some languages, like spanish, have specific channels to discuss translation. Refer to your specific channel to discuss issues related to your language: if you need a slack channel set up for a language, send a direct slack message to @mcnanton
 
 ### Rules
-Translating R programming messages and warnings from English to Arabic requires careful attention to both the technical accuracy and linguistic clarity of the translated text. Here's a translation guide to help you with this process:
+Translating R programming messages and warnings from English to other languages requires careful attention to both the technical accuracy and linguistic clarity of the translated text. Here's a translation guide to help you with this process:
 
 1. Understand the Context:
 
@@ -58,7 +58,7 @@ Keep a record of your translations for reference. This documentation can help ma
 
 13. Seek Feedback:
 
-If possible, seek feedback from native Arabic speakers who are also familiar with programming to ensure the translations make sense in the intended context.
+If possible, seek feedback from native speakers who are also familiar with programming to ensure the translations make sense in the intended context.
 
 14. Revise and Update:
 
