@@ -54,6 +54,7 @@ In rare cases, the messeges references who doing the programming. In these cases
 It's important to note that this strategy is not adopted by the French and Italian teams, who prefer to simply use the masculine term "usuario". Unless there is some guideline discouraging resources such as "o(a)", we believe that our standard is preferable.
 
 ### Glossary
-Glossaries developed by other projects
+Weblate has a built-in glossary that you can consult when doing a translation. To add new terms is better to discuss it with the community first and reach a consensus. You can also refer to glossaries created by different projects:
+
 * [R OpenSci](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
 * [R for Data Science](https://github.com/cienciadedatos/documentacion-traduccion-r4ds/blob/master/orientaciones-traduccion.md)
