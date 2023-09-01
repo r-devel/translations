@@ -18,7 +18,7 @@ To help in the translation process, you need to:
 1. Sign up to the [R Contributors
    Slack](https://contributor.r-project.org/slack) and introduce yourself in the
    `#core-translations` channel;
-1. Read the [Resources](https://github.com/r-devel/translations/wiki/Spanish-specific-translations#resources) section of
+1. Read the [Resources](https://github.com/r-devel/translations/wiki/Brazilian%E2%80%90Portugese-specific-translations#resources) section of
    this document, because the translation has some conventions that should be
    followed;
 1. Create an account on [Weblate](https://translate.rx.studio/) (currently
@@ -30,11 +30,6 @@ To help in the translation process, you need to:
 1. Click **Unfinished strings** to list all messages that haven't been
    translated and
 1. Start!
-
-This is a living document that lists some common problems that come up when
-translating R to Brazilian Portuguese. Every suggestion here is open to debate
-and, if you disagree about something, simply create a new topic in the
-[discussions](https://github.com/r-devel/translations/discussions) tab.
 
 ## Style
 
@@ -141,7 +136,17 @@ Italian teams, who prefer to simply use the masculine term "usuário". Unless
 there is some guideline discouraging resources such as "o(a)", we believe that
 our standard is preferable.
 
-## Glossary
+## Resources
+
+This is a living document that lists some common problems that come up when
+translating R to Brazilian Portuguese. Every suggestion here is open to debate
+and, if you disagree about something, simply create a new topic in the
+[discussions](https://github.com/r-devel/translations/discussions) tab.
+
+- [Weblate documentation on translation workflow](https://docs.weblate.org/en/latest/workflows.html)
+- [Translation dashboard](https://contributor.r-project.org/translations/)
+
+### Glossary
 
 Here we have put together some terms that appear repeatedly in R messages and
 which can be difficult to translate. If you have problems with a word that is
