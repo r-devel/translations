@@ -6,11 +6,26 @@ In a world that thrives on interconnectedness and global communication, translat
 
 [Translation dashboards](https://contributor.r-project.org/translations/#home)
 
+## What is being translated?
+All output in base R and recommended packages (such as messages emitted by stop(), warning(), or message()) is eligible for translation, as are menu labels in the GUI.
+
 So if you want to start, you can contribute by following these steps:
 
 1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the #core-translations channel;
 2. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by [@daroczig](https://twitter.com/daroczig)) and read the Translations chapter on the [R Development guide](https://contributor.r-project.org/rdevguide/);
 3. Read the [Conventions for translation](https://github.com/r-devel/translations/wiki/Conventions-for-translations) section of this Wiki, for some conventions that should be followed;
+4. Read the guidelines for the specific language you want to contribute to:
+Here are the guidelines for the existing languages. 
+
+|Language | 
+| -- |
+|[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations) |
+|[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)|
+|[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)|
+|[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
+|[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
+
+
 4. List the [components](https://translate.rx.studio/languages/) of your language;
 5. Choose a component that's not 100% translated (like, for example, the [utils package](https://translate.rx.studio/languages/es/r-project/));
 6. Click Unfinished strings to list all messages that haven't been translated and
@@ -32,19 +47,6 @@ Exist some key points when you starting translation:
 2. The translation that you participate, should be reviewing.
 3. A [peer reviewer](https://docs.weblate.org/en/latest/workflows.html#peer-review) can add suggestion(s) to the Weblate, however, the suggestion(s) would need approval from the dedicated reviewer(s) before it is accepted as a translation.
 4. Adding the missing worlds in the Glossary.
-
-Finally, those are the guidelines for the existing languages. If your language doesn't exist yet, please feel free to submit a pull request and create it.
-
-|Language | 
-| -- |
-|[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations) |
-|[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)|
-|[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)|
-|[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
-|[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
-
-## What is being translated?
-All output in R (such as messages emitted by stop(), warning(), or message()) is eligible for translation, as are menu labels in the GUI.
 
 ## Roles 
 We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) workflow on Weblate. We currently manage 3 roles in the platform. Languages without dedicated reviewers have their translations directly approved without review.
