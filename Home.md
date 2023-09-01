@@ -87,8 +87,4 @@ Some interesting guides, glossaries and handbooks:
 
 ## Future work 
 * Explore possible integration of dictionaries into weblate?
-* Add: when to use the "needs editing" button
 * Add demos from the translator and reviewer perspective
-
-The following discussion is taken from the meeting notes of the [EMEA-APAC region R Contributor Office Hours conducted on 13 April 2023](https://github.com/r-devel/rcontribution/blob/main/office_hours/2023-04-13_EMEA-APAC.md)
-
