@@ -8,51 +8,51 @@ The following update was made during the [R Project Sprint 2023](https://contrib
 ### Rules
 Translating R programming messages and warnings from English to other languages requires careful attention to both the technical accuracy and linguistic clarity of the translated text. Here's a translation guide to help you with this process:
 
-1. Understand the Context:
+**1. Understand the Context:**
 
 Before translating any message or warning, it's crucial to understand the context. Know what the message is conveying, what part of the code it relates to, and its intended audience.
 
-2. Maintain Technical Accuracy:
+**2. Maintain Technical Accuracy:**
 
 Ensure that the translated message conveys the same technical information as the original. The goal is to make sure that users can still understand the issue or information provided.
 
-3. Preserve Clarity:
+**3. Preserve Clarity:**
 
 Clarity is paramount in translations. Make sure the translated message is clear and easy to understand. Avoid overly complex or verbose translations.
 
-4. Use Formal language:
+**4. Use Formal language:**
 
 When translating messages for a general audience or professional context, use formal languange.
 
-5. Consistency:
+**5. Consistency:**
 
 Maintain consistency in your translations. Use consistent terminology and wording throughout the translation to avoid confusion.
 
-6. Be Mindful of Length:
+**6. Be Mindful of Length:**
 
 Ensure that the translated message fits within the space allocated in the code or interface.
 
-7. Retain Technical Terms:
+**7. Retain Technical Terms:**
 
 For technical terms and code-related elements such as function names, object names, and variable names, it's often best to keep them in English.
 
-8. Handle Plurals:
+**8. Handle Plurals:**
 
 Some languages nouns have different forms for singular and plural. Ensure that you correctly handle plurals when translating messages that involve counts or quantities.
 
-9. Punctuation:
+**9. Punctuation:**
 
 Use the punctuation and ensure proper spacing around punctuation marks.
 
-10. Special Characters:
+**10. Special Characters:**
 
 Some technical messages may contain special characters like %s, %d, or %f for string, integer, and floating-point substitutions. Keep these special characters and their order in the translated message, making sure they correspond correctly with the placeholders.
 
-11. Test the Translation:
+**11. Test the Translation:**
 
 After translating, test the messages in the R environment to ensure they appear correctly and are still functional.
 
-12. Document Translations:
+**12. Document Translations:**
 
 Keep a record of your translations for reference. This documentation can help maintain consistency in future translations and facilitate collaboration with other translators.
 
