@@ -20,9 +20,9 @@ Ensure that the translated message conveys the same technical information as the
 
 Clarity is paramount in translations. Make sure the translated message is clear and easy to understand. Avoid overly complex or verbose translations.
 
-4. Use Formal Arabic:
+4. Use Formal:
 
-When translating messages for a general audience or professional context, use Modern Standard Arabic (MSA) or Formal Arabic. Avoid using dialects unless the message is for a specific region where a particular dialect is preferred.
+When translating messages for a general audience or professional context, use formal languange.
 
 5. Consistency:
 
@@ -30,7 +30,7 @@ Maintain consistency in your translations. Use consistent terminology and wordin
 
 6. Be Mindful of Length:
 
-Consider that the Arabic translation might be longer or shorter than the English text. Ensure that the translated message fits within the space allocated in the code or interface.
+Ensure that the translated message fits within the space allocated in the code or interface.
 
 7. Retain Technical Terms:
 
@@ -48,23 +48,19 @@ Use Arabic punctuation and ensure proper spacing around punctuation marks. Arabi
 
 Some technical messages may contain special characters like %s, %d, or %f for string, integer, and floating-point substitutions. Keep these special characters and their order in the translated message, making sure they correspond correctly with the placeholders.
 
-11. Avoid Gendered Language:
-
-In Arabic, gendered language is common. However, in technical messages, try to avoid gender-specific terms. Use neutral language whenever possible to be inclusive.
-
-12. Test the Translation:
+11. Test the Translation:
 
 After translating, test the messages in the R environment to ensure they appear correctly and are still functional.
 
-13. Document Translations:
+12. Document Translations:
 
 Keep a record of your translations for reference. This documentation can help maintain consistency in future translations and facilitate collaboration with other translators.
 
-14. Seek Feedback:
+13. Seek Feedback:
 
 If possible, seek feedback from native Arabic speakers who are also familiar with programming to ensure the translations make sense in the intended context.
 
-15. Revise and Update:
+14. Revise and Update:
 
 Programming languages evolve, and so should your translations. Periodically review and update your translations to align with changes in the R programming language or best practices in translation.
 
