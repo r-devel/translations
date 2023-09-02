@@ -70,8 +70,7 @@ Remember that translating programming messages is a specialized skill that requi
 - Keyboard keys
 - Function names
 - Placeholders like %s, %d
-- put on wiki
-- Acronyms (if they are function arguments)
+- Acronyms (if they are, for example, function arguments)
 
 ### Updating glossaries
 _Process to be defined_
@@ -95,5 +94,3 @@ https://translate.rx.studio/translate/r-project/base-r-gui/hi/?checksum=05ce1e10
 * _French translates all the keys apart from those that are in English on a French keyboard: "Clavier : PageHaut, PageBas, Ctrl+Flèches, Ctrl+Début, Ctrl+Fin," According to Hugo: "keys that are translated in a French keyboard: del, end, screenshot, insert. I believe that other keys usually don't include text but use symbols (arrows, shift, pgup, pgdown). Ctrl and Alt are not translated". It looks like Chinese takes a similar approach._
 * _Italian does not translate the keys: "Tastiera: PgUp, PgDown, Ctrl+Arrows, Ctrl+Home, Ctrl+End,". Most languages take this approach._
 * _Best to discuss among translation team for specific language if possible, to decide best approach. General guidance: don't translate unless these terms are commonly translated on the keyboard, commonly used in other technical documentation, or are simply a translation of the English word into the language script. (The latter advice because if people are choosing to see R messages in a non-English language, they may prefer to see everything in that script where possible)._
-
-_Suggested each team maintains a page on this wiki https://github.com/r-devel/translations where they note agreed conventions for future contributors/translators._
