@@ -15,12 +15,12 @@ So if you want to start, you can contribute by following these steps:
 
 |Language | 
 | -- |
-|[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations) |
-|[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)|
+|[Arabic](https://github.com/r-devel/translations/wiki/Arabic-specific-translations) |
+|[Bengali](https://github.com/r-devel/translations/wiki/Bengali-specific-translations)|
 |[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)|
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
 |[Portuguese (Brazilian)](https://github.com/r-devel/translations/wiki/Brazilian%E2%80%90Portugese-specific-translations)|
-|[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)|
+|[Spanish](https://github.com/r-devel/translations/wiki/Spanish-specific-translation)|
 
 5. You can start translating!
 
@@ -35,8 +35,8 @@ We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.ht
 ### Translators
 Every registered user on Weblate can act as a translator. All translations are reviewed unless there is no reviewer assigned for that language. If you are not sure about a translation you can make a suggestion instead. You can also use the Glossary to check which terms you shouldn't translate and discuss with the community to add new ones if you don't find the word you are looking for. 
 
-### Admins / team leaders
-Admins / team leaders keep the list of admins and reviewers by language up to date. The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
+### Admins/team leaders
+Admins/team leaders keep the list of admins and reviewers by language up to date. The team leader(s) of a particular language is(are) the initial [dedicated reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
 
 ### Reviewers
 Reviewers have an editor role who approves the work of translators and ensures the overall cohesion of the translation work in one language. For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace.
@@ -48,7 +48,7 @@ Possible state of a string:
 * **Approved**: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.
 
 ## Sustainability of the translations community 
-- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is the main space of communication for the translations community. Join this Slack for communicating with the community and also for sharing any feedback.
+- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is the main space of communication for the translations community. Join this Slack to communicate with the community and share feedback.
 - We encourage people interested in translations to organise and conduct local/regional level events to promote and raise awareness about translations.
 - Highlight milestones (overall and by language)!
 
@@ -60,7 +60,7 @@ Possible state of a string:
 
 ## Space for feedback
 
-You can open an issue in this repository if you find something that is not working as expected in Weblate. If you want to discuss about translations and convictions you can use the slack channels dedicated to that.
+You can open an issue in this repository if you find something that is not working as expected in Weblate. If you want to discuss about translations and convictions you can use the Slack channels dedicated to that.
 
 ## Resources
 
@@ -79,5 +79,5 @@ Some interesting guides, glossaries and handbooks:
 - Use the [R Foundation Code of Conduct](https://www.r-project.org/coc-policy.html).
 
 ## Future work 
-* Explore possible integration of dictionaries into weblate?
-* Add demos from the translator and reviewer perspective
+* Explore possible integration of dictionaries into Weblate?
+* Add demos from the translator and reviewer's perspective
