@@ -82,6 +82,7 @@ _Process to be defined_
 |[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations)| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
 |[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)| [Debartha Paul](https://github.com/itsdebartha) |
 |[Brazilian-Portugese](https://github.com/r-devel/translations/wiki/Brazilian%E2%80%90Portugese-specific-translations)| [Caio Lente](https://github.com/clente), [Renata Hirota](https://github.com/rmhirota)|
+|[Chinese 中文](https://github.com/r-devel/translations/wiki/Chinese-specific-translations)|[Shun Wang](https://github.com/shun2wang)|
 |[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)| [Saranjeet Kaur Bhogal](https://github.com/SaranjeetKaur), [Ayush Patel](https://github.com/AyushBipinPatel)  |
 |[Japanese](https://github.com/r-devel/translations/wiki/Japanese-specific-translations)| [Reiko Okamoto](https://github.com/reikookamoto) |
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)| [Binod Jung Bogati](https://github.com/bjungbogati) |
