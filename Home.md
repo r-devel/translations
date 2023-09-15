@@ -17,6 +17,7 @@ So if you want to start, you can contribute by following these steps:
 | -- |
 |[Arabic](https://github.com/r-devel/translations/wiki/Arabic-specific-translations) |
 |[Bengali](https://github.com/r-devel/translations/wiki/Bengali-specific-translations)|
+|[Chinese](https://github.com/r-devel/translations/wiki/Chinese-specific-translations)|
 |[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)|
 |[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
 |[Portuguese (Brazilian)](https://github.com/r-devel/translations/wiki/Brazilian%E2%80%90Portugese-specific-translations)|
