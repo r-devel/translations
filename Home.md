@@ -15,13 +15,13 @@ So if you want to start, you can contribute by following these steps:
 
 |Language | 
 | -- |
-|[Arabic](https://github.com/r-devel/translations/wiki/Arabic-specific-translations) |
-|[Bengali](https://github.com/r-devel/translations/wiki/Bengali-specific-translations)|
-|[Chinese](https://github.com/r-devel/translations/wiki/Chinese-specific-translations)|
-|[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)|
-|[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)|
-|[Portuguese (Brazilian)](https://github.com/r-devel/translations/wiki/Brazilian%E2%80%90Portugese-specific-translations)|
-|[Spanish](https://github.com/r-devel/translations/wiki/Spanish-specific-translation)|
+|[Arabic](https://github.com/r-devel/translations-dashboard/wiki/Arabic-specific-translations) |
+|[Bengali](https://github.com/r-devel/translations-dashboard/wiki/Bengali-specific-translations)|
+|[Chinese](https://github.com/r-devel/translations-dashboard/wiki/Chinese-specific-translations)|
+|[Hindi](https://github.com/r-devel/translations-dashboard/wiki/Hindi-specific-translations)|
+|[Nepali](https://github.com/r-devel/translations-dashboard/wiki/Nepali-specific-translations)|
+|[Portuguese (Brazilian)](https://github.com/r-devel/translations-dashboard/wiki/Brazilian%E2%80%90Portugese-specific-translations)|
+|[Spanish](https://github.com/r-devel/translations-dashboard/wiki/Spanish-specific-translation)|
 
 5. You can start translating!
 
