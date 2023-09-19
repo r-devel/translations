@@ -85,14 +85,14 @@ _Process to be defined_
 
 |Language | Team Leaders (Contributor/Translator/Dedicated Reviewer) |
 | -- | -- |
-|[Arabic](https://github.com/r-devel/translations/wiki/Conventions-for-Arabic-translations)| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
-|[Bengali](https://github.com/r-devel/translations/wiki/Conventions-for-Bengali-translations)| [Debartha Paul](https://github.com/itsdebartha) |
-|[Brazilian-Portugese](https://github.com/r-devel/translations/wiki/Brazilian%E2%80%90Portugese-specific-translations)| [Caio Lente](https://github.com/clente), [Renata Hirota](https://github.com/rmhirota)|
-|[Chinese 中文](https://github.com/r-devel/translations/wiki/Chinese-specific-translations)|[Shun Wang](https://github.com/shun2wang)|
-|[Hindi](https://github.com/r-devel/translations/wiki/Hindi-specific-translations)| [Saranjeet Kaur Bhogal](https://github.com/SaranjeetKaur), [Ayush Patel](https://github.com/AyushBipinPatel)  |
-|[Japanese](https://github.com/r-devel/translations/wiki/Japanese-specific-translations)| [Reiko Okamoto](https://github.com/reikookamoto) |
-|[Nepali](https://github.com/r-devel/translations/wiki/Nepali-specific-translations)| [Binod Jung Bogati](https://github.com/bjungbogati) |
-|[Spanish](https://github.com/r-devel/translations/wiki/Conventions-for-Spanish-translation)| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton), [Macarena Quiroga](https://github.com/msquiroga89)| 
+|[Arabic](Arabic-specific-translations.qmd)| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
+|[Bengali](Bengali-specific-translations.qmd)| [Debartha Paul](https://github.com/itsdebartha) |
+|[Brazilian-Portugese](Brazilian‐Portugese-specific-translations.qmd)| [Caio Lente](https://github.com/clente), [Renata Hirota](https://github.com/rmhirota)|
+|[Chinese 中文](Chinese-specific-translations.qmd)|[Shun Wang](https://github.com/shun2wang)|
+|[Hindi](Hindi-specific-translations.qmd)| [Saranjeet Kaur Bhogal](https://github.com/SaranjeetKaur), [Ayush Patel](https://github.com/AyushBipinPatel)  |
+|[Japanese](Japanese-specific-translations.qmd)| [Reiko Okamoto](https://github.com/reikookamoto) |
+|[Nepali](Nepali-specific-translations.qmd)| [Binod Jung Bogati](https://github.com/bjungbogati) |
+|[Spanish](Spanish-specific-translations.qmd)| [Geraldine Gómez](https://github.com/GeraldineGomez), [María Nanton](https://github.com/mcnanton), [Macarena Quiroga](https://github.com/msquiroga89)| 
 
 ### An example on the discussion of guidelines:
 _Saranjeet wanted to know how to handle translating strings such as "Keyboard: PgUp, PgDown, Ctrl+Arrows, Ctrl+Home, Ctrl+End". She has currently translated to Hindi as "कीबोर्ड: पेज अप, पेज डाउन, कंट्रोल+एरोज , कंट्रोल+होम , कंट्रोल+एन्ड ,", which is in Hindi script but is spoken the same as the English words, since these are imported/foreign words._

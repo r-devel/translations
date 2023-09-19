@@ -23,9 +23,8 @@ To help in the translation process, you need to:
 1. Sign up to the [R Contributors
    Slack](https://contributor.r-project.org/slack) and introduce yourself in the
    `#core-translations` channel;
-1. Read the [Resources](https://github.com/r-devel/translations/wiki/Nepali-specific-translations#resources) section of
-   this document, because the translation has some conventions that should be
-   followed;
+1. Read the [Resources](#resources) section of this document, because the translation has some conventions that should
+   be followed;
 1. Create an account on [Weblate](https://translate.rx.studio/) (currently
    maintained by [@daroczig](https://twitter.com/daroczig));
 1. List every Nepali

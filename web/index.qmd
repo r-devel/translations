@@ -21,20 +21,21 @@ So if you want to start, you can contribute by following these steps:
 [@daroczig](https://twitter.com/daroczig)) and read the Translations chapter on the [R Development 
 guide](https://contributor.r-project.org/rdevguide/);
 
-3. Read the [Conventions for translation](https://github.com/r-devel/translations/wiki/Conventions-for-translations) 
+3. Read the [Conventions for translation](Conventions_for_Languages/index.qmd) 
 section of this Wiki, for some conventions that should be followed;
 
 4. Read the guidelines for the specific language you want to contribute to. If a guideline for your language doesn't 
 exist yet, please feel free to submit a pull request and create it.
 
-|Language | | -- | 
-|[Arabic](https://github.com/r-devel/translations-dashboard/wiki/Arabic-specific-translations) | 
-|[Bengali](https://github.com/r-devel/translations-dashboard/wiki/Bengali-specific-translations)| 
-|[Chinese](https://github.com/r-devel/translations-dashboard/wiki/Chinese-specific-translations)| 
-|[Hindi](https://github.com/r-devel/translations-dashboard/wiki/Hindi-specific-translations)| 
-|[Nepali](https://github.com/r-devel/translations-dashboard/wiki/Nepali-specific-translations)|
-|[Portuguese (Brazilian)](https://github.com/r-devel/translations-dashboard/wiki/Brazilian%E2%80%90Portugese-specific-translations)| 
-|[Spanish](https://github.com/r-devel/translations-dashboard/wiki/Spanish-specific-translation)|
+|Language |
+| -- | 
+|[Arabic](Conventions_for_Languages/Arabic-specific-translations.qmd) | 
+|[Bengali](Conventions_for_Languages/Bengali-specific-translations.qmd)| 
+|[Chinese](Conventions_for_Languages//Chinese-specific-translations.qmd)| 
+|[Hindi](Conventions_for_Languages/Hindi-specific-translations.qmd)| 
+|[Nepali](Conventions_for_Languages/Nepali-specific-translations.qmd)|
+|[Portuguese (Brazilian)](Conventions_for_Languages/Brazilian‐Portugese-specific-translations.qmd)| 
+|[Spanish](Conventions_for_Languages/Spanish-specific-translations.qmd)|
 
 5. You can start translating!
 
@@ -75,24 +76,30 @@ translation work in one language. For adding new reviewers or peer reviewers to 
 respective team leaders via the `#core-translation` channel on the [R Contributors 
 Slack](https://contributor.r-project.org/slack) workspace.
 
-Possible state of a string: * **Untranslated**: Translation is empty, it might or not be stored in the file, depending 
-on the file format. * **Needs editing**: Translation needs editing, this is usually the result of a source string 
-change, fuzzy matching or translator action. **If you are unsure about how to translate something, make a suggestion, do 
-not click the "Needs editing" button**. * **Waiting for review**: Translation is made, but not reviewed. * **Approved**: 
+Possible state of a string: 
+
+* **Untranslated**: Translation is empty, it might or not be stored in the file, depending on the file format. 
+* **Needs editing**: Translation needs editing, this is usually the result of a source string 
+change, fuzzy matching or translator action. **If you are unsure about how to translate something, make a suggestion,**
+**do not click the "Needs editing" button**.
+* **Waiting for review**: Translation is made, but not reviewed.
+* **Approved**: 
 Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.
 
 ## Sustainability of the translations community
 
-- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is the main space of communication for the translations 
-community. Join this Slack to communicate with the community and share feedback. - We encourage people interested in 
-translations to organise and conduct local/regional level events to promote and raise awareness about translations. - 
-Highlight milestones (overall and by language)!
+- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is
+the main space of communication for the translations  community. Join this Slack to communicate with the community and
+share feedback.
+- We encourage people interested in translations to organize and conduct local/regional level events to promote and
+raise awareness about translations.
+- Highlight milestones (overall and by language)!
 
 ## About Weblate
 
-- [Weblate documentation](https://docs.weblate.org/en/latest/) - [Glossary on 
-Weblate](https://translate.rx.studio/projects/r-project/glossary/)   - [Chapter on Weblate in the R Dev 
-Guide](https://github.com/r-devel/rdevguide/pull/142)
+- [Weblate documentation](https://docs.weblate.org/en/latest/)
+- [Glossary on Weblate](https://translate.rx.studio/projects/r-project/glossary/)
+- [Chapter on Weblate in the R Dev Guide](https://github.com/r-devel/rdevguide/pull/142)
 
 ## Space for feedback
 
@@ -102,6 +109,7 @@ to discuss about translations and convictions you can use the Slack channels ded
 ## Resources
 
 Some interesting guides, glossaries and handbooks:
+
 - [Turing way translation handbook](https://the-turing-way.netlify.app/community-handbook/translation)
 - [R OpenSci's draft of translation guidelines](https://translationguide.ropensci.org/)
 - [R OpenSci's glossary](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
@@ -118,5 +126,6 @@ Some interesting guides, glossaries and handbooks:
 
 ## Future work
 
-* Explore possible integration of dictionaries into Weblate? * Add demos from the translator and 
+* Explore possible integration of dictionaries into Weblate?
+* Add demos from the translator and 
 reviewer's perspective

@@ -1,8 +1,15 @@
-This page describes how the [Weblate](https://weblate.org/en/) service running at [translate.rx.studio](https://translate.rx.studio) was configured, and how it is maintained.
+---
+title: "Weblate server"
+---
+
+This page describes how the [Weblate](https://weblate.org/en/) service running at
+[translate.rx.studio](https://translate.rx.studio) was configured, and how it is maintained.
 
 ## Infrastructure
 
-The service runs on a single `t3a.large` node with 20GB storage (was extended from 10GB due to Docker pulls) in the `us-east-1` region of AWS, with termination protection enabled. AWS Backup is configured to take weekly snapshots of the node with a retention window of 1 year.
+The service runs on a single `t3a.large` node with 20GB storage (was extended from 10GB due to Docker pulls) in the
+`us-east-1` region of AWS, with termination protection enabled. AWS Backup is configured to take weekly snapshots of the
+node with a retention window of 1 year.
 
 ## Docker images and configuration
 
@@ -56,7 +63,8 @@ volumes:
   ssl-certs: {}
 ```
 
-The `environment` file has no modifications, as the env var overrides are defined in the `docker-compose-https.override.yml` file:
+The `environment` file has no modifications, as the env var overrides are defined in the
+`docker-compose-https.override.yml` file:
 
 ```yaml
 version: '3'
@@ -100,7 +108,7 @@ weblate/weblate         <none>      475045de4358   10 months ago   847MB
 steveltn/https-portal   <none>      26e5bea459df   12 months ago   274MB
 ```
 
-Current weblate etc versions listed at https://translate.rx.studio/about/
+Current weblate etc versions listed at <https://translate.rx.studio/about/>
 
 Commands to start the service:
 
@@ -109,7 +117,9 @@ docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml 
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up
 ```
 
-To update, follow the [official docs](https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-the-docker-container), but in short:
+To update, follow the 
+[official docs](https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-the-docker-container), but in
+short:
 
 ```sh
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml pull
@@ -121,14 +131,14 @@ docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml 
 
 To generate a report on the translation updates in a time period:
 
-1. Visit https://translate.rx.studio/projects/r-project/#reports
+1. Visit <https://translate.rx.studio/projects/r-project/#reports>
 2. Select time period and generate report in rST format
 3. Convert ~markdown to HTML and share in the R Contributors slack group's #core-translation channel
 
 To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
 
-1. Update the weblate repo from Subversion at https://translate.rx.studio/projects/r-project/#repository
-2. Clone the weblate git repo from https://translate.rx.studio/git/r-project/base-r-gui/
+1. Update the weblate repo from Subversion at <https://translate.rx.studio/projects/r-project/#repository>
+2. Clone the weblate git repo from <https://translate.rx.studio/git/r-project/base-r-gui/>
 3. Drop empty translation files to reduce noise, e.g. something like:
 
     ```r
@@ -155,7 +165,7 @@ To submit a patch file on the translations found in Weblate but not in the trunk
     }
     ```
 
-4. Clone the subversion R repo or its git clone from git@github.com:wch/r-source.git
+4. Clone the subversion R repo or its git clone from `git@github.com:wch/r-source.git`
 5. Make sure that both repos are up-to-date!
 6. Copy over `src/library` from the weblate repo to R/trunk.
 7. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
@@ -261,4 +271,4 @@ There are language teams defined in each project with the below extra permission
 - Review strings
 - Manage translation memory
 
-See the general [Weblate FAQ](https://github.com/r-devel/translations/wiki/Weblate-FAQ#how-to-manage-translation-teams-in-weblate) on how to manage members.
+See the general [Weblate FAQ](Weblate-FAQ.qmd#how-to-manage-translation-teams-in-weblate) on how to manage members.
