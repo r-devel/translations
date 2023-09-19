@@ -1,0 +1,37 @@
+project:
+  type: website
+  execute-dir: project
+  render:
+    - "*.qmd"
+
+website:
+  title: "R translations"
+  repo-url: https://github.com/r-devel/translations
+  repo-actions: [edit, issue]
+  site-url: https://contributor.r-project.org/translations
+  open-graph: true
+  navbar:
+    left:
+      - index.qmd
+    right:
+      - text: Status
+        href: https://contributor.r-project.org/translations-dashboard
+      - text: Translate!
+        href: https://translate.rx.studio
+    tools:
+      - icon: github
+        href: https://github.com/r-devel/translations
+  sidebar:
+    style: "docked"
+    contents:
+      - auto: Conventions_for_Languages
+      - Weblate-FAQ.qmd
+      - Weblate-server.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: source

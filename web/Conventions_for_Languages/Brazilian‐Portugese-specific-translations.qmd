@@ -1,5 +1,9 @@
+---
+title: "Brazilian Portuguese"
+---
+
 _This repository is a hub for all people who want to help translate R into
-Spanish. This README is in English, but you can reach out to
+Brazilian Portuguese. This README is in English, but you can reach out to
 other translators on the R Contributors Slack if you need any additional
 information about the project._
 
@@ -144,7 +148,7 @@ and, if you disagree about something, simply create a new topic in the
 [discussions](https://github.com/r-devel/translations/discussions) tab.
 
 - [Weblate documentation on translation workflow](https://docs.weblate.org/en/latest/workflows.html)
-- [Translation dashboard](https://contributor.r-project.org/translations/)
+- [Translation dashboard](https://contributor.r-project.org/translations-dashboard/)
 
 ### Glossary
 

@@ -1,3 +1,7 @@
+---
+title: "Spanish"
+---
+
 [![translation status](https://translate.rx.studio/widgets/r-project/es/svg-badge.svg?native=1)](https://translate.rx.studio/languages/es/r-project/)
 
 _This repository is a hub for all people who want to help translate R into

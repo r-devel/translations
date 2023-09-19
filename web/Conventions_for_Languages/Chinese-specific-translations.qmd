@@ -1,3 +1,7 @@
+---
+title: "Chinese"
+---
+
 <a href="https://translate.rx.studio/engage/r-project/zh_Hans/">
 <img src="https://translate.rx.studio/widgets/r-project/zh_Hans/svg-badge.svg" alt="翻译状态" />
 </a>

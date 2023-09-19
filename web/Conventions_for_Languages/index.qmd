@@ -1,5 +1,11 @@
+---
+title: "Guidelines"
+---
+
 The following update was made during the [R Project Sprint 2023](https://contributor.r-project.org/r-project-sprint-2023/), Warwick and Online (hybrid) during 30 Aug - 1 Sept 2023:
+
 ## Guidelines
+
 ### General guidelines
 - Unless having very strong reasons not to, please follow your language specific glossary and guidelines
 - If you encounter ambiguous or difficult strings to translate that aren't captured in the language specific glossary and guidelines, refer to the core-translation slack channel to discuss it with other translators
