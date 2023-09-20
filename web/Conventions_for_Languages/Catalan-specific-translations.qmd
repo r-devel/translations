@@ -1,0 +1,80 @@
+---
+title: "Catalan"
+---
+
+[![translation status](https://translate.rx.studio/widgets/r-project/ca/svg-badge.svg?native=1)](https://translate.rx.studio/languages/ca/r-project/)
+
+## About
+
+The goal of the Catalan Team is to bring together all people interested in helping translate the [R 
+language](https://en.wikipedia.org/wiki/R_(programming_language)) into Catalan. If you use R a lot, we 
+need your help!
+
+Unlike other languages, R tries to display every message in the same language as the computer it's running on. In 
+principle, this reduces R's barrier to entry; warnings and errors are very common in code written by beginners, so it's 
+essential that these messages are as clear as possible.
+
+## How to contribute
+
+To help in the translation process, you need to:
+
+1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the 
+`#core-translations` channel;
+2. Read the [Resources](#resources) section of this document, because the translation has some conventions that should 
+be followed;
+3. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
+[@daroczig](https://twitter.com/daroczig));
+3. List every Catalan [component](https://translate.rx.studio/languages/ca/r-project/);
+4. Choose a component that's not 100% translated;
+5. Click **Unfinished strings** to list all messages that haven't been translated and
+6. Start!
+
+## Resources
+
+### Style
+
+The Catalan project sticks to the [Guia d'estil de Softcatalà](https://www.softcatala.org/guia-estil-de-softcatala/).
+Have a look and check it when in doubts.
+
+### Terminology
+
+There are different sources for Catalan terminology
+
+- [Glossari de Softcatalà](https://static.softcatala.org/terminology/tots-glossary.html)
+- [Termcat](https://www.termcat.cat), el centre de terminologia de la llengua catalana
+
+### Translation memories
+
+In case of doubts, an useful resource is the compilation of [translation 
+memories](https://www.softcatala.org/recursos/memories/) for Catalan. Check how other projects translate
+similar concepts and get inspired.
+
+### Automatic translations
+
+Softcatalà provides [automatic translations](https://www.softcatala.org/traductor/) for `.po` files. Despite the results
+are quite good, it's necessary to review carefully each string. You can download the `.po` files from Weblate website:
+
+![](../img/Weblate_files.png)
+
+Alternatively, you can:
+
+1. Clone the repository using your [private URL](https://translate.rx.studio/accounts/profile/#api) with:
+
+``` bash
+git clone https://$USER:$PRIVATE_TOKEN@translate.rx.studio/git/r-project/base-r-gui/
+```
+
+2. Look for the files at `src/library/*/po/*ca.po` and use any app to help you to review and fix the translations (eg. 
+[Poedit](https://poedit.net/) or [Lokalize](https://apps.kde.org/ca/lokalize/))
+
+3. You can not push to this repository. To upload the finished files, use the Weblate web interface (see image above).
+
+### R-project specific conventions
+
+Non yet.
+
+### Glossary
+
+Weblate has a built-in [glossary](https://translate.rx.studio/browse/r-project/glossary/ca/) that will be shown while
+doing a translation in Weblate with a matching term. To add new terms, is better to discuss it with the community first
+and reach a consensus.

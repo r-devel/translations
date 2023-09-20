@@ -114,6 +114,7 @@ _Process to be defined_
 |[Arabic](Arabic-specific-translations.qmd)| [Iman Al-Hasani](https://github.com/imanalhasani), [Abdulrahman Alswaji](https://github.com/alswajiab) |
 |[Bengali](Bengali-specific-translations.qmd)| [Debartha Paul](https://github.com/itsdebartha) |
 |[Brazilian-Portugese](Brazilian‐Portugese-specific-translations.qmd)| [Caio Lente](https://github.com/clente), [Renata Hirota](https://github.com/rmhirota)|
+|[Catalan](Catalan-specific-translations.qmd)| [Joan Maspons](https://github.com/jmaspons), [Robert Castelo](https://github.com/rcastelo)|
 |[Chinese 中文](Chinese-specific-translations.qmd)|[Shun Wang](https://github.com/shun2wang)|
 |[Hindi](Hindi-specific-translations.qmd)| [Saranjeet Kaur Bhogal](https://github.com/SaranjeetKaur), [Ayush Patel](https://github.com/AyushBipinPatel)  |
 |[Japanese](Japanese-specific-translations.qmd)| [Reiko Okamoto](https://github.com/reikookamoto) |

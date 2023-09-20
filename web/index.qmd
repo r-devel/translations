@@ -31,6 +31,7 @@ exist yet, please feel free to submit a pull request and create it.
 | -- | 
 |[Arabic](Conventions_for_Languages/Arabic-specific-translations.qmd) | 
 |[Bengali](Conventions_for_Languages/Bengali-specific-translations.qmd)| 
+|[Catalan](Conventions_for_Languages/Catalan-specific-translations.qmd)| 
 |[Chinese](Conventions_for_Languages/Chinese-specific-translations.qmd)| 
 |[Hindi](Conventions_for_Languages/Hindi-specific-translations.qmd)| 
 |[Nepali](Conventions_for_Languages/Nepali-specific-translations.qmd)|
