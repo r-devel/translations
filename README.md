@@ -1,8 +1,8 @@
 # translations
 
-Subsite for translations
+Subsite for translations at https://contributor.r-project.org/translations/
 
-## Preview the website
+## Preview the website locally
 
 ``` r
 # install.packages("quarto")
