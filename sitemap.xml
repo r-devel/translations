@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Arabic-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:02.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Bengali-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:02.558Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Brazilian‐Portugese-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:03.434Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Catalan-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:03.766Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Chinese-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:03.986Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Hindi-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:04.210Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Japanese-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:04.426Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Nepali-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:05.062Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Spanish-specific-translations.html</loc>
-    <lastmod>2023-09-20T21:51:05.370Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/index.html</loc>
-    <lastmod>2023-09-20T21:51:05.782Z</lastmod>
+    <loc>https://contributor.r-project.org/translations/index.html</loc>
+    <lastmod>2023-09-20T22:10:58.679Z</lastmod>
   </url>
   <url>
     <loc>https://contributor.r-project.org/translations/Weblate-FAQ.html</loc>
-    <lastmod>2023-09-20T21:51:06.134Z</lastmod>
+    <lastmod>2023-09-20T22:10:57.283Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Spanish-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:56.287Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Japanese-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:55.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Chinese-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:54.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Brazilian‐Portugese-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:53.543Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Arabic-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:51.771Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Bengali-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:52.471Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Catalan-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:53.963Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Hindi-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:54.679Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/Nepali-specific-translations.html</loc>
+    <lastmod>2023-09-20T22:10:55.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://contributor.r-project.org/translations/Conventions_for_Languages/index.html</loc>
+    <lastmod>2023-09-20T22:10:56.799Z</lastmod>
   </url>
   <url>
     <loc>https://contributor.r-project.org/translations/Weblate-server.html</loc>
-    <lastmod>2023-09-20T21:51:06.790Z</lastmod>
-  </url>
-  <url>
-    <loc>https://contributor.r-project.org/translations/index.html</loc>
-    <lastmod>2023-09-20T21:51:07.182Z</lastmod>
+    <lastmod>2023-09-20T22:10:58.099Z</lastmod>
   </url>
 </urlset>
