@@ -12,7 +12,8 @@ title: "Hindi"
 
 ## Style
 
-Don't translate anything that is a technical term from R, for example, function names, objects and arguments (usually between quotes).
+Don't translate anything that is a technical term from R, for example, function names, objects and arguments (usually
+between quotes).
 
 ```
 invalid length(x)
@@ -26,7 +27,8 @@ length(x) अमान्य है
 'MARGIN' dim(X) से मेल नहीं खाता
 ```
 
-Words related to mathematics, statistics, engineering, etc will not be translated. However, a phonetic presentation will be provided in Devnagri script along with the word in English script.
+Words related to mathematics, statistics, engineering, etc will not be translated. However, a phonetic presentation will
+be provided in Devnagri script along with the word in English script.
 
 ```
 PORT must be specified

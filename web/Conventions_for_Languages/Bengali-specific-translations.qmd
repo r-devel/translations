@@ -12,7 +12,8 @@ title: "Bengali"
 
 ## Style
 
-Do not translate anything that is a technical term in R, for example, function names, objects, arguments(usually in between quotes), etc.
+Do not translate anything that is a technical term in R, for example, function names, objects, arguments(usually in
+between quotes), etc.
 ```
 See help("Defunct") and help("%s-defunct").
 
