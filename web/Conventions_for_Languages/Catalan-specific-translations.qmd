@@ -78,3 +78,8 @@ Non yet.
 Weblate has a built-in [glossary](https://translate.rx.studio/browse/r-project/glossary/ca/) that will be shown while
 doing a translation in Weblate with a matching term. To add new terms, is better to discuss it with the community first
 and reach a consensus.
+
+### Quality report
+
+Softcatalà generates quality reports periodically on R translations using LanguageTool and Pology. Check it out at
+<https://static.softcatala.org/quality/r-project.html>.
