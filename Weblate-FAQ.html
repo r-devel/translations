@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>R translations - Weblate FAQ</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="R translations - Weblate FAQ">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="R translations">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">R translations</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://contributor.r-project.org/translations-dashboard" rel="" target="">
+ <span class="menu-text">Status</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://translate.rx.studio" rel="" target="">
+ <span class="menu-text">Translate!</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/r-devel/translations" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Weblate-FAQ.html">Weblate FAQ</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Conventions_for_Languages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guidelines</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Arabic-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arabic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Bengali-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bengali</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Brazilian‐Portugese-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Brazilian Portuguese</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Catalan-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Catalan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Chinese-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chinese</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Hindi-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hindi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Japanese-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japanese</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Nepali-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nepali</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conventions_for_Languages/Spanish-specific-translations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spanish</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Weblate-FAQ.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Weblate FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Weblate-server.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Weblate server</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-weblate" id="toc-why-weblate" class="nav-link active" data-scroll-target="#why-weblate">Why Weblate?</a></li>
+  <li><a href="#what-is-a-component" id="toc-what-is-a-component" class="nav-link" data-scroll-target="#what-is-a-component">What is a “component”?</a></li>
+  <li><a href="#how-to-add-a-new-language-for-a-component" id="toc-how-to-add-a-new-language-for-a-component" class="nav-link" data-scroll-target="#how-to-add-a-new-language-for-a-component">How to add a new language for a component?</a></li>
+  <li><a href="#how-to-add-a-new-component" id="toc-how-to-add-a-new-component" class="nav-link" data-scroll-target="#how-to-add-a-new-component">How to add a new component?</a></li>
+  <li><a href="#how-to-add-a-new-package" id="toc-how-to-add-a-new-package" class="nav-link" data-scroll-target="#how-to-add-a-new-package">How to add a new package?</a></li>
+  <li><a href="#what-packages-are-translated-in-weblate" id="toc-what-packages-are-translated-in-weblate" class="nav-link" data-scroll-target="#what-packages-are-translated-in-weblate">What packages are translated in Weblate?</a></li>
+  <li><a href="#how-to-add-a-package-i-maintain-to-weblate" id="toc-how-to-add-a-package-i-maintain-to-weblate" class="nav-link" data-scroll-target="#how-to-add-a-package-i-maintain-to-weblate">How to add a package I maintain to Weblate?</a></li>
+  <li><a href="#how-to-test-the-changes-i-made-in-weblate" id="toc-how-to-test-the-changes-i-made-in-weblate" class="nav-link" data-scroll-target="#how-to-test-the-changes-i-made-in-weblate">How to test the changes I made in Weblate?</a></li>
+  <li><a href="#how-to-manage-translation-teams-in-weblate" id="toc-how-to-manage-translation-teams-in-weblate" class="nav-link" data-scroll-target="#how-to-manage-translation-teams-in-weblate">How to manage translation teams in Weblate?</a></li>
+  <li><a href="#how-to-get-notifications-about-language-updates" id="toc-how-to-get-notifications-about-language-updates" class="nav-link" data-scroll-target="#how-to-get-notifications-about-language-updates">How to get notifications about language updates?</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/r-devel/translations/edit/main/Weblate-FAQ.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/r-devel/translations/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Weblate FAQ</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="why-weblate" class="level3">
+<h3 class="anchored" data-anchor-id="why-weblate">Why Weblate?</h3>
+<p>Please see the problem statement and proposed solution in the <a href="https://contributor.r-project.org/r-project-sprint-2023/projects/weblate-improvements/#problem-statement">R Project Sprint 2023’s Weblate project</a>.</p>
+</section>
+<section id="what-is-a-component" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-component">What is a “component”?</h3>
+<p>Each R package has been implemented as at least one component in Weblate, referring to the strings to be translated in a PO file.</p>
+<p>When a package includes multiple PO files (e.g.&nbsp;one for the strings extracted from the C sources, another one for the strings extracted from the R sources, and another one for the GUI strings), then there are multiple components for a package.</p>
+</section>
+<section id="how-to-add-a-new-language-for-a-component" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-add-a-new-language-for-a-component">How to add a new language for a component?</h3>
+<p>After logging in and selecting a component, you should see a “Start new translation” button at the bottom of the page, see e.g.&nbsp;at <a href="https://translate.rx.studio/projects/r-project/base-c/" class="uri">https://translate.rx.studio/projects/r-project/base-c/</a></p>
+</section>
+<section id="how-to-add-a-new-component" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-add-a-new-component">How to add a new component?</h3>
+<p>Only Weblate admins can do that. For now, please reach out to <span class="citation" data-cites="daroczig">@daroczig</span> or <span class="citation" data-cites="MichaelChirico">@MichaelChirico</span>.</p>
+<ol type="1">
+<li>Go the the <a href="https://translate.rx.studio/projects/r-project/">R Project project dashboard</a></li>
+<li>Click on the “Add new translation component” button at the bottom of the page 3. Provide a name for the component following the naming schema of the other components (package name optionally followed by R or C files between parens, e.g.&nbsp;<code>methods (R files)</code>). It is required to split a package into (at least) two components when there are multiple PO files around, e.g.&nbsp;for R and C files, sometime even a 3rd one for the GUI</li>
+<li>Source code repo should point to <code>weblate://r-project/base-r-gui</code> (this is set to auto-poll the SVN repo)</li>
+<li>File format is usually <code>gettext PO file</code> (for strings extracted from R core and recommended packages), or e.g.&nbsp;iOS strings (for Mac GUI) 6. Provide file mask, e.g.&nbsp;<code>src/library/base/po/*.po</code> or <code>src/library/compiler/po/R-*.po</code></li>
+<li>Set a Language filter when needed to guide Weblate which files to pick up (e.g.&nbsp;to exclude the PO files starting with <code>R</code> (part of the “R files” component) for the “C files” component, something like <code>^(?!en$)[a-z][^.]+$</code></li>
+</ol>
+</section>
+<section id="how-to-add-a-new-package" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-add-a-new-package">How to add a new package?</h3>
+<p>See above for the definition of a <a href="#what-is-a-component">“component”</a>, and based on that, see the section on <a href="#how-to-add-a-new-component">“How to add a new component?”</a>.</p>
+</section>
+<section id="what-packages-are-translated-in-weblate" class="level3">
+<h3 class="anchored" data-anchor-id="what-packages-are-translated-in-weblate">What packages are translated in Weblate?</h3>
+<p>Currently, only base R packages. There are <a href="https://github.com/r-devel/translations/issues/2">plans to support recommended packages</a> as well. Other R packages can also use this installation of Weblate, as per below:</p>
+</section>
+<section id="how-to-add-a-package-i-maintain-to-weblate" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-add-a-package-i-maintain-to-weblate">How to add a package I maintain to Weblate?</h3>
+<p>If you maintain an R package using <code>gettext</code> (or similar) in a public git or SVN repo, and you are planning to use this installation of Weblate to crowdsource the translation of your already extracted strings, please reach out to the <a href="./Weblate-server.html#administrators">Weblate admins</a> to discuss the details, but in short, the following steps are expected:</p>
+<ol type="1">
+<li>The Weblate admins create a <a href="#how-to-add-a-new-component">new component</a> using your git/SVN repo</li>
+<li>Optionally set up push-back hooks to the <code>master</code> or other branch, so that new translations are available in the original repo as well</li>
+</ol>
+</section>
+<section id="how-to-test-the-changes-i-made-in-weblate" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-test-the-changes-i-made-in-weblate">How to test the changes I made in Weblate?</h3>
+<p>Speaking about translations done in a base R package, you will need to <a href="https://contributor.r-project.org/rdevguide/GetStart.html#building-r">build R</a>. Instead of the official SVN repo, you could use Weblate’s git repo at https://translate.rx.studio/git/r-project/base-r-gui/, which includes all new translations up to the past few minutes (translations are committed to the git repo every few minutes). In case you don’t want to clone the Weblate git repo, you can download the PO files from Weblate by visiting a component and downloading either all PO files as a ZIP file or selecting a language you can download an individual PO file.</p>
+</section>
+<section id="how-to-manage-translation-teams-in-weblate" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-manage-translation-teams-in-weblate">How to manage translation teams in Weblate?</h3>
+<p>Each language team has leaders and reviewers. Only language team leaders and the Weblate admins can remove existing users from the teams, and can add new team members. Team leaders can find their language team listed on their <a href="https://translate.rx.studio/accounts/profile/#teams">profile</a>, where they can edit the list of users in the group.</p>
+<p>New languages will not have teams; by default any translator can add new messages without a review process. The review process is recommended to encourage consistency across the body of translations. If you want to start a team for a new language, contact the <a href="./Weblate-server.html#administrators">Weblate admins</a>.</p>
+</section>
+<section id="how-to-get-notifications-about-language-updates" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-get-notifications-about-language-updates">How to get notifications about language updates?</h3>
+<p>Go to the <a href="https://translate.rx.studio/accounts/profile/#notifications">Notification settings on our profile</a>, select which projects (e.g.&nbsp;base R and/or recommended R packages) you want to monitor, and select the types of “Translation notifications” you are interested in (e.g.&nbsp;“Pending suggestions” for reviewers).</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
