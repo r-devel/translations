@@ -7,6 +7,7 @@ project:
 website:
   title: "R translations"
   repo-url: https://github.com/r-devel/translations
+  repo-subdir: web
   repo-actions: [edit, issue]
   site-url: https://contributor.r-project.org/translations
   open-graph: true
