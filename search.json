@@ -116,7 +116,7 @@
     "href": "Conventions_for_Languages/Chinese-specific-translations.html#weblate-存储库和协作",
     "title": "Chinese",
     "section": "Weblate 存储库和协作",
-    "text": "Weblate 存储库和协作"
+    "text": "Weblate 存储库和协作\n我们的翻译托管在 Weblate 翻译平台上，每个人都可以参与编辑。您在使用邮箱注册 Weblate 账户并提交翻译内容后即自动加入翻译团队，您可以自主选择是否将个人联系方式同步到此页面。"
   },
   {
     "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#翻译内容更新",
@@ -133,11 +133,18 @@
     "text": "翻译审阅"
   },
   {
-    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#基本用于",
-    "href": "Conventions_for_Languages/Chinese-specific-translations.html#基本用于",
+    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#基本用语",
+    "href": "Conventions_for_Languages/Chinese-specific-translations.html#基本用语",
     "title": "Chinese",
-    "section": "基本用于",
-    "text": "基本用于"
+    "section": "基本用语",
+    "text": "基本用语\n\n对翻译中的“你(you)”代称应使用敬语“您”，示例：您应该检查变量类型；\n基本统计术语应当参考当前主流应用词汇；"
+  },
+  {
+    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
+    "href": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
+    "title": "Chinese",
+    "section": "排版指南",
+    "text": "排版指南"
   },
   {
     "objectID": "Conventions_for_Languages/Brazilian‐Portugese-specific-translations.html",
