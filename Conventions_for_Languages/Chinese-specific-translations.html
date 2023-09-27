@@ -250,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>关于</h1>
 <p>欢迎加入R语言翻译团队！</p>
 <ul>
-<li><p>关于本页面：本页面旨在为R语言中文本地化翻译提供统一的说明和指导。这里包含语言翻译的通用规范、基本操作指引、常见问题解答和帮助页。如果你需要更新本页面的内容，请与团队内成员联系。</p></li>
+<li><p>关于本页面：本页面旨在为R语言中文本地化翻译提供统一的说明和指导。这里包含语言翻译的通用规范、基本操作指引、常见问题解答和帮助页。如果您需要更新本页面的内容，请与团队内成员联系。</p></li>
 <li><p>关于R语言翻译：R语言翻译包含了对R语言C级别和R级别消息的字符串翻译，以及R工具（例如GUI和命令行）的图形界面和命令行提示符界面的中文本地化翻译。</p></li>
 </ul>
 </section>
@@ -263,6 +263,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="翻译内容更新" class="level2">
 <h2 class="anchored" data-anchor-id="翻译内容更新">翻译内容更新</h2>
+<p>访问 https://translate.rx.studio/languages/zh_Hans/r-project/ 查看所有当前待翻译内容。选择您想要翻译的部件，点击“翻译”即可进入翻译面板。在编辑栏输入您的翻译内容，点击“保存并继续”。至此您已经完成了一条语句的翻译。请阅读风格指引章节了解用语和排版指导。</p>
 </section>
 <section id="翻译审阅" class="level2">
 <h2 class="anchored" data-anchor-id="翻译审阅">翻译审阅</h2>
@@ -276,10 +277,16 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li>对翻译中的“你(you)”代称应使用敬语“您”，示例：您应该检查变量类型；</li>
 <li>基本统计术语应当参考当前主流应用词汇；</li>
+<li><code>%s</code>,<code>%i</code>,<code>%1$s</code>等被称作占位符，这里的文字会按照运行时生成的内容自动替换，您不能去掉或增加任何占位符，仅调整语序；</li>
+<li>对于上述3中的占位符，您可根据需要调整其语序。例如：<code>%s in %s must be a numerical</code> 可被翻译为 <code>%2$s 中的 %1$s 必须是数值型</code>。显然您可以看到这里每个<code>%s</code>的含义不一样，如果您需要调整第二个<code>%s</code>的语序，您可以添加它们的位置像<code>1$</code>这样的参数到其中。如果您不确定如何使用它，可以参考其他已被翻译的内容；</li>
 </ol>
 </section>
 <section id="排版指南" class="level2">
 <h2 class="anchored" data-anchor-id="排版指南">排版指南</h2>
+<ol type="1">
+<li>中英文（含数字）混合排版时，应当在英文字符前后保持一个空格，像这样<code>欢迎使用 R 语言</code>；</li>
+<li>无须翻译的内容：一些内置函数、参数、值不能被翻译。例如<code>WARNING: no value given for '--max-connections'</code> 其中 <code>'--max-connections'</code> 这样的我们可以判断为参数，则保持不变。因此我们翻译成<code>警告：'--max-connections' 没有给定值</code></li>
+</ol>
 
 
 </section>
