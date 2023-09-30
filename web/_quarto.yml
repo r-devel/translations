@@ -5,13 +5,16 @@ project:
     - "*.qmd"
 
 website:
-  title: "R translations"
+  title: "translations"
   repo-url: https://github.com/r-devel/translations
   repo-subdir: web
   repo-actions: [edit, issue]
   site-url: https://contributor.r-project.org/translations
+  favicon: img/Rlogo.png
   open-graph: true
   navbar:
+    logo: img/Rlogo.png
+    logo-alt: R
     left:
       - index.qmd
     right:
