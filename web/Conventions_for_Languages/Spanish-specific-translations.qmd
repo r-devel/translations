@@ -60,31 +60,31 @@ Unlike Spanish, English does not specify grammatical gender for nouns and adject
 
 In the following example, `Authors@R` won't be translated as is a special tag.
 
-`Authors@R field gives no person with name and roles`
+> _Authors@R field gives no person with name and roles_
 
-`El campo Authors@R no proporciona ninguna persona con nombre ni roles`
+> El campo Authors@R no proporciona ninguna persona con nombre ni roles
 
 In rare cases, the message references who is doing the programming. 
 
-`Not enough arguments passed to user macro '%s'`
+> _Not enough arguments passed to user macro '%s'_
 
-`No se han pasado suficientes argumentos para la macro %s'`
+> No se han pasado suficientes argumentos para la macro %s'
 
 #### Gender mark for other nouns
 
 Grammatical gender of arguments, acronyms and other nouns can usually be inferred by context. In the example below, we 
 translate "DLL" as "a biblioteca de vínculo dinámico" (dynamic-link library).
 
-`DLL %s was not loaded`
+> _DLL %s was not loaded_
 
-`DLL %s no fue cargada`
+> DLL %s no fue cargada
 
-In the following example, although "scale" is a feminine noun in Spanish, the masculine is used because it is replacing 
-"argument", "o argumento", which is a masculine noun.
+In the following example, although `scale` is a feminine noun in Spanish, the masculine is used because it is replacing 
+"argument", o "argumento", which is a masculine noun.
 
-`'scale' should be numeric or NULL`
+> _'scale' should be numeric or NULL_
 
-`'scale' debe ser numérico o NULL`
+> 'scale' debe ser numérico o NULL
 
 ### Glossary
 
