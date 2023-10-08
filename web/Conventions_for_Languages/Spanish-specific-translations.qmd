@@ -4,35 +4,73 @@ title: "Spanish"
 
 [![](https://translate.rx.studio/widgets/r-project/es/svg-badge.svg?native=1){fig-align="left" fig-alt="translation status"}](https://translate.rx.studio/languages/es/r-project/)
 
-_This repository is a hub for all people who want to help translate R into Spanish. This README is in English, but you 
-can reach out to other translators on the R Contributors Slack if you need any additional information about the 
-project._
+_This page is a hub for all people who want to help translate R messages into Spanish. You 
+can reach out to other translators on the R Contributors Slack if you need any additional information about the project._
 
 ## About
 
 The goal of the _es_ project is to bring together all people interested in helping translate the [R 
 language](https://en.wikipedia.org/wiki/R_(programming_language)) into Spanish. If you use R a lot, we need your help!
 
-Unlike other languages, R tries to display every message in the same language as the computer it's running on. In 
-principle, this reduces R's barrier to entry; warnings and errors are very common in code written by beginners, so it's 
-essential that these messages are as clear as possible.
+Unlike other languages, R tries to display every message in the same language as the computer it's running on. 
+In principle, this reduces R's barrier to entry; warnings and errors are very common in code written by beginners (or anyone really), so it's essential that these messages are as clear as possible.
 
 ## Resources
 
 ### Style
 
+R is a programming language that's almost 30 years old and, therefore, its messages were written by many people with very different writing styles. 
+When translating, we what to generate a version of the English message the way we usually we will say it in Spanish. 
+In some cases this may involve altering the order of the elements of a sentence or adding words that were not in the original. The important thing is that the translation "sounds" as natural as possible in Spanish, respecting the content that was intended to be conveyed in the original.
+
+We also don't translate anything that is a technical term from R like, for example, function names, objects and arguments (usually between quotes).
+
+The dialectal variety of Spanish that we will use in the translation is the Latin american (because the possible target audience that speaks it is wider). We will try to make it as neutral a version as possible, therefore:
+
+* We will avoid local/regional expressions or usages, i.e., that are not widespread throughout Latin America.
+* We will not use voseo (vos/vosotros).
+
 ### Formatting
+
+The use of spaces and paragraphs in Portuguese is standardized and well established. R texts, however, have space and 
+formatting limitations that are not always obvious when translating.
+
+Most R messages have some kind of reference to the code that generated them. This happens through [format 
+specifiers](https://cplusplus.com/reference/cstdio/printf/) and we need to keep them in the same order as they appear in 
+the reference text.
+
+> _%s and %s must have the same length_
+
+> %s y %s deben tener el mismo largo
+
+If it's not possible to keep the same order, you need to specify the index of the desired substitution with `%n$<fmt>` 
+(e.g. `%1$s`, `%2$s`, and so on).
+
+Messages can also have special characters such as single quotes (`'`), double quotes (`"`), tabs (`\t`) and new lines 
+(`\n`), as well as extra spaces in strange places. To maintain a standard, we don't change this type of formatting even 
+if its use is not strictly correct.
+
+> _Conflicts attaching package %s:<br>%s_
+
+> Conflitos cargado paquete %s:<br>%s
 
 ### Grammatical gender
 
-Unlike Spanish, English does not specify grammatical gender. We will try to follow the [Manual for Non Sexist Use of 
-Language (in 
-Spanish)](http://conavim.gob.mx/work/models/CONAVIM/Resource/309/1/images/Manualparaelusonosexistadellenguaje%20completo
-%281%29.pdf) in translations as much as we can, but unfortunately that is not always possible.
+Unlike Spanish, English does not specify grammatical gender for nouns and adjectives. While it is not common to find R messages that mention people, if it happens, for example if "user" or "author" are part of the sentence, the recommendation is to avoid using any gender mark associated to them. 
 
-You can check other useful links to use grammatical gender:
-* [Gender Data](https://datadrivesimpact.course.tc/?utm_campaign=coschedule&utm_source=linkedin_company&utm_medium=DataDotOrg)
-* [Translate R Spanish](https://github.com/angelasanzo/TranslateR_Spanish/)
+In the following example, `Authors@R` won't be translated as is a special tag.
+
+`Authors@R field gives no person with name and roles`
+
+`El campo Authors@R no proporciona ninguna persona con nombre ni roles`
+
+In rare cases, the message references who is doing the programming. 
+
+`Not enough arguments passed to user macro '%s'`
+
+`No se han pasado suficientes argumentos para la macro %s'`
+
+#### Gender mark for other nouns
 
 Grammatical gender of arguments, acronyms and other nouns can usually be inferred by context. In the example below, we 
 translate "DLL" as "a biblioteca de vínculo dinámico" (dynamic-link library).
@@ -48,28 +86,15 @@ In the following example, although "scale" is a feminine noun in Spanish, the ma
 
 `'scale' debe ser numérico o NULL`
 
-In certain situations, we can simply ignore genders. In the following expression, we could translate "author" to 
-"autor(a)", but there are alternatives that allow us to completely omit it.
-
-`Authors@R field gives no person with name and author role`
-
-`El campo Authors@R no proporciona ninguna persona con nombre ni función de 'author'`
-
-In rare cases, the message references who is doing the programming. In these cases, the best we can do without 
-jeopardising comprehension or overly increasing the length of the sentence is to use "o(a)".
-
-`Not enough arguments passed to user macro '%s'`
-
-`No se han pasado suficientes argumentos para la macro %s' de usuario(a)`
-
-It's important to note that this strategy is not adopted by the French and Italian teams, who prefer to simply use the 
-masculine term "usuario". Unless there is some guideline discouraging resources such as "o(a)", we believe that our 
-standard is preferable.
-
 ### Glossary
 
 Weblate has a built-in glossary that you can consult when doing a translation. To add new terms is better to discuss it 
 with the community first and reach a consensus. You can also refer to glossaries created by different projects:
 
+### Resources 
+
+This is a living document built on the consensus of the contributors and the experience of many other projects (listed bellow). You can join the discussion in the #core-translations-es slack channel.
+
 * [R OpenSci](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
 * [R for Data Science](https://github.com/cienciadedatos/documentacion-traduccion-r4ds/blob/master/orientaciones-traduccion.md)
+* [Translate R Spanish](https://github.com/angelasanzo/TranslateR_Spanish/)
