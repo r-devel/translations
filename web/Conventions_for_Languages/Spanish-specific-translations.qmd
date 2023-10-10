@@ -25,7 +25,7 @@ In some cases this may involve altering the order of the elements of a sentence 
 
 We also don't translate anything that is a technical term from R like, for example, function names, objects and arguments (usually between quotes).
 
-The dialectal variety of Spanish that we will use in the translation is the Latin american (because the possible target audience that speaks it is wider). We will try to make it as neutral a version as possible, therefore:
+The dialectal variety of Spanish that we will use in the translation is the Latin American (because the possible target audience that speaks it is wider). We will try to make it as neutral a version as possible, therefore:
 
 * We will avoid local/regional expressions or usages, i.e., that are not widespread throughout Latin America.
 * We will not use voseo (vos/vosotros).
@@ -56,9 +56,9 @@ if its use is not strictly correct.
 
 ### Grammatical gender
 
-Unlike Spanish, English does not specify grammatical gender for nouns and adjectives. While it is not common to find R messages that mention people, if it happens, for example if "user" or "author" are part of the sentence, the recommendation is to avoid using any gender mark associated to them. 
+Unlike Spanish, English does not specify grammatical gender for nouns and adjectives. While it is not common to find R messages that mention people, if it happens, for example, if "user" or "author" are part of the sentence, the recommendation is to avoid using any gender mark associated with them. 
 
-In the following example, `Authors@R` won't be translated as is a special tag.
+In the following example, `Authors@R` won't be translated as it's a special tag.
 
 > _Authors@R field gives no person with name and roles_
 
