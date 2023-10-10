@@ -32,7 +32,7 @@ The dialectal variety of Spanish that we will use in the translation is the Lati
 
 ### Formatting
 
-The use of spaces and paragraphs in Portuguese is standardized and well established. R texts, however, have space and 
+The use of spaces and paragraphs in Spanish is standardized and well established. R texts, however, have space and 
 formatting limitations that are not always obvious when translating.
 
 Most R messages have some kind of reference to the code that generated them. This happens through [format 
