@@ -52,7 +52,7 @@ if its use is not strictly correct.
 
 > _Conflicts attaching package %s:<br>%s_
 
-> Conflitos cargado paquete %s:<br>%s
+> Conflictos cargando paquete %s:<br>%s
 
 ### Grammatical gender
 
