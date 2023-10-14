@@ -20,14 +20,15 @@ To help in the translation process, you need to:
 
 1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the 
 `#core-translations` channel;
-2. Read the [Resources](#resources) section of this document, because the translation has some conventions that should 
+2. Join [#core-translation-ca](https://app.slack.com/client/T01DW9DLB2A/C061B671J8G) channel. 
+3. Read the [Resources](#resources) section of this document, because the translation has some conventions that should 
 be followed;
-3. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
+4. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
 [@daroczig](https://twitter.com/daroczig));
-3. List every Catalan [component](https://translate.rx.studio/languages/ca/r-project/);
-4. Choose a component that's not 100% translated;
-5. Click **Unfinished strings** to list all messages that haven't been translated and
-6. Start!
+5. List every Catalan [component](https://translate.rx.studio/languages/ca/r-project/);
+6. Choose a component that's not 100% translated;
+7. Click **Unfinished strings** to list all messages that haven't been translated and
+8. Start!
 
 ## Resources
 
@@ -71,12 +72,13 @@ git clone https://$USER:$PRIVATE_TOKEN@translate.rx.studio/git/r-project/base-r-
 
 ### R-project specific conventions
 
-Non yet.
+* We use Latin quotes ([cometes baixes](https://www.softcatala.org/guia-estil-de-softcatala/aspectes-convencionals/)) as
+a «primary quotes» for cases that are not part of R code. Insert them with `AltGr + z` («) and `AltGr + x` (»).
 
 ### Glossary
 
 Weblate has a built-in [glossary](https://translate.rx.studio/browse/r-project/glossary/ca/) that will be shown while
-doing a translation in Weblate with a matching term. To add new terms, is better to discuss it with the community first
+doing a translation in Weblate with a matching term. To add new terms, better to discuss it with the community first
 and reach a consensus.
 
 ### Quality report
