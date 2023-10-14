@@ -7,6 +7,99 @@ title: "Spanish"
 _This page is a hub for all people who want to help translate R messages into Spanish. You 
 can reach out to other translators on the R Contributors Slack if you need any additional information about the project._
 
+## Sobre el proyecto
+
+El proyecto _es_ tiene como objetivo reunir a todas las personas interesadas en ayudar a traducir los mensajes del [lenguaje R](https://es.wikipedia.org/wiki/R_(lenguaje_de_programaci%C3%B3n)) al español. 
+Si utilizas R regularmente, ¡necesitamos tu ayuda!
+
+A diferencia de otros lenguajes, R intenta mostrar cada mensaje en el mismo idioma que el de la computadora en la que se está ejecutando. 
+En principio, esto reduce la barrera de entrada a R; es muy común obtener advertencias y errores en el código escrito por personas principiantes (o por cualquiera, en realidad), por lo que es muy importante que esos mensajes sean lo más claros que sea posible. 
+
+## Recursos
+
+### Estilo
+
+R es un lenguaje de programación que tiene casi 30 años, y por lo tanto, sus mensajes fueron escritos por muchas personas con estilos de escritura muy distintos. 
+Al traducir, lo que nos interesa es generar una versión del mensaje en inglés en la manera en la que lo expresaríamos en español. 
+En algunos casos esto puede implicar alterar el orden de los elementos en una oración o agregar palabras que no se encontraban en el texto original. 
+Lo importante es que la traducción "suene" lo más natural posible en español, respetando el contenido que quería ser transmitido en el original. 
+
+Tampoco traducimos nada que corresponda a un termino técnico en R como, por ejemplo, nombres de funciones, objetos y argumentos (habitualmente entre comillas).
+
+La variedad dialectal del español que utilizaremos en la traducción es la latinoamericana (porque la audiencia objetivo potencial que habla el idioma es más amplia). 
+Intentaremos traducir de la manera más neutral posible, por lo tanto:
+
+-   Evitaremos utilizar expresiones o usos locales/regionales, es decir, que no son comunes en toda latinoamérica.
+-   No utilizaremos voseo (vos/vosotros).
+
+### Formatting
+
+El uso de espacios y párrafos en español se encuentra estandarizado y bien establecido. 
+Los textos de R, no obstante, tienen limitaciones de espacios y formato que no siempre son aparentes a la hora de traducirlos.
+
+La mayoría de los mensajes de R tienen algún tipo de referencia al código que los generó. 
+Esto se logra mediante los  [especificadores de formato](https://es.wikipedia.org/wiki/Printf), y necesitamos mantenerlos en el mismo orden en el que figuran en el texto de referencia.
+
+> *%s and %s must have the same length*
+
+> %s y %s deben tener el mismo largo
+
+Si no es posible mantener el mismo orden, es necesario especificar el índice de la sustitución a efectuar utilizando `%n$<fmt>` (por ejemplo, `%1$s`, `%2$s`, y así sucesivamente).
+
+Los mensajes también pueden tener caracteres especiales como las comillas simples (`'`), dobles (`"`), tabulaciones (`\t`) y saltos de línea (`\n`), así como espacios en lugares extraños. 
+Para mantener un estándar, no modificamos este tipo de formatos incluso si su uso no es estrictamente el correcto.
+
+> *Conflicts attaching package %s:*<br>%s
+
+> Conflictos cargando paquete %s:<br>%s
+
+### Género gramatical
+
+A diferencia del español, el inglés no especifica un género gramatical para sustantivos y adjetivos. Si bien no es común encontrar mensajes de R que mencionen personas, en caso de que esto suceda (por ejemplo, si las palabras "user" o "author" son parte de la oración) la recomendación es evitar asociarles marcas de género.
+
+En el ejemplo a continuación, `Authors@R` no será traducido dado que es un _tag_ especial.
+
+> *Authors\@R field gives no person with name and roles*
+
+> El campo Authors\@R no proporciona ninguna persona con nombre ni roles
+
+En casos atípicos, el mensaje referencia a quien está programando.
+
+> *Not enough arguments passed to user macro '%s'*
+
+> No se han pasado suficientes argumentos para la macro %s'
+
+#### Marca de género para otros sustantivos
+
+El género gramatical de argumentos, acrónimos y otros sustantivos generalmente puede ser inferido por su contexto. 
+En el ejemplo a continuación, traducimos "DLL" como "una biblioteca de vínculo dinámico" (dynamic-link library).
+
+> *DLL %s was not loaded*
+
+> DLL %s no fue cargada
+
+En el siguiente ejemplo, si bien `scale` es un sistantivo femenino en español, se utiliza el masculino porque reemplaza a "argument" o "argumento", un sustantivo masculino.
+
+> *'scale' should be numeric or NULL*
+
+> 'scale' debe ser numérico o NULL
+
+### Glosario
+
+Weblate tiene un glosario integrado que puedes consultar al traducir. 
+Antes de sumarle nuevos términos, es preferible discutirlo con la comunidad de antemano para alcanzar un consenso al respecto. También puedes acudir a otros glosarios creados por diferentes proyectos.
+
+### Otros recursos
+
+Este es un documento vivo construido en base al consenso de las personas que contribuyen a este proyecto y en la experiencia de muchos otros proyectos (enumerados a continuación). Puedes unirte a la discusión en el canal de slack #core-translations-es.
+
+-   [R
+    OpenSci](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
+-   [R for Data
+    Science](https://github.com/cienciadedatos/documentacion-traduccion-r4ds/blob/master/orientaciones-traduccion.md)
+-   [Translate R
+    Spanish](https://github.com/angelasanzo/TranslateR_Spanish/)
+
 ## About
 
 The goal of the _es_ project is to bring together all people interested in helping translate the [R 
@@ -20,7 +113,7 @@ In principle, this reduces R's barrier to entry; warnings and errors are very co
 ### Style
 
 R is a programming language that's almost 30 years old and, therefore, its messages were written by many people with very different writing styles. 
-When translating, we what to generate a version of the English message the way we usually we will say it in Spanish. 
+When translating, we want to generate a version of the English message in the way we would usually say it in Spanish. 
 In some cases this may involve altering the order of the elements of a sentence or adding words that were not in the original. The important thing is that the translation "sounds" as natural as possible in Spanish, respecting the content that was intended to be conveyed in the original.
 
 We also don't translate anything that is a technical term from R like, for example, function names, objects and arguments (usually between quotes).
@@ -73,7 +166,7 @@ In rare cases, the message references who is doing the programming.
 #### Gender mark for other nouns
 
 Grammatical gender of arguments, acronyms and other nouns can usually be inferred by context. In the example below, we 
-translate "DLL" as "a biblioteca de vínculo dinámico" (dynamic-link library).
+translate "DLL" as "una biblioteca de vínculo dinámico" (dynamic-link library).
 
 > _DLL %s was not loaded_
 
@@ -88,7 +181,7 @@ In the following example, although `scale` is a feminine noun in Spanish, the ma
 
 ### Glossary
 
-Weblate has a built-in glossary that you can consult when doing a translation. To add new terms is better to discuss it 
+Weblate has a built-in glossary that you can consult when doing a translation. Before adding new terms it's better to discuss it 
 with the community first and reach a consensus. You can also refer to glossaries created by different projects:
 
 ### Resources 
