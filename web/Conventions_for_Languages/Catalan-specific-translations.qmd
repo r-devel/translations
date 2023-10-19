@@ -35,7 +35,8 @@ be followed;
 ### Style
 
 The Catalan project sticks to the [Guia d'estil de Softcatalà](https://www.softcatala.org/guia-estil-de-softcatala/).
-Have a look and check it when in doubts.
+Have a look and check it when in doubts. There is a 
+[cheat sheet](https://github.com/Softcatala/resum-guiaestil/blob/master/guia.pdf) with a resume.
 
 ### Terminology
 
