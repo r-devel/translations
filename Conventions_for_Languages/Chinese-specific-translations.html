@@ -283,13 +283,15 @@ ul.task-list li input[type="checkbox"] {
 <li>基本统计术语应当参考当前主流应用词汇；</li>
 <li><code>%s</code>,<code>%i</code>,<code>%1$s</code>等被称作占位符，这里的文字会按照运行时生成的内容自动替换，您不能去掉或增加任何占位符，仅调整语序；</li>
 <li>对于上述3中的占位符，您可根据需要调整其语序。例如：<code>%s in %s must be a numerical</code> 可被翻译为 <code>%2$s 中的 %1$s 必须是数值型</code>。显然您可以看到这里每个<code>%s</code>的含义不一样，如果您需要调整第二个<code>%s</code>的语序，您可以添加它们的位置像<code>1$</code>这样的参数到其中。如果您不确定如何使用它，可以参考其他已被翻译的内容；</li>
+<li>禁止词汇：查阅 Weblate 的术语册一栏，会出现建议翻译/禁止翻译为XXX的提示，例如禁止将’robust’ 翻译为“鲁棒”，而应当翻译为稳健性；</li>
 </ol>
 </section>
 <section id="排版指南" class="level2">
 <h2 class="anchored" data-anchor-id="排版指南">排版指南</h2>
 <ol type="1">
 <li>中英文（含数字）混合排版时，应当在英文字符前后保持一个空格，像这样<code>欢迎使用 R 语言</code>；</li>
-<li>无须翻译的内容：一些内置函数、参数、值不能被翻译。例如<code>WARNING: no value given for '--max-connections'</code> 其中 <code>'--max-connections'</code> 这样的我们可以判断为参数，则保持不变。因此我们翻译成<code>警告：'--max-connections' 没有给定值</code></li>
+<li>无须翻译的内容：一些内置函数、参数、值不能被翻译。例如<code>WARNING: no value given for '--max-connections'</code> 其中 <code>'--max-connections'</code> 这样的我们可以判断为参数，则保持不变。因此我们翻译成<code>警告：'--max-connections' 没有给定值</code>；</li>
+<li>保持术语一致性：我们应当尽可能保持程序和统计术语在上下文的一致性，并保证其与一些教材、论文当常用术语的继承性。</li>
 </ol>
 
 

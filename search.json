@@ -151,14 +151,14 @@
     "href": "Conventions_for_Languages/Chinese-specific-translations.html#基本用语",
     "title": "Chinese",
     "section": "基本用语",
-    "text": "基本用语\n\n对翻译中的“你(you)”代称应使用敬语“您”，示例：您应该检查变量类型；\n基本统计术语应当参考当前主流应用词汇；\n%s,%i,%1$s等被称作占位符，这里的文字会按照运行时生成的内容自动替换，您不能去掉或增加任何占位符，仅调整语序；\n对于上述3中的占位符，您可根据需要调整其语序。例如：%s in %s must be a numerical 可被翻译为 %2$s 中的 %1$s 必须是数值型。显然您可以看到这里每个%s的含义不一样，如果您需要调整第二个%s的语序，您可以添加它们的位置像1$这样的参数到其中。如果您不确定如何使用它，可以参考其他已被翻译的内容；"
+    "text": "基本用语\n\n对翻译中的“你(you)”代称应使用敬语“您”，示例：您应该检查变量类型；\n基本统计术语应当参考当前主流应用词汇；\n%s,%i,%1$s等被称作占位符，这里的文字会按照运行时生成的内容自动替换，您不能去掉或增加任何占位符，仅调整语序；\n对于上述3中的占位符，您可根据需要调整其语序。例如：%s in %s must be a numerical 可被翻译为 %2$s 中的 %1$s 必须是数值型。显然您可以看到这里每个%s的含义不一样，如果您需要调整第二个%s的语序，您可以添加它们的位置像1$这样的参数到其中。如果您不确定如何使用它，可以参考其他已被翻译的内容；\n禁止词汇：查阅 Weblate 的术语册一栏，会出现建议翻译/禁止翻译为XXX的提示，例如禁止将’robust’ 翻译为“鲁棒”，而应当翻译为稳健性；"
   },
   {
     "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
     "href": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
     "title": "Chinese",
     "section": "排版指南",
-    "text": "排版指南\n\n中英文（含数字）混合排版时，应当在英文字符前后保持一个空格，像这样欢迎使用 R 语言；\n无须翻译的内容：一些内置函数、参数、值不能被翻译。例如WARNING: no value given for '--max-connections' 其中 '--max-connections' 这样的我们可以判断为参数，则保持不变。因此我们翻译成警告：'--max-connections' 没有给定值"
+    "text": "排版指南\n\n中英文（含数字）混合排版时，应当在英文字符前后保持一个空格，像这样欢迎使用 R 语言；\n无须翻译的内容：一些内置函数、参数、值不能被翻译。例如WARNING: no value given for '--max-connections' 其中 '--max-connections' 这样的我们可以判断为参数，则保持不变。因此我们翻译成警告：'--max-connections' 没有给定值；\n保持术语一致性：我们应当尽可能保持程序和统计术语在上下文的一致性，并保证其与一些教材、论文当常用术语的继承性。"
   },
   {
     "objectID": "Conventions_for_Languages/Brazilian‐Portugese-specific-translations.html",
