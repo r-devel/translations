@@ -264,6 +264,7 @@ Weblate will provide a suggestion on how to fix, but in short:
 
     ```sh
     *.po merge=po3way
+    *.pot merge=po3way
     ```
 
 7. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
@@ -275,7 +276,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     git rebase --continue
     ```
 
-    I usually do the `git` commands inside Docker (at `app/data/vcs/r-project/base-r-gui`), and the edits outside of Docker (at `/var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui`) as it's more comfortable, but feel free to install anything that makes your life easier even within Docker (see e.g. `po3way` above).
+    I usually do the `git` commands inside Docker (at `app/data/vcs/r-project/base-r-gui`), and the edits outside of Docker (at `/var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui`) as it's more comfortable, but feel free to install anything that makes your life easier even within Docker (see e.g. the installation steps for `po3way` above on how to become root).
 
 To see the current progress of conflict resolution, run something like:
 
