@@ -206,13 +206,20 @@ rebase refs/remotes/origin/trunk: command returned error: 1
 Weblate will provide a suggestion on how to fix, but in short:
 
 1. SSH to the Weblate server
-2. Attach the Docker container:
+2. Make a backup on the Git repo before messing with the rebase process:
+
+    ```sh
+    tar -zcvf /root/base-r-gui-repo-$(date '+%Y-%m-%d').tar.gz \
+      /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
+    ```
+
+3. Attach the Docker container:
 
     ```sh
     sudo docker exec -ti weblate-docker_weblate_1 bash
     ```
 
-3. Enter the git folder:
+4. Enter the git folder:
 
     ```sh
     cd app/data/vcs/r-project/base-r-gui
@@ -224,14 +231,14 @@ Weblate will provide a suggestion on how to fix, but in short:
     /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
     ```
 
-4. Pull from SVN and start the rebase process to see the actual errors:
+5. Pull from SVN and start the rebase process to see the actual errors:
 
     ```sh
     git svn fetch
     git svn rebase
     ```
 
-5. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker):
+6. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker):
 
    ```sh
    pip install po3way
@@ -259,7 +266,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     *.po merge=po3way
     ```
 
-6. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
+7. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
 
     ```sh
     mcedit src/library/base/po/es.po
