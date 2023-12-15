@@ -213,7 +213,7 @@ Weblate will provide a suggestion on how to fix, but in short:
       /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
     ```
 
-3. Attach the Docker container:
+3. Attach the Docker container (this image is offered by `weblate`):
 
     ```sh
     sudo docker exec -ti weblate-docker_weblate_1 bash
