@@ -244,7 +244,7 @@ Weblate will provide a suggestion on how to fix, but in short:
    pip install po3way
    ```
 
-   Then add this folder to `$PATH` or symlink it, e.g. starting Docker as root:
+   Then add `/home/weblate/.local/bin` to `$PATH` or symlink it, e.g. starting Docker as root:
 
 
    ```sh
@@ -252,7 +252,7 @@ Weblate will provide a suggestion on how to fix, but in short:
    # ln -s /home/weblate/.local/bin/po3way /bin/po3way
    ```
 
-   With the regular `weblate` user inside Docker, edit `.git/config` at `app/data/vcs/r-project/base-r-gui` to add:
+   With the regular `weblate` user (i.e., no longer as `root`) inside Docker, edit `.git/config` inside `app/data/vcs/r-project/base-r-gui` to add:
 
     ```sh
     [merge "po3way"]
