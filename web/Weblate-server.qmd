@@ -238,7 +238,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     git svn rebase
     ```
 
-6. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker):
+6. Optionally, you might need to install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker):
 
    ```sh
    pip install po3way
