@@ -225,7 +225,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     cd app/data/vcs/r-project/base-r-gui
     ```
 
-    When looking for this folder outside of Docker, you can find it at
+    As noted above when we made a copy of the repo, this folder can also be found in Weblate outside Docker:
 
     ```
     /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
