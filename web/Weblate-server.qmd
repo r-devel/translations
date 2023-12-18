@@ -154,7 +154,8 @@ To submit a patch file on the translations found in Weblate but not in the trunk
     old_files <- po_files()
     set_branch('main')
 
-    added_files <- setdiff(new_files, old_files)                                                                                                                                                                                                   
+    added_files <- setdiff(new_files, old_files)
+
     for (f in added_files) {
       if (fread(cmd = paste('pocount --csv', f), sep = ',', fill = TRUE)$`Translated Messages` == 0) {
         log_info('dropping empty {f}')
@@ -205,26 +206,68 @@ rebase refs/remotes/origin/trunk: command returned error: 1
 Weblate will provide a suggestion on how to fix, but in short:
 
 1. SSH to the Weblate server
-2. Attach the Docker container:
+2. Make a backup on the Git repo before messing with the rebase process:
+
+    ```sh
+    tar -zcvf /root/base-r-gui-repo-$(date '+%Y-%m-%d').tar.gz \
+      /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
+    ```
+
+3. Attach the Docker container (this image is offered by `weblate`):
 
     ```sh
     sudo docker exec -ti weblate-docker_weblate_1 bash
     ```
 
-3. Enter the git folder:
+4. Enter the git folder:
 
     ```sh
     cd app/data/vcs/r-project/base-r-gui
     ```
 
-4. Pull from SVN and start the rebase process to see the actual errors:
+    As noted above when we made a copy of the repo, this folder can also be found in Weblate outside Docker:
+
+    ```
+    /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
+    ```
+
+5. Pull from SVN and start the rebase process to see the actual errors:
 
     ```sh
     git svn fetch
     git svn rebase
     ```
 
-5. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
+6. Optionally, you might need to install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker):
+
+   ```sh
+   pip install po3way
+   ```
+
+   Then add `/home/weblate/.local/bin` to `$PATH` or symlink it, e.g. starting Docker as root:
+
+
+   ```sh
+   $ sudo docker exec -u root -ti weblate-docker_weblate_1 bash
+   # ln -s /home/weblate/.local/bin/po3way /bin/po3way
+   ```
+
+   With the regular `weblate` user (i.e., no longer as `root`) inside Docker, edit `.git/config` inside `app/data/vcs/r-project/base-r-gui` to add:
+
+    ```sh
+    [merge "po3way"]
+        name = po file merge driver
+        driver = po3way --git-merge-driver -- %A %O %B
+    ```
+
+    Also edit `.gitattributes` to include:
+
+    ```sh
+    *.po merge=po3way
+    *.pot merge=po3way
+    ```
+
+7. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
 
     ```sh
     mcedit src/library/base/po/es.po
@@ -232,6 +275,8 @@ Weblate will provide a suggestion on how to fix, but in short:
     git commit -m "resolve conflict"
     git rebase --continue
     ```
+
+    I usually do the `git` commands inside Docker (at `app/data/vcs/r-project/base-r-gui`), and the edits outside of Docker (at `/var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui`) as it's more comfortable, but feel free to install anything that makes your life easier even within Docker (see e.g. the installation steps for `po3way` above on how to become root).
 
 To see the current progress of conflict resolution, run something like:
 
