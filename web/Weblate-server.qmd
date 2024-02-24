@@ -238,21 +238,27 @@ Weblate will provide a suggestion on how to fix, but in short:
     git svn rebase
     ```
 
-6. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker):
-
-   ```sh
-   pip install po3way
-   ```
-
-   Then add this folder to `$PATH` or symlink it, e.g. starting Docker as root:
+6. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker). Start Docker as root to install `po3way` system-wide:
 
 
    ```sh
    $ sudo docker exec -u root -ti weblate-docker_weblate_1 bash
-   # ln -s /home/weblate/.local/bin/po3way /bin/po3way
    ```
 
-   With the regular `weblate` user inside Docker, edit `.git/config` at `app/data/vcs/r-project/base-r-gui` to add:
+   Then in the Docker container:
+
+   ```sh
+   # pip install --prefix /usr/local po3way
+   # exit
+   ```
+
+   To set up `git` to always use `po3way`, first start the Docker container using the regular user:
+
+   ```sh
+   $ sudo docker exec -ti weblate-docker_weblate_1 bash
+   ```
+
+    And edit `.git/config` at `app/data/vcs/r-project/base-r-gui` to add the below content:
 
     ```sh
     [merge "po3way"]
