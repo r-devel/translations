@@ -139,7 +139,7 @@ To generate a report on the translation updates in a time period:
 
 To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
 
-1. Update the weblate repo from Subversion at <https://translate.rx.studio/projects/r-project/#repository>
+1. (_if necessary, i.e., there are any "Missing commits in the Weblate repository"_) Update the weblate repo from Subversion at <https://translate.rx.studio/projects/r-project/#repository>
 2. Clone the weblate git repo from <https://translate.rx.studio/git/r-project/base-r-gui/>
 3. Drop empty translation files to reduce noise, e.g. something like:
 
