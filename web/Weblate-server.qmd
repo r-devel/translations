@@ -213,7 +213,7 @@ Weblate will provide a suggestion on how to fix, but in short:
       /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
     ```
 
-3. Attach the Docker container:
+3. Attach the Docker container (this image is offered by `weblate`):
 
     ```sh
     sudo docker exec -ti weblate-docker_weblate_1 bash
@@ -225,7 +225,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     cd app/data/vcs/r-project/base-r-gui
     ```
 
-    When looking for this folder outside of Docker, you can find it at
+    As noted above when we made a copy of the repo, this folder can also be found in Weblate outside Docker:
 
     ```
     /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
@@ -239,7 +239,6 @@ Weblate will provide a suggestion on how to fix, but in short:
     ```
 
 6. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker). Start Docker as root to install `po3way` system-wide:
-
 
    ```sh
    $ sudo docker exec -u root -ti weblate-docker_weblate_1 bash
