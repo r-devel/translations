@@ -129,6 +129,8 @@ docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml 
 
 ## Quarterly patch for R Core
 
+_NB: Weblate links below assume you're logged in there, otherwise you'll be redirected to the home page_
+
 To generate a report on the translation updates in a time period:
 
 1. Visit <https://translate.rx.studio/projects/r-project/#reports>
