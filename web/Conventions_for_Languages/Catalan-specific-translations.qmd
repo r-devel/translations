@@ -20,15 +20,15 @@ To help in the translation process, you need to:
 
 1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the 
 `#core-translations` channel;
-2. Join [#core-translation-ca](https://app.slack.com/client/T01DW9DLB2A/C061B671J8G) channel. 
-3. Read the [Resources](#resources) section of this document, because the translation has some conventions that should 
+1. Join [#core-translation-ca](https://app.slack.com/client/T01DW9DLB2A/C061B671J8G) channel. 
+1. Read the [Resources](#resources) section of this document, because the translation has some conventions that should 
 be followed;
-4. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
+1. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
 [@daroczig](https://twitter.com/daroczig));
-5. List every Catalan [component](https://translate.rx.studio/languages/ca/r-project/);
-6. Choose a component that's not 100% translated;
-7. Click **Unfinished strings** to list all messages that haven't been translated and
-8. Start!
+1. List every Catalan [component](https://translate.rx.studio/languages/ca/r-project/);
+1. Choose a component that's not 100% translated;
+1. Click **Unfinished strings** to list all messages that haven't been translated and
+1. Start!
 
 ## Resources
 
@@ -66,10 +66,10 @@ Alternatively, you can:
 git clone https://$USER:$PRIVATE_TOKEN@translate.rx.studio/git/r-project/base-r-gui/
 ```
 
-2. Look for the files at `src/library/*/po/*ca.po` and use any app to help you to review and fix the translations (eg. 
+1. Look for the files at `src/library/*/po/*ca.po` and use any app to help you to review and fix the translations (eg. 
 [Poedit](https://poedit.net/) or [Lokalize](https://apps.kde.org/ca/lokalize/))
 
-3. You can not push to this repository. To upload the finished files, use the Weblate web interface (see image above).
+1. You can not push to this repository. To upload the finished files, use the Weblate web interface (see image above).
 
 ### R-project specific conventions
 

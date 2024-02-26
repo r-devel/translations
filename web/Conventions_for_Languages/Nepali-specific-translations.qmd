@@ -43,66 +43,66 @@ accuracy and linguistic clarity of the translated text. Here's a translation gui
 Before translating any message or warning, it's crucial to understand the context. Know what the message is conveying, 
 what part of the code it relates to, and its intended audience.
 
-2. Maintain Technical Accuracy:
+1. Maintain Technical Accuracy:
 
 Ensure that the translated message conveys the same technical information as the original. The goal is to make sure that 
 users can still understand the issue or information provided.
 
-3. Preserve Clarity:
+1. Preserve Clarity:
 
 Clarity is paramount in translations. Make sure the translated message is clear and easy to understand. Avoid overly 
 complex or verbose translations.
 
-4. Use Formal Nepali:
+1. Use Formal Nepali:
 
 When translating messages for a general audience or professional context. Avoid using dialects unless the message is for 
 a specific region where a particular dialect is preferred.
 
-5. Consistency:
+1. Consistency:
 
 Maintain consistency in your translations. Use consistent terminology and wording throughout the translation to avoid 
 confusion.
 
-6. Be Mindful of Length:
+1. Be Mindful of Length:
 
 Consider that the Nepali translation might be longer or shorter than the English text. Ensure that the translated 
 message fits within the space allocated in the code or interface.
 
-7. Retain Technical Terms:
+1. Retain Technical Terms:
 
 For technical terms and code-related elements such as function names, object names, and variable names, it's often best 
 to keep them in English. Use the Nepali script for these terms if necessary but maintain the English terminology.
 
-8. Handle Plurals:
+1. Handle Plurals:
 
 Nepali nouns have different forms for singular and plural. Ensure that you correctly handle plurals when translating 
 messages that involve counts or quantities.
 
-9. Punctuation:
+1. Punctuation:
 
 Use punctuation stop (|) and ensure proper spacing around punctuation marks.
 
-10. Special Characters:
+1. Special Characters:
 
 Some technical messages may contain special characters like `%s, %d, or %f` for string, integer, and floating-point 
 substitutions. Keep these special characters and their order in the translated message, making sure they correspond 
 correctly with the placeholders.
 
-11. Test the Translation:
+1. Test the Translation:
 
 After translating, test the messages in the R environment to ensure they appear correctly and are still functional.
 
-12. Document Translations:
+1. Document Translations:
 
 Keep a record of your translations for reference. This documentation can help maintain consistency in future 
 translations and facilitate collaboration with other translators.
 
-13. Seek Feedback:
+1. Seek Feedback:
 
 If possible, seek feedback from native Nepali speakers who are also familiar with programming to ensure the translations 
 make sense in the intended context.
 
-14. Revise and Update:
+1. Revise and Update:
 
 Programming languages evolve, and so should your translations. Periodically review and update your translations to align 
 with changes in the R programming language or best practices in translation.
