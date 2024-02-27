@@ -158,14 +158,11 @@ To submit a patch file on the translations found in Weblate but not in the trunk
 
     added_files <- setdiff(new_files, old_files)
 
-    for (f in added_files) {
-      if (fread(cmd = paste('pocount --csv', f), sep = ',', fill = TRUE)$`Translated Messages` == 0) {
-        log_info('dropping empty {f}')
-        unlink(f)
-      } else {
-        log_info('keeping {f}')
-      }
-    }
+    po_counts <- fread(cmd = paste('pocount --csv', paste(added_files, collapse = " ")), sep = ',', fill = TRUE)
+    po_counts[`Translated Messages` == 0, {
+       log_info('dropping {.N} empty files:\n {toString(Filename)}')
+       unlink(Filename)
+    }]
     ```
 
 4. Clone the subversion R repo or its git clone from `git@github.com:wch/r-source.git`
