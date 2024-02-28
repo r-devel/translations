@@ -176,7 +176,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     po_summary[, package := basename(dirname(dirname(filename)))]
     # Drop empty & record files
     po_summary[n_translated_weblate == 0, {
-       log_info('dropping {.N} empty files:')
+       log_info('Dropping {.N} empty files:')
        .SD[, by = package, {
           log_level(INFO, 'From package {blue(.BY$package)}:')
           log_level(INFO, '  {toString(green(basename(filename)))}', .topenv = .SD) # NB: Need .SD since data.table doesn't pick up the variable from the string
