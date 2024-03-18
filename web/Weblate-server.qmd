@@ -150,7 +150,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     git fetch svn master                                                       # retrieve the latest from SVN
     ```
 
-1. Revert unwanted changes to reduce noise, e.g. something like:
+1. Make needed manual changes to reduce noise and ensure quality, e.g. something like:
 
     ```r
     library(data.table)
@@ -166,13 +166,19 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     }
     set_branch <- \(branch) system2('git', c('checkout', branch))
 
-    # SUMMARIZE the changed translations, and delete empty .po files
     set_branch('weblate/master')
+    po_report <- tools::checkPoFiles("")
+    if (length(po_report)) {
+      print(po_report)
+      stop("Fix above issues in .po files identified by tools::checkPoFiles() to proceed.")
+    }
+
     weblate_summary <- po_counts(po_files())
     set_branch('svn/master')
     svn_summary <- po_counts(po_files())
     set_branch('master')
 
+    # SUMMARIZE the changed translations, and delete empty .po files
     po_summary <- merge(weblate_summary, svn_summary, by = "filename", all = TRUE, suffixes = c("_weblate", "_svn"))
     po_summary[, package := basename(dirname(dirname(filename)))]
     # Drop empty & record files
