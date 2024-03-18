@@ -131,50 +131,83 @@ docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml 
 
 _NB: Weblate links below assume you're logged in there, otherwise you'll be redirected to the home page_
 
-To generate a report on the translation updates in a time period:
+### To generate a report on the translation updates in a time period:
 
 1. Visit <https://translate.rx.studio/projects/r-project/#reports>
 1. Select time period and generate report in rST format
 1. Convert ~markdown to HTML and share in the R Contributors slack group's #core-translation channel
 
-To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
+### To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
 
-1. (_if necessary, i.e., there are any "Missing commits in the Weblate repository"_) Update the weblate repo from Subversion at <https://translate.rx.studio/projects/r-project/#repository>
-1. Clone the weblate git repo from <https://translate.rx.studio/git/r-project/base-r-gui/>
-1. Drop empty translation files to reduce noise, e.g. something like:
+The basic idea is to compare the Weblate repo (which copies the R subversion repo, but also adds translations provided _via_ Weblate) to the "official" R sources; any difference in .po files should be submitted as a patch.
+
+1. Make sure the Weblate repo is fully up-to-date. Check status at https://translate.rx.studio/projects/r-project/#repository -- be sure there are no `Update` or `Commit` actions needed.
+1. Get the two repos cloned on any machine:
+
+    ```sh
+    git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ # remote #1: Weblate source
+    git remote add svn git remote add svn git@github.com:r-devel/r-svn.git     # remote #2: SVN source
+    git fetch svn master                                                       # retrieve the latest from SVN
+    ```
+
+1. Revert unwanted changes to reduce noise, e.g. something like:
 
     ```r
     library(data.table)
+    library(crayon)
     library(logger)
 
-    last_commit <- '...'
-    po_files <- \() list.files(pattern = '\\.po$', recursive = TRUE, full.names = TRUE)
+    po_files <- \() list.files(pattern = '\\.po$', recursive = TRUE)
+    # pocount is available from e.g. 'apt install translate-toolkit'
+    po_counts <- function(f) {
+      x = fread(cmd = paste('pocount --csv', paste(f, collapse = " ")), sep = ',', fill = TRUE)
+      setnames(x, c("Filename", "Translated Messages"), c("filename", "n_translated"))
+      x
+    }
     set_branch <- \(branch) system2('git', c('checkout', branch))
 
-    new_files <- po_files()
-    set_branch(last_commit)
-    old_files <- po_files()
-    set_branch('main')
+    # SUMMARIZE the changed translations, and delete empty .po files
+    set_branch('weblate/master')
+    weblate_summary <- po_counts(po_files())
+    set_branch('svn/master')
+    svn_summary <- po_counts(po_files())
+    set_branch('master')
 
-    added_files <- setdiff(new_files, old_files)
+    po_summary <- merge(weblate_summary, svn_summary, by = "filename", all = TRUE, suffixes = c("_weblate", "_svn"))
+    po_summary[, package := basename(dirname(dirname(filename)))]
+    # Drop empty & record files
+    po_summary[n_translated_weblate == 0, {
+       log_info('Dropping {.N} empty files:')
+       .SD[, by = package, {
+          log_level(INFO, 'From package {blue(.BY$package)}:')
+          log_level(INFO, '  {toString(green(basename(filename)))}', .topenv = .SD) # NB: Need .SD since data.table doesn't pick up the variable from the string
+       }]
+       unlink(filename)
+       NULL
+    }]
+    po_summary <- po_summary[n_translated_weblate > 0]
 
-    for (f in added_files) {
-      if (fread(cmd = paste('pocount --csv', f), sep = ',', fill = TRUE)$`Translated Messages` == 0) {
-        log_info('dropping empty {f}')
-        unlink(f)
-      } else {
-        log_info('keeping {f}')
-      }
-    }
+    # (optional) Summarize the update for the rest of the files
+    setnafill(po_summary, fill = 0L, cols = which(sapply(po_summary, is.numeric)))
+    po_summary[, n_newly_translated := n_translated_weblate - n_translated_svn]
+    po_summary[n_newly_translated > 0, {
+      log_info('New translations in {.N} files')
+      .SD[, by = package, {
+        log_level(INFO, 'From package {blue(.BY$package)}:')
+        log_level(INFO, '  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}', .topenv = .SD)
+      }]
+      NULL
+    }]
+
+    # REPLACE 'Report-Msgid-Bugs-To' metadata field pointing to #core-translation-po-bugs
+    system2("sed", c("-i", "'s/sourcestringbugs.o40l9j@zapiermail.com/bugs.r-project.org/'", po_summary$filename))
     ```
 
-1. Clone the subversion R repo or its git clone from `git@github.com:wch/r-source.git`
-1. Make sure that both repos are up-to-date!
-1. Copy over `src/library` from the weblate repo to R/trunk.
 1. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
 
     ```sh
-    git diff --no-prefix 366f45a4599e04e00df59d063c67ccfadf27ae96
+    # NB: _not_ 'git diff weblate/master svn/master' since we've just deleted the empty .po files locally
+    git diff svn/master --no-prefix -- "*.po"
     ```
 
 1. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
