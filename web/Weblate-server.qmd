@@ -134,15 +134,15 @@ _NB: Weblate links below assume you're logged in there, otherwise you'll be redi
 ### To generate a report on the translation updates in a time period:
 
 1. Visit <https://translate.rx.studio/projects/r-project/#reports>
-2. Select time period and generate report in rST format
-3. Convert ~markdown to HTML and share in the R Contributors slack group's #core-translation channel
+1. Select time period and generate report in rST format
+1. Convert ~markdown to HTML and share in the R Contributors slack group's #core-translation channel
 
 ### To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
 
 The basic idea is to compare the Weblate repo (which copies the R subversion repo, but also adds translations provided _via_ Weblate) to the "official" R sources; any difference in .po files should be submitted as a patch.
 
 1. Make sure the Weblate repo is fully up-to-date. Check status at https://translate.rx.studio/projects/r-project/#repository -- be sure there are no `Update` or `Commit` actions needed.
-2. Get the two repos cloned on any machine:
+1. Get the two repos cloned on any machine:
 
     ```sh
     git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ # remote #1: Weblate source
@@ -150,7 +150,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     git fetch svn master                                                       # retrieve the latest from SVN
     ```
 
-3. Revert unwanted changes to reduce noise, e.g. something like:
+1. Revert unwanted changes to reduce noise, e.g. something like:
 
     ```r
     library(data.table)
@@ -203,14 +203,14 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     system2("sed", c("-i", "'s/sourcestringbugs.o40l9j@zapiermail.com/bugs.r-project.org/'", po_summary$filename))
     ```
 
-4. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
+1. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
 
     ```sh
     # NB: _not_ 'git diff weblate/master svn/master' since we've just deleted the empty .po files locally
     git diff svn/master --no-prefix -- "*.po"
     ```
 
-8. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
+1. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
 
 ## Maintenance
 
@@ -241,20 +241,20 @@ rebase refs/remotes/origin/trunk: command returned error: 1
 Weblate will provide a suggestion on how to fix, but in short:
 
 1. SSH to the Weblate server
-2. Make a backup on the Git repo before messing with the rebase process:
+1. Make a backup on the Git repo before messing with the rebase process:
 
     ```sh
     tar -zcvf /root/base-r-gui-repo-$(date '+%Y-%m-%d').tar.gz \
       /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
     ```
 
-3. Attach the Docker container (this image is offered by `weblate`):
+1. Attach the Docker container (this image is offered by `weblate`):
 
     ```sh
     sudo docker exec -ti weblate-docker_weblate_1 bash
     ```
 
-4. Enter the git folder:
+1. Enter the git folder:
 
     ```sh
     cd app/data/vcs/r-project/base-r-gui
@@ -266,14 +266,14 @@ Weblate will provide a suggestion on how to fix, but in short:
     /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
     ```
 
-5. Pull from SVN and start the rebase process to see the actual errors:
+1. Pull from SVN and start the rebase process to see the actual errors:
 
     ```sh
     git svn fetch
     git svn rebase
     ```
 
-6. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker). Start Docker as root to install `po3way` system-wide:
+1. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker). Start Docker as root to install `po3way` system-wide:
 
    ```sh
    $ sudo docker exec -u root -ti weblate-docker_weblate_1 bash
@@ -307,7 +307,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     *.pot merge=po3way
     ```
 
-7. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
+1. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
 
     ```sh
     mcedit src/library/base/po/es.po
@@ -339,14 +339,14 @@ In case of any questions, reach out to them on the R-devel Slack's `#core-transl
 To add a new admin in the Weblate app:
 
 1. Go to the [Users page](https://translate.rx.studio/manage/users)
-2. Select the user
-3. Go to "Groups"
-4. Add to the "The R Project for Statistical Computing / Administration" group
+1. Select the user
+1. Go to "Groups"
+1. Add to the "The R Project for Statistical Computing / Administration" group
 
 To grant SSH access:
 
 1. Share your public key with one of the admins, who will add that to `~/.ssh/authorized_keys`
-2. Ask for the SSH config from one of the admins
+1. Ask for the SSH config from one of the admins
 
 ### Team leaders
 

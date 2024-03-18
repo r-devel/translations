@@ -95,12 +95,12 @@ improve the quality of your translations.
 # How to Contribute:
 
 1. Join [R Contributors](https://app.slack.com/client/T01DW9DLB2A/C01EST8PTFA)  Slack group. 
-2. Join [#core-translation](https://app.slack.com/client/T01DW9DLB2A/C0210D7EN1X)  channel. 
-3. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
+1. Join [#core-translation](https://app.slack.com/client/T01DW9DLB2A/C0210D7EN1X)  channel. 
+1. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
 [@daroczig](https://twitter.com/daroczig)); 
-4. Choose Arabic language to see all components. 
-5. Add your translation to a component that's not 100% translated. 
-6. Review translated components. 
+1. Choose Arabic language to see all components. 
+1. Add your translation to a component that's not 100% translated. 
+1. Review translated components. 
 
 ## Glossary #### Note: The Arabic translation here is based on Google translate! It requires some review and edit. This 
 can be done later!
