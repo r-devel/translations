@@ -409,7 +409,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="at">-o</span> weblate https://translate.rx.studio/git/r-project/base-r-gui/ <span class="co"># remote #1: Weblate source</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add svn git remote add svn git@github.com:r-devel/r-svn.git     <span class="co"># remote #2: SVN source</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch svn master                                                       <span class="co"># retrieve the latest from SVN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Drop empty translation files to reduce noise, e.g.&nbsp;something like:</p>
+<li><p>Revert unwanted changes to reduce noise, e.g.&nbsp;something like:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(crayon)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(logger)</span>
@@ -423,37 +423,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>set_branch <span class="ot">&lt;-</span> \(branch) <span class="fu">system2</span>(<span class="st">'git'</span>, <span class="fu">c</span>(<span class="st">'checkout'</span>, branch))</span>
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="fu">set_branch</span>(<span class="st">'weblate/master'</span>)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>weblate_summary <span class="ot">&lt;-</span> <span class="fu">po_counts</span>(<span class="fu">po_files</span>())</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="fu">set_branch</span>(<span class="st">'svn/master'</span>)</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>svn_summary <span class="ot">&lt;-</span> <span class="fu">po_counts</span>(<span class="fu">po_files</span>())</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="fu">set_branch</span>(<span class="st">'master'</span>)</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>po_summary <span class="ot">&lt;-</span> <span class="fu">merge</span>(weblate_summary, svn_summary, <span class="at">by =</span> <span class="st">"filename"</span>, <span class="at">all =</span> <span class="cn">TRUE</span>, <span class="at">suffixes =</span> <span class="fu">c</span>(<span class="st">"_weblate"</span>, <span class="st">"_svn"</span>))</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>po_summary[, package <span class="sc">:</span><span class="er">=</span> <span class="fu">basename</span>(<span class="fu">dirname</span>(<span class="fu">dirname</span>(filename)))]</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop empty &amp; record files</span></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>po_summary[n_translated_weblate <span class="sc">==</span> <span class="dv">0</span>, {</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>   <span class="fu">log_info</span>(<span class="st">'Dropping {.N} empty files:'</span>)</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>   .SD[, by <span class="ot">=</span> package, {</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>      <span class="fu">log_level</span>(INFO, <span class="st">'From package {blue(.BY$package)}:'</span>)</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>      <span class="fu">log_level</span>(INFO, <span class="st">'  {toString(green(basename(filename)))}'</span>, <span class="at">.topenv =</span> .SD) <span class="co"># NB: Need .SD since data.table doesn't pick up the variable from the string</span></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>   }]</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>   <span class="fu">unlink</span>(filename)</span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>   <span class="cn">NULL</span></span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>}]</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>po_summary <span class="ot">&lt;-</span> po_summary[n_translated_weblate <span class="sc">&gt;</span> <span class="dv">0</span>]</span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="co"># (optional) Summarize the update for the rest of the files</span></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a><span class="fu">setnafill</span>(po_summary, <span class="at">fill =</span> <span class="dv">0</span>L, <span class="at">cols =</span> <span class="fu">which</span>(<span class="fu">sapply</span>(po_summary, is.numeric)))</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>po_summary[, n_newly_translated <span class="sc">:</span><span class="er">=</span> n_translated_weblate <span class="sc">-</span> n_translated_svn]</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>po_summary[n_newly_translated <span class="sc">&gt;</span> <span class="dv">0</span>, {</span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">log_info</span>(<span class="st">'New translations in {.N} files'</span>)</span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>  .SD[, by <span class="ot">=</span> package, {</span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log_level</span>(INFO, <span class="st">'From package {blue(.BY$package)}:'</span>)</span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log_level</span>(INFO, <span class="st">'  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}'</span>, <span class="at">.topenv =</span> .SD)</span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>  }]</span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NULL</span></span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>}]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># SUMMARIZE the changed translations, and delete empty .po files</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="fu">set_branch</span>(<span class="st">'weblate/master'</span>)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>weblate_po_files <span class="ot">&lt;-</span> <span class="fu">po_files</span>()</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>weblate_summary <span class="ot">&lt;-</span> <span class="fu">po_counts</span>(weblate_po_files)</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="fu">set_branch</span>(<span class="st">'svn/master'</span>)</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>svn_summary <span class="ot">&lt;-</span> <span class="fu">po_counts</span>(<span class="fu">po_files</span>())</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="fu">set_branch</span>(<span class="st">'master'</span>)</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>po_summary <span class="ot">&lt;-</span> <span class="fu">merge</span>(weblate_summary, svn_summary, <span class="at">by =</span> <span class="st">"filename"</span>, <span class="at">all =</span> <span class="cn">TRUE</span>, <span class="at">suffixes =</span> <span class="fu">c</span>(<span class="st">"_weblate"</span>, <span class="st">"_svn"</span>))</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>po_summary[, package <span class="sc">:</span><span class="er">=</span> <span class="fu">basename</span>(<span class="fu">dirname</span>(<span class="fu">dirname</span>(filename)))]</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop empty &amp; record files</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>po_summary[n_translated_weblate <span class="sc">==</span> <span class="dv">0</span>, {</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>   <span class="fu">log_info</span>(<span class="st">'Dropping {.N} empty files:'</span>)</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>   .SD[, by <span class="ot">=</span> package, {</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">log_level</span>(INFO, <span class="st">'From package {blue(.BY$package)}:'</span>)</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">log_level</span>(INFO, <span class="st">'  {toString(green(basename(filename)))}'</span>, <span class="at">.topenv =</span> .SD) <span class="co"># NB: Need .SD since data.table doesn't pick up the variable from the string</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>   }]</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>   <span class="fu">unlink</span>(filename)</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>   <span class="cn">NULL</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>}]</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>po_summary <span class="ot">&lt;-</span> po_summary[n_translated_weblate <span class="sc">&gt;</span> <span class="dv">0</span>]</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="co"># (optional) Summarize the update for the rest of the files</span></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="fu">setnafill</span>(po_summary, <span class="at">fill =</span> <span class="dv">0</span>L, <span class="at">cols =</span> <span class="fu">which</span>(<span class="fu">sapply</span>(po_summary, is.numeric)))</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>po_summary[, n_newly_translated <span class="sc">:</span><span class="er">=</span> n_translated_weblate <span class="sc">-</span> n_translated_svn]</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>po_summary[n_newly_translated <span class="sc">&gt;</span> <span class="dv">0</span>, {</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">log_info</span>(<span class="st">'New translations in {.N} files'</span>)</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>  .SD[, by <span class="ot">=</span> package, {</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log_level</span>(INFO, <span class="st">'From package {blue(.BY$package)}:'</span>)</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log_level</span>(INFO, <span class="st">'  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}'</span>, <span class="at">.topenv =</span> .SD)</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>  }]</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NULL</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>}]</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="co"># REPLACE 'Report-Msgid-Bugs-To' metadata field pointing to #core-translation-po-bugs</span></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"sed"</span>, <span class="fu">c</span>(<span class="st">"-i"</span>, <span class="st">"'s/sourcestringbugs.o40l9j@zapiermail.com/bugs.r-project.org/'"</span>, weblate_po_files))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NB: _not_ 'git diff weblate/master svn/master' since we've just deleted the empty .po files locally</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff svn/master <span class="at">--no-prefix</span> <span class="at">--</span> <span class="st">"*.po"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
