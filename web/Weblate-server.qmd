@@ -195,6 +195,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
         log_level(INFO, 'From package {blue(.BY$package)}:')
         log_level(INFO, '  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}', .topenv = .SD)
       }]
+      NULL
     }]
     ```
 
