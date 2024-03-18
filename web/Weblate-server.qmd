@@ -142,12 +142,20 @@ _NB: Weblate links below assume you're logged in there, otherwise you'll be redi
 The basic idea is to compare the Weblate repo (which copies the R subversion repo, but also adds translations provided _via_ Weblate) to the "official" R sources; any difference in .po files should be submitted as a patch.
 
 1. Make sure the Weblate repo is fully up-to-date. Check status at https://translate.rx.studio/projects/r-project/#repository -- be sure there are no `Update` or `Commit` actions needed.
-1. Get the two repos cloned on any machine:
+1. Get the two repos cloned on any machine. If this is your first time generating a patch on this machine:
 
     ```sh
     git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ # remote #1: Weblate source
     git remote add svn git remote add svn git@github.com:r-devel/r-svn.git     # remote #2: SVN source
     git fetch svn master                                                       # retrieve the latest from SVN
+    ```
+
+    If you've got the repo set up locally already, update:
+
+    ```sh
+    git fetch svn master
+    git fetch weblate master
+    git reset --hard weblate/master # force-reset to match state on Weblate (usual caution with --hard applies)
     ```
 
 1. Revert unwanted changes to reduce noise, e.g. something like:
