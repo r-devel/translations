@@ -150,7 +150,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     git fetch svn master                                                       # retrieve the latest from SVN
     ```
 
-3. Drop empty translation files to reduce noise, e.g. something like:
+3. Revert unwanted changes to reduce noise, e.g. something like:
 
     ```r
     library(data.table)
@@ -166,8 +166,10 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     }
     set_branch <- \(branch) system2('git', c('checkout', branch))
 
+    # SUMMARIZE the changed translations, and delete empty .po files
     set_branch('weblate/master')
-    weblate_summary <- po_counts(po_files())
+    weblate_po_files <- po_files()
+    weblate_summary <- po_counts(weblate_po_files)
     set_branch('svn/master')
     svn_summary <- po_counts(po_files())
     set_branch('master')
@@ -197,6 +199,9 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
       }]
       NULL
     }]
+
+    # REPLACE 'Report-Msgid-Bugs-To' metadata field pointing to #core-translation-po-bugs
+    system2("sed", c("-i", "'s/sourcestringbugs.o40l9j@zapiermail.com/bugs.r-project.org/'", weblate_po_files))
     ```
 
 4. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
