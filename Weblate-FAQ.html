@@ -273,9 +273,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Only Weblate admins can do that. For now, please reach out to <span class="citation" data-cites="daroczig">@daroczig</span> or <span class="citation" data-cites="MichaelChirico">@MichaelChirico</span>.</p>
 <ol type="1">
 <li>Go the the <a href="https://translate.rx.studio/projects/r-project/">R Project project dashboard</a></li>
-<li>Click on the “Add new translation component” button at the bottom of the page 3. Provide a name for the component following the naming schema of the other components (package name optionally followed by R or C files between parens, e.g.&nbsp;<code>methods (R files)</code>). It is required to split a package into (at least) two components when there are multiple PO files around, e.g.&nbsp;for R and C files, sometime even a 3rd one for the GUI</li>
+<li>Click on the “Add new translation component” button at the bottom of the page</li>
+<li>Provide a name for the component following the naming schema of the other components (package name optionally followed by R or C files between parens, e.g.&nbsp;<code>methods (R files)</code>). It is required to split a package into (at least) two components when there are multiple PO files around, e.g.&nbsp;for R and C files, sometime even a 3rd one for the GUI</li>
 <li>Source code repo should point to <code>weblate://r-project/base-r-gui</code> (this is set to auto-poll the SVN repo)</li>
-<li>File format is usually <code>gettext PO file</code> (for strings extracted from R core and recommended packages), or e.g.&nbsp;iOS strings (for Mac GUI) 6. Provide file mask, e.g.&nbsp;<code>src/library/base/po/*.po</code> or <code>src/library/compiler/po/R-*.po</code></li>
+<li>File format is usually <code>gettext PO file</code> (for strings extracted from R core and recommended packages), or e.g.&nbsp;iOS strings (for Mac GUI)</li>
+<li>Provide file mask, e.g.&nbsp;<code>src/library/base/po/*.po</code> or <code>src/library/compiler/po/R-*.po</code></li>
 <li>Set a Language filter when needed to guide Weblate which files to pick up (e.g.&nbsp;to exclude the PO files starting with <code>R</code> (part of the “R files” component) for the “C files” component, something like <code>^(?!en$)[a-z][^.]+$</code></li>
 </ol>
 </section>
