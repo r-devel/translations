@@ -190,7 +190,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     po_summary <- merge(weblate_summary, svn_summary, by = "filename", all = TRUE, suffixes = c("_weblate", "_svn"))
     po_summary[, package := basename(dirname(dirname(filename)))]
     # Drop empty & record files
-    po_summary[n_translated_weblate == 0, {
+    po_summary[n_translated_weblate == 0 & is.na(n_translated_svn), { # NB: keep empty files if they're already in SVN, hence is.na() check
        log_info('Dropping {.N} empty files:')
        .SD[, by = package, {
           log_level(INFO, 'From package {blue(.BY$package)}:')
