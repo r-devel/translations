@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -467,7 +467,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>}]</span>
 <span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a><span class="co"># REPLACE 'Report-Msgid-Bugs-To' metadata field pointing to #core-translation-po-bugs</span></span>
-<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"sed"</span>, <span class="fu">c</span>(<span class="st">"-i"</span>, <span class="st">"'s/sourcestringbugs.o40l9j@zapiermail.com/bugs.r-project.org/'"</span>, po_summary<span class="sc">$</span>filename))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a><span class="fu">system2</span>(<span class="st">"sed"</span>, <span class="fu">c</span>(<span class="st">"-i"</span>, <span class="st">"'s/sourcestringbugs.o40l9j@zapiermail.com/bugs.r-project.org/'"</span>, po_summary<span class="sc">$</span>filename))</span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a><span class="co"># CHECK msgfmt works -- 'make update*' commands run by R-core check this as well</span></span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>tmp <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a><span class="do">## NB: lapply() over for() to show all failures at once</span></span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">suppressWarnings</span>(<span class="fu">lapply</span>(</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>  po_summary<span class="sc">$</span>filename,</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>  \(po_file) <span class="fu">system2</span>(<span class="st">"msgfmt"</span>, <span class="fu">c</span>(<span class="st">"-c"</span>, <span class="st">"--statistics"</span>, <span class="st">"-o"</span>, tmp, po_file), <span class="at">stdout=</span><span class="cn">TRUE</span>, <span class="at">stderr=</span><span class="cn">TRUE</span>)</span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>failed <span class="ot">&lt;-</span> <span class="fu">which</span>(<span class="sc">!</span><span class="fu">sapply</span>(res, \(r) <span class="fu">is.null</span>(<span class="fu">attr</span>(r, <span class="st">"status"</span>))))</span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">length</span>(failed)) {</span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"'msgfmt' failed for some .po files:</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (idx <span class="cf">in</span> failed) {</span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"  %s:</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">red</span>(po_summary<span class="sc">$</span>filename[idx])))</span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>    <span class="fu">writeLines</span>(<span class="fu">paste0</span>(<span class="st">"    "</span>, res[[idx]]))</span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NB: _not_ 'git diff weblate/master svn/master' since we've just deleted the empty .po files locally</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff svn/master <span class="at">--no-prefix</span> <span class="at">--</span> <span class="st">"*.po"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
