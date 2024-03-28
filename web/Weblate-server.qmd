@@ -215,6 +215,22 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
 
     # REPLACE 'Report-Msgid-Bugs-To' metadata field pointing to #core-translation-po-bugs
     system2("sed", c("-i", "'s/sourcestringbugs.o40l9j@zapiermail.com/bugs.r-project.org/'", po_summary$filename))
+
+    # CHECK msgfmt works -- 'make update*' commands run by R-core check this as well
+    tmp <- tempfile()
+    ## NB: lapply() over for() to show all failures at once
+    res <- suppressWarnings(lapply(
+      po_summary$filename,
+      \(po_file) system2("msgfmt", c("-c", "--statistics", "-o", tmp, po_file), stdout=TRUE, stderr=TRUE)
+    ))
+    failed <- which(!sapply(res, \(r) is.null(attr(r, "status"))))
+    if (length(failed)) {
+      cat("'msgfmt' failed for some .po files:\n")
+      for (idx in failed) {
+        cat(sprintf("  %s:\n", red(po_summary$filename[idx])))
+        writeLines(paste0("    ", res[[idx]]))
+      }
+    }
     ```
 
 1. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
