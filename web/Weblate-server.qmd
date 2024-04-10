@@ -303,7 +303,7 @@ Weblate will provide a suggestion on how to fix, but in short:
     git svn rebase
     ```
 
-1. (repeat until rebase completes) Resolve any conflicts that come up, usually using the script `deconflict_add_continue.py` found at the repo root:
+1. (repeat until rebase completes) Resolve any conflicts that come up, usually using the script [`deconflict_add_continue.py`](https://github.com/daroczig/R-weblate-fork/blob/main/deconflict_add_continue.py) found at the repo root:
 
     ```sh
     ./deconflict_add_continue.py weblate
@@ -311,9 +311,9 @@ Weblate will provide a suggestion on how to fix, but in short:
 
     This finds the **one** file causing conflicts, selects the changes from Weblate (in order to preserve string edit history in the UI), removes the changes from SVN and the git conflict markers, then continues the rebase process. It also prints some helpful output, e.g. the number of conflicts resolved and the `git status` which tells about progress in the ongoing rebase.
 
-    For now, if there are more than one files affected by a given rebase step (e.g. more than one file marked `both modified:` in the `git status` output), these needed to be edited manually (with the text editor of your choice, e.g. `nano` or `mcedit`), then added (`git add`) before continuing (`git rebase --continue`). This should be rare as Weblate typically associates one file edit per commit. The `deconflict_add_continue.py` step could be extended to handle several files, but we've not yet done so. Note also the script `show_conflicts.py` which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.
+    For now, if there are more than one files affected by a given rebase step (e.g. more than one file marked `both modified:` in the `git status` output), these needed to be edited manually (with the text editor of your choice, e.g. `nano` or `mcedit`), then added (`git add`) before continuing (`git rebase --continue`). This should be rare as Weblate typically associates one file edit per commit. The `deconflict_add_continue.py` step could be extended to handle several files, but we've not yet done so. Note also the script [`show_conflicts.py`](https://github.com/daroczig/R-weblate-fork/blob/main/show_conflicts.py) which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.
 
-1. Restore changes that may have been lost from SVN, e.g. newly updated source strings or source line numbers, by running `msgmerge` on all pot files using the script `update_pkg_po.py`.
+1. Restore changes that may have been lost from SVN, e.g. newly updated source strings or source line numbers, by running `msgmerge` on all pot files using the script [`update_pkg_po.py`](https://github.com/daroczig/R-weblate-fork/blob/main/update_pkg_po.py).
 
 ## Administrators
 
