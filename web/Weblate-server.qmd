@@ -303,62 +303,17 @@ Weblate will provide a suggestion on how to fix, but in short:
     git svn rebase
     ```
 
-1. Optionally, if not yet done, install [helpers](https://github.com/JulienPalard/po3way) to make it easier to deal with the git conflicts (inside Docker). Start Docker as root to install `po3way` system-wide:
-
-   ```sh
-   $ sudo docker exec -u root -ti weblate-docker_weblate_1 bash
-   ```
-
-   Then in the Docker container:
-
-   ```sh
-   # pip install --prefix /usr/local po3way
-   # exit
-   ```
-
-   To set up `git` to always use `po3way`, first start the Docker container using the regular user:
-
-   ```sh
-   $ sudo docker exec -ti weblate-docker_weblate_1 bash
-   ```
-
-    And edit `.git/config` at `app/data/vcs/r-project/base-r-gui` to add the below content:
+1. (repeat until rebase completes) Resolve any conflicts that come up, usually using the script [`deconflict_add_continue.py`](https://github.com/daroczig/R-weblate-fork/blob/main/deconflict_add_continue.py) found at the repo root:
 
     ```sh
-    [merge "po3way"]
-        name = po file merge driver
-        driver = po3way --git-merge-driver -- %A %O %B
+    ./deconflict_add_continue.py weblate
     ```
 
-    Also edit `.gitattributes` to include:
+    This finds the **one** file causing conflicts, selects the changes from Weblate (in order to preserve string edit history in the UI), removes the changes from SVN and the git conflict markers, then continues the rebase process. It also prints some helpful output, e.g. the number of conflicts resolved and the `git status` which tells about progress in the ongoing rebase.
 
-    ```sh
-    *.po merge=po3way
-    *.pot merge=po3way
-    ```
+    For now, if there are more than one files affected by a given rebase step (e.g. more than one file marked `both modified:` in the `git status` output), these needed to be edited manually (with the text editor of your choice, e.g. `nano` or `mcedit`), then added (`git add`) before continuing (`git rebase --continue`). This should be rare as Weblate typically associates one file edit per commit. The `deconflict_add_continue.py` step could be extended to handle several files, but we've not yet done so. Note also the script [`show_conflicts.py`](https://github.com/daroczig/R-weblate-fork/blob/main/show_conflicts.py) which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.
 
-1. Resolve the conflict via a text editor, then continue. Let's say `src/library/base/po/es.po` is affected:
-
-    ```sh
-    mcedit src/library/base/po/es.po
-    git add src/library/base/po/es.po
-    git commit -m "resolve conflict"
-    git rebase --continue
-    ```
-
-    I usually do the `git` commands inside Docker (at `app/data/vcs/r-project/base-r-gui`), and the edits outside of Docker (at `/var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui`) as it's more comfortable, but feel free to install anything that makes your life easier even within Docker (see e.g. the installation steps for `po3way` above on how to become root).
-
-To see the current progress of conflict resolution, run something like:
-
-```sh
-( RMD="$( git rev-parse --git-path 'rebase-merge/' )" && N=$( cat "${RMD}msgnum" ) && L=$( cat "${RMD}end" ) && echo "${N} / ${L}" ; )
-```
-
-And make sure to use `rerere` (reuse recorded resolution) to speed up resolving the individual conflicts:
-
-```sh
-git config --global rerere.enabled true
-```
+1. Restore changes that may have been lost from SVN, e.g. newly updated source strings or source line numbers, by running `msgmerge` on all pot files using the script [`update_pkg_po.py`](https://github.com/daroczig/R-weblate-fork/blob/main/update_pkg_po.py).
 
 ## Administrators
 
