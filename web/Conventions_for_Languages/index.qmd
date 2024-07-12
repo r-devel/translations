@@ -103,16 +103,18 @@ improve the quality of your translations.
 - Placeholders like %s, %d
 - Acronyms (if they are, for example, function arguments)
 
-### Updating glossaries
+### Updating Glossaries
+To ensure compatibility across different languages,  [a list of specific terms from the English glossary were promoted to "terminology terms"](https://github.com/r-devel/r-dev-day/issues/8). This means these terms are now included in every glossary list, serving as a minimal set of terms for all language glossaries. If you need to add a specific term to your language glossary, you can include it in the "terminology list" by following the steps below. Please note that adding new words should adhere to existing translation guidelines, with the following additional rules:
 
-To ensure compatibility between languages, a list of specific terms from the English glossary were promoted to "terminology terms" which means they were added to every glossary list. This list is designed as the minimal set of terms intended for use across all language glossaries. In case you feel the need of including some specific term to a specific language glossary feel free to add specific terms to the "teminology list" by following the steps below. Please note that the inclusion of new words in this fashion should follow the other existing translation guidelines with the following additions:
+- Do not include conjugated verbs such as "coerced." Only include the noun (e.g., "coercion") and the infinitive verb (e.g., "coerce").
 
-- Do not include conjugated verbs on the glossary such as "coerced". The only possible entries on e.g. coercion should be the noun "coercion" and the infinitive verb "coerce";
-- Do not include expressions with more than 2 words unless extremely necessary;
+- Avoid expressions with more than two words unless absolutely necessary.
 
 #### How to include a terminology term
 
+You may include a specific term on your glossary ensuring that it is also included in the terminology list by ticking the box on the form below. 
 
+![](../img/example_form.png)
 
 ## Languages and contributions
 
