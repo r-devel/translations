@@ -105,7 +105,14 @@ improve the quality of your translations.
 
 ### Updating glossaries
 
-_Process to be defined_
+To ensure compatibility between languages, a list of specific terms from the English glossary were promoted to "terminology terms" which means they were added to every glossary list. This list is designed as the minimal set of terms intended for use across all language glossaries. In case you feel the need of including some specific term to a specific language glossary feel free to add specific terms to the "teminology list" by following the steps below. Please note that the inclusion of new words in this fashion should follow the other existing translation guidelines with the following additions:
+
+- Do not include conjugated verbs on the glossary such as "coerced". The only possible entries on e.g. coercion should be the noun "coercion" and the infinitive verb "coerce";
+- Do not include expressions with more than 2 words unless extremely necessary;
+
+#### How to include a terminology term
+
+
 
 ## Languages and contributions
 
