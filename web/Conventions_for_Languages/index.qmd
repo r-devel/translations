@@ -104,6 +104,7 @@ improve the quality of your translations.
 - Acronyms (if they are, for example, function arguments)
 
 ### Updating Glossaries
+  
 To ensure compatibility across different languages,  [a list of specific terms from the English glossary were promoted to "terminology terms"](https://github.com/r-devel/r-dev-day/issues/8). This means these terms are now included in every glossary list, serving as a minimal set of terms for all language glossaries. If you need to add a specific term to your language glossary, you can include it in the "terminology list" by following the steps below. Please note that adding new words should adhere to existing translation guidelines, with the following additional rules:
 
 - Do not include conjugated verbs such as "coerced." Only include the noun (e.g., "coercion") and the infinitive verb (e.g., "coerce").
@@ -112,7 +113,7 @@ To ensure compatibility across different languages,  [a list of specific terms f
 
 #### How to include a terminology term
 
-You may include a specific term on your glossary ensuring that it is also included in the terminology list by ticking the box on the form below. 
+You may suggest the inclusion of a specific term on your glossary ensuring that it is also included in the terminology list by ticking the box on the form below. Inclusion of new terms on a glossary is subjected to approval.
 
 ![](../img/example_form.png)
 
