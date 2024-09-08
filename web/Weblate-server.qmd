@@ -145,15 +145,16 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
 1. Get the two repos cloned on any machine. If this is your first time generating a patch on this machine:
 
     ```sh
-    git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ # remote #1: Weblate source
-    git remote add svn git remote add svn git@github.com:r-devel/r-svn.git     # remote #2: SVN source
-    git fetch svn master                                                       # retrieve the latest from SVN
+    mkdir weblate-diff && cd weblate-diff
+    git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ . # remote #1: Weblate source
+    git remote add svn git@github.com:r-devel/r-svn.git                          # remote #2: SVN source
+    git fetch svn                                                                # retrieve the latest from SVN
     ```
 
     If you've got the repo set up locally already, update:
 
     ```sh
-    git fetch svn master
+    git fetch svn
     git fetch weblate master
     git reset --hard weblate/master # force-reset to match state on Weblate (usual caution with --hard applies)
     ```
