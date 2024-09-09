@@ -146,7 +146,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
 
     ```sh
     git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ # remote #1: Weblate source
-    git remote add svn git remote add svn git@github.com:r-devel/r-svn.git     # remote #2: SVN source
+    git remote add svn git@github.com:r-devel/r-svn.git                        # remote #2: SVN source
     git fetch svn master                                                       # retrieve the latest from SVN
     ```
 
