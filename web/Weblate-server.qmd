@@ -147,13 +147,13 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     ```sh
     git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ # remote #1: Weblate source
     git remote add svn git@github.com:r-devel/r-svn.git                        # remote #2: SVN source
-    git fetch svn master                                                       # retrieve the latest from SVN
+    git fetch svn main                                                         # retrieve the latest from SVN
     ```
 
     If you've got the repo set up locally already, update:
 
     ```sh
-    git fetch svn master
+    git fetch svn main
     git fetch weblate master
     git reset --hard weblate/master # force-reset to match state on Weblate (usual caution with --hard applies)
     ```
@@ -182,7 +182,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     }
 
     weblate_summary <- po_counts(po_files())
-    set_branch('svn/master')
+    set_branch('svn/main')
     svn_summary <- po_counts(po_files())
     set_branch('master')
 
@@ -236,8 +236,8 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
 1. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
 
     ```sh
-    # NB: _not_ 'git diff weblate/master svn/master' since we've just deleted the empty .po files locally
-    git diff svn/master --no-prefix -- "*.po"
+    # NB: _not_ 'git diff weblate/master svn/main' since we've just deleted the empty .po files locally
+    git diff svn/main --no-prefix -- "*.po"
     ```
 
 1. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
