@@ -4,7 +4,10 @@
 \alias{po_counts}
 \title{pocount is available from e.g. 'apt install translate-toolkit'}
 \usage{
-po_counts(files)
+po_counts(branch)
+}
+\arguments{
+\item{branch}{Branch on which summary .po files}
 }
 \description{
 pocount is available from e.g. 'apt install translate-toolkit'

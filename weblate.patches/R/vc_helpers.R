@@ -1,3 +1,14 @@
+#' Clone repos to a local directory
+#'
+#' This sets up the repo with remotes named in a way easily understood by
+#'   other functions in the package.
+#' @param canonical URI where the "canonical" copy of the repo lives;
+#'   defaults to the r-devel Git mirror.
+#' @param patched URI where the "patched" copy of the repo, i.e., with
+#'   updated translations, lives; defaults to the 'base-r-gui' repo
+#'   of the r-devel Weblate instance.
+#' @param outdir Directory into which to clone the repos. By default,
+#'   a temporary directory is created.
 #' @importFrom logger log_info
 #' @export
 setup_local_clone <- function(
@@ -24,6 +35,8 @@ setup_local_clone <- function(
   system2("git",
     c("reset", "--hard", file.path("patched", patched_default_branch))
   )
+
+  outdir
 }
 
 default_branch <- function(git_repo) {

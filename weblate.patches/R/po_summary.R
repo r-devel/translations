@@ -1,6 +1,7 @@
 po_files <- \() list.files(pattern = "\\.po$", recursive = TRUE)
 
 #' pocount is available from e.g. 'apt install translate-toolkit'
+#' @param branch Branch on which summary .po files
 #' @importFrom data.table fread setnames
 po_counts <- function(branch) {
   if (Sys.which("pocount") == "") {
@@ -23,7 +24,8 @@ po_counts <- function(branch) {
   x
 }
 
-#' @importFrom data.table := .BY setDT setkeyv setnames tstrsplit
+#' Summarize what's changed in the current patch vs. canonical record
+#' @importFrom data.table := .BY .SD setDT setkeyv setnafill setnames tstrsplit
 #' @importFrom tools checkPoFiles
 #' @export
 po_update_summary <- function() {
@@ -68,8 +70,8 @@ po_update_summary <- function() {
   po_summary[n_translated_weblate == 0 & is.na(n_translated_svn), { # NB: keep empty files if they're already in SVN, hence is.na() check
     log_info('Dropping {.N} empty files:')
     .SD[, by = package, {
-        log_level(INFO, 'From package {blue(.BY$package)}:')
-        log_level(INFO, '  {toString(green(basename(filename)))}', .topenv = .SD) # NB: Need .SD since data.table doesn't pick up the variable from the string
+        log_info('From package {blue(.BY$package)}:')
+        log_info('  {toString(green(basename(filename)))}', .topenv = .SD) # NB: Need .SD since data.table doesn't pick up the variable from the string
     }]
     unlink(filename)
     NULL
