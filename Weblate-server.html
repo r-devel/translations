@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,10 +70,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c55491ef36bbbc1896d0375eee332cfe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -527,9 +527,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> svn rebase</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>(repeat until rebase completes) Resolve any conflicts that come up, usually using the script <a href="https://github.com/daroczig/R-weblate-fork/blob/main/deconflict_add_continue.py"><code>deconflict_add_continue.py</code></a> found at the repo root:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./deconflict_add_continue.py</span> weblate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This finds the <strong>one</strong> file causing conflicts, selects the changes from Weblate (in order to preserve string edit history in the UI), removes the changes from SVN and the git conflict markers, then continues the rebase process. It also prints some helpful output, e.g.&nbsp;the number of conflicts resolved and the <code>git status</code> which tells about progress in the ongoing rebase.</p>
-<p>For now, if there are more than one files affected by a given rebase step (e.g.&nbsp;more than one file marked <code>both modified:</code> in the <code>git status</code> output), these needed to be edited manually (with the text editor of your choice, e.g.&nbsp;<code>nano</code> or <code>mcedit</code>), then added (<code>git add</code>) before continuing (<code>git rebase --continue</code>). This should be rare as Weblate typically associates one file edit per commit. The <code>deconflict_add_continue.py</code> step could be extended to handle several files, but we’ve not yet done so. Note also the script <a href="https://github.com/daroczig/R-weblate-fork/blob/main/show_conflicts.py"><code>show_conflicts.py</code></a> which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.</p></li>
+<p>Note that at the start of the rebase process, the script will not be available in the repo (as was added there later in the git history), but you can download it from the above URL or copy the backup from the root user’s home directory.</p>
+<p>This script originally found the one file causing conflicts, selected the changes from Weblate (in order to preserve string edit history in the UI), removed the changes from SVN and the git conflict markers, then continued the rebase process. At the time being, it should be able to handle multiple files as well (iterating over all conflicting files), but manual intervention might be needed from time to time. It also prints some helpful output, e.g.&nbsp;the number of conflicts resolved and the <code>git status</code> which tells about progress in the ongoing rebase.</p>
+<p>When the script resolved the conflicts, you might need to confirm the commit message (e.g.&nbsp;hit <code>F2</code> in the opened nano editor), then run the script again and again and again until the rebase completes.</p>
+<p>If needed, edit file(s) manually (with the text editor of your choice, e.g.&nbsp;<code>nano</code> or <code>mcedit</code>), then add (<code>git add</code>) before continuing (<code>git rebase --continue</code>). This should be rare as Weblate typically associates one or a few file edits per commit. Note also the script <a href="https://github.com/daroczig/R-weblate-fork/blob/main/show_conflicts.py"><code>show_conflicts.py</code></a> which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.</p></li>
 <li><p>Restore changes that may have been lost from SVN, e.g.&nbsp;newly updated source strings or source line numbers, by running <code>msgmerge</code> on all pot files using the script <a href="https://github.com/daroczig/R-weblate-fork/blob/main/update_pkg_po.py"><code>update_pkg_po.py</code></a>.</p></li>
+<li><p>Don’t forget to unlock the components after the rebase is complete (see above).</p></li>
 </ol>
 </section>
 <section id="administrators" class="level2">
@@ -645,8 +648,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -757,7 +758,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
