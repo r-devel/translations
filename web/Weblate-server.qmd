@@ -245,11 +245,15 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
 
 ## Maintenance
 
+### Unlock components
+
 Components might become locked due to "not being able to push back to the upstream repo" (expected) or when upstream is not updated for a long time. In such case, components can be unlocked on the UI, but this needs to happen at the component level, so better to use the CLI instead:
 
 ```sh
 weblate unlock_translation r-project
 ```
+
+### Git rebase conflicts
 
 When there's a conflict between SVN and the Weblate git repo, and Weblate cannot pull from the upstream repo, you will need to resolve the conflicts manually after seeing an error like the below:
 
@@ -321,6 +325,14 @@ Weblate will provide a suggestion on how to fix, but in short:
 1. Restore changes that may have been lost from SVN, e.g. newly updated source strings or source line numbers, by running `msgmerge` on all pot files using the script [`update_pkg_po.py`](https://github.com/daroczig/R-weblate-fork/blob/main/update_pkg_po.py).
 
 1. Don't forget to unlock the components after the rebase is complete (see above).
+
+### Bot attacks
+
+Sometimes we experience massive traffic originating from bots at a single IP or subnet, which might bring down the service. To mitigate this, we can block the IP addresses on the server or at the related VPC's network ACL.
+
+Currently, the following IP addresses are blocked:
+
+- 47.79.0.0/16 (ACL)
 
 ## Administrators
 
