@@ -117,7 +117,7 @@ docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml 
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up
 ```
 
-To update, follow the 
+To update, follow the
 [official docs](https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-the-docker-container), but in
 short:
 

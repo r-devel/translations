@@ -6,48 +6,48 @@ title: "Home"
 
 Welcome to the translation adventure in R! 🚀
 
-In a world that thrives on interconnectedness and global communication, translation plays a pivotal role in bridging 
-linguistic divides. Translation, the art of rendering one language into another, shatters those confines, unlocking a 
+In a world that thrives on interconnectedness and global communication, translation plays a pivotal role in bridging
+linguistic divides. Translation, the art of rendering one language into another, shatters those confines, unlocking a
 world of possibilities for understanding and collaboration.
 
 [Translation dashboards](https://contributor.r-project.org/translations-dashboard/)
 
 So if you want to start, you can contribute by following these steps:
 
-1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the 
+1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the
 #core-translations channel;
 
-1. Create an account on [Weblate](https://translate.rx.studio/) and read the Translations chapter on the [R Development 
+1. Create an account on [Weblate](https://translate.rx.studio/) and read the Translations chapter on the [R Development
 guide](https://contributor.r-project.org/rdevguide/);
 
-1. Read the [Conventions for translation](Conventions_for_Languages/index.qmd) 
+1. Read the [Conventions for translation](Conventions_for_Languages/index.qmd)
 section of this Wiki, for some conventions that should be followed;
 
-1. Read the guidelines for the specific language you want to contribute to. If a guideline for your language doesn't 
+1. Read the guidelines for the specific language you want to contribute to. If a guideline for your language doesn't
 exist yet, please feel free to submit a pull request and create it.
 
     |Language |
-    | -- | 
-    |[Arabic](Conventions_for_Languages/Arabic-specific-translations.qmd) | 
-    |[Bengali](Conventions_for_Languages/Bengali-specific-translations.qmd)| 
-    |[Catalan](Conventions_for_Languages/Catalan-specific-translations.qmd)| 
-    |[Chinese](Conventions_for_Languages/Chinese-specific-translations.qmd)| 
-    |[Hindi](Conventions_for_Languages/Hindi-specific-translations.qmd)| 
+    | -- |
+    |[Arabic](Conventions_for_Languages/Arabic-specific-translations.qmd) |
+    |[Bengali](Conventions_for_Languages/Bengali-specific-translations.qmd)|
+    |[Catalan](Conventions_for_Languages/Catalan-specific-translations.qmd)|
+    |[Chinese](Conventions_for_Languages/Chinese-specific-translations.qmd)|
+    |[Hindi](Conventions_for_Languages/Hindi-specific-translations.qmd)|
     |[Nepali](Conventions_for_Languages/Nepali-specific-translations.qmd)|
-    |[Portuguese (Brazilian)](Conventions_for_Languages/Brazilian‐Portugese-specific-translations.qmd)| 
+    |[Portuguese (Brazilian)](Conventions_for_Languages/Brazilian‐Portugese-specific-translations.qmd)|
     |[Spanish](Conventions_for_Languages/Spanish-specific-translations.qmd)|
 
 1. You can start translating!
 
-You can check the 
-[guide](https://contributor.r-project.org/rdevguide/chapters/message_translations.html#how-to-contribute-new-translations) on how 
-Weblate works and check this short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) on how to use the Weblate 
-interface. You can also get access to complete documentation of Weblate through this 
+You can check the
+[guide](https://contributor.r-project.org/rdevguide/chapters/message_translations.html#how-to-contribute-new-translations) on how
+Weblate works and check this short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) on how to use the Weblate
+interface. You can also get access to complete documentation of Weblate through this
 [link](https://docs.weblate.org/en/latest/).
 
 ### What is being translated?
 
-All outputs in base R and recommended packages (such as messages emitted by `stop()`, 
+All outputs in base R and recommended packages (such as messages emitted by `stop()`,
 `warning()`, or `message()`) are eligible for translation, as are menu labels in the GUI.
 
 ## Roles
@@ -55,27 +55,27 @@ All outputs in base R and recommended packages (such as messages emitted by `sto
 Languages without an established translation team and so without dedicated reviewers have their translations directly approved without review.
 In that perspective, there's a single role for translators, and no reviewers.
 
-In case a team has been established for a language, we use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) 
+In case a team has been established for a language, we use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers)
 workflow on Weblate, where we currently manage 3 roles in the platform.
 
 ### Translators
 
-Every registered user on Weblate can act as a translator for any language. All translations need to be reviewed unless there is 
-no reviewer assigned for that language. If you are not sure about a translation, you can make a suggestion instead. You 
-can also use the Glossary to check which terms you shouldn't translate and discuss with the community to add new ones if 
-you don't find the word you are looking for. 
+Every registered user on Weblate can act as a translator for any language. All translations need to be reviewed unless there is
+no reviewer assigned for that language. If you are not sure about a translation, you can make a suggestion instead. You
+can also use the Glossary to check which terms you shouldn't translate and discuss with the community to add new ones if
+you don't find the word you are looking for.
 
 ### Reviewers
 
-Reviewers bear the editor role to approve the work of translators and ensure the overall cohesion of the 
-translation work in one language. For adding new reviewers for a language, please reach out to the 
-respective team leaders via the `#core-translation` channel on the [R Contributors 
+Reviewers bear the editor role to approve the work of translators and ensure the overall cohesion of the
+translation work in one language. For adding new reviewers for a language, please reach out to the
+respective team leaders via the `#core-translation` channel on the [R Contributors
 Slack](https://contributor.r-project.org/slack) workspace.
 
 ### Team leaders
 
-Team administrators and leaders keep the list of admins and reviewers for a language up to date. The team 
-leader(s) of a particular language is(are) the initial [dedicated 
+Team administrators and leaders keep the list of admins and reviewers for a language up to date. The team
+leader(s) of a particular language is(are) the initial [dedicated
 reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) as well.
 
 ## How to start a new language team
@@ -88,10 +88,10 @@ Additionally, language team administrators can be also shortlisted among the rev
 
 ## Translation states
 
-Possible state of a string: 
+Possible state of a string:
 
-* **Untranslated**: Translation is missing, and might or might not be stored in the translation file. 
-* **Needs editing**: Translation needs editing. This is usually the result of a source string 
+* **Untranslated**: Translation is missing, and might or might not be stored in the translation file.
+* **Needs editing**: Translation needs editing. This is usually the result of a source string
 change, fuzzy matching or translator action. The `fuzzy` tag might be commited to the translation file. **If you are unsure about how to translate something, make a suggestion instead of clicking the "Needs editing" button**.
 * **Waiting for review**: Translation is made, but not reviewed yet.
 * **Approved**: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers. This is also committed to the repository.
@@ -113,7 +113,7 @@ raise awareness about translations.
 
 ## Space for feedback
 
-You can open an issue in this repository if you find something that is not working as expected in Weblate. If you want 
+You can open an issue in this repository if you find something that is not working as expected in Weblate. If you want
 to discuss about translations and convictions you can use the Slack channels dedicated to that.
 
 ## Resources
@@ -137,5 +137,5 @@ Some interesting guides, glossaries and handbooks:
 ## Future work
 
 * Explore possible integration of dictionaries into Weblate?
-* Add demos from the translator and 
+* Add demos from the translator and
 reviewer's perspective
