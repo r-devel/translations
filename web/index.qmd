@@ -17,8 +17,7 @@ So if you want to start, you can contribute by following these steps:
 1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the 
 #core-translations channel;
 
-1. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
-[@daroczig](https://twitter.com/daroczig)) and read the Translations chapter on the [R Development 
+1. Create an account on [Weblate](https://translate.rx.studio/) and read the Translations chapter on the [R Development 
 guide](https://contributor.r-project.org/rdevguide/);
 
 1. Read the [Conventions for translation](Conventions_for_Languages/index.qmd) 
