@@ -52,39 +52,41 @@ All outputs in base R and recommended packages (such as messages emitted by `sto
 
 ## Roles
 
-We use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) 
-workflow on Weblate. We currently manage 3 roles in the platform. Languages without dedicated reviewers have their 
-translations directly approved without review.
+Languages without an established translation team and so without dedicated reviewers have their translations directly approved without review.
+In that perspective, there's a single role for translators, and no reviewers.
+
+In case a team has been established for a language, we use the [dedicated reviewers](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) 
+workflow on Weblate, where we currently manage 3 roles in the platform.
 
 ### Translators
 
-Every registered user on Weblate can act as a translator. All translations are reviewed unless there is 
-no reviewer assigned for that language. If you are not sure about a translation you can make a suggestion instead. You 
+Every registered user on Weblate can act as a translator for any language. All translations need to be reviewed unless there is 
+no reviewer assigned for that language. If you are not sure about a translation, you can make a suggestion instead. You 
 can also use the Glossary to check which terms you shouldn't translate and discuss with the community to add new ones if 
 you don't find the word you are looking for. 
 
-### Admins/team leaders
-
-Admins/team leaders keep the list of admins and reviewers by language up to date. The team 
-leader(s) of a particular language is(are) the initial [dedicated 
-reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers).
-
 ### Reviewers
 
-Reviewers have an editor role who approves the work of translators and ensures the overall cohesion of the 
-translation work in one language. For adding new reviewers or peer reviewers to Weblate, please reach out to the 
+Reviewers bear the editor role to approve the work of translators and ensure the overall cohesion of the 
+translation work in one language. For adding new reviewers for a language, please reach out to the 
 respective team leaders via the `#core-translation` channel on the [R Contributors 
 Slack](https://contributor.r-project.org/slack) workspace.
 
+### Team leaders
+
+Team administrators and leaders keep the list of admins and reviewers for a language up to date. The team 
+leader(s) of a particular language is(are) the initial [dedicated 
+reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) as well.
+
+## Translation states
+
 Possible state of a string: 
 
-* **Untranslated**: Translation is empty, it might or not be stored in the file, depending on the file format. 
-* **Needs editing**: Translation needs editing, this is usually the result of a source string 
-change, fuzzy matching or translator action. **If you are unsure about how to translate something, make a suggestion,**
-**do not click the "Needs editing" button**.
-* **Waiting for review**: Translation is made, but not reviewed.
-* **Approved**: 
-Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.
+* **Untranslated**: Translation is missing, and might or might not be stored in the translation file. 
+* **Needs editing**: Translation needs editing. This is usually the result of a source string 
+change, fuzzy matching or translator action. The `fuzzy` tag might be commited to the translation file. **If you are unsure about how to translate something, make a suggestion instead of clicking the "Needs editing" button**.
+* **Waiting for review**: Translation is made, but not reviewed yet.
+* **Approved**: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers. This is also committed to the repository.
 
 ## Sustainability of the translations community
 
