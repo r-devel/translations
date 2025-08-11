@@ -227,9 +227,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#roles" id="toc-roles" class="nav-link" data-scroll-target="#roles">Roles</a>
   <ul class="collapse">
   <li><a href="#translators" id="toc-translators" class="nav-link" data-scroll-target="#translators">Translators</a></li>
-  <li><a href="#adminsteam-leaders" id="toc-adminsteam-leaders" class="nav-link" data-scroll-target="#adminsteam-leaders">Admins/team leaders</a></li>
   <li><a href="#reviewers" id="toc-reviewers" class="nav-link" data-scroll-target="#reviewers">Reviewers</a></li>
+  <li><a href="#team-leaders" id="toc-team-leaders" class="nav-link" data-scroll-target="#team-leaders">Team leaders</a></li>
   </ul></li>
+  <li><a href="#translation-states" id="toc-translation-states" class="nav-link" data-scroll-target="#translation-states">Translation states</a></li>
   <li><a href="#sustainability-of-the-translations-community" id="toc-sustainability-of-the-translations-community" class="nav-link" data-scroll-target="#sustainability-of-the-translations-community">Sustainability of the translations community</a></li>
   <li><a href="#about-weblate" id="toc-about-weblate" class="nav-link" data-scroll-target="#about-weblate">About Weblate</a></li>
   <li><a href="#space-for-feedback" id="toc-space-for-feedback" class="nav-link" data-scroll-target="#space-for-feedback">Space for feedback</a></li>
@@ -315,26 +316,30 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="roles" class="level2">
 <h2 class="anchored" data-anchor-id="roles">Roles</h2>
-<p>We use the <a href="https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers">dedicated reviewers</a> workflow on Weblate. We currently manage 3 roles in the platform. Languages without dedicated reviewers have their translations directly approved without review.</p>
+<p>Languages without an established translation team and so without dedicated reviewers have their translations directly approved without review. In that perspective, there’s a single role for translators, and no reviewers.</p>
+<p>In case a team has been established for a language, we use the <a href="https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers">dedicated reviewers</a> workflow on Weblate, where we currently manage 3 roles in the platform.</p>
 <section id="translators" class="level3">
 <h3 class="anchored" data-anchor-id="translators">Translators</h3>
-<p>Every registered user on Weblate can act as a translator. All translations are reviewed unless there is no reviewer assigned for that language. If you are not sure about a translation you can make a suggestion instead. You can also use the Glossary to check which terms you shouldn’t translate and discuss with the community to add new ones if you don’t find the word you are looking for.</p>
-</section>
-<section id="adminsteam-leaders" class="level3">
-<h3 class="anchored" data-anchor-id="adminsteam-leaders">Admins/team leaders</h3>
-<p>Admins/team leaders keep the list of admins and reviewers by language up to date. The team leader(s) of a particular language is(are) the initial <a href="https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers">dedicated reviewer(s)</a>.</p>
+<p>Every registered user on Weblate can act as a translator for any language. All translations need to be reviewed unless there is no reviewer assigned for that language. If you are not sure about a translation, you can make a suggestion instead. You can also use the Glossary to check which terms you shouldn’t translate and discuss with the community to add new ones if you don’t find the word you are looking for.</p>
 </section>
 <section id="reviewers" class="level3">
 <h3 class="anchored" data-anchor-id="reviewers">Reviewers</h3>
-<p>Reviewers have an editor role who approves the work of translators and ensures the overall cohesion of the translation work in one language. For adding new reviewers or peer reviewers to Weblate, please reach out to the respective team leaders via the <code>#core-translation</code> channel on the <a href="https://contributor.r-project.org/slack">R Contributors Slack</a> workspace.</p>
+<p>Reviewers bear the editor role to approve the work of translators and ensure the overall cohesion of the translation work in one language. For adding new reviewers for a language, please reach out to the respective team leaders via the <code>#core-translation</code> channel on the <a href="https://contributor.r-project.org/slack">R Contributors Slack</a> workspace.</p>
+</section>
+<section id="team-leaders" class="level3">
+<h3 class="anchored" data-anchor-id="team-leaders">Team leaders</h3>
+<p>Team administrators and leaders keep the list of admins and reviewers for a language up to date. The team leader(s) of a particular language is(are) the initial <a href="https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers">dedicated reviewer(s)</a> as well.</p>
+</section>
+</section>
+<section id="translation-states" class="level2">
+<h2 class="anchored" data-anchor-id="translation-states">Translation states</h2>
 <p>Possible state of a string:</p>
 <ul>
-<li><strong>Untranslated</strong>: Translation is empty, it might or not be stored in the file, depending on the file format.</li>
-<li><strong>Needs editing</strong>: Translation needs editing, this is usually the result of a source string change, fuzzy matching or translator action. <strong>If you are unsure about how to translate something, make a suggestion,</strong> <strong>do not click the “Needs editing” button</strong>.</li>
-<li><strong>Waiting for review</strong>: Translation is made, but not reviewed.</li>
-<li><strong>Approved</strong>: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers.</li>
+<li><strong>Untranslated</strong>: Translation is missing, and might or might not be stored in the translation file.</li>
+<li><strong>Needs editing</strong>: Translation needs editing. This is usually the result of a source string change, fuzzy matching or translator action. The <code>fuzzy</code> tag might be commited to the translation file. <strong>If you are unsure about how to translate something, make a suggestion instead of clicking the “Needs editing” button</strong>.</li>
+<li><strong>Waiting for review</strong>: Translation is made, but not reviewed yet.</li>
+<li><strong>Approved</strong>: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers. This is also committed to the repository.</li>
 </ul>
-</section>
 </section>
 <section id="sustainability-of-the-translations-community" class="level2">
 <h2 class="anchored" data-anchor-id="sustainability-of-the-translations-community">Sustainability of the translations community</h2>
