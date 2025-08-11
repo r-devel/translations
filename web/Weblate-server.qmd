@@ -361,3 +361,19 @@ There are language teams defined in each project with the below extra permission
 - Manage translation memory
 
 See the general [Weblate FAQ](Weblate-FAQ.qmd#how-to-manage-translation-teams-in-weblate) on how to manage members.
+
+### Creating a new language team
+
+Language team creation should be done in a transparent way to the community, so that all translators of the same language can be aware of the team creation and decide on the dedicated reviewers workflow.
+
+Once the list of initial team leaders and administrators is defined, a Weblate admin should first create the team within the "R Project" Weblate project: https://translate.rx.studio/access/r-project/#teams
+
+The list of roles to be added:
+
+- Review strings
+- Manage translation memory
+- Manage glossary
+
+Users need to be added by their Weblate user ID, which can be searched for at https://translate.rx.studio/manage/users/ if unknown.
+
+Note that there's a special checkbox for Team Administrators at the time of adding a user to the team, which should be checked for the initial team leaders so that they can manage the team members.

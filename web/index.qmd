@@ -78,6 +78,14 @@ Team administrators and leaders keep the list of admins and reviewers for a lang
 leader(s) of a particular language is(are) the initial [dedicated 
 reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewers) as well.
 
+## How to start a new language team
+
+To request the creation of a new language team, please reach out on the `core-translation` channel of the [R Contributors Slack](https://contributor.r-project.org/slack) workspace, and the [administrators of Weblate](https://contributor.r-project.org/translations/Weblate-server.html#administrators) will follow the steps described in the [Weblate server admin page](https://contributor.r-project.org/translations/Weblate-server.html#team-leaders).
+
+In short, a new team will be created for the language with roles to approve translations and edit the language-specific glossary, then you (and others listed as team leaders) will be added to that team so that the dedicated reviewers workflow becomes enforced for that language.
+
+Additionally, language team administrators can be also shortlisted among the reviewers with permissions to add new reviewers to the team, and to manage the team members.
+
 ## Translation states
 
 Possible state of a string: 
