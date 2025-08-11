@@ -40,7 +40,7 @@ exist yet, please feel free to submit a pull request and create it.
 1. You can start translating!
 
 You can check the 
-[guide](https://contributor.r-project.org/rdevguide/message-translations.html#how-to-contribute-new-translations) on how 
+[guide](https://contributor.r-project.org/rdevguide/chapters/message_translations.html#how-to-contribute-new-translations) on how 
 Weblate works and check this short [demo](https://www.youtube.com/watch?v=VFwTn32MrBw) on how to use the Weblate 
 interface. You can also get access to complete documentation of Weblate through this 
 [link](https://docs.weblate.org/en/latest/).
