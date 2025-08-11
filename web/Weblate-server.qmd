@@ -195,7 +195,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
        log_info('Dropping {.N} empty files:')
        .SD[, by = package, {
           log_level(INFO, 'From package {blue(.BY$package)}:')
-          log_level(INFO, '  {toString(green(basename(filename)))}', .topenv = .SD) # NB: Need .SD since data.table doesn't pick up the variable from the string
+          log_level(INFO, '  {toString(green(basename(filename)))}', .topenv = list2env(.SD)) # NB: Need .SD since data.table doesn't pick up the variable from the string
        }]
        unlink(filename)
        NULL
@@ -209,7 +209,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
       log_info('New translations in {.N} files')
       .SD[, by = package, {
         log_level(INFO, 'From package {blue(.BY$package)}:')
-        log_level(INFO, '  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}', .topenv = .SD)
+        log_level(INFO, '  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}', .topenv = list2env(.SD))
       }]
       NULL
     }]
