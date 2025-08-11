@@ -456,7 +456,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>   <span class="fu">log_info</span>(<span class="st">'Dropping {.N} empty files:'</span>)</span>
 <span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>   .SD[, by <span class="ot">=</span> package, {</span>
 <span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>      <span class="fu">log_level</span>(INFO, <span class="st">'From package {blue(.BY$package)}:'</span>)</span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>      <span class="fu">log_level</span>(INFO, <span class="st">'  {toString(green(basename(filename)))}'</span>, <span class="at">.topenv =</span> .SD) <span class="co"># NB: Need .SD since data.table doesn't pick up the variable from the string</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>      <span class="fu">log_level</span>(INFO, <span class="st">'  {toString(green(basename(filename)))}'</span>, <span class="at">.topenv =</span> <span class="fu">list2env</span>(.SD)) <span class="co"># NB: Need .SD since data.table doesn't pick up the variable from the string</span></span>
 <span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>   }]</span>
 <span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>   <span class="fu">unlink</span>(filename)</span>
 <span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>   <span class="cn">NULL</span></span>
@@ -470,7 +470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">log_info</span>(<span class="st">'New translations in {.N} files'</span>)</span>
 <span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>  .SD[, by <span class="ot">=</span> package, {</span>
 <span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log_level</span>(INFO, <span class="st">'From package {blue(.BY$package)}:'</span>)</span>
-<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log_level</span>(INFO, <span class="st">'  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}'</span>, <span class="at">.topenv =</span> .SD)</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">log_level</span>(INFO, <span class="st">'  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}'</span>, <span class="at">.topenv =</span> <span class="fu">list2env</span>(.SD))</span>
 <span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>  }]</span>
 <span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NULL</span></span>
 <span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>}]</span>
