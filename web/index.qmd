@@ -30,7 +30,6 @@ exist yet, please feel free to submit a pull request and create it.
     | -- |
     |[Arabic](Conventions_for_Languages/Arabic-specific-translations.qmd) |
     |[Bengali](Conventions_for_Languages/Bengali-specific-translations.qmd)|
-    |[Brazilian-Portugese](Conventions_for_Languages/Brazilian‐Portugese-specific-translations.qmd)|
     |[Catalan](Conventions_for_Languages/Catalan-specific-translations.qmd)|
     |[Chinese](Conventions_for_Languages/Chinese-specific-translations.qmd)|
     |[French](Conventions_for_Languages/French-specific-translations.qmd)|
