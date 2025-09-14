@@ -18,11 +18,11 @@ Pour aider le processus de traduction, veuillez :
 
 1. Vous inscrire au [Slack des contributeurs de R](https://contributor.r-project.org/slack) et présentez-vous sur le canal 
 `#core-translations`
-1. Lire la section [Ressources](#resources) de ce document, car la traduction suit certaines conventions à respecter
+1. Lire la section [Ressources](#Ressources) de ce document, car la traduction suit certaines conventions à respecter
 1. Créer un compte sur [Weblate](https://translate.rx.studio/) (maintenu actuellement par [@daroczig](https://twitter.com/daroczig))
 1. Lister chaque [composant](https://translate.rx.studio/languages/fr/r-project/) en français
 1. Choisir un composant qui n'est pas traduit à 100% (comme par exemple le [package utils](https://translate.rx.studio/projects/r-project/utils-r/fr/))
-1. Cliquer sur **Unfinished strings** pour lister tous les messages non traduits et
+1. Cliquer sur **Chaînes non terminées** pour lister tous les messages non traduits et
 1. Commencez !
 
 ## Style
