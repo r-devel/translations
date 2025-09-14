@@ -113,7 +113,7 @@ In certain situations, we can simply ignore genders. In the following expression
 
 > Campo Authors@R não fornece nenhuma pessoa com nome e papel 'author'
 
-In rare cases, the messeges references who doing the programming. In these cases, the best we can do without 
+In rare cases, the message references who is doing the programming. In these cases, the best we can do without 
 jeopardising comprehension or overly increasing the length of the sentence is to use "o(a)".
 
 > _Not enough arguments passed to user macro '%s'_
