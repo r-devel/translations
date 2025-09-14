@@ -117,7 +117,7 @@ docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml 
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up
 ```
 
-To update, follow the 
+To update, follow the
 [official docs](https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-the-docker-container), but in
 short:
 
@@ -145,15 +145,16 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
 1. Get the two repos cloned on any machine. If this is your first time generating a patch on this machine:
 
     ```sh
-    git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ # remote #1: Weblate source
-    git remote add svn git remote add svn git@github.com:r-devel/r-svn.git     # remote #2: SVN source
-    git fetch svn master                                                       # retrieve the latest from SVN
+    mkdir weblate-diff && cd weblate-diff
+    git clone -o weblate https://translate.rx.studio/git/r-project/base-r-gui/ . # remote #1: Weblate source
+    git remote add svn git@github.com:r-devel/r-svn.git                          # remote #2: SVN source
+    git fetch svn main                                                           # retrieve the latest from SVN
     ```
 
     If you've got the repo set up locally already, update:
 
     ```sh
-    git fetch svn master
+    git fetch svn main
     git fetch weblate master
     git reset --hard weblate/master # force-reset to match state on Weblate (usual caution with --hard applies)
     ```
@@ -182,7 +183,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     }
 
     weblate_summary <- po_counts(po_files())
-    set_branch('svn/master')
+    set_branch('svn/main')
     svn_summary <- po_counts(po_files())
     set_branch('master')
 
@@ -194,7 +195,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
        log_info('Dropping {.N} empty files:')
        .SD[, by = package, {
           log_level(INFO, 'From package {blue(.BY$package)}:')
-          log_level(INFO, '  {toString(green(basename(filename)))}', .topenv = .SD) # NB: Need .SD since data.table doesn't pick up the variable from the string
+          log_level(INFO, '  {toString(green(basename(filename)))}', .topenv = list2env(.SD)) # NB: Need .SD since data.table doesn't pick up the variable from the string
        }]
        unlink(filename)
        NULL
@@ -208,7 +209,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
       log_info('New translations in {.N} files')
       .SD[, by = package, {
         log_level(INFO, 'From package {blue(.BY$package)}:')
-        log_level(INFO, '  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}', .topenv = .SD)
+        log_level(INFO, '  {sprintf("%s [+%s]", green(format(basename(filename))), red(format(n_newly_translated)))}', .topenv = list2env(.SD))
       }]
       NULL
     }]
@@ -236,19 +237,23 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
 1. Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.
 
     ```sh
-    # NB: _not_ 'git diff weblate/master svn/master' since we've just deleted the empty .po files locally
-    git diff svn/master --no-prefix -- "*.po"
+    # NB: _not_ 'git diff weblate/master svn/main' since we've just deleted the empty .po files locally
+    git diff svn/main --no-prefix -- "*.po"
     ```
 
 1. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
 
 ## Maintenance
 
+### Unlock components
+
 Components might become locked due to "not being able to push back to the upstream repo" (expected) or when upstream is not updated for a long time. In such case, components can be unlocked on the UI, but this needs to happen at the component level, so better to use the CLI instead:
 
 ```sh
 weblate unlock_translation r-project
 ```
+
+### Git rebase conflicts
 
 When there's a conflict between SVN and the Weblate git repo, and Weblate cannot pull from the upstream repo, you will need to resolve the conflicts manually after seeing an error like the below:
 
@@ -309,11 +314,25 @@ Weblate will provide a suggestion on how to fix, but in short:
     ./deconflict_add_continue.py weblate
     ```
 
-    This finds the **one** file causing conflicts, selects the changes from Weblate (in order to preserve string edit history in the UI), removes the changes from SVN and the git conflict markers, then continues the rebase process. It also prints some helpful output, e.g. the number of conflicts resolved and the `git status` which tells about progress in the ongoing rebase.
+    Note that at the start of the rebase process, the script will not be available in the repo (as was added there later in the git history), but you can download it from the above URL or copy the backup from the root user's home directory.
 
-    For now, if there are more than one files affected by a given rebase step (e.g. more than one file marked `both modified:` in the `git status` output), these needed to be edited manually (with the text editor of your choice, e.g. `nano` or `mcedit`), then added (`git add`) before continuing (`git rebase --continue`). This should be rare as Weblate typically associates one file edit per commit. The `deconflict_add_continue.py` step could be extended to handle several files, but we've not yet done so. Note also the script [`show_conflicts.py`](https://github.com/daroczig/R-weblate-fork/blob/main/show_conflicts.py) which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.
+    This script originally found the one file causing conflicts, selected the changes from Weblate (in order to preserve string edit history in the UI), removed the changes from SVN and the git conflict markers, then continued the rebase process. At the time being, it should be able to handle multiple files as well (iterating over all conflicting files), but manual intervention might be needed from time to time. It also prints some helpful output, e.g. the number of conflicts resolved and the `git status` which tells about progress in the ongoing rebase.
+
+    When the script resolved the conflicts, you might need to confirm the commit message (e.g. hit `F2` in the opened nano editor), then run the script again and again and again until the rebase completes.
+
+    If needed, edit file(s) manually (with the text editor of your choice, e.g. `nano` or `mcedit`), then add (`git add`) before continuing (`git rebase --continue`). This should be rare as Weblate typically associates one or a few file edits per commit. Note also the script [`show_conflicts.py`](https://github.com/daroczig/R-weblate-fork/blob/main/show_conflicts.py) which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.
 
 1. Restore changes that may have been lost from SVN, e.g. newly updated source strings or source line numbers, by running `msgmerge` on all pot files using the script [`update_pkg_po.py`](https://github.com/daroczig/R-weblate-fork/blob/main/update_pkg_po.py).
+
+1. Don't forget to unlock the components after the rebase is complete (see above).
+
+### Bot attacks
+
+Sometimes we experience massive traffic originating from bots at a single IP or subnet, which might bring down the service. To mitigate this, we can block the IP addresses on the server or at the related VPC's network ACL.
+
+Currently, the following IP addresses are blocked:
+
+- 47.79.0.0/16 (ACL)
 
 ## Administrators
 
@@ -342,3 +361,19 @@ There are language teams defined in each project with the below extra permission
 - Manage translation memory
 
 See the general [Weblate FAQ](Weblate-FAQ.qmd#how-to-manage-translation-teams-in-weblate) on how to manage members.
+
+### Creating a new language team
+
+Language team creation should be done in a transparent way to the community, so that all translators of the same language can be aware of the team creation and decide on the dedicated reviewers workflow.
+
+Once the list of initial team leaders and administrators is defined, a Weblate admin should first create the team within the "R Project" Weblate project: <https://translate.rx.studio/access/r-project/#teams>
+
+The list of roles to be added:
+
+- Review strings
+- Manage translation memory
+- Manage glossary
+
+Users need to be added by their Weblate user ID, which can be searched for at <https://translate.rx.studio/manage/users/> if unknown.
+
+Note that there's a special checkbox for Team Administrators at the time of adding a user to the team, which should be checked for the initial team leaders so that they can manage the team members.
