@@ -54,19 +54,24 @@ Dans les cas particuliers, une fonction peut être utilisée comme verbe. Nous a
 L'utilisation des espaces et des paragraphes en français est règlementée par la typographie.
 Les textes R, néanmoins ont des contraintes d'espace et de format qui ne sont pas évidentes à traduire.
 
-Nous plaçons un espace devant les ponctuations telles que :, ;, !, ? (sauf . et ,)
+Nous plaçons un espace devant les ponctuations telles que :  ; ! ? (sauf . et ,)
 
 / : espace avant et après (sauf si c'est un chemin d'accès, par exemple, c:/temp)
 par contre, nous conservons les conventions du langage S pour les guillemets,
 soit '' ou "", mais non transformés et sans espaces.
-’ : remplacer l'apostrophe grasse ’ par l'apostrophe simple '
-` : garder le backtick 
-‘ : remplacer l'apostrophe simple retournée ‘ par l'apostrophe simple '
-“ : remplacer les guillemets doubles retournés ouvrants “ par l'apostrophe simple '
-” : remplacer les guillemets doubles fermants ” par l'apostrophe simple '
+
++ ’ : remplacer l'apostrophe grasse ’ par l'apostrophe simple '
+
++ ` : garder le backtick 
+
++ ‘ : remplacer l'apostrophe simple retournée ‘ par l'apostrophe simple '
+
++ “ : remplacer les guillemets doubles retournés ouvrants “ par l'apostrophe simple '
+
++ ” : remplacer les guillemets doubles fermants ” par l'apostrophe simple '
 
 La plupart des messages R portent sous une certaine forme la référence au code qui les a produits.
-Ceci ce fait à l'aide des [spécifieurs de format](https://cplusplus.com/reference/cstdio/printf/) et ils doivent être dans le même ordre dans le texte de référence.
+Ceci se fait à l'aide des [spécifieurs de format](https://cplusplus.com/reference/cstdio/printf/) et ils doivent être dans le même ordre dans le texte de référence.
 
 > _%s and %s must have the same length_
 
@@ -132,17 +137,19 @@ Nous avons essayé d'utiliser les versions les plus communes de chaque terme, ma
 Par exemple si vous cherchez "_caching_", l'entrée correspondante est "_cache_". 
 Le même mot peut avoir aussi plusieurs fonctions telles que "_replacement_", qui signifie à la fois "substitution" et "substitué".
 
-Certain mots de par leur usage conservent leur terme anglais puisque leur traduction est faiblement utilisée, mais ce n'est que subjectif; les mots affectés d'un astérisque \* sont ceux sur lesquels un consensus doit statuer.
+Certain mots de par leur usage conservent leur terme anglais puisque leur traduction est faiblement utilisée, mais ce n'est que subjectif.
 
 | Anglais              | Français                                     |
 |:---------------------|:---------------------------------------------|
 | aborting             | annulation, abandon                          |
+| alias    | alias   |
 | allocation    | affectation mémoire   |
 | anova    | ANOVA   |
 | argument    | argument (et non paramètre)   |
 | array    | tableau   |
 | assigment    | affectation   |
 | attribute    | attribut   |
+| attach    | joindre, annexer   |
 | backslash    | caractère barre oblique inversée   |
 | binary operator   | opérateur binaire   |
 | bind    | lien (binding : lier)   |
@@ -150,8 +157,8 @@ Certain mots de par leur usage conservent leur terme anglais puisque leur traduc
 | BOM    | BOM (indicateur d'ordre d'octets)   |
 | boxplot    | boîte à moustaches   |
 | breaks    | borne des classes (histogrammes)   |
-| browser    | explorateur   |
-| bytecode    | pseudo-code (code a octets est officiel mais peu utilisé)   |
+| browser    | explorateur, navigateur   |
+| bytecode    | pseudo-code (code à octets est officiel mais peu utilisé)   |
 | cached value    | valeur enregistrée en mémoire cache   |
 | call    | appel   |
 | callback    | rappel (procédure de, callback)   |
@@ -159,50 +166,62 @@ Certain mots de par leur usage conservent leur terme anglais puisque leur traduc
 | categorical    | qualitative (pour une variable)   |
 | channel    | canal   |
 | character    | caractère (sans h)   |
+| check    | vérifier  |
+| chunk    | bloc de code   |
 | clipping    | détourage   |
 | closure    | fermeture (closure)   |
 | cluster    | agrégation, groupe   |
+| codoc   | codoc (fonction de R)   |
 | coerce    | convertir automatiquement   |
 | coercion    | conversion automatique   |
 | collation    | classement   |
-| collapsing level    | niveau de fusion   |
+| collapsing level  | niveau de fusion   |
 | colortype    | colorimétrie   |
-| computationally singular : numériquement singulière (par exemple pour une matrice)   |
+| computationally singular  |  numériquement singulière (par exemple pour une matrice)   |
 | connection   | connexion   |
 | console   | console   |
 | covariate    | covariables   |
-| database    |base de données   |
-| dataframe    | tableau de données, mais on précise (data frame) si nécessaire   |
+| database    | base de données   |
+| dataframe    | tableau de données, mais on précise (data frame) si nécessaire; utilisé au masculin (objet)   |
 | dataset    | jeu de données   |
+| debug  | débogguer   | 
+| defunct | obsolete, n'existe plus  |
 | deparse   | reconstruction de code (deparse)   |
 | deprecated   | obsolète   |
 | deviance    | déviance (en statistique)   |
 | device    | périphérique   |
+| detach | détacher, séparer |
 | dispatch   | dispatcheur   |
+| documentation object| objet de documentation  |
 | double    | ‘double’ (nombre à virgule flottante)   |
 | download   | téléchargement client <- serveur   |
 | driver    | pilote   |
+| drop    | ignorer |
 | edge    | côté (d'un polygone)   |
 | eigenvalues    | valeurs propres   |
 | encoding    | encodage   |
 | environment    | environnement (voir aussi workspace)   |
-| factor    |variable facteur ou facteur   |
+| evaluate    | évaluer, par exemple avec _evaluate()_   |
+| factor    | variable facteur ou facteur   |
 | fallback    | repli (ex: procédure de repli)   |
-| fifo    | fifo (préférable à... peps, peu connu)   |
+| fifo    | fifo , pour _first in, first out_ (préférable à... peps, peu connu)   |
 | filename    | nom de fichier   |
 | file stream    | corps du fichier   |
 | fit    | ajustement ou ajuster   |
+| flag  | balise, baliser, marquer   |
 | flush   | vider ou vidage   |
 | formula    | formule du modèle ou formule tout court   |
 | frame    | cadre ou trame selon le contexte; (data frame : tableau de données)   |
 | GiB    | giga octets (pour les tailles)   |
 | handler    | manipulateur de données (voir aussi interrupt handler)   |
+| hardcoded   | codé en dur |
 | hashing    | hachage   |
 | Hessian    | Hessienne (se dit d'une matrice)   |
 | hinges    | jointures   |
-| history    | historique des commandes   |
+| history    | historique (des commandes)   |
 | image    | image d'environnement (fichier image où les objets R sont sauvés)   |
 | implemented    | implémenté   |
+| incoming checks   | contrôle des entrées  |
 | index    |indice (presque toujours, et non index)   |
 | interrupt handler   | gestionnaire d'interruptions   |
 | invalid    |incorrect (à préférer à 'non valide')   |
@@ -210,42 +229,52 @@ Certain mots de par leur usage conservent leur terme anglais puisque leur traduc
 | issue tracker   | gestionnaire de tickets (issue tracker)   |
 | knots    | noeuds   |
 | kriging    | krigeage   |
-| label    | étiquette   |
+| label    | étiquette, libellé   |
 | lag    | décalage   |
 | l    | en général longueur; compléter avec 'taille' ex: "....différent de la taille l de l'objet DT..."   |
 | layout    | mise en page   |
-| lazy loading    |chargement partiel (explicit loading : chargement complet)   |
-| leading minor   | mineur dominant   |
-| length   | longueur (réserver taille pour size)   |
+| lazy loading    |chargement partiel (_explicit loading_ : chargement complet)   |
+| leading minor   | mineur dominant (sous-matrice)  |
+| length   | longueur (réserver taille pour _size_)   |
 | LHS    | membre gauche (d'une expression, d'une égalité...)   |
 | library    | bibliothèque   |
 | likelihood    |vraisemblance   |
+| link | lien  |
 | list column   | colonne de type liste   |
 | locale    | environnement linguistique   |
 | locator    | mode de localisation à la souris (pour les graphes)   |
 | logical    | booléen   |
 | log-likelihood   | log de vraisemblance   |
+| macro    | macro |
 | magic number   | nombre magique   |
 | map (to map)    |mapper (anglicisme d'usage courant)   |
+| match | correspondance |
 | matrix is exactly singular   | matrice singulière   |
+| metadata    | métadonnées  |
 | metafile    | metafile   |
-| mirror site    | site miroir   |
-| mismatch    |incohérence   |
+| mirror site    | site miroir (_ex_ : CRAN)  |
+| mismatch    | incohérence   |
+| missing | absent  |
 | mixed    | mixte (plutôt que mélangé)   |
 | mode    | mode   |
-| modulus    | modulus   |
+| modulus    | modulo   |
 | multibyte    | multioctets   |
 | NA    | NA ou valeur manquante, selon le contexte   |
 | named args    | arguments nommés   |
 | namespace    | espace de noms   |
 | nondecreasing vector    | vecteur de valeurs non décroissantes   |
+| non-interactively | de façon non interactive |
+| non-numeric type | type non numérique  |
 | non-vector type    | type non vectoriel   |
+| numeric-alike    | numérique ou assimilé   |
 | notches    | indentations   |
+| offending | qui pose problème  |
 | offset    | décalage   |
 | opcode    | code d'opération   |
 | outlier   | valeur extrême   |
 | out of range    | en dehors de l’intervalle   |
-| overflow   |débordement au dépassement de capacité par le haut   |
+| overflow   | débordement ou dépassement de capacité par le haut   |
+| override | réécraser, redéfinir |
 | package    | package (non traduit cf. significations pour paquet ou paquetage)   |
 | pager    | afficheur   |
 | pair list    | liste appairée   |
@@ -269,18 +298,22 @@ Certain mots de par leur usage conservent leur terme anglais puisque leur traduc
 | quote rule    | règle des guillemets   |
 | raw   | raw, si c'est le type de données, sinon brut   |
 | range   | plage, étendue ou intervalle, selon le contexte   |
-| redraw   | retraçage (des affichages), rafraichissement   |
+| redraw   | retraçage (des affichages), rafraîchissement   |
 | regex   | expression régulière   |
 | regular expression   | expression régulière   |
-| report   |(to report : signaler)   |
+| replace | substituer |
+| report   | (to report : signaler)   |
 | repository   | entrepôt, dépôt   |
+| required    | nécessaire  |
 | residuals    | résidus   |
 | restore   | restaurer   |
 | return   | retourner (abcd -> dcba) ou renvoyer (d'une fonction) selon le contexte   |
 | RHS    | membre droit (d'une expression, d'une égalité...)   |
 | RNG   | RNG ou générateur de nombres pseudo-aléatoires   |
 | routine   | sous-programme ou procédure   |
+| run   | exécuter (une fonction, un script...)  |
 | scaled    | standardisé, mis à l'échelle   |
+| seal    | sceller   |
 | search path    | chemin de recherche   |
 | seed    | valeurs d'initialisation d'un processus, graine aléatoire (ex: génération des nombres aléatoires)   |
 | seek    | mode d'accès aléatoire   |
@@ -291,20 +324,24 @@ Certain mots de par leur usage conservent leur terme anglais puisque leur traduc
 | size    | taille   |
 | skew-symmetric   | matrice anti-symétrique   |
 | slash    | caractère barre oblique droite '/' (opposé à antislash barre oblique gauche '\')   |
-| slot    | slot (sous partie d'un objet S4, terme spécifique de S)   |
+| slot    | slot (sous partie d'un objet S4, terme spécifique du _S_)   |
 | snapshot    | instantané graphique, capture d'écran   |
 | socket   | connecteur logiciel (ou socket -usage courant- dans les longs messages)   |
 | source    | source (to source : sourcer, préférable à entrée par défaut)   |
 | specified    | fourni (voir choisi ou donné, selon le contexte)   |
+| splice   | joindre  |
 | stack   | pile   |
 | standard deviation   | écart-type   |
+| startup | démarrage, initialisation  |
 | stratum    |strate   |
 | subscript    | indice   |
 | subset    | sous-ensemble (subsetting : indiçage, ou réalisation d'un sous-ensemble)   |
 | supernode    |super-noeud   |
 | supported   | pris en charge (pas supporté, qui est un anglicisme)   |
 | table    | tableau de contingence   |
-| tag    | marque   |
+| tag    | marque, balise   |
+| tarball | archive, tarball  |
+| template | modèle  |
 | thermometer    | jauge (contexte de graphes)   |
 | thread    | contexte (threaded code : code contextuel)   |
 | thread buffers        |  mémoire tampon des thread   |
@@ -321,6 +358,7 @@ Certain mots de par leur usage conservent leur terme anglais puisque leur traduc
 | unary operator       |  opérateur unaire   |
 | unbind       |  délier   |
 | underflow       |  dépassement de capacité par le bas   |
+| unlisted  | non listé |
 | unmatched       |  déparié   |
 | unpacking        |  extraction   |
 | unwrap columns        |  déplier les colonnes   |
@@ -334,174 +372,5 @@ Certain mots de par leur usage conservent leur terme anglais puisque leur traduc
 | warning       |  avis (avertissement est bien aussi, mais trop long)   |
 | weight        |  pondération   |
 | working directory        |  répertoire de travail   |
-| workspace       | environnement de travail (workspace = environment dans R)   |
-ou session s'il s'agit à la fois de l'historique et de l'environnement   |
+| workspace       | environnement de travail (workspace = environment dans R) ou session s'il s'agit à la fois de l'historique et de l'environnement   |
 | wrapup       | emballer ou emballage   |
-
-
-
-| Inglês               | Português                                    |
-|:---------------------|:---------------------------------------------|
-| abort                | interromper                                  |
-| alias                | alias\*                                      |
-| allocate             | alocar                                       |
-| argument             | argumento                                    |
-| array                | array                                        |
-| assign               | atribuir                                     |
-| attach               | anexar                                       |
-| attribute            | atributo                                     |
-| backslash            | barra invertida                              |
-| bind                 | associar / vincular                          |
-| bitmap               | bitmap                                       |
-| boxplot              | boxplot                                      |
-| break                | limite de categoria (para histogramas)       |
-| browser              | navegador                                    |
-| build                | compilar                                     |
-| bytecode             | bytecode                                     |
-| cache                | cachear                                      |
-| call                 | chamar                                       |
-| callback             | callback                                     |
-| character string     | string de caracteres\*                       |
-| check                | verificar                                    |
-| chunk                | bloco (de código)\*                          |
-| closure              | closure                                      |
-| codoc                | codoc (da função do R)                       |
-| coerce               | fazer coerção                                |
-| colortype            | colortype                                    |
-| console              | console                                      |
-| data frame           | data frame                                   |
-| database             | base de dados                                |
-| dataset              | conjunto de dados                            |
-| debug                | depurar\*                                    |
-| defunct              | extinto                                      |
-| deparse              | deparse                                      |
-| deprecated           | obsoleto                                     |
-| detach               | detach\*                                     |
-| device               | dispositivo                                  |
-| dispatch             | despachar                                    |
-| documentation object | objeto de documentação\*                     |
-| download             | baixar                                       |
-| driver               | driver                                       |
-| drop                 | descartar                                    |
-| encoding             | codificação                                  |
-| entry                | registro / campo                             |
-| environment          | ambiente                                     |
-| evaluate             | avaliar (por exemplo, `eval()`)\*            |
-| factor               | fator                                        |
-| fifo                 | fifo (de _first in, first out_)              |
-| file pointer         | ponteiro de arquivo\*                        |
-| file stream          | stream de arquivo                            |
-| filename             | nome do arquivo                              |
-| fit                  | ajustar                                      |
-| flag                 | flag                                         |
-| flush                | esvaziar                                     |
-| frame                | quadro (para _stack_) / escopo (para _call_) |
-| handle               | gerenciar                                    |
-| hard-coded           | hard-coded\*                                 |
-| history              | histórico                                    |
-| implement            | implementar                                  |
-| incoming checks      | verificações de recebimento\*                |
-| index                | índice                                       |
-| invalid              | inválido                                     |
-| IO                   | IO                                           |
-| label                | rótulo                                       |
-| lag                  | defasagem                                    |
-| layout               | layout\*                                     |
-| lazy loading         | lazy loading\*                               |
-| lazydata             | lazydata                                     |
-| leading minor        | submatriz\*                                  |
-| length               | comprimento                                  |
-| library              | biblioteca                                   |
-| link                 | link                                         |
-| locale               | locale                                       |
-| locator              | localizador                                  |
-| locking              | travamento\*                                 |
-| logical              | lógico (ao invés de booleano)                |
-| macro                | macro                                        |
-| magic number         | número mágico                                |
-| match                | corresponder                                 |
-| metafile             | metafile                                     |
-| mirror               | espelho (por exemplo, do CRAN)               |
-| mismatch             | incompatível                                 |
-| missing              | ausente                                      |
-| modulus              | módulo                                       |
-| multibyte            | multibyte                                    |
-| namespace            | namespace\*                                  |
-| non-interactively    | de forma não interativa                      |
-| non-numeric type     | tipo não numérico                            |
-| numeric-alike        | numérico ou similar\*                        |
-| offending            | problemático                                 |
-| offset               | deslocar / compensar (depende do contexto)   |
-| opcode               | opcode                                       |
-| outlier              | outlier\*                                    |
-| overflow             | overflow                                     |
-| override             | sobrescrever                                 |
-| package              | pacote                                       |
-| pager                | visualizador\*                               |
-| pair list            | lista pareada                                |
-| parse                | analisar\*                                   |
-| path                 | caminho                                      |
-| pipe                 | pipe                                         |
-| pixmap               | pixmap                                       |
-| platform             | plataforma                                   |
-| polyline             | polyline                                     |
-| port                 | porta (por exemplo, 8080)                    |
-| portable             | portável                                     |
-| profiling            | análise de desempenho                        |
-| profile              | perfil (substantivo), perfilar (verbo)       |
-| promise              | promessa                                     |
-| prompt               | prompt                                       |
-| proxy                | proxy                                        |
-| push back            | voltar atrás                                 |
-| quote symbol         | símbolo de citação                           |
-| range                | intervalo / limite (depende do contexto)     |
-| raw                  | raw (para o tipo de dado)                    |
-| redraw               | redesenhar                                   |
-| regular expression   | expressão regular                            |
-| replace              | substituir                                   |
-| report               | reportar                                     |
-| repository           | repositório                                  |
-| require              | requerer\*                                   |
-| return               | retornar                                     |
-| RNG                  | RNG                                          |
-| role                 | papel\*                                      |
-| routine              | rotina                                       |
-| run                  | executar                                     |
-| seal                 | selar                                        |
-| search path          | caminho de busca                             |
-| seed                 | semente                                      |
-| seek                 | buscar                                       |
-| sink                 | sink                                         |
-| slash                | barra                                        |
-| slot                 | slot (termo do R)\*                          |
-| snapshot             | snapshot                                     |
-| socket               | soquete                                      |
-| source               | carregar                                     |
-| splice               | juntar                                       |
-| stack                | stack\*                                      |
-| standardizable       | padronizável                                 |
-| startup              | inicialização                                |
-| strict               | rigoroso(a)                                  |
-| subscript            | índice\*                                     |
-| subset               | dividir em subconjuntos                      |
-| tag                  | etiqueta                                     |
-| tag                  | tag\*                                        |
-| tangling             | tangling\*                                   |
-| tarball              | tarball                                      |
-| template             | modelo\*                                     |
-| thread               | thread\*                                     |
-| timeout              | limite de tempo                              |
-| timer                | cronômetro                                   |
-| timezone             | fuso horário                                 |
-| top level            | nível superior                               |
-| traceback            | traceback                                    |
-| truncate             | truncar                                      |
-| unary operator       | operador unário                              |
-| unbind               | desvincular                                  |
-| underflow            | underflow                                    |
-| unlisted             | não listado                                  |
-| viewport             | viewport                                     |
-| vignette             | vignette                                     |
-| warning              | alerta                                       |
-| workspace            | ambiente de trabalho                         |
-| wrapup               | finalização\*                                |
