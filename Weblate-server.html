@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -68,14 +68,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./img/Rlogo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a6cb8b00d52e44bfe076b25afc5475c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5df47603e3b75ee8f755543cdaab90e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -119,7 +120,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/Rlogo.png" alt="R" class="navbar-logo">
+    <img src="./img/Rlogo.png" alt="R" class="navbar-logo light-content">
+    <img src="./img/Rlogo.png" alt="R" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">translations</span>
@@ -132,7 +134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -167,6 +169,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
@@ -307,7 +313,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="docker-images-and-configuration" class="level2">
 <h2 class="anchored" data-anchor-id="docker-images-and-configuration">Docker images and configuration</h2>
 <p>Weblate is running using Docker and Docker compose:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="st">'3'</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="st">'3'</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">services</span><span class="kw">:</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">weblate</span><span class="kw">:</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span><span class="at"> weblate/weblate</span></span>
@@ -351,9 +357,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">weblate-data</span><span class="kw">:</span><span class="at"> </span><span class="kw">{}</span></span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">postgres-data</span><span class="kw">:</span><span class="at"> </span><span class="kw">{}</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">redis-data</span><span class="kw">:</span><span class="at"> </span><span class="kw">{}</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">ssl-certs</span><span class="kw">:</span><span class="at"> </span><span class="kw">{}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">ssl-certs</span><span class="kw">:</span><span class="at"> </span><span class="kw">{}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>environment</code> file has no modifications, as the env var overrides are defined in the <code>docker-compose-https.override.yml</code> file:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="st">'3'</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="st">'3'</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">services</span><span class="kw">:</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">weblate</span><span class="kw">:</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">environment</span><span class="kw">:</span></span>
@@ -374,9 +380,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">WEBLATE_AUTO_UPDATE</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">https-portal</span><span class="kw">:</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">environment</span><span class="kw">:</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">DOMAINS</span><span class="kw">:</span><span class="at"> </span><span class="st">'translate.rx.studio -&gt; http://weblate:8080'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">DOMAINS</span><span class="kw">:</span><span class="at"> </span><span class="st">'translate.rx.studio -&gt; http://weblate:8080'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The current image ids:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo docker images</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo docker images</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">REPOSITORY</span>              TAG         IMAGE ID       CREATED         SIZE</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">weblate/weblate</span>         latest      2ea7d086a8c4   4 days ago      1.1GB</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">redis</span>                   6-alpine    3616f0c0705d   7 days ago      27.1MB</span>
@@ -387,15 +393,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">redis</span>                   <span class="op">&lt;</span>none<span class="op">&gt;</span>      57c580553a4d   10 months ago   25.5MB</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ex">postgres</span>                <span class="op">&lt;</span>none<span class="op">&gt;</span>      ea498678e2bd   10 months ago   189MB</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ex">weblate/weblate</span>         <span class="op">&lt;</span>none<span class="op">&gt;</span>      475045de4358   10 months ago   847MB</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">steveltn/https-portal</span>   <span class="op">&lt;</span>none<span class="op">&gt;</span>      26e5bea459df   12 months ago   274MB</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">steveltn/https-portal</span>   <span class="op">&lt;</span>none<span class="op">&gt;</span>      26e5bea459df   12 months ago   274MB</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Current weblate etc versions listed at <a href="https://translate.rx.studio/about/" class="uri">https://translate.rx.studio/about/</a></p>
 <p>Commands to start the service:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml build</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml up</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml build</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml up</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>To update, follow the <a href="https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-the-docker-container">official docs</a>, but in short:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml pull</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml pull</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml down</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml up <span class="at">-d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">docker-compose</span> <span class="at">-f</span> docker-compose-https.yml <span class="at">-f</span> docker-compose-https.override.yml up <span class="at">-d</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="quarterly-patch-for-r-core" class="level2">
 <h2 class="anchored" data-anchor-id="quarterly-patch-for-r-core">Quarterly patch for R Core</h2>
@@ -414,16 +420,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><p>Make sure the Weblate repo is fully up-to-date. Check status at https://translate.rx.studio/projects/r-project/#repository – be sure there are no <code>Update</code> or <code>Commit</code> actions needed.</p></li>
 <li><p>Get the two repos cloned on any machine. If this is your first time generating a patch on this machine:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> weblate-diff <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> weblate-diff</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> weblate-diff <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> weblate-diff</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="at">-o</span> weblate https://translate.rx.studio/git/r-project/base-r-gui/ . <span class="co"># remote #1: Weblate source</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add svn git@github.com:r-devel/r-svn.git                          <span class="co"># remote #2: SVN source</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch svn main                                                           <span class="co"># retrieve the latest from SVN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch svn main                                                           <span class="co"># retrieve the latest from SVN</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>If you’ve got the repo set up locally already, update:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch svn main</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch svn main</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch weblate master</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--hard</span> weblate/master <span class="co"># force-reset to match state on Weblate (usual caution with --hard applies)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--hard</span> weblate/master <span class="co"># force-reset to match state on Weblate (usual caution with --hard applies)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Make needed manual changes to reduce noise and ensure quality, e.g.&nbsp;something like:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(crayon)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(logger)</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -492,10 +498,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"  %s:</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">red</span>(po_summary<span class="sc">$</span>filename[idx])))</span>
 <span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>    <span class="fu">writeLines</span>(<span class="fu">paste0</span>(<span class="st">"    "</span>, res[[idx]]))</span>
 <span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NB: _not_ 'git diff weblate/master svn/main' since we've just deleted the empty .po files locally</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff svn/main <span class="at">--no-prefix</span> <span class="at">--</span> <span class="st">"*.po"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NB: _not_ 'git diff weblate/master svn/main' since we've just deleted the empty .po files locally</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff svn/main <span class="at">--no-prefix</span> <span class="at">--</span> <span class="st">"*.po"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Share the patch file on the R Contributors Slack group’s #core-translation channel and kindly ping <span class="citation" data-cites="MichaelLawrence">@MichaelLawrence</span> for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.</p></li>
 </ol>
 </section>
@@ -505,12 +511,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="unlock-components" class="level3">
 <h3 class="anchored" data-anchor-id="unlock-components">Unlock components</h3>
 <p>Components might become locked due to “not being able to push back to the upstream repo” (expected) or when upstream is not updated for a long time. In such case, components can be unlocked on the UI, but this needs to happen at the component level, so better to use the CLI instead:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">weblate</span> unlock_translation r-project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">weblate</span> unlock_translation r-project</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="git-rebase-conflicts" class="level3">
 <h3 class="anchored" data-anchor-id="git-rebase-conflicts">Git rebase conflicts</h3>
 <p>When there’s a conflict between SVN and the Weblate git repo, and Weblate cannot pull from the upstream repo, you will need to resolve the conflicts manually after seeing an error like the below:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rebasing</span> <span class="er">(</span><span class="ex">1/210</span><span class="kw">)</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rebasing</span> <span class="er">(</span><span class="ex">1/210</span><span class="kw">)</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Rebasing</span> <span class="er">(</span><span class="ex">2/210</span><span class="kw">)</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Rebasing</span> <span class="er">(</span><span class="ex">50/210</span><span class="kw">)</span></span>
@@ -522,30 +528,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Could</span> not apply 93fd9017... Added translation using Weblate <span class="er">(</span><span class="ex">Spanish</span><span class="kw">)</span></span>
 <span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="ex">CONFLICT</span> <span class="er">(</span><span class="ex">add/add</span><span class="kw">)</span><span class="bu">:</span> Merge conflict in src/library/stats/po/es.po</span>
 <span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="ex">Auto-merging</span> src/library/stats/po/es.po</span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="ex">rebase</span> refs/remotes/origin/trunk: command returned error: 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="ex">rebase</span> refs/remotes/origin/trunk: command returned error: 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Weblate will provide a suggestion on how to fix, but in short:</p>
 <ol type="1">
 <li><p>SSH to the Weblate server</p></li>
 <li><p>Make a backup on the Git repo before messing with the rebase process:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-zcvf</span> /root/base-r-gui-repo-<span class="va">$(</span><span class="fu">date</span> <span class="st">'+%Y-%m-%d'</span><span class="va">)</span>.tar.gz <span class="dt">\</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-zcvf</span> /root/base-r-gui-repo-<span class="va">$(</span><span class="fu">date</span> <span class="st">'+%Y-%m-%d'</span><span class="va">)</span>.tar.gz <span class="dt">\</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Attach the Docker container (this image is offered by <code>weblate</code>):</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker exec <span class="at">-ti</span> weblate-docker_weblate_1 bash</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker exec <span class="at">-ti</span> weblate-docker_weblate_1 bash</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Enter the git folder:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> app/data/vcs/r-project/base-r-gui</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> app/data/vcs/r-project/base-r-gui</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>As noted above when we made a copy of the repo, this folder can also be found in Weblate outside Docker:</p>
 <pre><code>/var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui</code></pre></li>
 <li><p>Pull from SVN and start the rebase process to see the actual errors:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> svn fetch</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> svn rebase</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> svn fetch</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> svn rebase</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>(repeat until rebase completes) Resolve any conflicts that come up, usually using the script <a href="https://github.com/daroczig/R-weblate-fork/blob/main/deconflict_add_continue.py"><code>deconflict_add_continue.py</code></a> found at the repo root:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./deconflict_add_continue.py</span> weblate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./deconflict_add_continue.py</span> weblate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Note that at the start of the rebase process, the script will not be available in the repo (as was added there later in the git history), but you can download it from the above URL or copy the backup from the root user’s home directory.</p>
 <p>This script originally found the one file causing conflicts, selected the changes from Weblate (in order to preserve string edit history in the UI), removed the changes from SVN and the git conflict markers, then continued the rebase process. At the time being, it should be able to handle multiple files as well (iterating over all conflicting files), but manual intervention might be needed from time to time. It also prints some helpful output, e.g.&nbsp;the number of conflicts resolved and the <code>git status</code> which tells about progress in the ongoing rebase.</p>
 <p>When the script resolved the conflicts, you might need to confirm the commit message (e.g.&nbsp;hit <code>F2</code> in the opened nano editor), then run the script again and again and again until the rebase completes.</p>
 <p>If needed, edit file(s) manually (with the text editor of your choice, e.g.&nbsp;<code>nano</code> or <code>mcedit</code>), then add (<code>git add</code>) before continuing (<code>git rebase --continue</code>). This should be rare as Weblate typically associates one or a few file edits per commit. Note also the script <a href="https://github.com/daroczig/R-weblate-fork/blob/main/show_conflicts.py"><code>show_conflicts.py</code></a> which takes a file name as an argument and prints a side-by-side view of any git conflicts in the file.</p></li>
 <li><p>Restore changes that may have been lost from SVN, e.g.&nbsp;newly updated source strings or source line numbers, by running <code>msgmerge</code> on all pot files using the script <a href="https://github.com/daroczig/R-weblate-fork/blob/main/update_pkg_po.py"><code>update_pkg_po.py</code></a>.</p></li>
-<li><p>Don’t forget to unlock the components after the rebase is complete (see above).</p></li>
+<li><p>Don’t forget to unlock the components after the rebase is complete: <code>weblate unlock_translation r-project</code></p></li>
 </ol>
 </section>
 <section id="bot-attacks" class="level3">
@@ -652,13 +658,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
