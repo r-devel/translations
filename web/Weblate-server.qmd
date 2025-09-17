@@ -324,7 +324,7 @@ Weblate will provide a suggestion on how to fix, but in short:
 
 1. Restore changes that may have been lost from SVN, e.g. newly updated source strings or source line numbers, by running `msgmerge` on all pot files using the script [`update_pkg_po.py`](https://github.com/daroczig/R-weblate-fork/blob/main/update_pkg_po.py).
 
-1. Don't forget to unlock the components after the rebase is complete (see above).
+1. Don't forget to unlock the components after the rebase is complete: `weblate unlock_translation r-project`
 
 ### Bot attacks
 
