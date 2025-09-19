@@ -89,8 +89,7 @@ if its use is not strictly correct.
 
 Unlike Portuguese, English does not specify grammatical gender. We will try to follow the [Manual for Non Sexist Use of 
 Language (in 
-Portuguese)](https://edisciplinas.usp.br/pluginfile.php/3034366/mod_resource/content/1/Manual%20para%20uso%20n%C3%A3o%
-20sexista%20da%20linguagem.pdf) in translations as much as we can, but unfortunately that is not always possible.
+Portuguese)](https://edisciplinas.usp.br/pluginfile.php/3034366/mod_resource/content/1/Manual%20para%20uso%20n%C3%A3o%20sexista%20da%20linguagem.pdf) in translations as much as we can, but unfortunately that is not always possible.
 
 Grammatical gender of arguments, acronyms and other nouns can usually be inferred by context. In the example below, we 
 translate "_DLL_" as "a biblioteca de vínculo dinâmico" (dynamic-link library).
