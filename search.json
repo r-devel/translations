@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Welcome to the translation adventure in R! 🚀\nIn a world that thrives on interconnectedness and global communication, translation plays a pivotal role in bridging linguistic divides. Translation, the art of rendering one language into another, shatters those confines, unlocking a world of possibilities for understanding and collaboration.\nTranslation dashboards\nSo if you want to start, you can contribute by following these steps:\n\nSign up to the R Contributors Slack and introduce yourself in the #core-translations channel;\nCreate an account on Weblate and read the Translations chapter on the R Development guide;\nRead the Conventions for translation section of this Wiki, for some conventions that should be followed;\nRead the guidelines for the specific language you want to contribute to. If a guideline for your language doesn’t exist yet, please feel free to submit a pull request and create it.\n\n\n\nLanguage\n\n\n\n\nArabic\n\n\nBengali\n\n\nCatalan\n\n\nChinese\n\n\nHindi\n\n\nNepali\n\n\nPortuguese (Brazilian)\n\n\nSpanish\n\n\n\nYou can start translating!\n\nYou can check the guide on how Weblate works and check this short demo on how to use the Weblate interface. You can also get access to complete documentation of Weblate through this link.\n\n\nAll outputs in base R and recommended packages (such as messages emitted by stop(), warning(), or message()) are eligible for translation, as are menu labels in the GUI.\n\n\n\nLanguages without an established translation team and so without dedicated reviewers have their translations directly approved without review. In that perspective, there’s a single role for translators, and no reviewers.\nIn case a team has been established for a language, we use the dedicated reviewers workflow on Weblate, where we currently manage 3 roles in the platform.\n\n\nEvery registered user on Weblate can act as a translator for any language. All translations need to be reviewed unless there is no reviewer assigned for that language. If you are not sure about a translation, you can make a suggestion instead. You can also use the Glossary to check which terms you shouldn’t translate and discuss with the community to add new ones if you don’t find the word you are looking for.\n\n\n\nReviewers bear the editor role to approve the work of translators and ensure the overall cohesion of the translation work in one language. For adding new reviewers for a language, please reach out to the respective team leaders via the #core-translation channel on the R Contributors Slack workspace.\n\n\n\nTeam administrators and leaders keep the list of admins and reviewers for a language up to date. The team leader(s) of a particular language is(are) the initial dedicated reviewer(s) as well.\n\n\n\n\nTo request the creation of a new language team, please reach out on the core-translation channel of the R Contributors Slack workspace, and the administrators of Weblate will follow the steps described in the Weblate server admin page.\nIn short, a new team will be created for the language with roles to approve translations and edit the language-specific glossary, then you (and others listed as team leaders) will be added to that team so that the dedicated reviewers workflow becomes enforced for that language.\nAdditionally, language team administrators can be also shortlisted among the reviewers with permissions to add new reviewers to the team, and to manage the team members.\n\n\n\nPossible state of a string:\n\nUntranslated: Translation is missing, and might or might not be stored in the translation file.\nNeeds editing: Translation needs editing. This is usually the result of a source string change, fuzzy matching or translator action. The fuzzy tag might be commited to the translation file. If you are unsure about how to translate something, make a suggestion instead of clicking the “Needs editing” button.\nWaiting for review: Translation is made, but not reviewed yet.\nApproved: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers. This is also committed to the repository.\n\n\n\n\n\nThe #core-translation channel on the R Contributors Slack workspace is the main space of communication for the translations community. Join this Slack to communicate with the community and share feedback.\nWe encourage people interested in translations to organize and conduct local/regional level events to promote and raise awareness about translations.\nHighlight milestones (overall and by language)!\n\n\n\n\n\nWeblate documentation\nGlossary on Weblate\nChapter on Weblate in the R Dev Guide\n\n\n\n\nYou can open an issue in this repository if you find something that is not working as expected in Weblate. If you want to discuss about translations and convictions you can use the Slack channels dedicated to that.\n\n\n\nSome interesting guides, glossaries and handbooks:\n\nTuring way translation handbook\nR OpenSci’s draft of translation guidelines\nR OpenSci’s glossary\nR French Dictionary\nR Brazilian Portuguese guide (will be translated into English)\ncpplib translations (in Portuguese)\nInternational statistical glossaries\nTranslating R Messages, R &gt;= 3.0.0\nR Translation Teams\n\n\n\n\n\nUse the R Foundation Code of Conduct.\n\n\n\n\n\nExplore possible integration of dictionaries into Weblate?\nAdd demos from the translator and reviewer’s perspective"
+    "text": "Welcome to the translation adventure in R! 🚀\nIn a world that thrives on interconnectedness and global communication, translation plays a pivotal role in bridging linguistic divides. Translation, the art of rendering one language into another, shatters those confines, unlocking a world of possibilities for understanding and collaboration.\nTranslation dashboards\nSo if you want to start, you can contribute by following these steps:\n\nSign up to the R Contributors Slack and introduce yourself in the #core-translations channel;\nCreate an account on Weblate and read the Translations chapter on the R Development guide;\nRead the Conventions for translation section of this Wiki, for some conventions that should be followed;\nRead the guidelines for the specific language you want to contribute to. If a guideline for your language doesn’t exist yet, please feel free to submit a pull request and create it.\n\n\n\nLanguage\n\n\n\n\nArabic\n\n\nBengali\n\n\nCatalan\n\n\nChinese\n\n\nFrench\n\n\nHindi\n\n\nNepali\n\n\nPortuguese (Brazilian)\n\n\nSpanish\n\n\n\nYou can start translating!\n\nYou can check the guide on how Weblate works and check this short demo on how to use the Weblate interface. You can also get access to complete documentation of Weblate through this link.\n\n\nAll outputs in base R and recommended packages (such as messages emitted by stop(), warning(), or message()) are eligible for translation, as are menu labels in the GUI.\n\n\n\nLanguages without an established translation team and so without dedicated reviewers have their translations directly approved without review. In that perspective, there’s a single role for translators, and no reviewers.\nIn case a team has been established for a language, we use the dedicated reviewers workflow on Weblate, where we currently manage 3 roles in the platform.\n\n\nEvery registered user on Weblate can act as a translator for any language. All translations need to be reviewed unless there is no reviewer assigned for that language. If you are not sure about a translation, you can make a suggestion instead. You can also use the Glossary to check which terms you shouldn’t translate and discuss with the community to add new ones if you don’t find the word you are looking for.\n\n\n\nReviewers bear the editor role to approve the work of translators and ensure the overall cohesion of the translation work in one language. For adding new reviewers for a language, please reach out to the respective team leaders via the #core-translation channel on the R Contributors Slack workspace.\n\n\n\nTeam administrators and leaders keep the list of admins and reviewers for a language up to date. The team leader(s) of a particular language is(are) the initial dedicated reviewer(s) as well.\n\n\n\n\nTo request the creation of a new language team, please reach out on the core-translation channel of the R Contributors Slack workspace, and the administrators of Weblate will follow the steps described in the Weblate server admin page.\nIn short, a new team will be created for the language with roles to approve translations and edit the language-specific glossary, then you (and others listed as team leaders) will be added to that team so that the dedicated reviewers workflow becomes enforced for that language.\nAdditionally, language team administrators can be also shortlisted among the reviewers with permissions to add new reviewers to the team, and to manage the team members.\n\n\n\nPossible state of a string:\n\nUntranslated: Translation is missing, and might or might not be stored in the translation file.\nNeeds editing: Translation needs editing. This is usually the result of a source string change, fuzzy matching or translator action. The fuzzy tag might be commited to the translation file. If you are unsure about how to translate something, make a suggestion instead of clicking the “Needs editing” button.\nWaiting for review: Translation is made, but not reviewed yet.\nApproved: Translation has been approved in the review. It can no longer be changed by translators, but only by reviewers. This is also committed to the repository.\n\n\n\n\n\nThe #core-translation channel on the R Contributors Slack workspace is the main space of communication for the translations community. Join this Slack to communicate with the community and share feedback.\nWe encourage people interested in translations to organize and conduct local/regional level events to promote and raise awareness about translations.\nHighlight milestones (overall and by language)!\n\n\n\n\n\nWeblate documentation\nGlossary on Weblate\nChapter on Weblate in the R Dev Guide\n\n\n\n\nYou can open an issue in this repository if you find something that is not working as expected in Weblate. If you want to discuss about translations and convictions you can use the Slack channels dedicated to that.\n\n\n\nSome interesting guides, glossaries and handbooks:\n\nTuring way translation handbook\nR OpenSci’s draft of translation guidelines\nR OpenSci’s glossary\nR French Dictionary\nR Brazilian Portuguese guide (will be translated into English)\ncpplib translations (in Portuguese)\nInternational statistical glossaries\nTranslating R Messages, R &gt;= 3.0.0\nR Translation Teams\n\n\n\n\n\nUse the R Foundation Code of Conduct.\n\n\n\n\n\nExplore possible integration of dictionaries into Weblate?\nAdd demos from the translator and reviewer’s perspective"
   },
   {
     "objectID": "index.html#roles",
@@ -189,63 +189,171 @@
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#weblate-存储库和协作",
-    "href": "Conventions_for_Languages/Chinese-specific-translations.html#weblate-存储库和协作",
-    "title": "Chinese",
-    "section": "Weblate 存储库和协作",
-    "text": "Weblate 存储库和协作\n我们的翻译托管在 Weblate 翻译平台上，每个人都可以参与编辑。您在使用邮箱注册 Weblate 账户并提交翻译内容后即自动加入翻译团队，您可以自主选择是否将个人联系方式同步到此页面。",
+    "objectID": "Conventions_for_Languages/French-specific-translations.html",
+    "href": "Conventions_for_Languages/French-specific-translations.html",
+    "title": "French",
+    "section": "",
+    "text": "This repository is a hub for all people who want to help translate R into French. This README is in English, but you can reach out to other translators on the R Contributors Slack if you need any additional information about the project.",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Chinese"
+      "French"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#翻译内容更新",
-    "href": "Conventions_for_Languages/Chinese-specific-translations.html#翻译内容更新",
-    "title": "Chinese",
-    "section": "翻译内容更新",
-    "text": "翻译内容更新\n访问 https://translate.rx.studio/languages/zh_Hans/r-project/ 查看所有当前待翻译内容。选择您想要翻译的部件，点击“翻译”即可进入翻译面板。在编辑栏输入您的翻译内容，点击“保存并继续”。至此您已经完成了一条语句的翻译。请阅读风格指引章节了解用语和排版指导。",
+    "objectID": "Conventions_for_Languages/French-specific-translations.html#a-propos",
+    "href": "Conventions_for_Languages/French-specific-translations.html#a-propos",
+    "title": "French",
+    "section": "A propos",
+    "text": "A propos\nLe but du projet fr est de rassembler chaque personne qui souhaite aider à la traductions du langage R en français 🇫🇷. Si vous utilisez R souvent, nous avons besoin de votre aide !\nA la différence des autres langages de programmation, R essaie d’afficher chaque message dans la même langue que votre ordinateur. En principe cela réduit la barrière de la langue pour aborder R. Les erreurs et les avertissements sont très communs dans le code écrit par les débutants, il est donc essentiel que ces messages soient les plus clairs possibles.",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Chinese"
+      "French"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#翻译审阅",
-    "href": "Conventions_for_Languages/Chinese-specific-translations.html#翻译审阅",
-    "title": "Chinese",
-    "section": "翻译审阅",
-    "text": "翻译审阅",
+    "objectID": "Conventions_for_Languages/French-specific-translations.html#comment-contribuer",
+    "href": "Conventions_for_Languages/French-specific-translations.html#comment-contribuer",
+    "title": "French",
+    "section": "Comment contribuer",
+    "text": "Comment contribuer\nPour aider le processus de traduction, veuillez :\n\nVous inscrire au Slack des contributeurs de R et présentez-vous sur le canal #core-translations\nLire la section Ressources de ce document, car la traduction suit certaines conventions à respecter\nCréer un compte sur Weblate (maintenu actuellement par @daroczig)\nLister chaque composant en français\nChoisir un composant qui n’est pas traduit à 100% (comme par exemple le package utils)\nCliquer sur Chaînes non terminées pour lister tous les messages non traduits et\nCommencez !",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Chinese"
+      "French"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#基本用语",
-    "href": "Conventions_for_Languages/Chinese-specific-translations.html#基本用语",
-    "title": "Chinese",
-    "section": "基本用语",
-    "text": "基本用语\n\n对翻译中的“你(you)”代称应使用敬语“您”，示例：您应该检查变量类型；\n基本统计术语应当参考当前主流应用词汇；\n%s,%i,%1$s等被称作占位符，这里的文字会按照运行时生成的内容自动替换，您不能去掉或增加任何占位符，仅调整语序；\n对于上述3中的占位符，您可根据需要调整其语序。例如：%s in %s must be a numerical 可被翻译为 %2$s 中的 %1$s 必须是数值型。显然您可以看到这里每个%s的含义不一样，如果您需要调整第二个%s的语序，您可以添加它们的位置像1$这样的参数到其中。如果您不确定如何使用它，可以参考其他已被翻译的内容；\n禁止词汇：查阅 Weblate 的术语册一栏，会出现建议翻译/禁止翻译为XXX的提示，例如禁止将’robust’ 翻译为“鲁棒”，而应当翻译为稳健性；",
+    "objectID": "Conventions_for_Languages/French-specific-translations.html#style",
+    "href": "Conventions_for_Languages/French-specific-translations.html#style",
+    "title": "French",
+    "section": "Style",
+    "text": "Style\nR est un langage de programmation qui a presque 30 ans et c’est pourquoi les messages se trouvent écrits par plusieurs personnes dont le style est différent. Nous devons toujours suivre ici la grammaire et l’orthographe française, en appliquant les nouvelles réformes correspondantes, mais nous voulons préserver la langue initiale le plus possible.\nEn anglais, vous pouvez omettre les coordinations sans changer la signification. Nous les ajoutons habituellement quand la phrase ne semble pas naturelle.\n\nMaybe package installed with version of R newer than %s ?\n\n\nLe package est peut-être installé avec une version de R plus récente que %s ?\n\nLes termes techniques de R ne sont pas à traduire, comme par exemple le nom des fonctions, des objets et des argument (habituellement entre apostrophes).\n\n‘MARGIN’ does not match dim(X)\n\n\n‘MARGIN’ ne correspond pas à dim(X)\n\nDans les cas particuliers, une fonction peut être utilisée comme verbe. Nous adoptons la solution de reconstruire la phrase.\n\ncannot xtfrm data frames\n\n\nxtfrm ne peut être utilisé avec les data frame\n\n\nFormatage\nL’utilisation des espaces et des paragraphes en français est règlementée par la typographie. Les textes R, néanmoins ont des contraintes d’espace et de format qui ne sont pas évidentes à traduire.\nNous plaçons un espace devant les ponctuations telles que : ; ! ? (sauf . et ,)\n/ : espace avant et après (sauf si c’est un chemin d’accès, par exemple, c:/temp) par contre, nous conservons les conventions du langage S pour les guillemets, soit ’’ ou ““, mais non transformés et sans espaces.\n\n’ : remplacer l’apostrophe grasse ’ par l’apostrophe simple ’\n` : garder le backtick\n‘ : remplacer l’apostrophe simple retournée ‘ par l’apostrophe simple ’\n“ : remplacer les guillemets doubles retournés ouvrants “ par l’apostrophe simple ’\n” : remplacer les guillemets doubles fermants ” par l’apostrophe simple ’\n\nLa plupart des messages R portent sous une certaine forme la référence au code qui les a produits. Ceci se fait à l’aide des spécifieurs de format et ils doivent être dans le même ordre dans le texte de référence.\n\n%s and %s must have the same length\n\n\n%s et %s doivent avoir la même longueur\n\nS’il n’est pas possible de conserver le même ordre, vous devez utiliser l’indice de la substitution choisie avec %n$&lt;fmt&gt; (par exemple %1$s, %2$s, etc.).\nLes messages peuvent aussi comporter des caractères spéciaux tels que des apostrophes simples ('), des guillemets (\"), des tabulations (\\t) et des passages à la ligne (\\n), tout comme des espaces supplémentaires à des endroits particuliers. Pour maintenir un standard, nous ne modifions pas ce type de mise en forme même si son utilisation ne nous semble pas correcte.\n\nConflicts attaching package %s:%s\n\n\nConflicts pour attacher le package %s :%s\n\n\n\nGenre\nA la différence du français, l’anglais ne spécifie pas le genre grammatical. Nous utiliserons la terminologie utilisée habituellement dans la littérature technique française.\nLe genre grammatical des arguments, des acronymes et autres noms peut habituellement être déduit du contexte. Dans l’exemple ci-dessous, nous interprétons “DLL” par “bibliothèque de liens dynamiques” (dynamic-link library).\n\nDLL %s was not loaded\n\n\nDLL %s ne s’est pas chargée\n\nDans l’exemple suivant, bien que “scale” soit féminin en français, le masculin est utilisé car il remplace “argument” qui est un nom masculin.\n\n‘scale’ should be numeric or NULL\n\n\n‘scale’ doit être numérique ou NULL\n\nDans certains cas, les genres peuvent simplement être ignorés. Dans les expressions suivantes il est possible de traduire “author” par “auteur(e)”, mais il existe des tournures permettant souvent de s’en passer.\n\nAuthors@R field gives no person with name and author role\n\n\nLe champ Authors@R ne désigne aucune personne avec son rôle\n\nDans certains cas plus rares, les messages référencent la personne qui programme. Dans ce cas, si cela est expressément demandé, vous pourrez utiliser “o(a)” pour rester lisible et ne pas augmenter la taille de la phrase.\n\nNot enough arguments passed to user macro ‘%s’\n\n\nPas assez d’arguments passés à la macro ‘%s’ de l’utilisateur\n\nEn français on utilisera le terme masculin “utilisateur” qui fait référence à la fonction plutôt qu’au genre.",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Chinese"
+      "French"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
-    "href": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
-    "title": "Chinese",
-    "section": "排版指南",
-    "text": "排版指南\n\n中英文（含数字）混合排版时，应当在英文字符前后保持一个空格，像这样欢迎使用 R 语言；\n无须翻译的内容：一些内置函数、参数、值不能被翻译。例如WARNING: no value given for '--max-connections' 其中 '--max-connections' 这样的我们可以判断为参数，则保持不变。因此我们翻译成警告：'--max-connections' 没有给定值；\n保持术语一致性：我们应当尽可能保持程序和统计术语在上下文的一致性，并保证其与一些教材、论文当常用术语的继承性。",
+    "objectID": "Conventions_for_Languages/French-specific-translations.html#ressources",
+    "href": "Conventions_for_Languages/French-specific-translations.html#ressources",
+    "title": "French",
+    "section": "Ressources",
+    "text": "Ressources\nCe document est vivant et liste le problèmes communs à propos de la traduction de R en français. Chaque suggestion ici est ouverte au débat et si vous êtes en désaccord avec un élément vous pouvez le signaler en créant simplement un nouveau sujet dans l’onglet discussions .\n\nDocumentation Weblate sur le flux du travail de traduction - Tableau de bord des traductions\n\n\nGlossaire\nNous avons regroupé ici les termes qui apparaissent souvent dans les messages R et pouvant représenter des difficultés de traduction. Si un mot vous pose problème et qu’il ne se trouve pas dans le tableau ci-dessous, recherchez la traduction avec Linguee ou Wikipedia et indiquez-nous la pour que nous puissions l’inclure dans cette section.\nNous avons essayé d’utiliser les versions les plus communes de chaque terme, mais il n’est pas toujours possible de tenir une liste exhaustive. Par exemple si vous cherchez “caching”, l’entrée correspondante est “cache”. Le même mot peut avoir aussi plusieurs fonctions telles que “replacement”, qui signifie à la fois “substitution” et “substitué”.\nCertain mots de par leur usage conservent leur terme anglais puisque leur traduction est faiblement utilisée, mais ce n’est que subjectif.\n\n\n\n\n\n\n\nAnglais\nFrançais\n\n\n\n\naborting\nannulation, abandon\n\n\nalias\nalias\n\n\nallocation\naffectation mémoire\n\n\nanova\nANOVA\n\n\nargument\nargument (et non paramètre)\n\n\narray\ntableau\n\n\nassigment\naffectation\n\n\nattribute\nattribut\n\n\nattach\njoindre, annexer\n\n\nbackslash\ncaractère barre oblique inversée\n\n\nbinary operator\nopérateur binaire\n\n\nbind\nlien (binding : lier)\n\n\nbitmap\nbitmap\n\n\nBOM\nBOM (indicateur d’ordre d’octets)\n\n\nboxplot\nboîte à moustaches\n\n\nbreaks\nborne des classes (histogrammes)\n\n\nbrowser\nexplorateur, navigateur\n\n\nbytecode\npseudo-code (code à octets est officiel mais peu utilisé)\n\n\ncached value\nvaleur enregistrée en mémoire cache\n\n\ncall\nappel\n\n\ncallback\nrappel (procédure de, callback)\n\n\ncase insensitive matching\ncorrespondance insensible à la casse\n\n\ncategorical\nqualitative (pour une variable)\n\n\nchannel\ncanal\n\n\ncharacter\ncaractère (sans h)\n\n\ncheck\nvérifier\n\n\nchunk\nbloc de code\n\n\nclipping\ndétourage\n\n\nclosure\nfermeture (closure)\n\n\ncluster\nagrégation, groupe\n\n\ncodoc\ncodoc (fonction de R)\n\n\ncoerce\nconvertir automatiquement\n\n\ncoercion\nconversion automatique\n\n\ncollation\nclassement\n\n\ncollapsing level\nniveau de fusion\n\n\ncolortype\ncolorimétrie\n\n\ncomputationally singular\nnumériquement singulière (par exemple pour une matrice)\n\n\nconnection\nconnexion\n\n\nconsole\nconsole\n\n\ncovariate\ncovariables\n\n\ndatabase\nbase de données\n\n\ndataframe\ntableau de données, mais on précise (data frame) si nécessaire; utilisé au masculin (objet)\n\n\ndataset\njeu de données\n\n\ndebug\ndébogguer\n\n\ndefunct\nobsolete, n’existe plus\n\n\ndeparse\nreconstruction de code (deparse)\n\n\ndeprecated\nobsolète\n\n\ndeviance\ndéviance (en statistique)\n\n\ndevice\npériphérique\n\n\ndetach\ndétacher, séparer\n\n\ndispatch\ndispatcheur\n\n\ndocumentation object\nobjet de documentation\n\n\ndouble\n‘double’ (nombre à virgule flottante)\n\n\ndownload\ntéléchargement client &lt;- serveur\n\n\ndriver\npilote\n\n\ndrop\nignorer\n\n\nedge\ncôté (d’un polygone)\n\n\neigenvalues\nvaleurs propres\n\n\nencoding\nencodage\n\n\nenvironment\nenvironnement (voir aussi workspace)\n\n\nevaluate\névaluer, par exemple avec evaluate()\n\n\nfactor\nvariable facteur ou facteur\n\n\nfallback\nrepli (ex: procédure de repli)\n\n\nfifo\nfifo , pour first in, first out (préférable à… peps, peu connu)\n\n\nfilename\nnom de fichier\n\n\nfile stream\ncorps du fichier\n\n\nfit\najustement ou ajuster\n\n\nflag\nbalise, baliser, marquer\n\n\nflush\nvider ou vidage\n\n\nformula\nformule du modèle ou formule tout court\n\n\nframe\ncadre ou trame selon le contexte; (data frame : tableau de données)\n\n\nGiB\ngiga octets (pour les tailles)\n\n\nhandler\nmanipulateur de données (voir aussi interrupt handler)\n\n\nhardcoded\ncodé en dur\n\n\nhashing\nhachage\n\n\nHessian\nHessienne (se dit d’une matrice)\n\n\nhinges\njointures\n\n\nhistory\nhistorique (des commandes)\n\n\nimage\nimage d’environnement (fichier image où les objets R sont sauvés)\n\n\nimplemented\nimplémenté\n\n\nincoming checks\ncontrôle des entrées\n\n\nindex\nindice (presque toujours, et non index)\n\n\ninterrupt handler\ngestionnaire d’interruptions\n\n\ninvalid\nincorrect (à préférer à ‘non valide’)\n\n\nIO\nE/S (pour entrées/sorties)\n\n\nissue tracker\ngestionnaire de tickets (issue tracker)\n\n\nknots\nnoeuds\n\n\nkriging\nkrigeage\n\n\nlabel\nétiquette, libellé\n\n\nlag\ndécalage\n\n\nl\nen général longueur; compléter avec ‘taille’ ex: “….différent de la taille l de l’objet DT…”\n\n\nlayout\nmise en page\n\n\nlazy loading\nchargement partiel (explicit loading : chargement complet)\n\n\nleading minor\nmineur dominant (sous-matrice)\n\n\nlength\nlongueur (réserver taille pour size)\n\n\nLHS\nmembre gauche (d’une expression, d’une égalité…)\n\n\nlibrary\nbibliothèque\n\n\nlikelihood\nvraisemblance\n\n\nlink\nlien\n\n\nlist column\ncolonne de type liste\n\n\nlocale\nenvironnement linguistique\n\n\nlocator\nmode de localisation à la souris (pour les graphes)\n\n\nlogical\nbooléen\n\n\nlog-likelihood\nlog de vraisemblance\n\n\nmacro\nmacro\n\n\nmagic number\nnombre magique\n\n\nmap (to map)\nmapper (anglicisme d’usage courant)\n\n\nmatch\ncorrespondance\n\n\nmatrix is exactly singular\nmatrice singulière\n\n\nmetadata\nmétadonnées\n\n\nmetafile\nmetafile\n\n\nmirror site\nsite miroir (ex : CRAN)\n\n\nmismatch\nincohérence\n\n\nmissing\nabsent\n\n\nmixed\nmixte (plutôt que mélangé)\n\n\nmode\nmode\n\n\nmodulus\nmodulo\n\n\nmultibyte\nmultioctets\n\n\nNA\nNA ou valeur manquante, selon le contexte\n\n\nnamed args\narguments nommés\n\n\nnamespace\nespace de noms\n\n\nnondecreasing vector\nvecteur de valeurs non décroissantes\n\n\nnon-interactively\nde façon non interactive\n\n\nnon-numeric type\ntype non numérique\n\n\nnon-vector type\ntype non vectoriel\n\n\nnumeric-alike\nnumérique ou assimilé\n\n\nnotches\nindentations\n\n\noffending\nqui pose problème\n\n\noffset\ndécalage\n\n\nopcode\ncode d’opération\n\n\noutlier\nvaleur extrême\n\n\nout of range\nen dehors de l’intervalle\n\n\noverflow\ndébordement ou dépassement de capacité par le haut\n\n\noverride\nréécraser, redéfinir\n\n\npackage\npackage (non traduit cf. significations pour paquet ou paquetage)\n\n\npager\nafficheur\n\n\npair list\nliste appairée\n\n\nparse\nanalyse syntaxique du code (to parse : analyser le code)\n\n\nparser\nanalyseur syntaxique\n\n\npassed\ntransmis\n\n\npassed in\npassé en argument\n\n\npath\nchemin d’accès (d’un fichier…)\n\n\npattern\nmotif\n\n\npipe\nconduite, caractère barre verticale ’\n\n\npixmap\npixmap (format de fichier image)\n\n\nplatform\narchitecture\n\n\npolyline\nligne brisée\n\n\nport\nport (sur un serveur TCP/IP par exemple)\n\n\nprofiling\nprofilage (to profile : profiler)\n\n\npromise\npromesse (promise)\n\n\nprompt\ninvite ou invite de commande\n\n\nproxy\nproxy\n\n\npush back\nrepoussage\n\n\nquote symbol\nsymbole de chaîne de caractères (et non de citation)\n\n\nquote rule\nrègle des guillemets\n\n\nraw\nraw, si c’est le type de données, sinon brut\n\n\nrange\nplage, étendue ou intervalle, selon le contexte\n\n\nredraw\nretraçage (des affichages), rafraîchissement\n\n\nregex\nexpression régulière\n\n\nregular expression\nexpression régulière\n\n\nreplace\nsubstituer\n\n\nreport\n(to report : signaler)\n\n\nrepository\nentrepôt, dépôt\n\n\nrequired\nnécessaire\n\n\nresiduals\nrésidus\n\n\nrestore\nrestaurer\n\n\nreturn\nretourner (abcd -&gt; dcba) ou renvoyer (d’une fonction) selon le contexte\n\n\nRHS\nmembre droit (d’une expression, d’une égalité…)\n\n\nRNG\nRNG ou générateur de nombres pseudo-aléatoires\n\n\nroutine\nsous-programme ou procédure\n\n\nrun\nexécuter (une fonction, un script…)\n\n\nscaled\nstandardisé, mis à l’échelle\n\n\nseal\nsceller\n\n\nsearch path\nchemin de recherche\n\n\nseed\nvaleurs d’initialisation d’un processus, graine aléatoire (ex: génération des nombres aléatoires)\n\n\nseek\nmode d’accès aléatoire\n\n\nself-starting function\nfonction auto-initialisée\n\n\nsequence\nsuite (selon contexte) ou séquence\n\n\nshingle\nlatte (dans lattice)\n\n\nsink\nsortie par défaut\n\n\nsize\ntaille\n\n\nskew-symmetric\nmatrice anti-symétrique\n\n\nslash\ncaractère barre oblique droite ‘/’ (opposé à antislash barre oblique gauche ’')\n\n\nslot\nslot (sous partie d’un objet S4, terme spécifique du S)\n\n\nsnapshot\ninstantané graphique, capture d’écran\n\n\nsocket\nconnecteur logiciel (ou socket -usage courant- dans les longs messages)\n\n\nsource\nsource (to source : sourcer, préférable à entrée par défaut)\n\n\nspecified\nfourni (voir choisi ou donné, selon le contexte)\n\n\nsplice\njoindre\n\n\nstack\npile\n\n\nstandard deviation\nécart-type\n\n\nstartup\ndémarrage, initialisation\n\n\nstratum\nstrate\n\n\nsubscript\nindice\n\n\nsubset\nsous-ensemble (subsetting : indiçage, ou réalisation d’un sous-ensemble)\n\n\nsupernode\nsuper-noeud\n\n\nsupported\npris en charge (pas supporté, qui est un anglicisme)\n\n\ntable\ntableau de contingence\n\n\ntag\nmarque, balise\n\n\ntarball\narchive, tarball\n\n\ntemplate\nmodèle\n\n\nthermometer\njauge (contexte de graphes)\n\n\nthread\ncontexte (threaded code : code contextuel)\n\n\nthread buffers\nmémoire tampon des thread\n\n\ntimeout\ndélai maximal\n\n\ntimer\nhorloge ou temporisation, selon le contexte\n\n\ntimezone\nfuseau horaire\n\n\ntl\nen général taille préallouée (pour true length) ; Compléter avec le texte ex: “…différent de la taille préallouée tl de l’objet DT…”\n\n\ntop level\nniveau le plus haut\n\n\ntraceback\nhistorique des fonctions appelées (‘traceback’)\n\n\ntrimmed mean\nmoyenne tronquée\n\n\ntruncation\ntroncature\n\n\ntype\ntype\n\n\ntype bumps\ncollision / changement de type\n\n\nunary operator\nopérateur unaire\n\n\nunbind\ndélier\n\n\nunderflow\ndépassement de capacité par le bas\n\n\nunlisted\nnon listé\n\n\nunmatched\ndéparié\n\n\nunpacking\nextraction\n\n\nunwrap columns\ndéplier les colonnes\n\n\nunmapping view of file\nannulation du mappage / démappage de la vue du fichier\n\n\nupload\ntéléversement client -&gt; serveur\n\n\nurl\nURL\n\n\nunsupported\nnon pris en charge\n\n\nvertex\nsommet (d’un polygone)\n\n\nviewport\nvue\n\n\nvignette\nvignette\n\n\nwarning\navis (avertissement est bien aussi, mais trop long)\n\n\nweight\npondération\n\n\nworking directory\nrépertoire de travail\n\n\nworkspace\nenvironnement de travail (workspace = environment dans R) ou session s’il s’agit à la fois de l’historique et de l’environnement\n\n\nwrapup\nemballer ou emballage",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Chinese"
+      "French"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Catalan-specific-translations.html#about",
+    "href": "Conventions_for_Languages/Catalan-specific-translations.html#about",
+    "title": "Catalan",
+    "section": "About",
+    "text": "About\nThe goal of the Catalan Team is to bring together all people interested in helping translate the R language into Catalan. If you use R a lot, we need your help!\nUnlike other languages, R tries to display every message in the same language as the computer it’s running on. In principle, this reduces R’s barrier to entry; warnings and errors are very common in code written by beginners, so it’s essential that these messages are as clear as possible.",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Catalan"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Catalan-specific-translations.html#how-to-contribute",
+    "href": "Conventions_for_Languages/Catalan-specific-translations.html#how-to-contribute",
+    "title": "Catalan",
+    "section": "How to contribute",
+    "text": "How to contribute\nTo help in the translation process, you need to:\n\nSign up to the R Contributors Slack and introduce yourself in the #core-translations channel;\nJoin #core-translation-ca channel.\nRead the Resources section of this document, because the translation has some conventions that should be followed;\nCreate an account on Weblate (currently maintained by @daroczig);\nList every Catalan component;\nChoose a component that’s not 100% translated;\nClick Unfinished strings to list all messages that haven’t been translated and\nStart!",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Catalan"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Catalan-specific-translations.html#resources",
+    "href": "Conventions_for_Languages/Catalan-specific-translations.html#resources",
+    "title": "Catalan",
+    "section": "Resources",
+    "text": "Resources\n\nStyle\nThe Catalan project sticks to the Guia d’estil de Softcatalà. Have a look and check it when in doubts. There is a cheat sheet with a resume.\n\n\nTerminology\nThere are different sources for Catalan terminology\n\nGlossari de Softcatalà\nTermcat, el centre de terminologia de la llengua catalana\n\n\n\nTranslation memories\nIn case of doubts, an useful resource is the compilation of translation memories for Catalan. Check how other projects translate similar concepts and get inspired.\n\n\nAutomatic translations\nSoftcatalà provides automatic translations for .po files. Despite the results are quite good, it’s necessary to review carefully each string. You can download the .po files from Weblate website:\n\nAlternatively, you can:\n\nClone the repository using your private URL with:\n\ngit clone https://$USER:$PRIVATE_TOKEN@translate.rx.studio/git/r-project/base-r-gui/\n\nLook for the files at src/library/*/po/*ca.po and use any app to help you to review and fix the translations (eg. Poedit or Lokalize)\nYou can not push to this repository. To upload the finished files, use the Weblate web interface (see image above).\n\n\n\nR-project specific conventions\n\nWe use Latin quotes (cometes baixes) as a «primary quotes» for cases that are not part of R code. Insert them with AltGr + z («) and AltGr + x (»).\n\n\n\nGlossary\nWeblate has a built-in glossary that will be shown while doing a translation in Weblate with a matching term. To add new terms, better to discuss it with the community first and reach a consensus.\n\n\nQuality report\nSoftcatalà generates quality reports periodically on R translations using LanguageTool and Pology. Check it out at https://static.softcatala.org/quality/r-project.html.",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Catalan"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#style",
+    "href": "Conventions_for_Languages/Bengali-specific-translations.html#style",
+    "title": "Bengali",
+    "section": "Style",
+    "text": "Style\nDo not translate anything that is a technical term in R, for example, function names, objects, arguments(usually in between quotes), etc.\nSee help(\"Defunct\") and help(\"%s-defunct\").\n\nhelp(\"Defunct\") আর help(\"%s-defunct\") দেখুন।\n\"hexNumeric\" and \"digits17\" are mutually exclusive\n\n\"hexNumeric\" এবং \"digits17\" একে অপরের স্বতন্ত্র",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Bengali"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#formatting",
+    "href": "Conventions_for_Languages/Bengali-specific-translations.html#formatting",
+    "title": "Bengali",
+    "section": "Formatting",
+    "text": "Formatting",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Bengali"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#grammatical-gender",
+    "href": "Conventions_for_Languages/Bengali-specific-translations.html#grammatical-gender",
+    "title": "Bengali",
+    "section": "Grammatical gender",
+    "text": "Grammatical gender",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Bengali"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#glossary",
+    "href": "Conventions_for_Languages/Bengali-specific-translations.html#glossary",
+    "title": "Bengali",
+    "section": "Glossary",
+    "text": "Glossary",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Bengali"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Arabic-specific-translations.html",
+    "href": "Conventions_for_Languages/Arabic-specific-translations.html",
+    "title": "Arabic",
+    "section": "",
+    "text": "This document provides a guideline of translating R Messages/Warnings/Errors from English to Arabic.",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Arabic"
+    ]
+  },
+  {
+    "objectID": "Conventions_for_Languages/Arabic-specific-translations.html#glossary-note-the-arabic-translation-here-is-based-on-google-translate-it-requires-some-review-and-edit.-this",
+    "href": "Conventions_for_Languages/Arabic-specific-translations.html#glossary-note-the-arabic-translation-here-is-based-on-google-translate-it-requires-some-review-and-edit.-this",
+    "title": "Arabic",
+    "section": "Glossary #### Note: The Arabic translation here is based on Google translate! It requires some review and edit. This",
+    "text": "Glossary #### Note: The Arabic translation here is based on Google translate! It requires some review and edit. This\ncan be done later!\n\n\n\n\n\n\n\nEnglish\nArabic\n\n\n\n\nabort\nإلغاء\n\n\nalias\nاسم بديل\n\n\nallocate\nتخصيص\n\n\nargument\nوسيط\n\n\narray\nمصفوفة\n\n\nassign\nتخصيص\n\n\nattach\nإرفاق\n\n\nattribute\nسمة\n\n\nbackslash\nشرطة عكسية\n\n\nbind\nربط\n\n\nbitmap\nخريطة نقاط\n\n\nboxplot\nمخطط صندوق\n\n\nbreak\nانقطاع\n\n\nbrowser\nمتصفح\n\n\nbuild\nبناء\n\n\nbytecode\nبايت كود\n\n\ncache\nذاكرة مؤقتة\n\n\ncall\nاستدعاء\n\n\ncallback\nاستدعاء راجع\n\n\ncharacter string\nسلسلة أحرف\n\n\ncheck\nفحص\n\n\nchunk\nمقطع\n\n\nclosure\nإغلاق\n\n\ncodoc\nوثائق الكود\n\n\ncoerce\nإجبار\n\n\ncolortype\nنوع اللون\n\n\nconsole\nوحدة التحكم\n\n\ndata frame\nإطار البيانات\n\n\ndatabase\nقاعدة البيانات\n\n\ndataset\nمجموعة البيانات\n\n\ndebug\nتصحيح\n\n\ndefunct\nغير صالح\n\n\ndeparse\nتفريق\n\n\ndeprecated\nمهجور\n\n\ndetach\nفصل\n\n\ndevice\nجهاز\n\n\ndispatch\nإرسال\n\n\ndocumentation object\nكائن الوثائق\n\n\ndownload\nتنزيل\n\n\ndriver\nسائق\n\n\ndrop\nإسقاط\n\n\nencoding\nترميز\n\n\nentry\nإدخال\n\n\nenvironment\nبيئة\n\n\nevaluate\nتقييم\n\n\nfactor\nعامل\n\n\nfifo\nFIFO (الأولوية للأولوية)\n\n\nfile pointer\nمؤشر الملفات\n\n\nfile stream\nتدفق الملفات\n\n\nfilename\nاسم الملف\n\n\nfit\nتناسب\n\n\nflag\nعلم\n\n\nflush\nتفريغ\n\n\nframe\nإطار\n\n\nhandle\nالتعامل مع\n\n\nhard-coded\nمشفر بصورة صعبة\n\n\nhistory\nتاريخ\n\n\nimplement\nتنفيذ\n\n\nincoming checks\nفحوصات الوارد\n\n\nindex\nفهرس\n\n\ninvalid\nغير صالح\n\n\nIO\nالإدخال والإخراج\n\n\nlabel\nتصنيف\n\n\nlag\nتأخير\n\n\nlayout\nتخطيط\n\n\nlazy loading\nالتحميل الكسلاني\n\n\nlazydata\nبيانات كسلانية\n\n\nleading minor\nصغير القيادة\n\n\nlength\nالطول\n\n\nlibrary\nمكتبة\n\n\nlink\nربط\n\n\nlocale\nاللغة والمنطقة\n\n\nlocator\nمحدد\n\n\nlocking\nقفل\n\n\nlogical\nمنطقي\n\n\nmacro\nماكرو\n\n\nmagic number\nالرقم السحري\n\n\nmatch\nتطابق\n\n\nmetafile\nملف ميتا\n\n\nmirror\nمرآة\n\n\nmismatch\nغير متطابق\n\n\nmissing\nمفقود\n\n\nmodulus\nباقي القسمة\n\n\nmultibyte\nمتعدد البايت\n\n\nnamespace\nمساحة الأسماء\n\n\nnon-interactively\nبشكل غير تفاعلي\n\n\nnon-numeric type\nنوع غير رقمي\n\n\nnumeric-alike\nمشابه للأرقام\n\n\noffending\nمسبب\n\n\noffset\nإزاحة\n\n\nopcode\nرمز العملية\n\n\noutlier\nقيمة متطرفة\n\n\noverflow\nتجاوز\n\n\noverride\nتجاوز\n\n\npackage\nحزمة\n\n\npager\nعارض\n\n\npair list\nقائمة مزدوجة\n\n\nparse\nتحليل\n\n\npath\nمسار\n\n\npipe\nأنبوب\n\n\npixmap\nصورة نقطية\n\n\nplatform\nمنصة\n\n\npolyline\nمتعدد الخطوط\n\n\nport\nمنفذ\n\n\nportable\nقابل للنقل\n\n\nprofiling\nتحليل الأداء\n\n\nprofile\nملف التحليل\n\n\npromise\nوعد\n\n\nprompt\nتوجيه\n\n\nproxy\nوكيل\n\n\npush back\nتراجع\n\n\nquote symbol\nرمز الاقتباس\n\n\nrange\nنطاق\n\n\nraw\nنص نقي\n\n\nredraw\nإعادة الرسم\n\n\nregular expression\nتعبير منتظم\n\n\nreplace\nاستبدال\n\n\nreport\nتقرير\n\n\nrepository\nمستودع\n\n\nrequire\nيتطلب\n\n\nreturn\nإرجاع\n\n\nRNG\nRNG\n\n\nrole\nدور\n\n\nroutine\nروتين\n\n\nrun\nتشغيل\n\n\nseal\nختم\n\n\nsearch path\nمسار البحث\n\n\nseed\nبذرة\n\n\nseek\nالبحث\n\n\nsink\nمصفاة\n\n\nslash\nشرطة مائلة\n\n\nslot\nفتحة\n\n\nsnapshot\nلقطة\n\n\nsocket\nمأخذ\n\n\nsource\nالمصدر\n\n\nsplice\nدمج\n\n\nstack\nمكدس\n\n\nstandardizable\nقابل للتوحيد\n\n\nstartup\nبدء التشغيل\n\n\nstrict\nصارم\n\n\nsubscript\nرمز تصنيف\n\n\nsubset\nمجموعة فرعية\n\n\ntag\nوسم\n\n\ntag\nعلامة\n\n\ntangling\nتشابك\n\n\ntarball\nحزمة الأرشيف\n\n\ntemplate\nقالب\n\n\nthread\nموضوع\n\n\ntimeout\nمهلة\n\n\ntimer\nمؤقت\n\n\ntimezone\nمنطقة زمنية\n\n\ntop level\nالمستوى العلوي\n\n\ntraceback\nمسار الإتباع\n\n\ntruncate\nاقتصاص\n\n\nunary operator\nمشغل أحادي\n\n\nunbind\nإلغاء الربط\n\n\nunderflow\nانخفاض\n\n\nunlisted\nغير مدرج\n\n\nviewport\nمنظر\n\n\nvignette\nدرس تعريفي\n\n\nwarning\nتحذير\n\n\nworkspace\nمساحة العمل\n\n\nwrapup\nاختتام",
+    "crumbs": [
+      "Home",
+      "Guidelines",
+      "Arabic"
     ]
   },
   {
@@ -309,111 +417,63 @@
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Arabic-specific-translations.html",
-    "href": "Conventions_for_Languages/Arabic-specific-translations.html",
-    "title": "Arabic",
-    "section": "",
-    "text": "This document provides a guideline of translating R Messages/Warnings/Errors from English to Arabic.",
+    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#weblate-存储库和协作",
+    "href": "Conventions_for_Languages/Chinese-specific-translations.html#weblate-存储库和协作",
+    "title": "Chinese",
+    "section": "Weblate 存储库和协作",
+    "text": "Weblate 存储库和协作\n我们的翻译托管在 Weblate 翻译平台上，每个人都可以参与编辑。您在使用邮箱注册 Weblate 账户并提交翻译内容后即自动加入翻译团队，您可以自主选择是否将个人联系方式同步到此页面。",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Arabic"
+      "Chinese"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Arabic-specific-translations.html#glossary-note-the-arabic-translation-here-is-based-on-google-translate-it-requires-some-review-and-edit.-this",
-    "href": "Conventions_for_Languages/Arabic-specific-translations.html#glossary-note-the-arabic-translation-here-is-based-on-google-translate-it-requires-some-review-and-edit.-this",
-    "title": "Arabic",
-    "section": "Glossary #### Note: The Arabic translation here is based on Google translate! It requires some review and edit. This",
-    "text": "Glossary #### Note: The Arabic translation here is based on Google translate! It requires some review and edit. This\ncan be done later!\n\n\n\n\n\n\n\nEnglish\nArabic\n\n\n\n\nabort\nإلغاء\n\n\nalias\nاسم بديل\n\n\nallocate\nتخصيص\n\n\nargument\nوسيط\n\n\narray\nمصفوفة\n\n\nassign\nتخصيص\n\n\nattach\nإرفاق\n\n\nattribute\nسمة\n\n\nbackslash\nشرطة عكسية\n\n\nbind\nربط\n\n\nbitmap\nخريطة نقاط\n\n\nboxplot\nمخطط صندوق\n\n\nbreak\nانقطاع\n\n\nbrowser\nمتصفح\n\n\nbuild\nبناء\n\n\nbytecode\nبايت كود\n\n\ncache\nذاكرة مؤقتة\n\n\ncall\nاستدعاء\n\n\ncallback\nاستدعاء راجع\n\n\ncharacter string\nسلسلة أحرف\n\n\ncheck\nفحص\n\n\nchunk\nمقطع\n\n\nclosure\nإغلاق\n\n\ncodoc\nوثائق الكود\n\n\ncoerce\nإجبار\n\n\ncolortype\nنوع اللون\n\n\nconsole\nوحدة التحكم\n\n\ndata frame\nإطار البيانات\n\n\ndatabase\nقاعدة البيانات\n\n\ndataset\nمجموعة البيانات\n\n\ndebug\nتصحيح\n\n\ndefunct\nغير صالح\n\n\ndeparse\nتفريق\n\n\ndeprecated\nمهجور\n\n\ndetach\nفصل\n\n\ndevice\nجهاز\n\n\ndispatch\nإرسال\n\n\ndocumentation object\nكائن الوثائق\n\n\ndownload\nتنزيل\n\n\ndriver\nسائق\n\n\ndrop\nإسقاط\n\n\nencoding\nترميز\n\n\nentry\nإدخال\n\n\nenvironment\nبيئة\n\n\nevaluate\nتقييم\n\n\nfactor\nعامل\n\n\nfifo\nFIFO (الأولوية للأولوية)\n\n\nfile pointer\nمؤشر الملفات\n\n\nfile stream\nتدفق الملفات\n\n\nfilename\nاسم الملف\n\n\nfit\nتناسب\n\n\nflag\nعلم\n\n\nflush\nتفريغ\n\n\nframe\nإطار\n\n\nhandle\nالتعامل مع\n\n\nhard-coded\nمشفر بصورة صعبة\n\n\nhistory\nتاريخ\n\n\nimplement\nتنفيذ\n\n\nincoming checks\nفحوصات الوارد\n\n\nindex\nفهرس\n\n\ninvalid\nغير صالح\n\n\nIO\nالإدخال والإخراج\n\n\nlabel\nتصنيف\n\n\nlag\nتأخير\n\n\nlayout\nتخطيط\n\n\nlazy loading\nالتحميل الكسلاني\n\n\nlazydata\nبيانات كسلانية\n\n\nleading minor\nصغير القيادة\n\n\nlength\nالطول\n\n\nlibrary\nمكتبة\n\n\nlink\nربط\n\n\nlocale\nاللغة والمنطقة\n\n\nlocator\nمحدد\n\n\nlocking\nقفل\n\n\nlogical\nمنطقي\n\n\nmacro\nماكرو\n\n\nmagic number\nالرقم السحري\n\n\nmatch\nتطابق\n\n\nmetafile\nملف ميتا\n\n\nmirror\nمرآة\n\n\nmismatch\nغير متطابق\n\n\nmissing\nمفقود\n\n\nmodulus\nباقي القسمة\n\n\nmultibyte\nمتعدد البايت\n\n\nnamespace\nمساحة الأسماء\n\n\nnon-interactively\nبشكل غير تفاعلي\n\n\nnon-numeric type\nنوع غير رقمي\n\n\nnumeric-alike\nمشابه للأرقام\n\n\noffending\nمسبب\n\n\noffset\nإزاحة\n\n\nopcode\nرمز العملية\n\n\noutlier\nقيمة متطرفة\n\n\noverflow\nتجاوز\n\n\noverride\nتجاوز\n\n\npackage\nحزمة\n\n\npager\nعارض\n\n\npair list\nقائمة مزدوجة\n\n\nparse\nتحليل\n\n\npath\nمسار\n\n\npipe\nأنبوب\n\n\npixmap\nصورة نقطية\n\n\nplatform\nمنصة\n\n\npolyline\nمتعدد الخطوط\n\n\nport\nمنفذ\n\n\nportable\nقابل للنقل\n\n\nprofiling\nتحليل الأداء\n\n\nprofile\nملف التحليل\n\n\npromise\nوعد\n\n\nprompt\nتوجيه\n\n\nproxy\nوكيل\n\n\npush back\nتراجع\n\n\nquote symbol\nرمز الاقتباس\n\n\nrange\nنطاق\n\n\nraw\nنص نقي\n\n\nredraw\nإعادة الرسم\n\n\nregular expression\nتعبير منتظم\n\n\nreplace\nاستبدال\n\n\nreport\nتقرير\n\n\nrepository\nمستودع\n\n\nrequire\nيتطلب\n\n\nreturn\nإرجاع\n\n\nRNG\nRNG\n\n\nrole\nدور\n\n\nroutine\nروتين\n\n\nrun\nتشغيل\n\n\nseal\nختم\n\n\nsearch path\nمسار البحث\n\n\nseed\nبذرة\n\n\nseek\nالبحث\n\n\nsink\nمصفاة\n\n\nslash\nشرطة مائلة\n\n\nslot\nفتحة\n\n\nsnapshot\nلقطة\n\n\nsocket\nمأخذ\n\n\nsource\nالمصدر\n\n\nsplice\nدمج\n\n\nstack\nمكدس\n\n\nstandardizable\nقابل للتوحيد\n\n\nstartup\nبدء التشغيل\n\n\nstrict\nصارم\n\n\nsubscript\nرمز تصنيف\n\n\nsubset\nمجموعة فرعية\n\n\ntag\nوسم\n\n\ntag\nعلامة\n\n\ntangling\nتشابك\n\n\ntarball\nحزمة الأرشيف\n\n\ntemplate\nقالب\n\n\nthread\nموضوع\n\n\ntimeout\nمهلة\n\n\ntimer\nمؤقت\n\n\ntimezone\nمنطقة زمنية\n\n\ntop level\nالمستوى العلوي\n\n\ntraceback\nمسار الإتباع\n\n\ntruncate\nاقتصاص\n\n\nunary operator\nمشغل أحادي\n\n\nunbind\nإلغاء الربط\n\n\nunderflow\nانخفاض\n\n\nunlisted\nغير مدرج\n\n\nviewport\nمنظر\n\n\nvignette\nدرس تعريفي\n\n\nwarning\nتحذير\n\n\nworkspace\nمساحة العمل\n\n\nwrapup\nاختتام",
+    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#翻译内容更新",
+    "href": "Conventions_for_Languages/Chinese-specific-translations.html#翻译内容更新",
+    "title": "Chinese",
+    "section": "翻译内容更新",
+    "text": "翻译内容更新\n访问 https://translate.rx.studio/languages/zh_Hans/r-project/ 查看所有当前待翻译内容。选择您想要翻译的部件，点击“翻译”即可进入翻译面板。在编辑栏输入您的翻译内容，点击“保存并继续”。至此您已经完成了一条语句的翻译。请阅读风格指引章节了解用语和排版指导。",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Arabic"
+      "Chinese"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#style",
-    "href": "Conventions_for_Languages/Bengali-specific-translations.html#style",
-    "title": "Bengali",
-    "section": "Style",
-    "text": "Style\nDo not translate anything that is a technical term in R, for example, function names, objects, arguments(usually in between quotes), etc.\nSee help(\"Defunct\") and help(\"%s-defunct\").\n\nhelp(\"Defunct\") আর help(\"%s-defunct\") দেখুন।\n\"hexNumeric\" and \"digits17\" are mutually exclusive\n\n\"hexNumeric\" এবং \"digits17\" একে অপরের স্বতন্ত্র",
+    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#翻译审阅",
+    "href": "Conventions_for_Languages/Chinese-specific-translations.html#翻译审阅",
+    "title": "Chinese",
+    "section": "翻译审阅",
+    "text": "翻译审阅",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Bengali"
+      "Chinese"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#formatting",
-    "href": "Conventions_for_Languages/Bengali-specific-translations.html#formatting",
-    "title": "Bengali",
-    "section": "Formatting",
-    "text": "Formatting",
+    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#基本用语",
+    "href": "Conventions_for_Languages/Chinese-specific-translations.html#基本用语",
+    "title": "Chinese",
+    "section": "基本用语",
+    "text": "基本用语\n\n对翻译中的“你(you)”代称应使用敬语“您”，示例：您应该检查变量类型；\n基本统计术语应当参考当前主流应用词汇；\n%s,%i,%1$s等被称作占位符，这里的文字会按照运行时生成的内容自动替换，您不能去掉或增加任何占位符，仅调整语序；\n对于上述3中的占位符，您可根据需要调整其语序。例如：%s in %s must be a numerical 可被翻译为 %2$s 中的 %1$s 必须是数值型。显然您可以看到这里每个%s的含义不一样，如果您需要调整第二个%s的语序，您可以添加它们的位置像1$这样的参数到其中。如果您不确定如何使用它，可以参考其他已被翻译的内容；\n禁止词汇：查阅 Weblate 的术语册一栏，会出现建议翻译/禁止翻译为XXX的提示，例如禁止将’robust’ 翻译为“鲁棒”，而应当翻译为稳健性；",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Bengali"
+      "Chinese"
     ]
   },
   {
-    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#grammatical-gender",
-    "href": "Conventions_for_Languages/Bengali-specific-translations.html#grammatical-gender",
-    "title": "Bengali",
-    "section": "Grammatical gender",
-    "text": "Grammatical gender",
+    "objectID": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
+    "href": "Conventions_for_Languages/Chinese-specific-translations.html#排版指南",
+    "title": "Chinese",
+    "section": "排版指南",
+    "text": "排版指南\n\n中英文（含数字）混合排版时，应当在英文字符前后保持一个空格，像这样欢迎使用 R 语言；\n无须翻译的内容：一些内置函数、参数、值不能被翻译。例如WARNING: no value given for '--max-connections' 其中 '--max-connections' 这样的我们可以判断为参数，则保持不变。因此我们翻译成警告：'--max-connections' 没有给定值；\n保持术语一致性：我们应当尽可能保持程序和统计术语在上下文的一致性，并保证其与一些教材、论文当常用术语的继承性。",
     "crumbs": [
       "Home",
       "Guidelines",
-      "Bengali"
-    ]
-  },
-  {
-    "objectID": "Conventions_for_Languages/Bengali-specific-translations.html#glossary",
-    "href": "Conventions_for_Languages/Bengali-specific-translations.html#glossary",
-    "title": "Bengali",
-    "section": "Glossary",
-    "text": "Glossary",
-    "crumbs": [
-      "Home",
-      "Guidelines",
-      "Bengali"
-    ]
-  },
-  {
-    "objectID": "Conventions_for_Languages/Catalan-specific-translations.html#about",
-    "href": "Conventions_for_Languages/Catalan-specific-translations.html#about",
-    "title": "Catalan",
-    "section": "About",
-    "text": "About\nThe goal of the Catalan Team is to bring together all people interested in helping translate the R language into Catalan. If you use R a lot, we need your help!\nUnlike other languages, R tries to display every message in the same language as the computer it’s running on. In principle, this reduces R’s barrier to entry; warnings and errors are very common in code written by beginners, so it’s essential that these messages are as clear as possible.",
-    "crumbs": [
-      "Home",
-      "Guidelines",
-      "Catalan"
-    ]
-  },
-  {
-    "objectID": "Conventions_for_Languages/Catalan-specific-translations.html#how-to-contribute",
-    "href": "Conventions_for_Languages/Catalan-specific-translations.html#how-to-contribute",
-    "title": "Catalan",
-    "section": "How to contribute",
-    "text": "How to contribute\nTo help in the translation process, you need to:\n\nSign up to the R Contributors Slack and introduce yourself in the #core-translations channel;\nJoin #core-translation-ca channel.\nRead the Resources section of this document, because the translation has some conventions that should be followed;\nCreate an account on Weblate (currently maintained by @daroczig);\nList every Catalan component;\nChoose a component that’s not 100% translated;\nClick Unfinished strings to list all messages that haven’t been translated and\nStart!",
-    "crumbs": [
-      "Home",
-      "Guidelines",
-      "Catalan"
-    ]
-  },
-  {
-    "objectID": "Conventions_for_Languages/Catalan-specific-translations.html#resources",
-    "href": "Conventions_for_Languages/Catalan-specific-translations.html#resources",
-    "title": "Catalan",
-    "section": "Resources",
-    "text": "Resources\n\nStyle\nThe Catalan project sticks to the Guia d’estil de Softcatalà. Have a look and check it when in doubts. There is a cheat sheet with a resume.\n\n\nTerminology\nThere are different sources for Catalan terminology\n\nGlossari de Softcatalà\nTermcat, el centre de terminologia de la llengua catalana\n\n\n\nTranslation memories\nIn case of doubts, an useful resource is the compilation of translation memories for Catalan. Check how other projects translate similar concepts and get inspired.\n\n\nAutomatic translations\nSoftcatalà provides automatic translations for .po files. Despite the results are quite good, it’s necessary to review carefully each string. You can download the .po files from Weblate website:\n\nAlternatively, you can:\n\nClone the repository using your private URL with:\n\ngit clone https://$USER:$PRIVATE_TOKEN@translate.rx.studio/git/r-project/base-r-gui/\n\nLook for the files at src/library/*/po/*ca.po and use any app to help you to review and fix the translations (eg. Poedit or Lokalize)\nYou can not push to this repository. To upload the finished files, use the Weblate web interface (see image above).\n\n\n\nR-project specific conventions\n\nWe use Latin quotes (cometes baixes) as a «primary quotes» for cases that are not part of R code. Insert them with AltGr + z («) and AltGr + x (»).\n\n\n\nGlossary\nWeblate has a built-in glossary that will be shown while doing a translation in Weblate with a matching term. To add new terms, better to discuss it with the community first and reach a consensus.\n\n\nQuality report\nSoftcatalà generates quality reports periodically on R translations using LanguageTool and Pology. Check it out at https://static.softcatala.org/quality/r-project.html.",
-    "crumbs": [
-      "Home",
-      "Guidelines",
-      "Catalan"
+      "Chinese"
     ]
   },
   {
@@ -551,7 +611,7 @@
     "href": "Conventions_for_Languages/index.html#languages-and-contributions",
     "title": "Guidelines",
     "section": "Languages and contributions",
-    "text": "Languages and contributions\n\n\n\nLanguage\nTeam Leaders (Contributor/Translator/Dedicated Reviewer)\n\n\n\n\nArabic\nIman Al-Hasani, Abdulrahman Alswaji\n\n\nBengali\nDebartha Paul\n\n\nBrazilian-Portugese\nCaio Lente, Renata Hirota\n\n\nCatalan\nJoan Maspons, Robert Castelo\n\n\nChinese 中文\nShun Wang\n\n\nHindi\nSaranjeet Kaur Bhogal, Ayush Patel\n\n\nJapanese\nReiko Okamoto\n\n\nNepali\nBinod Jung Bogati\n\n\nSpanish\nGeraldine Gómez, María Nanton, Macarena Quiroga\n\n\n\n\nAn example on the discussion of guidelines:\nSaranjeet wanted to know how to handle translating strings such as “Keyboard: PgUp, PgDown, Ctrl+Arrows, Ctrl+Home, Ctrl+End”. She has currently translated to Hindi as “कीबोर्ड: पेज अप, पेज डाउन, कंट्रोल+एरोज , कंट्रोल+होम , कंट्रोल+एन्ड ,”, which is in Hindi script but is spoken the same as the English words, since these are imported/foreign words.\nWe looked at how other languages translate this string using the “Other languages” button on Weblate: https://translate.rx.studio/translate/r-project/base-r-gui/hi/?checksum=05ce1e10588b237c&sort_by=-priority,position#translations\n\nFrench translates all the keys apart from those that are in English on a French keyboard: “Clavier : PageHaut, PageBas, Ctrl+Flèches, Ctrl+Début, Ctrl+Fin,” According to Hugo: “keys that are translated in a French keyboard: del, end, screenshot, insert. I believe that other keys usually don’t include text but use symbols (arrows, shift, pgup, pgdown). Ctrl and Alt are not translated”. It looks like Chinese takes a similar approach.\nItalian does not translate the keys: “Tastiera: PgUp, PgDown, Ctrl+Arrows, Ctrl+Home, Ctrl+End,”. Most languages take this approach.\nBest to discuss among translation team for specific language if possible, to decide best approach. General guidance: don’t translate unless these terms are commonly translated on the keyboard, commonly used in other technical documentation, or are simply a translation of the English word into the language script. (The latter advice because if people are choosing to see R messages in a non-English language, they may prefer to see everything in that script where possible).",
+    "text": "Languages and contributions\n\n\n\nLanguage\nTeam Leaders (Contributor/Translator/Dedicated Reviewer)\n\n\n\n\nArabic\nIman Al-Hasani, Abdulrahman Alswaji\n\n\nBengali\nDebartha Paul\n\n\nBrazilian-Portugese\nCaio Lente, Renata Hirota\n\n\nCatalan\nJoan Maspons, Robert Castelo\n\n\nChinese 中文\nShun Wang\n\n\nFrench\nChristian Wiat\n\n\nHindi\nSaranjeet Kaur Bhogal, Ayush Patel\n\n\nJapanese\nReiko Okamoto\n\n\nNepali\nBinod Jung Bogati\n\n\nSpanish\nGeraldine Gómez, María Nanton, Macarena Quiroga\n\n\n\n\nAn example on the discussion of guidelines:\nSaranjeet wanted to know how to handle translating strings such as “Keyboard: PgUp, PgDown, Ctrl+Arrows, Ctrl+Home, Ctrl+End”. She has currently translated to Hindi as “कीबोर्ड: पेज अप, पेज डाउन, कंट्रोल+एरोज , कंट्रोल+होम , कंट्रोल+एन्ड ,”, which is in Hindi script but is spoken the same as the English words, since these are imported/foreign words.\nWe looked at how other languages translate this string using the “Other languages” button on Weblate: https://translate.rx.studio/translate/r-project/base-r-gui/hi/?checksum=05ce1e10588b237c&sort_by=-priority,position#translations\n\nFrench translates all the keys apart from those that are in English on a French keyboard: “Clavier : PageHaut, PageBas, Ctrl+Flèches, Ctrl+Début, Ctrl+Fin,” According to Hugo: “keys that are translated in a French keyboard: del, end, screenshot, insert. I believe that other keys usually don’t include text but use symbols (arrows, shift, pgup, pgdown). Ctrl and Alt are not translated”. It looks like Chinese takes a similar approach.\nItalian does not translate the keys: “Tastiera: PgUp, PgDown, Ctrl+Arrows, Ctrl+Home, Ctrl+End,”. Most languages take this approach.\nBest to discuss among translation team for specific language if possible, to decide best approach. General guidance: don’t translate unless these terms are commonly translated on the keyboard, commonly used in other technical documentation, or are simply a translation of the English word into the language script. (The latter advice because if people are choosing to see R messages in a non-English language, they may prefer to see everything in that script where possible).",
     "crumbs": [
       "Home",
       "Guidelines"
