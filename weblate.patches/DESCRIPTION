@@ -1,0 +1,17 @@
+Package: weblate.patches
+Title: Helpers for generating weblate patches
+Version: 0.0.1
+Authors@R: c(
+    person("Michael", "Chirico", email="michaelchirico4@gmail.com", role=c("aut", "cre")),
+    person("Gergely", "Daróczi", email="daroczig@rapporter.net", role="aut")
+  )
+Description: Packaged up helpers used to generate patches
+  from the r-devel Weblate server. GitHub-only.
+Imports:
+  data.table,
+  logger,
+  tools
+License: CC-BY 4.0
+URL: https://github.com/r-devel/translations
+Encoding: UTF-8
+RoxygenNote: 7.3.1
