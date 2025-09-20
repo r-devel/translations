@@ -1,0 +1,376 @@
+---
+title: "French"
+---
+
+_This repository is a hub for all people who want to help translate R into French. This README is in 
+English, but you can reach out to other translators on the R Contributors Slack if you need any additional information 
+about the project._
+
+## A propos
+
+Le but du projet _fr_ est de rassembler chaque personne qui souhaite aider à la traductions du [langage R](https://en.wikipedia.org/wiki/R_(programming_language)) en français 🇫🇷. Si vous utilisez R souvent, nous avons besoin de votre aide !
+
+A la différence des autres langages de programmation, R essaie d'afficher chaque message dans la même langue que votre ordinateur. En principe cela réduit la barrière de la langue pour aborder R. Les erreurs et les avertissements sont très communs dans le code écrit par les débutants, il est donc essentiel que ces messages soient les plus clairs possibles.
+
+## Comment contribuer
+
+Pour aider le processus de traduction, veuillez :
+
+1. Vous inscrire au [Slack des contributeurs de R](https://contributor.r-project.org/slack) et présentez-vous sur le canal 
+`#core-translations`
+1. Lire la section [Ressources](#ressources) de ce document, car la traduction suit certaines conventions à respecter
+1. Créer un compte sur [Weblate](https://translate.rx.studio/) (maintenu actuellement par [@daroczig](https://twitter.com/daroczig))
+1. Lister chaque [composant](https://translate.rx.studio/languages/fr/r-project/) en français
+1. Choisir un composant qui n'est pas traduit à 100% (comme par exemple le [package utils](https://translate.rx.studio/projects/r-project/utils-r/fr/))
+1. Cliquer sur **Chaînes non terminées** pour lister tous les messages non traduits et
+1. Commencez !
+
+## Style
+
+R est un langage de programmation qui a presque 30 ans et c'est pourquoi les messages se trouvent écrits par plusieurs personnes dont le style est différent.
+Nous devons toujours suivre ici la grammaire et l'orthographe française, en appliquant les nouvelles réformes correspondantes, mais nous voulons préserver la langue initiale le plus possible.
+
+En anglais, vous pouvez omettre les coordinations sans changer la signification.
+Nous les ajoutons habituellement quand la phrase ne semble pas naturelle.
+
+> _Maybe package installed with version of R newer than %s ?_
+
+> Le package est peut-être installé avec une version de R plus récente que %s ?
+
+Les termes techniques de R ne sont pas à traduire, comme par exemple le nom des fonctions, des objets et des argument (habituellement entre apostrophes).
+
+> _'MARGIN' does not match dim(X)_
+
+> 'MARGIN' ne correspond pas à dim(X)
+
+Dans les cas particuliers, une fonction peut être utilisée comme verbe. Nous adoptons la solution de reconstruire la phrase.
+
+> _cannot xtfrm data frames_
+
+> xtfrm ne peut être utilisé avec les data frame
+
+### Formatage
+
+L'utilisation des espaces et des paragraphes en français est règlementée par la typographie.
+Les textes R, néanmoins ont des contraintes d'espace et de format qui ne sont pas évidentes à traduire.
+
+Nous plaçons un espace devant les ponctuations telles que :  ; ! ? (sauf . et ,)
+
+/ : espace avant et après (sauf si c'est un chemin d'accès, par exemple, c:/temp)
+par contre, nous conservons les conventions du langage S pour les guillemets,
+soit '' ou "", mais non transformés et sans espaces.
+
++ ’ : remplacer l'apostrophe grasse ’ par l'apostrophe simple '
+
++ ` : garder le backtick 
+
++ ‘ : remplacer l'apostrophe simple retournée ‘ par l'apostrophe simple '
+
++ “ : remplacer les guillemets doubles retournés ouvrants “ par l'apostrophe simple '
+
++ ” : remplacer les guillemets doubles fermants ” par l'apostrophe simple '
+
+La plupart des messages R portent sous une certaine forme la référence au code qui les a produits.
+Ceci se fait à l'aide des [spécifieurs de format](https://cplusplus.com/reference/cstdio/printf/) et ils doivent être dans le même ordre dans le texte de référence.
+
+> _%s and %s must have the same length_
+
+> %s et %s doivent avoir la même longueur
+
+S'il n'est pas possible de conserver le même ordre, vous devez utiliser l'indice de la substitution choisie avec `%n$<fmt>` 
+(par exemple `%1$s`, `%2$s`, etc.).
+
+Les messages peuvent aussi comporter des caractères spéciaux tels que des apostrophes simples (`'`), des guillemets (`"`), des tabulations (`\t`) et des passages à la ligne 
+(`\n`), tout comme des espaces supplémentaires à des endroits particuliers.
+Pour maintenir un standard, nous ne modifions pas ce type de mise en forme même si son utilisation ne nous semble pas correcte.
+
+> _Conflicts attaching package %s:<br>%s_
+
+> Conflicts pour attacher le package %s :<br>%s
+
+### Genre
+
+A la différence du français, l'anglais ne spécifie pas le genre grammatical.
+Nous utiliserons la terminologie utilisée habituellement dans la littérature technique française.
+
+Le genre grammatical des arguments, des acronymes et autres noms peut habituellement être déduit du contexte. 
+Dans l'exemple ci-dessous, nous interprétons "_DLL_" par "bibliothèque de liens dynamiques" (dynamic-link library).
+
+> _DLL %s was not loaded_
+
+> DLL %s ne s'est pas chargée
+
+Dans l'exemple suivant, bien que "_scale_" soit féminin en français, le masculin est utilisé car il remplace "_argument_" qui est un nom masculin.
+
+> _'scale' should be numeric or NULL_
+
+> 'scale' doit être numérique ou NULL
+
+Dans certains cas, les genres peuvent simplement être ignorés. Dans les expressions suivantes il est possible de traduire "_author_" par "auteur(e)", mais il existe des tournures permettant souvent de s'en passer.
+
+> _Authors@R field gives no person with name and author role_
+
+> Le champ Authors@R ne désigne aucune personne avec son rôle
+
+Dans certains cas plus rares, les messages référencent la personne qui programme. 
+Dans ce cas, si cela est expressément demandé, vous pourrez utiliser "o(a)" pour rester lisible et ne pas augmenter la taille de la phrase.
+
+> _Not enough arguments passed to user macro '%s'_
+
+> Pas assez d'arguments passés à la macro '%s' de l'utilisateur
+
+En français on utilisera le terme masculin "utilisateur" qui fait référence à la fonction plutôt qu'au genre.
+
+## Ressources
+
+Ce document est vivant et liste le problèmes communs à propos de la traduction de R en français. 
+Chaque suggestion ici est ouverte au débat et si vous êtes en désaccord avec un élément vous pouvez le signaler en créant simplement un nouveau sujet dans l'onglet [discussions](https://github.com/r-devel/translations/discussions) .
+
+- [Documentation Weblate sur le flux du travail de traduction](https://docs.weblate.org/en/latest/workflows.html) - [Tableau de bord des traductions](https://contributor.r-project.org/translations-dashboard/)
+
+### Glossaire
+
+Nous avons regroupé ici les termes qui apparaissent souvent dans les messages R et pouvant représenter des difficultés de traduction.
+Si un mot vous pose problème et qu'il ne se trouve pas dans le tableau ci-dessous, recherchez la traduction avec [Linguee](https://www.linguee.com) ou Wikipedia et indiquez-nous la pour que nous puissions l'inclure dans cette section.
+
+Nous avons essayé d'utiliser les versions les plus communes de chaque terme, mais il n'est pas toujours possible de tenir une liste exhaustive.
+Par exemple si vous cherchez "_caching_", l'entrée correspondante est "_cache_". 
+Le même mot peut avoir aussi plusieurs fonctions telles que "_replacement_", qui signifie à la fois "substitution" et "substitué".
+
+Certain mots de par leur usage conservent leur terme anglais puisque leur traduction est faiblement utilisée, mais ce n'est que subjectif.
+
+| Anglais              | Français                                     |
+|:---------------------|:---------------------------------------------|
+| aborting             | annulation, abandon                          |
+| alias    | alias   |
+| allocation    | affectation mémoire   |
+| anova    | ANOVA   |
+| argument    | argument (et non paramètre)   |
+| array    | tableau   |
+| assigment    | affectation   |
+| attribute    | attribut   |
+| attach    | joindre, annexer   |
+| backslash    | caractère barre oblique inversée   |
+| binary operator   | opérateur binaire   |
+| bind    | lien (binding : lier)   |
+| bitmap    | bitmap   |
+| BOM    | BOM (indicateur d'ordre d'octets)   |
+| boxplot    | boîte à moustaches   |
+| breaks    | borne des classes (histogrammes)   |
+| browser    | explorateur, navigateur   |
+| bytecode    | pseudo-code (code à octets est officiel mais peu utilisé)   |
+| cached value    | valeur enregistrée en mémoire cache   |
+| call    | appel   |
+| callback    | rappel (procédure de, callback)   |
+| case insensitive matching    | correspondance insensible à la casse   |
+| categorical    | qualitative (pour une variable)   |
+| channel    | canal   |
+| character    | caractère (sans h)   |
+| check    | vérifier  |
+| chunk    | bloc de code   |
+| clipping    | détourage   |
+| closure    | fermeture (closure)   |
+| cluster    | agrégation, groupe   |
+| codoc   | codoc (fonction de R)   |
+| coerce    | convertir automatiquement   |
+| coercion    | conversion automatique   |
+| collation    | classement   |
+| collapsing level  | niveau de fusion   |
+| colortype    | colorimétrie   |
+| computationally singular  |  numériquement singulière (par exemple pour une matrice)   |
+| connection   | connexion   |
+| console   | console   |
+| covariate    | covariables   |
+| database    | base de données   |
+| dataframe    | tableau de données, mais on précise (data frame) si nécessaire; utilisé au masculin (objet)   |
+| dataset    | jeu de données   |
+| debug  | débogguer   | 
+| defunct | obsolete, n'existe plus  |
+| deparse   | reconstruction de code (deparse)   |
+| deprecated   | obsolète   |
+| deviance    | déviance (en statistique)   |
+| device    | périphérique   |
+| detach | détacher, séparer |
+| dispatch   | dispatcheur   |
+| documentation object| objet de documentation  |
+| double    | ‘double’ (nombre à virgule flottante)   |
+| download   | téléchargement client <- serveur   |
+| driver    | pilote   |
+| drop    | ignorer |
+| edge    | côté (d'un polygone)   |
+| eigenvalues    | valeurs propres   |
+| encoding    | encodage   |
+| environment    | environnement (voir aussi workspace)   |
+| evaluate    | évaluer, par exemple avec _evaluate()_   |
+| factor    | variable facteur ou facteur   |
+| fallback    | repli (ex: procédure de repli)   |
+| fifo    | fifo , pour _first in, first out_ (préférable à... peps, peu connu)   |
+| filename    | nom de fichier   |
+| file stream    | corps du fichier   |
+| fit    | ajustement ou ajuster   |
+| flag  | balise, baliser, marquer   |
+| flush   | vider ou vidage   |
+| formula    | formule du modèle ou formule tout court   |
+| frame    | cadre ou trame selon le contexte; (data frame : tableau de données)   |
+| GiB    | giga octets (pour les tailles)   |
+| handler    | manipulateur de données (voir aussi interrupt handler)   |
+| hardcoded   | codé en dur |
+| hashing    | hachage   |
+| Hessian    | Hessienne (se dit d'une matrice)   |
+| hinges    | jointures   |
+| history    | historique (des commandes)   |
+| image    | image d'environnement (fichier image où les objets R sont sauvés)   |
+| implemented    | implémenté   |
+| incoming checks   | contrôle des entrées  |
+| index    |indice (presque toujours, et non index)   |
+| interrupt handler   | gestionnaire d'interruptions   |
+| invalid    |incorrect (à préférer à 'non valide')   |
+| IO    | E/S (pour entrées/sorties)   |
+| issue tracker   | gestionnaire de tickets (issue tracker)   |
+| knots    | noeuds   |
+| kriging    | krigeage   |
+| label    | étiquette, libellé   |
+| lag    | décalage   |
+| l    | en général longueur; compléter avec 'taille' ex: "....différent de la taille l de l'objet DT..."   |
+| layout    | mise en page   |
+| lazy loading    |chargement partiel (_explicit loading_ : chargement complet)   |
+| leading minor   | mineur dominant (sous-matrice)  |
+| length   | longueur (réserver taille pour _size_)   |
+| LHS    | membre gauche (d'une expression, d'une égalité...)   |
+| library    | bibliothèque   |
+| likelihood    |vraisemblance   |
+| link | lien  |
+| list column   | colonne de type liste   |
+| locale    | environnement linguistique   |
+| locator    | mode de localisation à la souris (pour les graphes)   |
+| logical    | booléen   |
+| log-likelihood   | log de vraisemblance   |
+| macro    | macro |
+| magic number   | nombre magique   |
+| map (to map)    |mapper (anglicisme d'usage courant)   |
+| match | correspondance |
+| matrix is exactly singular   | matrice singulière   |
+| metadata    | métadonnées  |
+| metafile    | metafile   |
+| mirror site    | site miroir (_ex_ : CRAN)  |
+| mismatch    | incohérence   |
+| missing | absent  |
+| mixed    | mixte (plutôt que mélangé)   |
+| mode    | mode   |
+| modulus    | modulo   |
+| multibyte    | multioctets   |
+| NA    | NA ou valeur manquante, selon le contexte   |
+| named args    | arguments nommés   |
+| namespace    | espace de noms   |
+| nondecreasing vector    | vecteur de valeurs non décroissantes   |
+| non-interactively | de façon non interactive |
+| non-numeric type | type non numérique  |
+| non-vector type    | type non vectoriel   |
+| numeric-alike    | numérique ou assimilé   |
+| notches    | indentations   |
+| offending | qui pose problème  |
+| offset    | décalage   |
+| opcode    | code d'opération   |
+| outlier   | valeur extrême   |
+| out of range    | en dehors de l’intervalle   |
+| overflow   | débordement ou dépassement de capacité par le haut   |
+| override | réécraser, redéfinir |
+| package    | package (non traduit cf. significations pour paquet ou paquetage)   |
+| pager    | afficheur   |
+| pair list    | liste appairée   |
+| parse    | analyse syntaxique du code (to parse : analyser le code)   |
+| parser    | analyseur syntaxique   |
+| passed    | transmis   |
+| passed in    | passé en argument   |
+| path    | chemin d'accès (d'un fichier...)   |
+| pattern    | motif   |
+| pipe    | conduite, caractère barre verticale '|'    |
+| pixmap    | pixmap (format de fichier image)   |
+| platform    | architecture   |
+| polyline   | ligne brisée   |
+| port    | port (sur un serveur TCP/IP par exemple)   |
+| profiling    | profilage (to profile : profiler)   |
+| promise   | promesse (promise)   |
+| prompt    | invite ou invite de commande   |
+| proxy    | proxy   |
+| push back    | repoussage   |   
+| quote symbol   | symbole de chaîne de caractères (et non de citation)   |
+| quote rule    | règle des guillemets   |
+| raw   | raw, si c'est le type de données, sinon brut   |
+| range   | plage, étendue ou intervalle, selon le contexte   |
+| redraw   | retraçage (des affichages), rafraîchissement   |
+| regex   | expression régulière   |
+| regular expression   | expression régulière   |
+| replace | substituer |
+| report   | (to report : signaler)   |
+| repository   | entrepôt, dépôt   |
+| required    | nécessaire  |
+| residuals    | résidus   |
+| restore   | restaurer   |
+| return   | retourner (abcd -> dcba) ou renvoyer (d'une fonction) selon le contexte   |
+| RHS    | membre droit (d'une expression, d'une égalité...)   |
+| RNG   | RNG ou générateur de nombres pseudo-aléatoires   |
+| routine   | sous-programme ou procédure   |
+| run   | exécuter (une fonction, un script...)  |
+| scaled    | standardisé, mis à l'échelle   |
+| seal    | sceller   |
+| search path    | chemin de recherche   |
+| seed    | valeurs d'initialisation d'un processus, graine aléatoire (ex: génération des nombres aléatoires)   |
+| seek    | mode d'accès aléatoire   |
+| self-starting function   | fonction auto-initialisée   |
+| sequence    | suite (selon contexte) ou séquence   |
+| shingle   |latte (dans lattice)   |
+| sink    | sortie par défaut   |
+| size    | taille   |
+| skew-symmetric   | matrice anti-symétrique   |
+| slash    | caractère barre oblique droite '/' (opposé à antislash barre oblique gauche '\')   |
+| slot    | slot (sous partie d'un objet S4, terme spécifique du _S_)   |
+| snapshot    | instantané graphique, capture d'écran   |
+| socket   | connecteur logiciel (ou socket -usage courant- dans les longs messages)   |
+| source    | source (to source : sourcer, préférable à entrée par défaut)   |
+| specified    | fourni (voir choisi ou donné, selon le contexte)   |
+| splice   | joindre  |
+| stack   | pile   |
+| standard deviation   | écart-type   |
+| startup | démarrage, initialisation  |
+| stratum    |strate   |
+| subscript    | indice   |
+| subset    | sous-ensemble (subsetting : indiçage, ou réalisation d'un sous-ensemble)   |
+| supernode    |super-noeud   |
+| supported   | pris en charge (pas supporté, qui est un anglicisme)   |
+| table    | tableau de contingence   |
+| tag    | marque, balise   |
+| tarball | archive, tarball  |
+| template | modèle  |
+| thermometer    | jauge (contexte de graphes)   |
+| thread    | contexte (threaded code : code contextuel)   |
+| thread buffers        |  mémoire tampon des thread   |
+| timeout        |  délai maximal   |
+| timer       |  horloge ou temporisation, selon le contexte   |
+| timezone        |  fuseau horaire   |
+| tl        |  en général taille préallouée (pour true length) ; Compléter avec le texte ex: "...différent de la taille préallouée tl de l'objet DT..."   |
+| top level        |  niveau le plus haut   |
+| traceback        |  historique des fonctions appelées ('traceback')   |
+| trimmed mean       |  moyenne tronquée   |
+| truncation       |  troncature   |
+| type       |  type   |
+| type bumps        |  collision / changement de type   |
+| unary operator       |  opérateur unaire   |
+| unbind       |  délier   |
+| underflow       |  dépassement de capacité par le bas   |
+| unlisted  | non listé |
+| unmatched       |  déparié   |
+| unpacking        |  extraction   |
+| unwrap columns        |  déplier les colonnes   |
+| unmapping view of file       |  annulation du mappage / démappage de la vue du fichier   |
+| upload       |  téléversement client -> serveur   |
+| url        | URL   |
+| unsupported        |  non pris en charge   |
+| vertex        |  sommet (d'un polygone)   |
+| viewport       |  vue   |
+| vignette        |  vignette   |
+| warning       |  avis (avertissement est bien aussi, mais trop long)   |
+| weight        |  pondération   |
+| working directory        |  répertoire de travail   |
+| workspace       | environnement de travail (workspace = environment dans R) ou session s'il s'agit à la fois de l'historique et de l'environnement   |
+| wrapup       | emballer ou emballage   |
