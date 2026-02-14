@@ -289,6 +289,13 @@ Weblate will provide a suggestion on how to fix, but in short:
     sudo docker exec -ti weblate-docker_weblate_1 bash
     ```
 
+    Note that in some cases, you might want `root` access to the container, e.g. to install packages. As `sudo` is not available in the container, you need to `docker exec` using the `-u root` flag to get `root` access. Then install e.g.
+
+    ```sh
+    apt update
+    apt install -y mc nano less
+    ```
+
 1. Enter the git folder:
 
     ```sh
