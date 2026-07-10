@@ -127,6 +127,36 @@ docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml 
 docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up -d
 ```
 
+## Weblate Upgrades
+
+1. Read about recent changes at https://docs.weblate.org/en/latest/changes.html
+2. Check for special instructions at https://docs.weblate.org/en/latest/admin/upgrade.html#generic-upgrade-instructions
+3. Backup up the data and database:
+
+    ```shell
+    tar -zcvf /root/base-r-gui-repo-$(date '+%Y-%m-%d').tar.gz \
+      /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui
+
+    docker exec weblate-docker_database_1 pg_dump -U weblate -Fc weblate > postgres-backup-$(date '+%Y-%m-%d').dump
+    ```
+
+4. Update the target Weblate version in the `docker-compose-https.yml` file, e.g.:
+
+    ```yaml
+    services:
+      weblate:
+        image: weblate/weblate:2026.7
+    ```
+
+5. Actual Docker compose upgrade as per https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-docker
+
+    ```shell
+    docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml pull
+    docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml down
+    docker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up -d
+    docker compose logs -f
+    ```
+
 ## Quarterly patch for R Core
 
 _NB: Weblate links below assume you're logged in there, otherwise you'll be redirected to the home page_
