@@ -651,6 +651,17 @@
     ]
   },
   {
+    "objectID": "Weblate-server.html#weblate-upgrades",
+    "href": "Weblate-server.html#weblate-upgrades",
+    "title": "Weblate server",
+    "section": "Weblate Upgrades",
+    "text": "Weblate Upgrades\n\nRead about recent changes at https://docs.weblate.org/en/latest/changes.html\nCheck for special instructions at https://docs.weblate.org/en/latest/admin/upgrade.html#generic-upgrade-instructions\nBackup up the data and database:\ntar -zcvf /root/base-r-gui-repo-$(date '+%Y-%m-%d').tar.gz \\\n  /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/r-project/base-r-gui\n\ndocker exec weblate-docker_database_1 pg_dump -U weblate -Fc weblate &gt; postgres-backup-$(date '+%Y-%m-%d').dump\nUpdate the target Weblate version in the docker-compose-https.yml file, e.g.:\nservices:\n  weblate:\n    image: weblate/weblate:2026.7\nActual Docker compose upgrade as per https://docs.weblate.org/en/latest/admin/install/docker.html#upgrading-docker\ndocker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml pull\ndocker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml down\ndocker-compose -f docker-compose-https.yml -f docker-compose-https.override.yml up -d\ndocker compose logs -f",
+    "crumbs": [
+      "Home",
+      "Weblate server"
+    ]
+  },
+  {
     "objectID": "Weblate-server.html#quarterly-patch-for-r-core",
     "href": "Weblate-server.html#quarterly-patch-for-r-core",
     "title": "Weblate server",
