@@ -373,7 +373,7 @@ Currently, the following IP addresses are blocked:
 
 ## Administrators
 
-Currently @daroczig and @MichaelChirico have admin access to Weblate, both in the web UI and via SSH.
+Currently @daroczig, @MichaelChirico, @azeloc, @beatrizmilz, @Saranjeet, and @hturner have admin access to the Weblate UI. SSH access is granted to @daroczig, @MichaelChirico,  @azeloc, and @beatrizmilz.
 
 In case of any questions, reach out to them on the R-devel Slack's `#core-translation` channel, pinging both their usernames.
 
@@ -381,8 +381,8 @@ To add a new admin in the Weblate app:
 
 1. Go to the [Users page](https://translate.rx.studio/manage/users)
 1. Select the user
-1. Go to "Groups"
-1. Add to the "The R Project for Statistical Computing / Administration" group
+1. Go to "Edit"
+1. Mark the "Superuser status" checkbox
 
 To grant SSH access:
 
