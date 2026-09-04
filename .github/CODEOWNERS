@@ -1,0 +1,4 @@
+# Assign all team members for review so that
+#   1. everyone get notified and made aware of a pending new contribution,
+#   2. the PR gets attention.
+* @r-devel/translations
