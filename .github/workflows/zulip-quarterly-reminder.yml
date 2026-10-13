@@ -1,0 +1,48 @@
+name: Monthly Zulip reminder
+
+on:
+  # 09:17 Europe/London on the first day of every month.
+  schedule:
+    - cron: '17 9 1 * *'
+      timezone: 'Europe/London'
+  # Use this to test without posting; set dry_run to false to send a real message.
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Do not send a Zulip message (recommended for testing)'
+        required: true
+        type: boolean
+        default: true
+
+permissions: {}
+
+jobs:
+  send-reminder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Preview reminder (manual dry run)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: |
+          echo 'Dry run only; no Zulip message sent.'
+          echo 'Reminder: Please complete the monthly reminder action.'
+
+      - name: Send message to Zulip
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        env:
+          ZULIP_WEBHOOK_URL: ${{ secrets.ZULIP_WEBHOOK_URL }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "$ZULIP_WEBHOOK_URL" ]]; then
+            echo 'Missing ZULIP_WEBHOOK_URL secret.' >&2
+            exit 1
+          fi
+
+          payload=$(jq -n --arg text 'Monthly reminder: please complete the required monthly task.' '{text: $text}')
+          curl --silent --show-error --fail-with-body \
+            -H 'Content-Type: application/json' \
+            --data "$payload" \
+            "$ZULIP_WEBHOOK_URL"
+          echo 'Zulip reminder sent successfully.'
