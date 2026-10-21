@@ -40,7 +40,7 @@ jobs:
             exit 1
           fi
 
-          payload=$(jq -n --arg text 'It is time to generate the quarterly patch file for base R and the recommended R packages. cc @weblate-admins' '{text: $text}')
+          payload=$(jq -n --arg text 'It is time to generate the quarterly patch file for base R and the recommended R packages. cc @*weblate-admins*' '{text: $text}')
           curl --silent --show-error --fail-with-body \
             -H 'Content-Type: application/json' \
             --data "$payload" \
