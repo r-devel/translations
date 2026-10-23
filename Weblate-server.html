@@ -285,6 +285,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#administrators" id="toc-administrators" class="nav-link" data-scroll-target="#administrators">Administrators</a>
   <ul class="collapse">
+  <li><a href="#add-weblate-admin" id="toc-add-weblate-admin" class="nav-link" data-scroll-target="#add-weblate-admin">Adding a new admin in the Weblate app</a></li>
+  <li><a href="#grant-ssh-access" id="toc-grant-ssh-access" class="nav-link" data-scroll-target="#grant-ssh-access">Granting SSH access</a></li>
+  <li><a href="#onboarding-a-new-admin" id="toc-onboarding-a-new-admin" class="nav-link" data-scroll-target="#onboarding-a-new-admin">Onboarding a new admin</a></li>
   <li><a href="#team-leaders" id="toc-team-leaders" class="nav-link" data-scroll-target="#team-leaders">Team leaders</a></li>
   <li><a href="#creating-a-new-language-team" id="toc-creating-a-new-language-team" class="nav-link" data-scroll-target="#creating-a-new-language-team">Creating a new language team</a></li>
   </ul></li>
@@ -599,18 +602,33 @@ docker compose logs -f</code></pre></li>
 <h2 class="anchored" data-anchor-id="administrators">Administrators</h2>
 <p>Currently <span class="citation" data-cites="daroczig">@daroczig</span>, <span class="citation" data-cites="MichaelChirico">@MichaelChirico</span>, <span class="citation" data-cites="azeloc">@azeloc</span>, <span class="citation" data-cites="beatrizmilz">@beatrizmilz</span>, <span class="citation" data-cites="Saranjeet">@Saranjeet</span>, and <span class="citation" data-cites="hturner">@hturner</span> have admin access to the Weblate UI. SSH access is granted to <span class="citation" data-cites="daroczig">@daroczig</span>, <span class="citation" data-cites="MichaelChirico">@MichaelChirico</span>, <span class="citation" data-cites="azeloc">@azeloc</span>, and <span class="citation" data-cites="beatrizmilz">@beatrizmilz</span>.</p>
 <p>In case of any questions, reach out to them on the R-devel Slack’s <code>#core-translation</code> channel, pinging both their usernames.</p>
-<p>To add a new admin in the Weblate app:</p>
+<section id="add-weblate-admin" class="level3">
+<h3 class="anchored" data-anchor-id="add-weblate-admin">Adding a new admin in the Weblate app</h3>
 <ol type="1">
 <li>Go to the <a href="https://translate.rx.studio/manage/users">Users page</a></li>
 <li>Select the user</li>
 <li>Go to “Edit”</li>
 <li>Mark the “Superuser status” checkbox</li>
 </ol>
-<p>To grant SSH access:</p>
+</section>
+<section id="grant-ssh-access" class="level3">
+<h3 class="anchored" data-anchor-id="grant-ssh-access">Granting SSH access</h3>
 <ol type="1">
 <li>Share your public key with one of the admins, who will add that to <code>~/.ssh/authorized_keys</code></li>
 <li>Ask for the SSH config from one of the admins</li>
 </ol>
+</section>
+<section id="onboarding-a-new-admin" class="level3">
+<h3 class="anchored" data-anchor-id="onboarding-a-new-admin">Onboarding a new admin</h3>
+<p>When a new person joins the Weblate admins, make sure to:</p>
+<ol type="1">
+<li><strong>Zulip</strong>: make sure they joined the <a href="https://contributor.r-project.org/zulip">R Contributors Zulip</a> and the <code>#translation</code> channel, where the translations community and the admins communicate.</li>
+<li><strong>Weblate</strong>: grant them “Superuser status” in the Weblate app (see <a href="#add-weblate-admin">how to add a new admin in the Weblate app</a>).</li>
+<li><strong>GitHub</strong>: invite them to the <a href="https://github.com/orgs/r-devel/teams/translations">translations team</a> of the <code>r-devel</code> GitHub organization.</li>
+<li><strong>Update this page</strong>: add them to the <a href="#administrators">list of admins</a> (<a href="https://github.com/r-devel/translations/blob/main/web/Weblate-server.qmd">edit this file</a>).</li>
+<li><strong>SSH</strong> (if needed): add their public key to the server and share the SSH config (see <a href="#grant-ssh-access">how to grant SSH access</a>).</li>
+</ol>
+</section>
 <section id="team-leaders" class="level3">
 <h3 class="anchored" data-anchor-id="team-leaders">Team leaders</h3>
 <p>There are language teams defined in each project with the below extra permissions:</p>
