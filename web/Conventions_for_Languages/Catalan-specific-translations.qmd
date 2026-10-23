@@ -18,9 +18,8 @@ essential that these messages are as clear as possible.
 
 To help in the translation process, you need to:
 
-1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the 
-`#core-translations` channel;
-1. Join [#core-translation-ca](https://app.slack.com/client/T01DW9DLB2A/C061B671J8G) channel. 
+1. Sign up to the [R Contributors Zulip](https://contributor.r-project.org/zulip) and introduce yourself in the 
+`#translation` channel;
 1. Read the [Resources](#resources) section of this document, because the translation has some conventions that should 
 be followed;
 1. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
