@@ -377,17 +377,29 @@ Currently @daroczig, @MichaelChirico, @azeloc, @beatrizmilz, @Saranjeet, and @ht
 
 In case of any questions, reach out to them on the R-devel Slack's `#core-translation` channel, pinging both their usernames.
 
-To add a new admin in the Weblate app:
+### Adding a new admin in the Weblate app {#add-weblate-admin}
 
 1. Go to the [Users page](https://translate.rx.studio/manage/users)
 1. Select the user
 1. Go to "Edit"
 1. Mark the "Superuser status" checkbox
 
-To grant SSH access:
+### Granting SSH access {#grant-ssh-access}
 
 1. Share your public key with one of the admins, who will add that to `~/.ssh/authorized_keys`
 1. Ask for the SSH config from one of the admins
+
+### Onboarding a new admin
+
+When a new person joins the Weblate admins, make sure to:
+
+1. **Zulip**: make sure they joined the [R Contributors Zulip](https://contributor.r-project.org/zulip) and the `#translation` channel, where the translations community and the admins communicate.
+1. **Weblate**: grant them "Superuser status" in the Weblate app (see [how to add a new admin in the Weblate app](#add-weblate-admin)).
+1. **GitHub**: invite them to the [translations team](https://github.com/orgs/r-devel/teams/translations) of the `r-devel` GitHub organization.
+1. **Update this page**: add them to the [list of admins](#administrators) ([edit this file](https://github.com/r-devel/translations/blob/main/web/Weblate-server.qmd)).
+1. **SSH** (if needed): add their public key to the server and share the SSH config (see [how to grant SSH access](#grant-ssh-access)).
+
+
 
 ### Team leaders
 
