@@ -371,6 +371,12 @@ Currently, the following IP addresses are blocked:
 
 - 47.79.0.0/16 (ACL)
 
+### Source string bug reporting address {#source-string-bug-reporting-address}
+
+When translators find a problem in a source string (e.g. a typo in the original English message), they can report it by adding a comment to the string in Weblate.
+Weblate then sends these reports by email to the [source string bug reporting address](https://docs.weblate.org/en/latest/admin/projects.html#component-report-source-bugs).
+
+Currently, this address points to the `#source-string-bugs` channel on the [R Contributors Zulip](https://contributor.r-project.org/zulip), for all the components of base R and of the recommended packages.
 ## Administrators
 
 Currently @daroczig, @MichaelChirico, @azeloc, @beatrizmilz, @Saranjeet, and @hturner have admin access to the Weblate UI. SSH access is granted to @daroczig, @MichaelChirico,  @azeloc, and @beatrizmilz.
