@@ -9,8 +9,28 @@ Each package has its own maintainer and repository, so the contributions need to
 
 ## Tracking
 
-For each round of contributions, open an issue in the [translations repo](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package. 
+For each round of contributions, open an issue in the [translations repo](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package.
 See, for example, [r-devel/translations#68](https://github.com/r-devel/translations/issues/68).
+
+## Before you start
+
+For each package you are going to send upstream:
+
+1. Lock the package's components (e.g. both the `C` and `R` files components), so no new translations are added while the contribution is being reviewed upstream.
+
+This can be done in the Weblate interface, on each component's page ("Operations" > "Repository maintenance" > "Lock").
+
+Alternatively, use the CLI inside the Docker container (see the [Weblate server page](Weblate-server.qmd#git-rebase-conflicts) on how to attach it), once for each component:
+
+```sh
+weblate lock_translation the-r-project-recommended-packages/NAME-OF-THE-COMPONENT
+```
+
+2. SSH to the Weblate server and make a backup of the package's Git repo (outside the Docker container).
+
+When a package has both `C` and `R` files components, only one of them has its own repo (the other is linked to it), so this is the one to back up.
+For the packages hosted on GitHub or Codeberg, this is the `R` files component (e.g. `rpart-r-files`).
+The packages hosted on the R-project SVN all share the repo of the `kernsmooth-r-files` component.
 ## After acceptance
 
 After the contribution is accepted upstream (e.g. the pull request is merged), you can:
