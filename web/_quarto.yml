@@ -31,6 +31,7 @@ website:
       - auto: Conventions_for_Languages
       - Weblate-FAQ.qmd
       - Weblate-server.qmd
+      - Recommended-packages.qmd
 
 format:
   html:
