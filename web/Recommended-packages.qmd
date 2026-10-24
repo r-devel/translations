@@ -11,6 +11,18 @@ Each package has its own maintainer and repository, so the contributions need to
 
 For each round of contributions, open an issue in the [translations repo](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package. 
 See, for example, [r-devel/translations#68](https://github.com/r-devel/translations/issues/68).
+## After acceptance
+
+After the contribution is accepted upstream (e.g. the pull request is merged), you can:
+
+1. TO DO
+
+2. Unlock the components so new contributions can be made, in the Weblate interface ("Operations" > "Repository maintenance" > "Unlock") or with the CLI inside the Docker container, once for each component:
+
+```sh
+weblate unlock_translation the-r-project-recommended-packages/NAME-OF-THE-COMPONENT
+```
+
 ## Decisions
 
 These are decisions discussed by the team, and they can be revisited if needed.
