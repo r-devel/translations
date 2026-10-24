@@ -14,8 +14,8 @@ world of possibilities for understanding and collaboration.
 
 So if you want to start, you can contribute by following these steps:
 
-1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the
-#core-translations channel;
+1. Sign up to the [R Contributors Zulip](https://contributor.r-project.org/zulip) and introduce yourself in the
+`#translation` channel;
 
 1. Create an account on [Weblate](https://translate.rx.studio/) and read the Translations chapter on the [R Development
 guide](https://contributor.r-project.org/rdevguide/);
@@ -70,8 +70,8 @@ you don't find the word you are looking for.
 
 Reviewers bear the editor role to approve the work of translators and ensure the overall cohesion of the
 translation work in one language. For adding new reviewers for a language, please reach out to the
-respective team leaders via the `#core-translation` channel on the [R Contributors
-Slack](https://contributor.r-project.org/slack) workspace.
+respective team leaders via the `#translation` channel on the [R Contributors
+Zulip](https://contributor.r-project.org/zulip).
 
 ### Team leaders
 
@@ -81,7 +81,7 @@ reviewer(s)](https://docs.weblate.org/en/latest/workflows.html#dedicated-reviewe
 
 ## How to start a new language team
 
-To request the creation of a new language team, please reach out on the `core-translation` channel of the [R Contributors Slack](https://contributor.r-project.org/slack) workspace, and the [administrators of Weblate](https://contributor.r-project.org/translations/Weblate-server.html#administrators) will follow the steps described in the [Weblate server admin page](https://contributor.r-project.org/translations/Weblate-server.html#team-leaders).
+To request the creation of a new language team, please reach out on the `#translation` channel of the [R Contributors Zulip](https://contributor.r-project.org/zulip), and the [administrators of Weblate](https://contributor.r-project.org/translations/Weblate-server.html#administrators) will follow the steps described in the [Weblate server admin page](https://contributor.r-project.org/translations/Weblate-server.html#team-leaders).
 
 In short, a new team will be created for the language with roles to approve translations and edit the language-specific glossary, then you (and others listed as team leaders) will be added to that team so that the dedicated reviewers workflow becomes enforced for that language.
 
@@ -99,8 +99,8 @@ change, fuzzy matching or translator action. The `fuzzy` tag might be commited t
 
 ## Sustainability of the translations community
 
-- The `#core-translation` channel on the [R Contributors Slack](https://contributor.r-project.org/slack) workspace is
-the main space of communication for the translations  community. Join this Slack to communicate with the community and
+- The `#translation` channel on the [R Contributors Zulip](https://contributor.r-project.org/zulip) is
+the main space of communication for the translations  community. Join this Zulip to communicate with the community and
 share feedback.
 - We encourage people interested in translations to organize and conduct local/regional level events to promote and
 raise awareness about translations.
@@ -115,7 +115,7 @@ raise awareness about translations.
 ## Space for feedback
 
 You can open an issue in this repository if you find something that is not working as expected in Weblate. If you want
-to discuss about translations and convictions you can use the Slack channels dedicated to that.
+to discuss about translations and convictions you can use the Zulip channels dedicated to that.
 
 ## Resources
 

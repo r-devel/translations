@@ -3,7 +3,7 @@ title: "French"
 ---
 
 _This repository is a hub for all people who want to help translate R into French. This README is in 
-English, but you can reach out to other translators on the R Contributors Slack if you need any additional information 
+English, but you can reach out to other translators on the R Contributors Zulip if you need any additional information 
 about the project._
 
 ## A propos
@@ -16,8 +16,8 @@ A la différence des autres langages de programmation, R essaie d'afficher chaqu
 
 Pour aider le processus de traduction, veuillez :
 
-1. Vous inscrire au [Slack des contributeurs de R](https://contributor.r-project.org/slack) et présentez-vous sur le canal 
-`#core-translations`
+1. Vous inscrire au [Zulip des contributeurs de R](https://contributor.r-project.org/zulip) et présentez-vous sur le canal 
+`#translation`
 1. Lire la section [Ressources](#ressources) de ce document, car la traduction suit certaines conventions à respecter
 1. Créer un compte sur [Weblate](https://translate.rx.studio/) (maintenu actuellement par [@daroczig](https://twitter.com/daroczig))
 1. Lister chaque [composant](https://translate.rx.studio/languages/fr/r-project/) en français
