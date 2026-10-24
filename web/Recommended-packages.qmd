@@ -31,6 +31,34 @@ weblate lock_translation the-r-project-recommended-packages/NAME-OF-THE-COMPONEN
 When a package has both `C` and `R` files components, only one of them has its own repo (the other is linked to it), so this is the one to back up.
 For the packages hosted on GitHub or Codeberg, this is the `R` files component (e.g. `rpart-r-files`).
 The packages hosted on the R-project SVN all share the repo of the `kernsmooth-r-files` component.
+
+First, check that the folder with this name exists on the server:
+
+```sh
+sudo ls /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/the-r-project-recommended-packages/
+```
+
+The output should be similar to this:
+
+```
+class-r-files       lattice-r-files  matrix-r-files  rpart-r-files
+kernsmooth-r-files  mass-r-files     nnet-r-files    spatial-r-files
+```
+
+Create the backup, replacing `NAME-OF-THE-COMPONENT` (twice) with the folder name from the output above (e.g. `rpart-r-files`):
+
+```sh
+sudo tar -zcvf /root/NAME-OF-THE-COMPONENT-repo-$(date '+%Y-%m-%d').tar.gz \
+  /var/lib/docker/volumes/weblate-docker_weblate-data/_data/vcs/the-r-project-recommended-packages/NAME-OF-THE-COMPONENT
+```
+
+Then check that the backup file is listed, with today's date:
+
+```sh
+sudo ls -lh /root/
+```
+
+
 ## After acceptance
 
 After the contribution is accepted upstream (e.g. the pull request is merged), you can:
