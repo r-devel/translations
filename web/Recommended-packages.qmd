@@ -2,4 +2,12 @@
 title: "Recommended packages"
 ---
 
-TO DO
+This page describes how the translations of the [recommended packages](https://translate.rx.studio/projects/the-r-project-recommended-packages/#components) contributed on Weblate are sent upstream.
+
+Unlike base R, these translations are not part of the [quarterly patch for R Core](Weblate-server.qmd#quarterly-patch-for-r-core).
+Each package has its own maintainer and repository, so the contributions need to be sent to each one separately, as a pull request or as a patch.
+
+## Tracking
+
+For each round of contributions, open an issue in the [translations repo](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package. 
+See, for example, [r-devel/translations#68](https://github.com/r-devel/translations/issues/68).
