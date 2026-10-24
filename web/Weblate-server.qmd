@@ -377,6 +377,13 @@ When translators find a problem in a source string (e.g. a typo in the original 
 Weblate then sends these reports by email to the [source string bug reporting address](https://docs.weblate.org/en/latest/admin/projects.html#component-report-source-bugs).
 
 Currently, this address points to the `#source-string-bugs` channel on the [R Contributors Zulip](https://contributor.r-project.org/zulip), for all the components of base R and of the recommended packages.
+#### Getting the email address of the Zulip channel
+
+1. In Zulip, open the settings of the `#source-string-bugs` channel.
+2. Click on "Generate email address".
+3. Uncheck "The sender's email address", so that it is not included in the messages.
+4. Copy the generated email address.
+
 ## Administrators
 
 Currently @daroczig, @MichaelChirico, @azeloc, @beatrizmilz, @Saranjeet, and @hturner have admin access to the Weblate UI. SSH access is granted to @daroczig, @MichaelChirico,  @azeloc, and @beatrizmilz.
