@@ -11,3 +11,13 @@ Each package has its own maintainer and repository, so the contributions need to
 
 For each round of contributions, open an issue in the [translations repo](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package. 
 See, for example, [r-devel/translations#68](https://github.com/r-devel/translations/issues/68).
+## Decisions
+
+These are decisions discussed by the team, and they can be revisited if needed.
+
+### New source strings (`.pot` and `.po` files)
+
+When a package changes (e.g. new or modified messages), its `.pot` and `.po` files need to be regenerated (e.g. with `tools::update_pkg_po()`), so that these messages show up in Weblate to be translated.
+We don't do this for the recommended packages: it is left to each package's maintainer, and Weblate picks up the new source strings on its next fetch from upstream.
+So the contributions sent upstream should include only the translations.
+See the discussion in [r-devel/translations#69](https://github.com/r-devel/translations/issues/69).
