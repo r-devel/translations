@@ -384,6 +384,14 @@ Currently, this address points to the `#source-string-bugs` channel on the [R Co
 3. Uncheck "The sender's email address", so that it is not included in the messages.
 4. Copy the generated email address.
 
+#### Changing the address
+
+The address can be changed in the Weblate interface, on the settings page of each component (e.g. <https://translate.rx.studio/settings/r-project/base-c/>).
+As this needs to be done component by component, it's easier to use the Weblate API with the R scripts in the [`scripts/`](https://github.com/r-devel/translations/tree/main/scripts) folder of this repo:
+
+- [`fetch-weblate-components.R`](https://github.com/r-devel/translations/blob/main/scripts/fetch-weblate-components.R) gets the list of components from Weblate, including their current source string bug reporting address, and saves it in `scripts/output/`.
+No token is needed, so it can also be used just to check the current settings.
+- [`update-report-source-bugs-email.R`](https://github.com/r-devel/translations/blob/main/scripts/update-report-source-bugs-email.R) changes the address of the selected components.
 ## Administrators
 
 Currently @daroczig, @MichaelChirico, @azeloc, @beatrizmilz, @Saranjeet, and @hturner have admin access to the Weblate UI. SSH access is granted to @daroczig, @MichaelChirico,  @azeloc, and @beatrizmilz.
