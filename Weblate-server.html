@@ -282,6 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#unlock-components" id="toc-unlock-components" class="nav-link" data-scroll-target="#unlock-components">Unlock components</a></li>
   <li><a href="#git-rebase-conflicts" id="toc-git-rebase-conflicts" class="nav-link" data-scroll-target="#git-rebase-conflicts">Git rebase conflicts</a></li>
   <li><a href="#bot-attacks" id="toc-bot-attacks" class="nav-link" data-scroll-target="#bot-attacks">Bot attacks</a></li>
+  <li><a href="#source-string-bug-reporting-address" id="toc-source-string-bug-reporting-address" class="nav-link" data-scroll-target="#source-string-bug-reporting-address">Source string bug reporting address</a></li>
   </ul></li>
   <li><a href="#administrators" id="toc-administrators" class="nav-link" data-scroll-target="#administrators">Administrators</a>
   <ul class="collapse">
@@ -596,6 +597,31 @@ docker compose logs -f</code></pre></li>
 <ul>
 <li>47.79.0.0/16 (ACL)</li>
 </ul>
+</section>
+<section id="source-string-bug-reporting-address" class="level3">
+<h3 class="anchored" data-anchor-id="source-string-bug-reporting-address">Source string bug reporting address</h3>
+<p>When translators find a problem in a source string (e.g.&nbsp;a typo in the original English message), they can report it by adding a comment to the string in Weblate. Weblate then sends these reports by email to the <a href="https://docs.weblate.org/en/latest/admin/projects.html#component-report-source-bugs">source string bug reporting address</a>.</p>
+<p>Currently, this address points to the <code>#source-string-bugs</code> channel on the <a href="https://contributor.r-project.org/zulip">R Contributors Zulip</a>, for all components of base R and the recommended packages.</p>
+<p>For the recommended packages that are not maintained by R Core, we decided to contact each maintainer on an as-needed basis.</p>
+<p>If a maintainer prefers to receive these reports somewhere else, update the address of their package’s components, as described <a href="#changing-the-address">below</a>.</p>
+<section id="getting-the-email-address-of-the-zulip-channel" class="level4">
+<h4 class="anchored" data-anchor-id="getting-the-email-address-of-the-zulip-channel">Getting the email address of the Zulip channel</h4>
+<ol type="1">
+<li>In Zulip, open the settings of the <code>#source-string-bugs</code> channel.</li>
+<li>Click “Generate email address”.</li>
+<li>Uncheck “The sender’s email address”, so that it is not included in the messages.</li>
+<li>Copy the generated email address.</li>
+</ol>
+</section>
+<section id="changing-the-address" class="level4">
+<h4 class="anchored" data-anchor-id="changing-the-address">Changing the address</h4>
+<p>The address can be changed in the Weblate interface, on the settings page of each component (e.g.&nbsp;<a href="https://translate.rx.studio/settings/r-project/base-c/">base-c</a>), in the <strong>“Source string bug reporting address”</strong> field.</p>
+<p>As this needs to be done for each component, it’s easier to use the Weblate API with the R scripts in the <a href="https://github.com/r-devel/translations/tree/main/scripts"><code>scripts/</code></a> folder of this repo:</p>
+<ul>
+<li><a href="https://github.com/r-devel/translations/blob/main/scripts/fetch-weblate-components.R"><code>fetch-weblate-components.R</code></a> gets the list of components from Weblate, including their current source string bug reporting address, and saves it in <code>scripts/output/</code>. No token is needed, so it can also be used just to check the current settings.</li>
+<li><a href="https://github.com/r-devel/translations/blob/main/scripts/update-report-source-bugs-email.R"><code>update-report-source-bugs-email.R</code></a> changes the address of the selected components. It needs a <a href="https://translate.rx.studio/accounts/profile/#api">Weblate API token</a>.</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="administrators" class="level2">
