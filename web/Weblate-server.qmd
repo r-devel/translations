@@ -397,7 +397,8 @@ As this needs to be done component by component, it's easier to use the Weblate 
 
 - [`fetch-weblate-components.R`](https://github.com/r-devel/translations/blob/main/scripts/fetch-weblate-components.R) gets the list of components from Weblate, including their current source string bug reporting address, and saves it in `scripts/output/`.
 No token is needed, so it can also be used just to check the current settings.
-- [`update-report-source-bugs-email.R`](https://github.com/r-devel/translations/blob/main/scripts/update-report-source-bugs-email.R) changes the address of the selected components.
+- [`update-report-source-bugs-email.R`](https://github.com/r-devel/translations/blob/main/scripts/update-report-source-bugs-email.R) changes the address of the selected components. It needs a [Weblate API token](https://translate.rx.studio/accounts/profile/#api).
+
 ## Administrators
 
 Currently @daroczig, @MichaelChirico, @azeloc, @beatrizmilz, @Saranjeet, and @hturner have admin access to the Weblate UI. SSH access is granted to @daroczig, @MichaelChirico,  @azeloc, and @beatrizmilz.
