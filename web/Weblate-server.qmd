@@ -376,17 +376,23 @@ Currently, the following IP addresses are blocked:
 When translators find a problem in a source string (e.g. a typo in the original English message), they can report it by adding a comment to the string in Weblate.
 Weblate then sends these reports by email to the [source string bug reporting address](https://docs.weblate.org/en/latest/admin/projects.html#component-report-source-bugs).
 
-Currently, this address points to the `#source-string-bugs` channel on the [R Contributors Zulip](https://contributor.r-project.org/zulip), for all the components of base R and of the recommended packages.
+Currently, this address points to the `#source-string-bugs` channel on the [R Contributors Zulip](https://contributor.r-project.org/zulip), for all components of base R and the recommended packages.
+
+For the recommended packages that are not maintained by R Core, we decided to contact each maintainer on an as-needed basis.
+
+If a maintainer prefers to receive these reports somewhere else, update the address of their package’s components, as described [below](#changing-the-address).
+
 #### Getting the email address of the Zulip channel
 
 1. In Zulip, open the settings of the `#source-string-bugs` channel.
-2. Click on "Generate email address".
+2. Click "Generate email address".
 3. Uncheck "The sender's email address", so that it is not included in the messages.
 4. Copy the generated email address.
 
 #### Changing the address
 
-The address can be changed in the Weblate interface, on the settings page of each component (e.g. <https://translate.rx.studio/settings/r-project/base-c/>).
+The address can be changed in the Weblate interface, on the settings page of each component (e.g. <https://translate.rx.studio/settings/r-project/base-c/>), in the **"Source string bug reporting address"** field.
+
 As this needs to be done component by component, it's easier to use the Weblate API with the R scripts in the [`scripts/`](https://github.com/r-devel/translations/tree/main/scripts) folder of this repo:
 
 - [`fetch-weblate-components.R`](https://github.com/r-devel/translations/blob/main/scripts/fetch-weblate-components.R) gets the list of components from Weblate, including their current source string bug reporting address, and saves it in `scripts/output/`.
