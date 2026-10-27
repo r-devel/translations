@@ -1,4 +1,4 @@
-name: Monthly Zulip reminder
+name: Quarterly Zulip reminder
 
 on:
   # 09:17 Europe/London on the 1st of every 3rd month,
