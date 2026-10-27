@@ -1,9 +1,10 @@
-name: Monthly Zulip reminder
+name: Quarterly Zulip reminder
 
 on:
-  # 09:17 Europe/London on the first day of every month.
+  # 09:17 Europe/London on the 1st of every 3rd month,
+  # starting 1 December 2026.
   schedule:
-    - cron: '17 9 1 * *'
+    - cron: '17 9 1 12,3,6,9 *'
       timezone: 'Europe/London'
   # Use this to test without posting; set dry_run to false to send a real message.
   workflow_dispatch:
@@ -40,7 +41,7 @@ jobs:
             exit 1
           fi
 
-          payload=$(jq -n --arg text 'Monthly reminder: please complete the required monthly task.' '{text: $text}')
+          payload=$(jq -n --arg text 'It is time to generate the quarterly patch file for base R and the recommended R packages. cc @*weblate-admins*' '{text: $text}')
           curl --silent --show-error --fail-with-body \
             -H 'Content-Type: application/json' \
             --data "$payload" \
