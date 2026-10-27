@@ -1,9 +1,10 @@
 name: Monthly Zulip reminder
 
 on:
-  # 09:17 Europe/London on the first day of every month.
+  # 09:17 Europe/London on the 1st of every 3rd month,
+  # starting 1 December 2026.
   schedule:
-    - cron: '17 9 1 * *'
+    - cron: '17 9 1 12,3,6,9 *'
       timezone: 'Europe/London'
   # Use this to test without posting; set dry_run to false to send a real message.
   workflow_dispatch:
