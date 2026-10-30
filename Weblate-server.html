@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.20">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -78,10 +78,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d779191fb58665fba6013d76b5d4c7b3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-35c3568c17950149c2e0b720c3d25ea4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -444,7 +444,7 @@ docker compose logs -f</code></pre></li>
 <ol type="1">
 <li>Visit <a href="https://translate.rx.studio/projects/r-project/#reports" class="uri">https://translate.rx.studio/projects/r-project/#reports</a></li>
 <li>Select time period and generate report in rST format</li>
-<li>Convert ~markdown to HTML and share in the R Contributors slack group’s #core-translation channel</li>
+<li>Convert ~markdown to HTML and share in the R Contributors Zulip’s <code>#translation</code> channel</li>
 </ol>
 </section>
 <section id="to-submit-a-patch-file-on-the-translations-found-in-weblate-but-not-in-the-trunk-of-the-main-r-subversion-repo" class="level3">
@@ -535,7 +535,7 @@ docker compose logs -f</code></pre></li>
 <li><p>Generate a patch file from the diff, going back to the most recent commit with translations merged, e.g.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NB: _not_ 'git diff weblate/master svn/main' since we've just deleted the empty .po files locally</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff svn/main <span class="at">--no-prefix</span> <span class="at">--</span> <span class="st">"*.po"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Share the patch file on the R Contributors Slack group’s #core-translation channel and kindly ping <span class="citation" data-cites="MichaelLawrence">@MichaelLawrence</span> for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.</p></li>
+<li><p>Share the patch file on the R Contributors Zulip’s <code>#translation</code> channel and kindly ping <strong>Michael Lawrence</strong> on Zulip for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.</p></li>
 </ol>
 </section>
 </section>
@@ -627,7 +627,7 @@ docker compose logs -f</code></pre></li>
 <section id="administrators" class="level2">
 <h2 class="anchored" data-anchor-id="administrators">Administrators</h2>
 <p>Currently <span class="citation" data-cites="daroczig">@daroczig</span>, <span class="citation" data-cites="MichaelChirico">@MichaelChirico</span>, <span class="citation" data-cites="azeloc">@azeloc</span>, <span class="citation" data-cites="beatrizmilz">@beatrizmilz</span>, <span class="citation" data-cites="Saranjeet">@Saranjeet</span>, and <span class="citation" data-cites="hturner">@hturner</span> have admin access to the Weblate UI. SSH access is granted to <span class="citation" data-cites="daroczig">@daroczig</span>, <span class="citation" data-cites="MichaelChirico">@MichaelChirico</span>, <span class="citation" data-cites="azeloc">@azeloc</span>, and <span class="citation" data-cites="beatrizmilz">@beatrizmilz</span>.</p>
-<p>In case of any questions, reach out to them on the R-devel Slack’s <code>#core-translation</code> channel, pinging both their usernames.</p>
+<p>In case of any questions, reach out to them on the R Contributors Zulip’s <code>#translation</code> channel, pinging both their usernames.</p>
 <section id="add-weblate-admin" class="level3">
 <h3 class="anchored" data-anchor-id="add-weblate-admin">Adding a new admin in the Weblate app</h3>
 <ol type="1">
