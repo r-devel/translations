@@ -5,7 +5,7 @@ title: "Spanish"
 [![](https://translate.rx.studio/widgets/r-project/es/svg-badge.svg?native=1){fig-align="left" fig-alt="translation status"}](https://translate.rx.studio/languages/es/r-project/)
 
 _This page is a hub for all people who want to help translate R messages into Spanish. You 
-can reach out to other translators on the R Contributors Slack if you need any additional information about the project._
+can reach out to other translators on the R Contributors Zulip if you need any additional information about the project._
 
 ## Sobre el proyecto
 
@@ -91,7 +91,7 @@ Antes de sumarle nuevos términos, es preferible discutirlo con la comunidad de 
 
 ### Otros recursos
 
-Este es un documento vivo construido en base al consenso de las personas que contribuyen a este proyecto y en la experiencia de muchos otros proyectos (enumerados a continuación). Puedes unirte a la discusión en el canal de slack #core-translations-es.
+Este es un documento vivo construido en base al consenso de las personas que contribuyen a este proyecto y en la experiencia de muchos otros proyectos (enumerados a continuación). Puedes unirte a la discusión en el canal `#team-spanish` de Zulip.
 
 -   [R
     OpenSci](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
@@ -186,7 +186,7 @@ with the community first and reach a consensus. You can also refer to glossaries
 
 ### Resources 
 
-This is a living document built on the consensus of the contributors and the experience of many other projects (listed bellow). You can join the discussion in the #core-translations-es slack channel.
+This is a living document built on the consensus of the contributors and the experience of many other projects (listed bellow). You can join the discussion in the `#team-spanish` Zulip channel.
 
 * [R OpenSci](https://github.com/ropensci-review-tools/glossary/blob/master/glossary.csv)
 * [R for Data Science](https://github.com/cienciadedatos/documentacion-traduccion-r4ds/blob/master/orientaciones-traduccion.md)

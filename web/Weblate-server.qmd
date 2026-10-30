@@ -165,7 +165,7 @@ _NB: Weblate links below assume you're logged in there, otherwise you'll be redi
 
 1. Visit <https://translate.rx.studio/projects/r-project/#reports>
 1. Select time period and generate report in rST format
-1. Convert ~markdown to HTML and share in the R Contributors slack group's #core-translation channel
+1. Convert ~markdown to HTML and share in the R Contributors Zulip's `#translation` channel
 
 ### To submit a patch file on the translations found in Weblate but not in the trunk of the main R subversion repo:
 
@@ -271,7 +271,7 @@ The basic idea is to compare the Weblate repo (which copies the R subversion rep
     git diff svn/main --no-prefix -- "*.po"
     ```
 
-1. Share the patch file on the R Contributors Slack group's #core-translation channel and kindly ping @MichaelLawrence for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
+1. Share the patch file on the R Contributors Zulip's `#translation` channel and kindly ping **Michael Lawrence** on Zulip for his assistance on getting the patch file applied on the trunk of R dev to get it merged. We should do this ~once per quarter.
 
 ## Maintenance
 
@@ -403,7 +403,7 @@ No token is needed, so it can also be used just to check the current settings.
 
 Currently @daroczig, @MichaelChirico, @azeloc, @beatrizmilz, @Saranjeet, and @hturner have admin access to the Weblate UI. SSH access is granted to @daroczig, @MichaelChirico,  @azeloc, and @beatrizmilz.
 
-In case of any questions, reach out to them on the R-devel Slack's `#core-translation` channel, pinging both their usernames.
+In case of any questions, reach out to them on the R Contributors Zulip's `#translation` channel, pinging both their usernames.
 
 ### Adding a new admin in the Weblate app {#add-weblate-admin}
 

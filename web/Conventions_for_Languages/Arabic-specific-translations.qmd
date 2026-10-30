@@ -94,8 +94,8 @@ improve the quality of your translations.
 
 # How to Contribute:
 
-1. Join [R Contributors](https://app.slack.com/client/T01DW9DLB2A/C01EST8PTFA)  Slack group. 
-1. Join [#core-translation](https://app.slack.com/client/T01DW9DLB2A/C0210D7EN1X)  channel. 
+1. Join the [R Contributors Zulip](https://contributor.r-project.org/zulip). 
+1. Join the `#translation` channel. 
 1. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
 [@daroczig](https://twitter.com/daroczig)); 
 1. Choose Arabic language to see all components. 

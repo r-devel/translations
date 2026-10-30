@@ -5,7 +5,7 @@ title: "Nepali"
 [![](https://translate.rx.studio/widgets/r-project/ne/svg-badge.svg?native=1){fig-align="left" fig-alt="translation status"}](https://translate.rx.studio/languages/ne/r-project/)
 
 _This repository is a hub for all people who want to help translate R into Nepali. This README is in English, but you 
-can reach out to other translators on the R Contributors Slack if you need any additional information about the 
+can reach out to other translators on the R Contributors Zulip if you need any additional information about the 
 project._
 
 ## About
@@ -21,8 +21,8 @@ essential that these messages are as clear as possible.
 
 To help in the translation process, you need to:
 
-1. Sign up to the [R Contributors Slack](https://contributor.r-project.org/slack) and introduce yourself in the 
-`#core-translations` channel;
+1. Sign up to the [R Contributors Zulip](https://contributor.r-project.org/zulip) and introduce yourself in the 
+`#translation` channel;
 1. Read the [Resources](#resources) section of this document, because the translation has some conventions that should 
 be followed;
 1. Create an account on [Weblate](https://translate.rx.studio/) (currently maintained by 
