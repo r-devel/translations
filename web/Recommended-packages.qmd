@@ -6,10 +6,11 @@ This page describes how the translations of the [recommended packages](https://t
 
 Unlike base R, these translations are not part of the [quarterly patch for R Core](Weblate-server.qmd#quarterly-patch-for-r-core).
 Each package has its own maintainer and repository, so the contributions need to be sent to each one separately, as a pull request or as a patch.
+This process needs admin access to Weblate and, for some steps, SSH access to the Weblate server.
 
 ## Tracking
 
-For each round of contributions, open an issue in the [translations repo](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package.
+For each round of contributions, open an issue in the [translations repository](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package.
 See, for example, [r-devel/translations#68](https://github.com/r-devel/translations/issues/68).
 
 ## Before you start
@@ -26,11 +27,16 @@ Alternatively, use the CLI inside the Docker container (see the [Weblate server 
 weblate lock_translation the-r-project-recommended-packages/NAME-OF-THE-COMPONENT
 ```
 
-2. SSH to the Weblate server and make a backup of the package's Git repo (outside the Docker container).
+2. Check that there are no pending changes to commit in the components ("Operations" > "Repository maintenance").
+If there are, click "Commit".
+Weblate keeps new translations in its database and commits them to the component's repository from time to time.
 
-When a package has both `C` and `R` files components, only one of them has its own repo (the other is linked to it), so this is the one to back up.
+
+3. SSH to the Weblate server and make a backup of the package's Git repository (outside the Docker container).
+
+When a package has both `C` and `R` files components, only one of them has its own repository (the other is linked to it), so this is the one to back up.
 For the packages hosted on GitHub or Codeberg, this is the `R` files component (e.g. `rpart-r-files`).
-The packages hosted on the R-project SVN all share the repo of the `kernsmooth-r-files` component.
+The packages hosted on the R-project SVN all share the repository of the `kernsmooth-r-files` component.
 
 First, check that the folder with this name exists on the server:
 
