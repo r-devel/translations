@@ -13,8 +13,9 @@ This process needs admin access to Weblate and, for some steps, SSH access to th
 For each round of contributions, open an issue in the [translations repository](https://github.com/r-devel/translations/issues) for tracking, listing the status of each package.
 See, for example, [r-devel/translations#68](https://github.com/r-devel/translations/issues/68).
 
-## Before you start
+## First steps (for all packages) {#first-steps}
 
+These steps are the same for every package, whatever the way the translations are sent upstream (pull request or patch).
 For each package you are going to send upstream:
 
 1. Lock the package's components (e.g. both the `C` and `R` files components), so no new translations are added while the contribution is being reviewed upstream.
@@ -30,7 +31,6 @@ weblate lock_translation the-r-project-recommended-packages/NAME-OF-THE-COMPONEN
 2. Check that there are no pending changes to commit in the components ("Operations" > "Repository maintenance").
 If there are, click "Commit".
 Weblate keeps new translations in its database and commits them to the component's repository from time to time.
-
 
 3. SSH to the Weblate server and make a backup of the package's Git repository (outside the Docker container).
 
@@ -64,7 +64,66 @@ Then check that the backup file is listed, with today's date:
 sudo ls -lh /root/
 ```
 
+## Getting and sending the translations
 
+How to get the translations from Weblate and send them upstream depends on the repository that each component fetches from (the "Source code repository" in the component settings on Weblate).
+
+### Maintainer's own repository on GitHub (pull request)
+
+These packages are developed in a public repository on GitHub that accepts pull requests, so the translations can be contributed directly via a pull request.
+See, for example, [bethatkinson/rpart#76](https://github.com/bethatkinson/rpart/pull/76).
+
+| Package | Weblate components | Upstream | Fork (`translations` branch) | Maintainer |
+|---|---|---|---|---|
+| rpart | [C](https://translate.rx.studio/projects/the-r-project-recommended-packages/rpart-c-files/) + [R](https://translate.rx.studio/projects/the-r-project-recommended-packages/rpart-r-files/) | <https://github.com/bethatkinson/rpart> | [r-devel/rpart](https://github.com/r-devel/rpart/tree/translations) | [Beth Atkinson](https://cran.r-project.org/package=rpart) |
+| lattice | [R](https://translate.rx.studio/projects/the-r-project-recommended-packages/lattice-r-files/) | <https://github.com/deepayan/lattice> | [r-devel/lattice](https://github.com/r-devel/lattice/tree/translations) | [Deepayan Sarkar](https://cran.r-project.org/package=lattice) |
+
+For these packages, Weblate fetches from the upstream repository, and pushes the translations to the `translations` branch of a fork in the [`r-devel`](https://github.com/r-devel) GitHub organization (the "Fork" column above).
+This way, the commits keep the translators as authors.
+
+To open the pull request and to fix problems in the `translations` branch, you need write access to the fork (be a collaborator of the `r-devel/NAME-OF-THE-PACKAGE` repository).
+If you don't have it, ask the team to add you, e.g. in the `#translation` channel of the [R Contributors Zulip](https://contributor.r-project.org/zulip.html) or in the tracking issue.
+
+For each round of contributions:
+
+1. Push the translations from Weblate ("Operations" > "Repository maintenance" > "Push").
+
+::: {.callout-warning collapse="true"}
+## If the push is rejected
+
+If the push from Weblate is rejected with `! [rejected] master -> translations (fetch first)`, the `translations` branch probably changed outside Weblate (e.g. the previous pull request was squashed or rebased when merged).
+See [how this was fixed for rpart](https://github.com/r-devel/translations/issues/68#issuecomment-5589588113) for an example.
+:::
+
+2. Check that the new commits are in the `translations` branch of the fork on GitHub.
+
+3. Clone the `translations` branch of the fork:
+
+```sh
+git clone --branch translations https://github.com/r-devel/NAME-OF-THE-PACKAGE
+cd NAME-OF-THE-PACKAGE
+git remote add upstream https://github.com/OWNER/NAME-OF-THE-PACKAGE
+git fetch upstream
+```
+
+Replace `OWNER/NAME-OF-THE-PACKAGE` with the repository in the "Upstream" column (e.g. `bethatkinson/rpart`).
+
+4. Run the [checks](#checking-the-translations) in this folder.
+To see the changes compared to upstream, use `git diff upstream/master -- po/` (or the default branch of the upstream repository, if it isn't `master`).
+
+5. If something doesn't follow the [checks](#checking-the-translations) (e.g. a `.po` file with no translated messages), fix it with commits in the `translations` branch, and push them to the fork (see [Fixing problems](#fixing-problems)).
+
+6. Open a pull request from `r-devel/NAME-OF-THE-PACKAGE:translations` to the upstream repository, and check the changes again in its "Files changed" tab.
+In the description, summarize the changes by language and thank the translators (see [Listing the translators](#listing-the-translators)).
+
+### Maintainer's own repository on Codeberg (pull request)
+
+This package is developed in a public repository on Codeberg that accepts pull requests.
+See, for example, [jaganmn/Matrix#1](https://codeberg.org/jaganmn/Matrix/pulls/1).
+
+| Package | Weblate components | Upstream | Maintainer |
+|---|---|---|---|
+| Matrix | [C](https://translate.rx.studio/projects/the-r-project-recommended-packages/matrix-c-files/) + [R](https://translate.rx.studio/projects/the-r-project-recommended-packages/matrix-r-files/) | <https://codeberg.org/jaganmn/Matrix> | [Martin Maechler](https://cran.r-project.org/package=Matrix) |
 ## After acceptance
 
 After the contribution is accepted upstream (e.g. the pull request is merged), you can:
