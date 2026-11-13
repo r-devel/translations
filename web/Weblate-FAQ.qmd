@@ -45,9 +45,9 @@ add a new component?"](#how-to-add-a-new-component).
 
 ### What packages are translated in Weblate?
 
-Currently, only base R packages. There are [plans to support recommended 
-packages](https://github.com/r-devel/translations/issues/2) as well. Other R packages can also use this installation of 
-Weblate, as per below:
+Currently, [base R](https://translate.rx.studio/projects/r-project/#components) and the [recommended packages](https://translate.rx.studio/projects/the-r-project-recommended-packages/#components).
+
+Other R packages can also use this installation of  Weblate, as per below:
 
 ### How to add a package I maintain to Weblate?
 
